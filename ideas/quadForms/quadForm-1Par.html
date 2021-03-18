@@ -1,0 +1,93 @@
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+    <link rel="stylesheet" type="text/css" href="scstyle.css"/>
+    <!--
+    <script src="https://sc.math.fau.de/static/jquery.min.js"></script>
+    <script src="https://sc.math.fau.de/static/embedded_sagecell.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://sc.math.fau.de/static/sagecell_embed.css">
+    <script src="https://www.math.fau.de/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    -->
+    <title>Matrizen (Stoerung) - Sage </title>
+<script>
+$(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+	                   outputLocation: 'div.output',
+			   evalButtonText: 'Auswerten',
+			   codeLocation: "#codeinput",
+			   languages: ["sage","octave"],
+			   hide:["language","permalink"],
+			   //mode:"debug",
+			   autoeval: false});
+	   });
+    </script>
+</head>
+
+<body>
+<div style="float: right;"><img style="height: 40px;" alt=""
+	src="FAU.png"><br>
+	</div>
+
+	<h1>
+		Quadratic Forms
+	</h1>
+
+This is an example for an interactive question. Given a symmetric matrix
+$A_0=\begin{pmatrix}a_{11} & a_{12}\\ a_{12} &
+ a_{22}\end{pmatrix}$.
+
+ The values of $a_{11},a_{12},a_{22}$ is a random number from $\{-1, -0.9, \dots, 1\}$.
+The contour plot of $q_{A_0}(x_1,x_2) = (x_1,x_2)\cdot A \cdot \left(\begin{array}{c}x_1\\x_2\end{array}\right)$
+is show (colored).
+
+ The goal of the student is now, to find the value of $a_{12}$  by comparing the countour plot of the given matrix $A_0$ and "his/her" matrix $A$ (copper).
+
+
+\( A = \left( \begin{array}{cc} a_{11} & a_{12}\\a_{12} & a_{22} \end{array}\right)\)
+
+	<div class="compute" style="width:800;">
+	<script type="text/x-sage">
+	</script>
+</div>
+
+<script type=text/x-sage" id="codeinput">
+x,y = var('x','y')
+a011=randrange(-10,10)/10.0
+a012=randrange(-10,10)/10.0
+a022=randrange(-10,10)/10.0
+f0 = a011*x*x+2*a012*x*y+a022*y*y
+C0 = contour_plot(f0, (x,-1,1), (y,-1,1), plot_points=30, contours=15, cmap='jet',figsize=5)
+renderer3d = 'threejs'
+@interact
+def _(a12=slider(-1,1,step_size=0.1,default=0)):
+      A = matrix(RDF,[[a011,a12],[a12,a022]])
+      show("A=",A.n(10))
+      pretty_print(html('Eigenwerte von $A:\\, %s$'%(latex(A.eigenvalues()))))
+      x,y = var('x','y')
+      f = a011*x*x+2*a12*x*y+a022*y*y
+      pretty_print(html('$q_A(x,y)=%s'%(latex(f))))
+      C = contour_plot(f, (x,-1,1), (y,-1,1), plot_points=30, contours=15, cmap='copper',figsize=5)
+      show(C,C0)
+      if (abs(a12-a012)==0.0):
+            print("Congrats, you have got it!")
+      elif (abs(a12-a012)<=0.1):
+            print("Congrats, you are close!")
+#      show(plot3d(f, (x,-1,1), (y,-1,1), figsize=3, adaptive=true,viewer=renderer3d))
+        
+</script>
+
+	<div class="output" style="width:800;">
+	</div>
+	<p/>
+</body>
+<footer>&copy; Wigand Rathmann, FAU, <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></footer>
+</html>
