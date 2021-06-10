@@ -12,7 +12,13 @@ Two files are available.
 
 ### Parametrized surface
 https://www.math3d.org/AqBxoGW
+
 https://www.math3d.org/k2V4B0G0
+
+https://www.math3d.org/PDQ73IJQ
+
+https://www.math3d.org/JYIeVhPz
+
 3d objects, how to describe surfaces
 change coordinates: cartesian to polar.
 
@@ -22,5 +28,13 @@ piecewise defined curves
 ### line integrals
 given a vectorfield and a curve
 find parameters, where the integral will have a certain value.
+
 https://www.math3d.org/An2v3fOj
+
 https://www.math3d.org/S9IBmQt1
+
+### coordinate transformation
+https://www.math3d.org/EePMAb5n
+
+https://www.math3d.org/xOr4iwiC
+
