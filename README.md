@@ -11,13 +11,15 @@ Given a quadratic form (genarated randomly) the student should figure out the nu
 Two files are available.
 
 ### Parametrized surface
-https://www.math3d.org/AqBxoGW
+https://www.math3d.org/AqBxoGW (empty)
 
-https://www.math3d.org/k2V4B0G0
+https://www.math3d.org/k2V4B0G0 cylinder with caps. 1 version
 
-https://www.math3d.org/PDQ73IJQ
+https://www.math3d.org/PDQ73IJQ cylindrical cone with inner hole
 
-https://www.math3d.org/JYIeVhPz
+https://www.math3d.org/JYIeVhPz cylindrical cone with inner hole
+
+https://www.math3d.org/BlKlqRgj (cylinder with caps, height parametrized)
 
 3d objects, how to describe surfaces
 change coordinates: cartesian to polar.
