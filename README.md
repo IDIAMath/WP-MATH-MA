@@ -21,6 +21,8 @@ https://www.math3d.org/JYIeVhPz cylindrical cone with inner hole
 
 https://www.math3d.org/BlKlqRgj (cylinder with caps, height parametrized)
 
+https://www.math3d.org/bFBA1y2h (simple cube)
+
 3d objects, how to describe surfaces
 change coordinates: cartesian to polar.
 
