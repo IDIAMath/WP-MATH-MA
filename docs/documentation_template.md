@@ -23,7 +23,7 @@ theme: minima
 
 
 ### Teacher perspective
-The teacher's do not have to change anything unless they wish to change the range for the randomly generated parameters for the question. Then they may change the a (x) and b (y) variables inside the **Question variables** box.
+[describe what the teacher needs to do and can do]
 
 | ![values the teacher can change](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
 |:--:|
