@@ -69,9 +69,6 @@ The code is divided into segments, each of which is explained
 ### Feedback variables
 We retrieve the student answer and store it in variables. 
 
-We then find the partial derivatives of the provided expression and create a **score** variable set it to 0.
-
-The **ta** variable check wether the score matches the required score to pass the selected question, if it is, then its set to the student retrived input because its the correct answer. It bascally checks if the answer is correct and stores it.
 
 
 ```rust
