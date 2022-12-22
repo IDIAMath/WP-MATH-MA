@@ -77,11 +77,11 @@ FdxRefSol:1/a2;
 
 ### Question Text
 +	“Find a point with certain properties of the Hessian at this point”
-+	JSXGraph applet using the functions and variables defined in Question variables plotting the randomized function and displaying the Taylor-Approximation in a point of freely adjustable x,y-coordinates
++	JSXGraph applet using the functions and variables defined in **Question variables** plotting the randomized function and displaying the Taylor-Approximation in a point of freely adjustable x,y-coordinates
 +	`[[input:ans1]]` at the end of JSXGraph code to allow input of an answer of the student
 +	`[[validation:ans1]]` checking of answer
 
-
+#### Question text code
 
 
 ```javascript
@@ -194,17 +194,50 @@ board.update();
 ```
 ## Answers
 ### Answer ans 1
----
-|type | numerical |
-|reference solution | [FdxRefSol, FdyRefSol] defined in Question variables |
+|property | setting| 
+|:---|:---|
+|Input type | Numerical |
+|Model answer | `[FdxRefSol, FdyRefSol]` defined in **Question variables** |
+| Forbidden words | none |
+| Forbid float | No |
+| Student must verify | Yes |
+| Show the validation | Yes, with variable list|
 --- 
-## Feedback variables
-We retrieve the student answer and store it in variables. 
-```rust
-[insert feedback variables]
+## Potential response tree
+### prt1
+
+Feedback variables:
 ```
+FdxSAns:ev(Fdx,numer,x=ans1[1],y=ans1[2]);
+FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
+```
+ Creates variables `FdxSAns`, `FdySAns`. Their values are determined by the function `ev()` evaluating the derivatives `Fdx`, `Fdy` specified in **Question variables** numerically at the location specified by `ans1`.
+
 ## Partial response tree
 | ![Node 1](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
+ |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | FdxSAns|
+|TAns | 0| 
+|Node 1 true feedback | In \(x\)-direction the slope is close to zero.|
+|Node 1 false feedback | In \(x\)-direction the slope is not close to zero enough.|
+### Node 2
+ |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | FdySAns|
+|TAns | 0| 
+|Node 2 true feedback | In \(y\)-direction the slope is close to zero.|
+|Node 2 false feedback | In \(y\)-direction the slope is not close to zero enough.|
+
+**IMPORTANT: This PRT is not suited fot this task and needs to be replaced**
+
+## Todo:
++ [] Specify task for students
++ [] Display property of hessian in solution
++ [] Update PRT to correct task
++ [] No need for sliders etc.: Update code
