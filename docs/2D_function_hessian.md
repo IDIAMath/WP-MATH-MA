@@ -237,7 +237,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 **IMPORTANT: This PRT is not suited fot this task and needs to be replaced**
 
 ## Todo:
-+ [] Specify task for students
-+ [] Display property of hessian in solution
-+ [] Update PRT to correct task
-+ [] No need for sliders etc.: Update code
+* [] Specify task for students
+* [] Display property of hessian in solution
+* [] Update PRT to correct task
+* [] No need for sliders etc.: Update code
