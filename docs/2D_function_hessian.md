@@ -203,7 +203,7 @@ board.update();
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 --- 
-## Potential response tree
+## Partial response tree
 ### prt1
 
 Feedback variables:
@@ -213,7 +213,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 ```
  Creates variables `FdxSAns`, `FdySAns`. Their values are determined by the function `ev()` evaluating the derivatives `Fdx`, `Fdy` specified in **Question variables** numerically at the location specified by `ans1`.
 
-## Partial response tree
+
 | ![Node 1](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
 |:--:|
 | *Values of **node 1*** |
