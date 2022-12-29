@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to spherical coordinates  (Handling mathematical symbols and formalism)
 +	Student can take a volume with spherical geometry and reconstruct the limits of its radius and angles (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/209998772-0bdef5e1-4e5e-46b4-bca4-25798398254f.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -31,7 +31,7 @@ The task is to find the correct intervalls for $r$, $\phi$ and $\psi$ in real nu
 ### Teacher perspective
 [describe what the teacher needs to do and can do]
 
-| ![values the teacher can change](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998765-cc7196b5-bc98-44b8-906c-72f1c5d953e3.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -260,10 +260,14 @@ board.update(); [[/jsxgraph]]
 ## Potential response tree
 ### prt1
 
+| ![prt1](https://user-images.githubusercontent.com/120648145/209998779-1117f249-7b2f-49d2-bbd9-e0e42368d7eb.PNG) |
+|:--:|
+| *Visualization of **prt1*** |
+
 Feedback variables: `r1:ans1[1]`
 
 
-| ![Node 1](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/209998776-cfa51f7e-9a9a-4695-bc7d-376f25c109e7.PNG) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
