@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how local approximation and value of Hessian matrix are connected graphically (Representing mathematical entities)
 +	Using a visualization of Taylor-approximation student can derive qualitative statements about Hessian matrix at a given point (Making use of aids and tools)
 
-| ![First impression](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/209998318-a3c35f8d-ca6e-45a7-b5f2-c910a32cd136.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -26,7 +26,7 @@ the character of the Taylor approximation gives information about the hessian of
 
 [describe what the student will see]
 
-| ![Click draw button](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/209998325-438d534e-02c8-455f-898b-4e0b8a2fd164.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -34,7 +34,7 @@ the character of the Taylor approximation gives information about the hessian of
 ### Teacher perspective
 [describe what the teacher needs to do and can do]
 
-| ![values the teacher can change](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998330-06ff458e-eeb3-40c0-bec2-069140610164.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
