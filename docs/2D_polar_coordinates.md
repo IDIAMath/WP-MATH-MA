@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to polar coordinates  (Handling mathematical symbols and formalism)
 +	Student can think of an area that is transformed to the given area in polar coordinates and check graphically (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools )
 
-| ![First impression](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/209998497-b80aeef2-fcc8-41cb-a717-89c361abd805.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -22,7 +22,7 @@ The task is to find the correct intervalls for $r$ and $\phi$ in real numbers th
 
 [describe what the student will see]
 
-| ![Click draw button](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/209998506-2108d80f-d943-4fc1-b863-3698215d32a0.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -30,7 +30,7 @@ The task is to find the correct intervalls for $r$ and $\phi$ in real numbers th
 ### Teacher perspective
 [describe what the teacher needs to do and can do]
 
-| ![values the teacher can change](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998491-d053aeba-cb1a-408a-98b2-a08263bf6196.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -194,6 +194,10 @@ board2.unsuspendUpdate();
 ## Potential response tree
 ### prt1
 
+| ![prt1](https://user-images.githubusercontent.com/120648145/209998503-d17d43ca-be5f-4e6e-820d-01946ba26950.PNG) |
+|:--:|
+| *Display of **prt1*** |
+
 Feedback variables:
 ```
 r1:ans1[1]
@@ -204,7 +208,7 @@ phi2:ans2[2]/%pi
 int1low:ans1[1]
 ```
 
-| ![Node 1](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/209998500-913eb222-72fc-4ffd-9451-d1519cfa673c.PNG) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
