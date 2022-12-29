@@ -15,12 +15,12 @@ theme: minima
 
 ## Question description
 
-A 2D function is plotted and its Taylor approximation of second order is given at a moveable point $(x,y)$. 
+A 2D function is plotted and its Taylor approximation of second order is given at a moveable point $x= (x_1,x_2)$. 
 Since the Taylor approximation is given as 
 $$f_2 (t) = f(x_0) + \nabla f(x_0) \cdot (x-x_0) + \frac{1}{2} (x-x_0)^\text{T} H_f(x-x_0)$$
 the character of the Taylor approximation gives information about the hessian of the function.
 
-**NOT YET IMPLEMENTED:** Some desired properties of the hessian matrix will be given. The student then chooses a point $(x,y)$ where $f$ fulfills the conditions.
+**NOT YET IMPLEMENTED:** Some desired properties of the hessian matrix will be given. The student then chooses a point $ (x_1,x_2)$ where $f$ fulfills the conditions.
 
 ### Student perspective
 
@@ -46,11 +46,11 @@ the character of the Taylor approximation gives information about the hessian of
 
 ### Question Variables
 +	3 lists of integer numbers for variables a1, a2, a3 to randomly select from
-+	Selected number can be divided or multiplied with a number to    scale e.g.: a1:rand([-10,-8,-6,-4,-2,2,4,6,8,10])/5;
-+	function F using ` a1, a2, a3` dependent on variables `x, y` as follows: 
++	Selected number can be divided or multiplied with a number to    scale e.g.: `a1:rand([-10,-8,-6,-4,-2,2,4,6,8,10])/5;`
++	function F using ` a1`,` a2`, `a3` dependent on variables `x`, `y` as follows: 
 
     `F: a1 * cos(%pi*a2*x)*cos(a3*y);`  
-    Note that this function’s parameters `a1, a2` and `a3` are randomized upon executing the code as mentioned above
+    Note that this function’s parameters `a1`, `a2` and `a3` are randomized upon executing the code as mentioned above
 +	derivatives of Function F using Maxima syntax e.g.: `Fdx: diff(F,x)` to calculate the components of the Hessian Matrix
 +	numerical reference solution e.g.: `FdyRefSol:0
 `
@@ -203,7 +203,7 @@ board.update();
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 --- 
-## Partial response tree
+## Potential response tree
 ### prt1
 
 Feedback variables:
