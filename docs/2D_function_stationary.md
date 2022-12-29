@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/209998953-5722dda0-489b-454c-96b6-7dda57151a1d.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -26,7 +26,7 @@ The task is to move $x_0$ where it is stationary with the help of the tangent pl
 
 [describe what the student will see]
 
-| ![Click draw button](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/209998963-e26bc963-b8f7-48e9-be24-89978e8a2588.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -34,7 +34,7 @@ The task is to move $x_0$ where it is stationary with the help of the tangent pl
 ### Teacher perspective
 [describe what the teacher needs to do and can do]
 
-| ![values the teacher can change](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998948-4f4a9938-4b9d-4f2a-9a7e-1ffa5fade0bd.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -181,6 +181,10 @@ board.update();
 ## Potential response tree
 ### prt1
 
+| ![prt1](https://user-images.githubusercontent.com/120648145/209998959-82c868cc-b662-4c4c-a7bd-7c0c9c32c5e4.PNG) |
+|:--:|
+| *Visualization of **prt1*** |
+
 Feedback variables:
 ```
 FdxSAns:ev(Fdx,numer,x=ans1[1],y=ans1[2]);
@@ -189,7 +193,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
  Creates variables `FdxSAns`, `FdySAns`. Their values are determined by the function `ev()` evaluating the derivatives `Fdx`, `Fdy` specified in **Question variables** numerically at the location specified by `ans1`.
 
 
-| ![Node 1](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/209998956-4b1d3d17-2ee3-4e94-b9e7-e942d6f16e8b.PNG) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
