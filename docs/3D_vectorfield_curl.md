@@ -8,7 +8,7 @@ theme: minima
 +	Student understands, how a vector field and its curl are connected graphically (Representing mathematical entities)
 + 	Using a visualization of vector field and its curl the student can graphically check whether his calculations are correct (Making use of aids and tools)
 
-| ![First impression](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/209999022-cebb6337-8522-40a4-bcc6-429757301ddc.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,7 +29,7 @@ A 3D vector field is plotted.
 ### Teacher perspective
 [describe what the teacher needs to do and can do]
 
-| ![values the teacher can change](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209999017-c79b6da8-0685-4cdc-b808-9efee6b2ea99.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -161,13 +161,16 @@ Select \(\hat V\).
 --- 
 ## Potential response tree
 ### prt1
+| ![prt1](https://user-images.githubusercontent.com/120648145/209999029-fa4b3865-d361-47b8-a088-f86c5ffc5ded.PNG) |
+|:--:|
+| *Visualization of **prt1*** |
 
 Feedback variables:
 
 None needed, since `ans1` is selected by ticking a button.
 
 
-| ![Node 1](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/209999025-682c7f4b-23a9-4919-9782-f88854279609.PNG) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
