@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JSXGraph template</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<link href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" rel="
+			stylesheet" type="text/css" />
+		<script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"
+			type="text/javascript" charset="UTF-8"></script>
+		<!-- The next line is optional: MathJax -->
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="
+			MathJax-script" async></script>
+	</head>
+	<body>
+		<div id="jxgbox" class="jxgbox" style="width:500px; height:700px;"></div>
+		<script>
+			var board = JXG.JSXGraph.initBoard('jxgbox', {
+				boundingbox: [-8, 8, 8, -10],
+				keepaspectratio: true,
+				axis: false
+				});
+			var bound = [-10, 10];
+			var view = board.create('view3d',
+				[[-6, -3], [8, 8],
+				[bound, bound, bound]],
+				{
+					/*planes*/
+					xPlaneRear: {visible:false},
+					yPlaneRear: {visible:false}	
+				});
+			
+			/*curve from STACK values*/
+			var radius = 5.75;
+			var amp = 3;
+			var phase = 0.5;
+			var num = 4;
+			var c_base = view.create('curve3d', [
+				(t) => radius* Math.cos(t),
+				(t) => radius* Math.sin(t),
+				(t) => amp*Math.cos(num *t-Math.PI*phase),
+				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "blue"});
+
+			//slider-based curve 
+
+			var r = board.create('slider', [[-7,-8], [3,-8], [0,5,10]], {name: "r"});
+			var h = board.create('slider', [[-7,-9],[3,-9],[0,2,4]], {name: 'h'});
+			var n = board.create('slider', [[-7,-6],[3,-6],[0,2,7]], {name: 'n', snapWidth:1});
+			var s = board.create('slider', [[-7,-7],[3,-7],[0,2,Math.PI]], {name: 'shift'});
+			var c = view.create('curve3d', [
+				(t) => r.Value()*Math.cos(t),
+				(t) => r.Value()*Math.sin(t),
+				(t) => 
+				h.Value()*Math.exp(-1*(t-s.Value())**2)+h.Value()*Math.exp(-1*(t+s.Value())**2),
+				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "red"});
+		</script>
+	</body>
