@@ -15,16 +15,17 @@ theme: minima
 
 ## Question description
 
-A 2D function is plotted and its Taylor approximation of first order is given at a moveable point $x_0= (x_1,x_2)$. 
+A 2D function is plotted and its Taylor approximation of first order is given at a moveable point $r_0= (x_0,y_0,f(x_0,y_0))$. 
 Since the Taylor approximation is given as 
-$$f_1 (t) = f(x_0) + \nabla f(x_0) \cdot (x-x_0) $$
-it describes the tangent plane to a given point $x_0$.
+$$f_1 (r) = f(r_0) + \nabla f(r_0) \cdot (r-r_0) $$
+it describes the tangent plane to a given point $r_0$.
 
-The task is to move $x_0$ where it is stationary with the help of the tangent plane. It is stationary where the slope in both $x_1$ and $x_2$ direction are zero.
+The task is to move $x_0$ where it is stationary with the help of the tangent plane. It is stationary where the slope in both $x$ and $y$ direction are zero.
 
 ### Student perspective
 
-[describe what the student will see]
+When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
+The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
 | ![Click draw button](https://user-images.githubusercontent.com/120648145/209998963-e26bc963-b8f7-48e9-be24-89978e8a2588.PNG) |
 |:--:|
@@ -32,15 +33,17 @@ The task is to move $x_0$ where it is stationary with the help of the tangent pl
 
 
 ### Teacher perspective
-[describe what the teacher needs to do and can do]
+The teacher is able to give a list of possible values for parameters of the function. In order to do this, he simply needs to modify the entrys in the lists specified e.g. change `a1:rand([-10,-8,.6,-4,-2,2,4,6,8,10])/5` to `a1:rand([2,3,4,5,6,7,8])/5`.
+
+Furthermore the teacher is able to change the function entirely to a function that fits his needs. He can change the function defined by `F: a1* cos(%pi *a2* x)* cos(%pi* a3* y)` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before.
+
+Lastly, the reference solution for an exemplatory stationary point must be adjusted to the function used.
 
 | ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998948-4f4a9938-4b9d-4f2a-9a7e-1ffa5fade0bd.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
-### Questions and answers examples
 
-[insert examples]
 
 ## Question code
 
@@ -73,7 +76,10 @@ FdxRefSol:1/a2;
 ```
 
 ### Question Text
-+	“Find a stationary point on the surface”
++	“Given is the graph of a function and its tangent plane in a point. You can   move that point by moving its projected point in $x,y$-direction. You can rotate the coordinate system using the sliders.
+
+    Select a stationary point of the function.
+”
 +	JSXGraph applet using the functions and variables defined in **Question variables** plotting the randomized function and displaying the	tangent plane for a point of freely adjustable x,y-coordinates
 +	`[[input:ans1]]` at the end of JSXGraph code to allow input of an answer of the student
 +	`[[validation:ans1]]` checking of answer
@@ -82,7 +88,8 @@ FdxRefSol:1/a2;
 
 
 ```javascript
-<p>Find a stationary point on the surface.</p>
+<p>Given is the graph of a function and its tangent plane in a point. You can move that point by moving its projected point in \(x,y\)-direction. You can rotate the coordinate system using the sliders.</p>
+<p> Select a stationary point of the function.</p>
 
 
 [[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref']]
@@ -178,6 +185,17 @@ board.update();
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 --- 
+
+## General feedback
+```
+<hr>
+
+<p>A stationary point is a point on the graph of a function, where the function's derivative is zero. Since this is a 2D-function both the partial derivative in \(x\) and \(y\)-direction must be zero. </p>
+
+<p>The plane tangent to a  point \(r_0= (x_0,y_0, f(x_0,y_0))\) is defined at a point \(r\) by the equation \(f_1 (r) = f(r_0) + \nabla f(r_0) \cdot (r-r_0)\).
+Therefore the tangent plane in a stationary point is exactly horizontal. </p>
+```
+
 ## Potential response tree
 ### prt1
 
@@ -200,21 +218,21 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
-|SAns | FdxSAns|
-|TAns | 0| 
-|Node 1 true feedback | In \\(x\\)-direction the slope is close to zero.|
-|Node 1 false feedback | In \\(x\\)-direction the slope is not close to zero enough.|
+|SAns | `FdxSAns`|
+|TAns | `0`| 
+|Node 1 true feedback | `<p>Nice! In \(x\)-direction the slope is close to zero.</p>`|
+|Node 1 false feedback | `<p>In \(x\)-direction the slope is not close enough to zero.</p>`|
 ### Node 2
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
-|SAns | FdySAns|
-|TAns | 0| 
-|Node 2 true feedback | In \\(y\\)-direction the slope is close to zero.|
-|Node 2 false feedback | In \\(y\\)-direction the slope is not close to zero enough.|
+|SAns | `FdySAns`|
+|TAns | `0`| 
+|Node 2 true feedback | `<p>Nice! In \(y\)-direction the slope is close to zero.</p>`|
+|Node 2 false feedback | `<p>In \(y\)-direction the slope is not close enough to zero.</p>`|
 
 ## Todo:
-* [ ] Elaborate more on task for students
-* [ ] Display definition of stationary point in solution
+* [x] Elaborate more on task for students
+* [x] Display definition of stationary point in solution
 * [ ] JSXGraph-Applet does not work in solution
 
