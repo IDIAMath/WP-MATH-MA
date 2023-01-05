@@ -20,7 +20,14 @@ The task is to find the correct intervalls for $r$ and $\phi$ in real numbers th
 
 ### Student perspective
 
-[describe what the student will see]
+The student will see two coordinate systems.
+
+1. A polar coordinate system with a given area and another area they can modify.
+1. A cartesian coordinate system with a rectangle defined by two points P1 and P2.
+
+The rectangle in the cartesian coordinate system is transformed to polar coordinates and displayed in the polar coordinate system. By changing P1 and P2 the area in the polar coordinate system changes.
+
+It is the aim to match the changing area to the given area. Then, the interval bounds can be read from the cartesian coordinate system and given as input.
 
 | ![Click draw button](https://user-images.githubusercontent.com/120648145/209998506-2108d80f-d943-4fc1-b863-3698215d32a0.PNG) |
 |:--:|
@@ -28,15 +35,16 @@ The task is to find the correct intervalls for $r$ and $\phi$ in real numbers th
 
 
 ### Teacher perspective
-[describe what the teacher needs to do and can do]
+The teacher is able to give a list of possible values for interval bounds. In order to do this, they simply need to modify the entries in the lists specified e.g. change `ranger:rand([1/6,1/4,1/3,1/2,2/3,3/4,5/6,1])` to `ranger:rand([1/2,1,3/2,2,5/2])`.
+
+Another example - in the case of the radius - is the following: change `radius1:rand(6)/2` to `radius1: rand(8)/2` in order to select numbers from 0 to 4 in steps of 1/2.
+
+**They should not change any of the values `p1x,...,p4y`!**
 
 | ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998491-d053aeba-cb1a-408a-98b2-a08263bf6196.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
-### Questions and answers examples
-
-[insert examples]
 
 ## Question code
 
@@ -65,7 +73,6 @@ p3x:radius2*cos((startr+ranger)*%pi)
 p3y:radius2*sin((startr+ranger)*%pi)
 p4x:radius1*cos((startr+ranger)*%pi)
 p4y:radius1*sin((startr+ranger)*%pi)
-
 numer:false;
 ```
 
@@ -84,29 +91,22 @@ Write the interval in the form $r\in$[r1,r2] and $\phi\in$[phi1,phi2]., e.g. [1/
 ```javascript
 <p>Give the limits for a 2d integration for the area shown in the diagram in polar coordinates \((r,\phi)\). </p>
 <p> Write the interval in the form \(r\in\)<code>[r1,r2]</code> and  \(\phi\in\)<code>[phi1,phi2].</code>, e.g. <code>[1/2,2]</code> and <code>[1/2*pi,2*pi]</code></p>
-
 [[ jsxgraph width="250px" height="250px"]] [[/ jsxgraph ]]
 [[ jsxgraph width="250px" height="250px"]] [[/ jsxgraph ]]
-
 [[jsxgraph width='0px' height='0px' input-ref-ans1='ans1Ref']]
-
 //handling divids
 var divid3 = divid;
 console.log(divid3);
 var parts = divid.split('-');
 console.log(parts);
-
 parts[2] = parts[2] -1;
 var divid2 = parts.join('-');
 console.log(divid2);
-
 parts[2] = parts[2] -1;
 var divid1 = parts.join('-');
 console.log(divid1);
-
 //content
 var board = JXG.JSXGraph.initBoard(divid1,{boundingbox : [-5, 5, 5,-5], axis:true, shownavigation : false});
-
 var center =board.create("point",[0,0],{name : "",visible:false,fixed:true});
 var p1 = board.create("point",[{#p1x#},{#p1y#}],{name : "P1",visible:false,fixed:true,});
 var p2 = board.create("point",[{#p2x#},{#p2y#}],{name : "P2",visible:false,fixed:true});
@@ -117,8 +117,6 @@ var c2 = board.create("line",[p4,p3],{frozen:true, straightFirst:false, straight
 var c3 = board.create("arc",[center,p2,p3],{frozen:true});
 var c4 = board.create("line",[p2,p1],{frozen:true, straightFirst:false, straightLast:false});
 //stack_jxg.bind_point(ans1Ref,p1);
-
-
 var board2 = JXG.JSXGraph.initBoard(divid2,{boundingbox : [-1, 5, 5,-0.5], axis:true, 
   defaultAxes: {
     	y: {
@@ -133,17 +131,13 @@ var board2 = JXG.JSXGraph.initBoard(divid2,{boundingbox : [-1, 5, 5,-0.5], axis:
   board2.addChild(board);
   board.suspendUpdate();
   board2.suspendUpdate();
-
 // var center2 =board2.create("point",[0,0],{name : "",visible:false,fixed:true});
 var p12 = board2.create("point",[0.5,1.57],{name : "P1",visible:true});
 var p32 = board2.create("point",[2.5,3.14],{name : "P2",visible:true});
-
 var p22 = board2.create("point",[function () {return p32.X()},function () {return p12.Y()}],{name : "P3",visible:false});
 var p42 = board2.create("point",[function () {return p12.X()},function () {return p32.Y()}],{name : "P4",visible:false});
 var polyg1 = board2.create("polygon",[p12,p22,p32,p42],{name : ""});
-
 //stack_jxg.bind_point(ans1Ref,p1);
-
 var p1p = board.create("point",[function () {return p12.X()*Math.cos(p12.Y());},
                             function () {return p12.X()*Math.sin(p12.Y());}],
                             {name : "P1",visible:false});
@@ -160,12 +154,9 @@ var c1p = board.create("arc",[center,p1p,p4p],{frozen:true,strokeColor:'red'});
 var c2p = board.create("line",[p4p,p3p],{frozen:true,strokeColor:'red', straightFirst:false, straightLast:false});
 var c3p = board.create("arc",[center,p2p,p3p],{frozen:true,strokeColor:'red'});
 var c4p = board.create("line",[p2p,p1p],{frozen:true,strokeColor:'red', straightFirst:false, straightLast:false});
-
 board.unsuspendUpdate();
 board2.unsuspendUpdate();
-
 [[/ jsxgraph]]
-
 <p>\(r\in\) [[input:ans1]] [[validation:ans1]]</p>
 <p>\(\phi\in\) [[input:ans2]] [[validation:ans2]]</p>
 ```
@@ -204,7 +195,6 @@ r1:ans1[1]
 r2:ans1[2]
 phi1:ans2[1]/%pi
 phi2:ans2[2]/%pi
-
 int1low:ans1[1]
 ```
 
@@ -217,8 +207,8 @@ int1low:ans1[1]
 |Answer Test | Algequiv|
 |SAns | r1|
 |TAns | radius1| 
-|Node 1 true feedback |Nice, you found the correct value for \(r_1\)! Good job! |
-|Node 1 false feedback |The value you gave for \(r_1\) is not correct. Try matching the points perfectly and read the smaller radius. This is the lower bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.|
+|Node 1 true feedback |`Nice, you found the correct value for \(r_1\)! Good job! `|
+|Node 1 false feedback |`The value you gave for \(r_1\) is not correct. Try matching the points perfectly and read the smaller radius. This is the lower bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.`|
 
 ### Node 2
  |property | setting| 
@@ -226,8 +216,8 @@ int1low:ans1[1]
 |Answer Test | Algequiv|
 |SAns | r2|
 |TAns | radius2| 
-|Node 2 true feedback |Nice, you found the correct value for \(r_2\)! Good job!|
-|Node 2 false feedback |The value you gave for \(r_2\) is not correct. Try matching the points perfectly and read the bigger radius. This is the upper bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.|
+|Node 2 true feedback |`Nice, you found the correct value for \(r_2\)! Good job!`|
+|Node 2 false feedback |`The value you gave for \(r_2\) is not correct. Try matching the points perfectly and read the bigger radius. This is the upper bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.`|
 
 ### Node 3
  |property | setting| 
@@ -235,8 +225,8 @@ int1low:ans1[1]
 |Answer Test | Algequiv|
 |SAns | phi1|
 |TAns | startr| 
-|Node 3 true feedback |Nice, you found the correct value for \(\phi_1\)! Good job!|
-|Node 3 false feedback |The value you gave for \(\phi_1\) is not correct. Try matching the points perfectly and read the smaller angle. This is the lower bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation|
+|Node 3 true feedback |`Nice, you found the correct value for \(\phi_1\)! Good job!`|
+|Node 3 false feedback |`The value you gave for \(\phi_1\) is not correct. Try matching the points perfectly and read the smaller angle. This is the lower bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation`|
 
 ### Node 4
  |property | setting| 
@@ -244,9 +234,9 @@ int1low:ans1[1]
 |Answer Test | Algequiv|
 |SAns | phi1|
 |TAns | startr| 
-|Node 4 true feedback |Nice, you found the correct value for \(\phi_2\)! Good job! Now that you know how to transform points from cartesian to polar coordinates graphically, you can have a look at the quantitative transformation from one system in the other. If you know this, it will be way easier to parametrize functions or solve problems with rotational symmetry. You can then use, what you used in this exercise to find suiting integration bounds and perform calculations you could not easily do with cartesian coordinates.|
-|Node 4 false feedback |The value you gave for \(\phi_2\) is not correct. Try matching the points perfectly and read the bigger angle. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation. If you try again and know how to transform points from cartesian to polar coordinates graphically, you can have a look at the quantitative transformation from one system in the other. If you know this, it will be way easier to parametrize functions or solve problems with rotational symmetry. You can then use, what you used in this exercise to find suiting integration bounds and perform calculations you could not easily do with  cartesian coordinates.|
+|Node 4 true feedback |`Nice, you found the correct value for \(\phi_2\)! Good job! Now that you know how to transform points from cartesian to polar coordinates graphically, you can have a look at the quantitative transformation from one system in the other. If you know this, it will be way easier to parametrize functions or solve problems with rotational symmetry. You can then use, what you used in this exercise to find suiting integration bounds and perform calculations you could not easily do with cartesian coordinates.`|
+|Node 4 false feedback |`The value you gave for \(\phi_2\) is not correct. Try matching the points perfectly and read the bigger angle. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation. If you try again and know how to transform points from cartesian to polar coordinates graphically, you can have a look at the quantitative transformation from one system in the other. If you know this, it will be way easier to parametrize functions or solve problems with rotational symmetry. You can then use, what you used in this exercise to find suiting integration bounds and perform calculations you could not easily do with  cartesian coordinates.`|
 
 ## Todo:
 * [ ] make sure variable names and code are consistent with other tasks
-
+* [ ] evaluate whether the JSXGraph values should be specified in Question variables or not
