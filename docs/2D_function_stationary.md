@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/209998953-5722dda0-489b-454c-96b6-7dda57151a1d.PNG) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/210770463-d714b00f-ce57-4130-804c-39e378676416.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -27,7 +27,7 @@ The task is to move $x_0$ where it is stationary with the help of the tangent pl
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/209998963-e26bc963-b8f7-48e9-be24-89978e8a2588.PNG) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/210770475-62d8d4ad-f5ea-4209-8ed8-deceab53f52c.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -211,7 +211,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
  Creates variables `FdxSAns`, `FdySAns`. Their values are determined by the function `ev()` evaluating the derivatives `Fdx`, `Fdy` specified in **Question variables** numerically at the location specified by `ans1`.
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/209998956-4b1d3d17-2ee3-4e94-b9e7-e942d6f16e8b.PNG) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/210770473-d51927f2-522a-469f-8604-2972ecb2f13a.PNG) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
@@ -222,6 +222,11 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |TAns | `0`| 
 |Node 1 true feedback | `<p>Nice! In \(x\)-direction the slope is close to zero.</p>`|
 |Node 1 false feedback | `<p>In \(x\)-direction the slope is not close enough to zero.</p>`|
+
+| ![Node 2](https://user-images.githubusercontent.com/120648145/210770470-829c60d5-22f3-47a5-bade-7718c0bebf03.PNG) |
+|:--:|
+| *Values of **node 2*** |
+
 ### Node 2
  |property | setting| 
 |:---|:---|
