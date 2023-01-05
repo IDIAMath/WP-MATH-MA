@@ -19,7 +19,8 @@ A 3D vector field is plotted.
 
 ### Student perspective
 
-[describe what the student will see]
+The student sees a plot of the 3D vector field. They can rotate their point of view using the sliders and get a better idea of the vector field.
+
 
 | ![Click draw button](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
 |:--:|
@@ -27,15 +28,15 @@ A 3D vector field is plotted.
 
 
 ### Teacher perspective
-[describe what the teacher needs to do and can do]
+The teacher can remove entries from or add entries to the list `Vlist` that contains the vector fields. Possible vector fields need to contain only the variables `x`, `y` and `z`. The coordinates are saved in the shape [x-component, y-component, z-component]. Each of the components can be dependent on all variables.
+
+**The rest of the Question variables should not be altered.**
 
 | ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209999017-c79b6da8-0685-4cdc-b808-9efee6b2ea99.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
-### Questions and answers examples
 
-[insert examples]
 
 ## Question code
 
@@ -159,6 +160,15 @@ Select \(\hat V\).
 | Student must verify | Yes |
 | Show the validation | Yes, compact|
 --- 
+## General feedback
+
+```
+<hr>
+<p> The notation \(\nabla \times V\) is describing the application of the curl operator on a vector field \(V\). It is based on the notation of the gradient of a potential \(f\) given as \(\nabla f = \begin{pmatrix} \frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y}\\ \frac{\partial f}{\partial z} \end{pmatrix}\). </p>
+<p> The curl is then defined by the vector product of the nabla operator \(\nabla  = \begin{pmatrix} \frac{\partial }{\partial x} \\ \frac{\partial}{\partial y}\\ \frac{\partial}{\partial z} \end{pmatrix}\) and the vector field \(V = \begin{pmatrix} V_x \\ V_y \\V_z \end{pmatrix}\).</p>
+<p> We find \(\nabla \times V = \begin{pmatrix}\frac{\partial V_z}{\partial y}- \frac{\partial V_y}{\partial z}\\ \frac{\partial V_x}{\partial z}- \frac{\partial V_z}{\partial x} \\ \frac{\partial V_y }{\partial x}- \frac{\partial V_x}{\partial y} \end{pmatrix} \). </p>
+ ```
+
 ## Potential response tree
 ### prt1
 | ![prt1](https://user-images.githubusercontent.com/120648145/209999029-fa4b3865-d361-47b8-a088-f86c5ffc5ded.PNG) |
@@ -170,21 +180,21 @@ Feedback variables:
 None needed, since `ans1` is selected by ticking a button.
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/209999025-682c7f4b-23a9-4919-9782-f88854279609.PNG) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/210808115-5e057a95-400b-4c3d-8251-057e675bb665.PNG) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
  |property | setting| 
 |:---|:---|
 |Answer Test | AlgEquiv|
-|SAns | ans1|
-|TAns | tans| 
-|Node 1 true feedback | Correct vector field selected.|
-|Node 1 false feedback | Selected vector field does not fit. Please compute \\(\nabla \times V\\) for the given field. \\(\nabla \times V(x,y,z):=\begin{pmatrix}{@Vx@}\\\{@Vy@}\\\{@Vz@}\end{pmatrix}\\)|
+|SAns | `ans1`|
+|TAns | `tans`| 
+|Node 1 true feedback | `<p> Well done, you selected the correct vector field. You can now try to calculate the curl of more complcated vector fields. The process is always the same.</p>`|
+|Node 1 false feedback | `<p> You did not select the correct vector field. Please compute \(\nabla \times V\) for the given field \(V(x,y,z):=\begin{pmatrix}{@Vx@}\\{@Vy@}\\{@Vz@}\end{pmatrix}\). </p>`|
 
 
 ## Todo:
 * [ ] More options for vector fields
-* [ ] Display definition of curl in solution
+* [x] Display definition of curl in solution
 * [ ] **fix JSXGraph-Applet, does not work currently**
 
