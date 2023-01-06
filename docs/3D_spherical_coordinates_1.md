@@ -80,7 +80,16 @@ psistartr:psistartr*%pi;
 ```
 
 ### Question Text
-+	“Determine the limits of the $r$, $\phi$ and $\psi$ in the spherical coordinates. Write the interval in the form $r\in$[r1,r2] and $\phi\in$[phi1,phi2]., e.g. [1/2,2] and [1/2* pi,2*pi]”
++	"Given is a 3D volume with spherical geometry. It is defined by the intervals for each of the spherical coordinates $r$, $\phi$ and $\psi$. Here $r$ is the radial coordinate and $\phi$ is the azimuthal angle starting at the $x$-axis oriented counterclockwise with $\phi\in [0, 2 \pi]$. Lastly, $\psi$ is the polar angle measured from the $z$-axis with $\psi\in [0, \pi]$. 
+
+	 The volume is contained in the interval between a smaller and a bigger value of the coordinates.
+
+	 The point of view can be rotated with help of the sliders in the plot. </p>
+
+	**Reconstruct the intervals that define the given volume.** 
+
+	 Write the interval in the form $r\in$`[r1,r2]` and  $\phi\in$ `[phi1,phi2]`, e.g. `[1/2,2]` and `[1/2*pi,2*pi]`.
+”
 + Task explanation using LaTex
 +	JSXGraph applet using the functions and variables defined in **Question variables** plotting the 3D volume given by the coordinates phi, psi and r
 +	`[[input:ans1]]`, `[[input:ans2]]`, `[[input:ans3]]` at the end of JSXGraph code to allow input of  answers of the student for r, phi and psi respectively
