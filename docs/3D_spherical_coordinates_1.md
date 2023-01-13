@@ -1,5 +1,5 @@
 ---
-title: Example Spherical Coordinates
+title: Spherical Coordinates Rotating
 usemathjax: true
 theme: minima
 ---
@@ -34,6 +34,8 @@ The teacher is able to give a list of possible values for interval bounds. In or
 
 Another example - in the case of the radius - is the following: change `radius1:rand(6)/2` to `radius1: rand(8)/2` in order to select numbers from 0 to 4 in steps of 1/2.
 
+For an explanation of the processing of the values read **Question variables** and **Question text**.
+
 **It is important to make sure that $\psi \le \pi$ and $\phi \le 2 \pi$, when changing values!** 
 
 
@@ -49,7 +51,7 @@ Another example - in the case of the radius - is the following: change `radius1:
 +	phiranger and phistartr take random values of a list containing possible values for phi (needs to be multiplied by pi later)
 +	psiranger and psistartr take random values of a list containing possible values for phi (needs to be multiplied by pi later)
 +	radius1 and radius2 are randomly selected in steps of 1/2 and radius2 is always bigger than radius1  
-+	psiranger, phiranger, psistartr and phistartr are multiplied by pi and saved as numerical values
++	psiranger, phiranger, psistartr and phistartr are multiplied by pi and saved as numerical values. This is done in between `numer:true` and `numer:false`.
 
 
 
@@ -105,7 +107,7 @@ psistartr:psistartr*%pi;
 
 <p> <b>Reconstruct the intervals that define the given volume. </b> </p> 
 
-<p> Write the interval in the form \(r\in\)<code>[r1,r2]</code> and  \(\phi\in\)<code>[phi1,phi2].</code>, e.g. <code>[1/2,2]</code> and <code>[1/2*pi,2*pi]</code></p>
+<p> Write the interval in the form \(r\in\)<code>[r1,r2]</code> and  \(\phi\in\)<code>[phi1,phi2]</code>, e.g. <code>[1/2,2]</code> and <code>[1/2*pi,2*pi]</code>.</p>
 
 [[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref']]
 var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:false, shownavigation : false});
