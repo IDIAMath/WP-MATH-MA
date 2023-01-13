@@ -1,5 +1,5 @@
 ---
-title: Example Polar Coordinates
+title: Polar Coordinates Matching
 usemathjax: true
 theme: minima
 ---
@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to polar coordinates  (Handling mathematical symbols and formalism)
 +	Student can think of an area that is transformed to the given area in polar coordinates and check graphically (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools )
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/209998497-b80aeef2-fcc8-41cb-a717-89c361abd805.PNG) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/212383398-e59ac588-a9cc-4dc4-8503-9abfc5e5b2bc.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,7 +29,7 @@ The rectangle in the cartesian coordinate system is transformed to polar coordin
 
 It is the aim to match the changing area to the given area. Then, the interval bounds can be read from the cartesian coordinate system and given as input.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/209998506-2108d80f-d943-4fc1-b863-3698215d32a0.PNG) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/212383381-2368b019-f12b-4672-923d-1f789f81284e.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -41,7 +41,7 @@ Another example - in the case of the radius - is the following: change `radius1:
 
 **They should not change any of the values `p1x,...,p4y`!**
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998491-d053aeba-cb1a-408a-98b2-a08263bf6196.PNG) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/212383411-1340fd0d-004f-4ca6-a0a4-753a9020cc46.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -51,7 +51,7 @@ Another example - in the case of the radius - is the following: change `radius1:
 ### Question Variables
 +	`ranger` and `startr` take random values of a list containing possible values for phi (needs to be multiplied by pi later)
 +	`radius1` and `radius2` are randomly selected in steps of 1/2 and `radius2` is always bigger than `radius1`  
-+	`p1x`, `p1y`, `p2x`, `p2y`, `p3x`, `p3y`, `p4x`, `p4y` are defined as numerical value using polar coordinate transformation and `radius1`, `radius2`, `startr` and `ranger`
++	`p1x`, `p1y`, `p2x`, `p2y`, `p3x`, `p3y`, `p4x`, `p4y` are defined as numerical value in between `numer:true` and `numer:false` using polar coordinate transformation and `radius1`, `radius2`, `startr` and `ranger`.
 + the variables `p1x`,…,`p4y` form a rectangle that is constructed in the code of **Question text** which is the correct solution of the task
 
 
@@ -63,7 +63,7 @@ startr:rand([1/6,1/4,1/3,1/2,2/3,3/4,5/6,1]);
 /*radius*/
 radius1: rand(6)/2;
 radius2: radius1+(rand(6)+1)/2;
-/* preper JSXGraph values */
+/* prepare JSXGraph values */
 numer:true;
 p1x:radius1*cos(startr*%pi);
 p1y:radius1*sin(startr*%pi);
@@ -77,8 +77,15 @@ numer:false;
 ```
 
 ### Question Text
-+	Give the limits for a 2d integration for the area shown in the diagram in polar coordinates $(r,\phi)$. 
-Write the interval in the form $r\in$[r1,r2] and $\phi\in$[phi1,phi2]., e.g. [1/2,2] and [1/2* pi,2*pi]”
++	"Given is a 2D area with polar geometry. It is defined by the intervals for each of the polar coordinates $r$ and $\phi$. Here $r$ is the radial coordinate and $\phi$ is the angle starting at the $x$-axis oriented counterclockwise with $\phi\in [0, 2 \pi]$. 
+
+    The area is contained in the interval between a smaller and a bigger value of the coordinates. 
+    
+    The point of view can be rotated with help of the sliders in the plot.
+
+    **Reconstruct the intervals that define the given area by matching the areas using the lower coordinate system.** 
+  
+    Write the interval in the form $r\in$`[r1,r2]` and  $\phi\in$ `[phi1,phi2]`, e.g. `[1/2,2]` and `[1/2*pi,2*pi]`.”
 
 + Task explanation using LaTex
 +	JSXGraph applet using the functions and variables defined in **Question variables** plotting the randomized points in polar coordinates
@@ -89,10 +96,17 @@ Write the interval in the form $r\in$[r1,r2] and $\phi\in$[phi1,phi2]., e.g. [1/
 
 
 ```javascript
-<p>Give the limits for a 2d integration for the area shown in the diagram in polar coordinates \((r,\phi)\). </p>
-<p> Write the interval in the form \(r\in\)<code>[r1,r2]</code> and  \(\phi\in\)<code>[phi1,phi2].</code>, e.g. <code>[1/2,2]</code> and <code>[1/2*pi,2*pi]</code></p>
+<p>Given is a 2D area with polar geometry. It is defined by the intervals for each of the polar coordinates \(r\) and \(\phi\). Here \(r\) is the radial coordinate and \(\phi\) is the angle starting at the \(x\)-axis oriented counterclockwise with \(\phi\in [0, 2 \pi]\). </p>
+<p> The area is contained in the interval between a smaller and a bigger value of the coordinates. </p>
+<p> The point of view can be rotated with help of the sliders in the plot. </p>
+
+<p> <b>Reconstruct the intervals that define the given area by matching the areas using the lower coordinate system. </b> </p> 
+
+<p> Write the interval in the form \(r\in\)<code>[r1,r2]</code> and  \(\phi\in\)<code>[phi1,phi2]</code>, e.g. <code>[1/2,2]</code> and <code>[1/2*pi,2*pi]</code>.</p>
+
 [[ jsxgraph width="250px" height="250px"]] [[/ jsxgraph ]]
 [[ jsxgraph width="250px" height="250px"]] [[/ jsxgraph ]]
+
 [[jsxgraph width='0px' height='0px' input-ref-ans1='ans1Ref']]
 //handling divids
 var divid3 = divid;
@@ -182,6 +196,14 @@ board2.unsuspendUpdate();
 | Show the validation | Yes, with variable list|
 ---
 
+## General feedback
+```
+<hr>
+
+<p> Once you know how to transform points from cartesian to polar coordinates graphically, you can have a look at the quantitative transformation from one system in the other. If you know this, it will be way easier to parametrize functions or solve problems with rotational symmetry. You can then use, what you used in this exercise to find suiting integration bounds and perform calculations you could not easily do with cartesian coordinates. </p>
+```
+
+
 ## Potential response tree
 ### prt1
 
@@ -198,7 +220,7 @@ phi2:ans2[2]/%pi
 int1low:ans1[1]
 ```
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/209998500-913eb222-72fc-4ffd-9451-d1519cfa673c.PNG) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/212383405-d43f59aa-986f-4b8d-9dd4-ac8fc348239e.PNG) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
@@ -207,8 +229,8 @@ int1low:ans1[1]
 |Answer Test | Algequiv|
 |SAns | r1|
 |TAns | radius1| 
-|Node 1 true feedback |`Nice, you found the correct value for \(r_1\)! Good job! `|
-|Node 1 false feedback |`The value you gave for \(r_1\) is not correct. Try matching the points perfectly and read the smaller radius. This is the lower bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.`|
+|Node 1 true feedback |`<p>Nice, you found the correct value for \(r_1\)! Good job! </p>`|
+|Node 1 false feedback |`<p>The value you gave for \(r_1\) is not correct. Try matching the points perfectly and read the smaller radius. This is the lower bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
 ### Node 2
  |property | setting| 
@@ -216,8 +238,8 @@ int1low:ans1[1]
 |Answer Test | Algequiv|
 |SAns | r2|
 |TAns | radius2| 
-|Node 2 true feedback |`Nice, you found the correct value for \(r_2\)! Good job!`|
-|Node 2 false feedback |`The value you gave for \(r_2\) is not correct. Try matching the points perfectly and read the bigger radius. This is the upper bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.`|
+|Node 2 true feedback |`<p>Nice, you found the correct value for \(r_2\)! Good job!</p>`|
+|Node 2 false feedback |`<p>The value you gave for \(r_2\) is not correct. Try matching the points perfectly and read the bigger radius. This is the upper bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
 ### Node 3
  |property | setting| 
@@ -225,8 +247,8 @@ int1low:ans1[1]
 |Answer Test | Algequiv|
 |SAns | phi1|
 |TAns | startr| 
-|Node 3 true feedback |`Nice, you found the correct value for \(\phi_1\)! Good job!`|
-|Node 3 false feedback |`The value you gave for \(\phi_1\) is not correct. Try matching the points perfectly and read the smaller angle. This is the lower bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation`|
+|Node 3 true feedback |`<p>Nice, you found the correct value for \(\phi_1\)! Good job!<p>`|
+|Node 3 false feedback |`<p>The value you gave for \(\phi_1\) is not correct. Try matching the points perfectly and read the smaller angle. This is the lower bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation. </p>`|
 
 ### Node 4
  |property | setting| 
@@ -234,9 +256,11 @@ int1low:ans1[1]
 |Answer Test | Algequiv|
 |SAns | phi1|
 |TAns | startr| 
-|Node 4 true feedback |`Nice, you found the correct value for \(\phi_2\)! Good job! Now that you know how to transform points from cartesian to polar coordinates graphically, you can have a look at the quantitative transformation from one system in the other. If you know this, it will be way easier to parametrize functions or solve problems with rotational symmetry. You can then use, what you used in this exercise to find suiting integration bounds and perform calculations you could not easily do with cartesian coordinates.`|
-|Node 4 false feedback |`The value you gave for \(\phi_2\) is not correct. Try matching the points perfectly and read the bigger angle. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation. If you try again and know how to transform points from cartesian to polar coordinates graphically, you can have a look at the quantitative transformation from one system in the other. If you know this, it will be way easier to parametrize functions or solve problems with rotational symmetry. You can then use, what you used in this exercise to find suiting integration bounds and perform calculations you could not easily do with  cartesian coordinates.`|
+|Node 4 true feedback |`<p>Nice, you found the correct value for \(\phi_2\)! Good job!</p>`|
+|Node 4 false feedback |`<p>The value you gave for \(\phi_2\) is not correct. Try matching the points perfectly and read the bigger angle. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
 ## Todo:
 * [ ] make sure variable names and code are consistent with other tasks
-* [ ] evaluate whether the JSXGraph values should be specified in Question variables or not
+* [x] evaluate whether the JSXGraph values should be specified in Question variables or not
+* [ ] make sure random values fit nicely in applet
+* [ ] place applets side by side
