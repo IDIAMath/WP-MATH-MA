@@ -1,5 +1,5 @@
 ---
-title: Example Function of two variables (stationary point)
+title: Function of two variables (stationary point)
 usemathjax: true
 theme: minima
 ---
@@ -15,10 +15,10 @@ theme: minima
 
 ## Question description
 
-A 2D function is plotted and its Taylor approximation of first order is given at a moveable point $r_0= (x_0,y_0,f(x_0,y_0))$. 
+A 2D function is plotted and its Taylor approximation of first order is given at a moveable location $u_0= (x_0,y_0)$. 
 Since the Taylor approximation is given as 
-$$f_1 (r) = f(r_0) + \nabla f(r_0) \cdot (r-r_0) $$
-it describes the tangent plane to a given point $r_0$.
+$$T_1 (u) = f(u_0) + \langle \nabla f(u_0),  u-u_0 \rangle $$
+it describes the tangent plane to a given point $u_0$ with the scalar product $\langle \cdot , \cdot \rangle$.
 
 The task is to move $x_0$ where it is stationary with the help of the tangent plane. It is stationary where the slope in both $x$ and $y$ direction are zero.
 
@@ -33,9 +33,9 @@ The student moves the plane to a point with a tangent plane that fulfils the req
 
 
 ### Teacher perspective
-The teacher is able to give a list of possible values for parameters of the function. In order to do this, he simply needs to modify the entrys in the lists specified e.g. change `a1:rand([-10,-8,.6,-4,-2,2,4,6,8,10])/5` to `a1:rand([2,3,4,5,6,7,8])/5`.
+The teacher is able to give a list of possible values for parameters of the function. In order to do this, they simply need to modify the entries in the lists specified e.g. change `a1:rand([-10,-8,.6,-4,-2,2,4,6,8,10])/5` to `a1:rand([2,3,4,5,6,7,8])/5`.
 
-Furthermore the teacher is able to change the function entirely to a function that fits his needs. He can change the function defined by `F: a1* cos(%pi *a2* x)* cos(%pi* a3* y)` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before.
+Furthermore the teacher is able to change the function entirely to a function that fits his needs. They can change the function defined by `F: a1* cos(%pi *a2* x)* cos(%pi* a3* y)` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before.
 
 Lastly, the reference solution for an exemplatory stationary point must be adjusted to the function used.
 
@@ -192,8 +192,8 @@ board.update();
 
 <p>A stationary point is a point on the graph of a function, where the function's derivative is zero. Since this is a 2D-function both the partial derivative in \(x\) and \(y\)-direction must be zero. </p>
 
-<p>The plane tangent to a  point \(r_0= (x_0,y_0, f(x_0,y_0))\) is defined at a point \(r\) by the equation \(f_1 (r) = f(r_0) + \nabla f(r_0) \cdot (r-r_0)\).
-Therefore the tangent plane in a stationary point is exactly horizontal. </p>
+<p>The plane tangent to a  function \(f\) in the location \(u_0\)= \((x_0,y_0)\) is defined at  a location \(u\) by the equation \(T_1 (u) = f(u_0) + \langle \nabla f(u_0), u-u_0 \rangle \).
+The tangent plane in a stationary point is exactly horizontal, since the gradient is zero. </p>
 ```
 
 ## Potential response tree
