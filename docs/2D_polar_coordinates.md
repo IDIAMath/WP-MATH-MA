@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to polar coordinates  (Handling mathematical symbols and formalism)
 +	Student can think of an area that is transformed to the given area in polar coordinates and check graphically (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools )
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/212383398-e59ac588-a9cc-4dc4-8503-9abfc5e5b2bc.PNG) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/212396778-99f646a0-cef1-4daf-b957-e506a4ae3447.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,7 +29,7 @@ The rectangle in the cartesian coordinate system is transformed to polar coordin
 
 It is the aim to match the changing area to the given area. Then, the interval bounds can be read from the cartesian coordinate system and given as input.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/212383381-2368b019-f12b-4672-923d-1f789f81284e.PNG) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/212396786-a615de75-7553-446e-960b-7766f59d709e.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -104,7 +104,10 @@ numer:false;
 
 <p> Write the interval in the form \(r\in\)<code>[r1,r2]</code> and  \(\phi\in\)<code>[phi1,phi2]</code>, e.g. <code>[1/2,2]</code> and <code>[1/2*pi,2*pi]</code>.</p>
 
+
+<div style= 'float:left'> 
 [[ jsxgraph width="250px" height="250px"]] [[/ jsxgraph ]]
+</div>
 [[ jsxgraph width="250px" height="250px"]] [[/ jsxgraph ]]
 
 [[jsxgraph width='0px' height='0px' input-ref-ans1='ans1Ref']]
@@ -217,7 +220,7 @@ r1:ans1[1]
 r2:ans1[2]
 phi1:ans2[1]/%pi
 phi2:ans2[2]/%pi
-int1low:ans1[1]
+
 ```
 
 | ![Node 1](https://user-images.githubusercontent.com/120648145/212383405-d43f59aa-986f-4b8d-9dd4-ac8fc348239e.PNG) |
@@ -263,4 +266,4 @@ int1low:ans1[1]
 * [ ] make sure variable names and code are consistent with other tasks
 * [x] evaluate whether the JSXGraph values should be specified in Question variables or not
 * [ ] make sure random values fit nicely in applet
-* [ ] place applets side by side
+* [x] place applets side by side
