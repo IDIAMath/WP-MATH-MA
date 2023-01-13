@@ -1,5 +1,5 @@
 ---
-title: Example Spherical Coordinates (2)
+title: Spherical Coordinates Matching
 usemathjax: true
 theme: minima
 ---
@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to spherical coordinates  (Handling mathematical symbols and formalism)
 +	Student can take a volume with spherical geometry and reconstruct the limits of its radius and angles (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/209998772-0bdef5e1-4e5e-46b4-bca4-25798398254f.PNG) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/212374110-86f4e6a0-5228-4d01-883f-88e26e326e31.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -21,23 +21,28 @@ The task is to find the correct intervalls for $r$, $\phi$ and $\psi$ in real nu
 
 ### Student perspective
 
-[describe what the student will see]
+The student sees a cartesian coordinate system and a volume with spherical geometry.
 
-| ![Click draw button](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+It is the task to reconstruct the intervals of a 3D integration in spherical coordinates that results in the volume given. In order to do this they have to find out the radius and angles by matching a second volume to the given one using sliders. If they overlap exactly, the interval bounds can be read from the sliders. The values have to be given in an exact algebraic manner.
+
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/212374105-a9bbc488-1e79-444a-a112-914764cb0bd0.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
 
 ### Teacher perspective
-[describe what the teacher needs to do and can do]
+The teacher is able to give a list of possible values for interval bounds. In order to do this, they simply need to modify the entries in the lists specified e.g. change `psiranger:rand([1/6,1/4,1/3,1/2,2/3])` to `psiranger:rand([1/8,1/7,1/3])`. However, if they change this, they have to make sure $\psi$, composed by `phistartr+phiranger` is not larger than 1, since it will be multiplied by $\pi$.
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998765-cc7196b5-bc98-44b8-906c-72f1c5d953e3.PNG) |
+Another example - in the case of the radius - is the following: change `radius1:rand(6)/2` to `radius1: rand(8)/2` in order to select numbers from 0 to 4 in steps of 1/2.
+
+For an explanation of the processing of the values read **Question variables** and **Question text**.
+
+**It is important to make sure that $\psi \le \pi$ and $\phi \le 2 \pi$, when changing values!** 
+
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/212374103-87823772-a35f-46d7-81e7-6b010fedf85e.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
-### Questions and answers examples
-
-[insert examples]
 
 ## Question code
 
@@ -45,7 +50,7 @@ The task is to find the correct intervalls for $r$, $\phi$ and $\psi$ in real nu
 +	phiranger and phistartr take random values of a list containing possible values for phi (needs to be multiplied by pi later)
 +	psiranger and psistartr take random values of a list containing possible values for phi (needs to be multiplied by pi later)
 +	radius1 and radius2 are randomly selected in steps of 1/2 and radius2 is always bigger than radius1  
-+	psiranger, phiranger, psistartr and phistartr are multiplied by pi and saved as numerical values
++	psiranger, phiranger, psistartr and phistartr are multiplied by pi and saved as numerical values. This is done in between `numer:true` and `numer:false`.
 
 
 
@@ -302,7 +307,7 @@ psi1:ans3[1]
 psi2:ans3[2]
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/209998779-1117f249-7b2f-49d2-bbd9-e0e42368d7eb.PNG) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/212374099-d2e67317-ab88-49b7-825d-ab784d56894f.PNG) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -318,7 +323,7 @@ psi2:ans3[2]
 |Node 1 false feedback |`<p>The value you gave for \(r_1\) is not correct. Try matching the volumes using the sliders and read the smaller radius from the coordinate system. This is the lower bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/209998776-cfa51f7e-9a9a-4695-bc7d-376f25c109e7.PNG) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/212374090-381817c1-ab5a-4b6a-81f9-605ee5e34a60.PNG) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -377,6 +382,7 @@ psi2:ans3[2]
 * [ ] Print JSXGraph applet bigger
 * [ ] make square appear as such
 * [x] Simplify and improve PRT
-* [ ] Update Images and description
+* [x] Update Images and description
 * [ ] Further improve PRT
-* [ ] Remove extra PRTs
+* [x] Remove extra PRTs
+* [ ] fix point system: only psi1 and psi2 correct leads to correct
