@@ -63,7 +63,7 @@ phiranger:rand([1/6,1/4,1/3,1/2,2/3,3/4,5/6,1]);
 phistartr:rand([1/6,1/4,1/3,1/2,2/3,3/4,5/6,1]);
 
 radius1: rand(6)/2;
-radius2: radius1+(rand(6)+1)/2;
+radius2: radius1+(rand(5)+1)/2;
 
 /* Multiply with PI */
 /* numerical data for plotting */
