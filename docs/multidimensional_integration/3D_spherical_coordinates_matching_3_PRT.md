@@ -63,7 +63,7 @@ phiranger:rand([1/6,1/4,1/3,1/2,2/3,3/4,5/6,1]);
 phistartr:rand([1/6,1/4,1/3,1/2,2/3,3/4,5/6,1]);
 
 radius1: rand(6)/2;
-radius2: radius1+(rand(6)+1)/2;
+radius2: radius1+(rand(5)+1)/2;
 
 /* Multiply with PI */
 /* numerical data for plotting */
@@ -124,7 +124,7 @@ psistartr:psistartr*%pi;
 		    // define Variables init=[xlower, xinit, xupper]
 
 		    var u1init = [0,1,4];
-		    var u2init = [0,2,4];
+		    var u2init = [0,2,6];
 		    var v1init = [0, 0, 6.28];
 		    var v2init = [0, 2, 6.28];
 		    var w1init = [0, 0, 3.14];
