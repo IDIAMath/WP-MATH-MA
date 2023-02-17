@@ -124,7 +124,7 @@ psistartr:psistartr*%pi;
 		    // define Variables init=[xlower, xinit, xupper]
 
 		    var u1init = [0,1,4];
-		    var u2init = [0,2,4];
+		    var u2init = [0,2,6];
 		    var v1init = [0, 0, 6.28];
 		    var v2init = [0, 2, 6.28];
 		    var w1init = [0, 0, 3.14];
