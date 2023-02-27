@@ -13,12 +13,11 @@ theme: minima
 
 ## Question description
 
+
 A 3D curve is plotted. It is a closed curve whose constant parameters are randomly selected upon starting the task. Its equation is
-$$  t \mapsto \begin{pmatrix} 
-x_0+ a \cdot \cos(t) \cdot \cos(\alpha) - b \cdot \sin(t) \cdot \sin(\alpha) \\
-y_0+ a \cdot \cos(t) \cdot \sin(\alpha) + b \cdot \sin(t) \cdot \cos(\alpha) \\
-h \cdot \cos(t)
-\end{pmatrix}. $$
+```math 
+t \mapsto \begin{pmatrix} x_0+ a \cdot \cos(t) \cdot \cos(\alpha) - b \cdot \sin(t) \cdot \sin(\alpha) \\ y_0+ a \cdot \cos(t) \cdot \sin(\alpha) + b \cdot \sin(t) \cdot \cos(\alpha) \\h \cdot \cos(t)\end{pmatrix}.
+```
 A second curve given by the same equation is plotted that can be varied using sliders.
 That way, by matching the two curves, the parameters can be interactively obtained.
 The task is to find the correct values for $r$, $a$, $\phi$ and $n$ in real numbers or integer numbers.
@@ -81,16 +80,19 @@ alphar: alphar*%pi
 ```
 
 ### Question Text
-+	"Reconstruct the blue 3D curve dependent on a parameter $t$.
+Reconstruct the blue 3D curve dependent on a parameter $t$.
 
-	In order to do so, you need to find the correct offsets $x_0$ and $y_0$, semi-axis  $a$ and $b$, angle of rotation $\alpha$ and amplitude $h$.
+In order to do so, you need to find the correct offsets $x_0$ and $y_0$, semi-axis  $a$ and $b$, angle of rotation $\alpha$ and amplitude $h$.
 
-	The curve is the trace of the function $t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ a \cdot \cos(n \cdot t - \phi) \end{pmatrix}$. 
+The curve is the trace of the function 
+```math
+t \mapsto \begin{pmatrix} x_0+ a \cdot \cos(t) \cdot \cos(\alpha) - b \cdot \sin(t) \cdot \sin(\alpha) \\ y_0+ a \cdot \cos(t) \cdot \sin(\alpha) + b \cdot \sin(t) \cdot \cos(\alpha) \\h \cdot \cos(t)\end{pmatrix}.
+```
 
-	Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.
+Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.
 	
-	Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`. 
-”
+Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`. 
+
 + Task explanation using LaTex
 +	JSXGraph applet using and variables defined in **Question variables** plotting the 3D curve
 +	`[[input:ans1]]`, `[[input:ans2]]`, `[[input:ans3]]`, `[[input:ans4]]`, `[[input:ans5]]` and `[[input:ans6]]` at the end of JSXGraph code to allow input of  answers of the student for r, a and phi and n respectively
