@@ -7,18 +7,21 @@ theme: minima
 +	Student knows how a multidimensional curve is produced from varying a single parameter. (Handling mathematical symbols and formalism)
 +	Student can find other parameters of the curve using a 3D visualization. (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/213679634-c35d8096-4c3f-4fbe-b2be-8cb6d441ea87.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/221525309-d92ad28b-25db-4898-9dad-328b740e4065.png) |
 |:--:|
 | *First impression of the question* |
 
 ## Question description
 
 A 3D curve is plotted. It is a closed curve whose constant parameters are randomly selected upon starting the task. Its equation is
-$$  t \mapsto \begin{pmatrix} 
+```math
+t \mapsto \begin{pmatrix} 
 x_0+ a \cdot \cos(t) \cdot \cos(\alpha) - b \cdot \sin(t) \cdot \sin(\alpha) \\
 y_0+ a \cdot \cos(t) \cdot \sin(\alpha) + b \cdot \sin(t) \cdot \cos(\alpha) \\
 h \cdot t
-\end{pmatrix}. $$
+\end{pmatrix}. 
+```
+
 A second curve given by the same equation is plotted that can be varied using sliders.
 That way, by matching the two curves, the parameters can be interactively obtained.
 The task is to find the correct values for $x_0$, $y_0$, $a$, $b$, $\alpha$ and $h$ in real numbers or integer numbers.
@@ -30,7 +33,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders. The values have to be given in an exact algebraic manner.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/213679631-30d42545-5805-4ed7-8ec7-5ab5812c95ef.png) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/221525302-dcb6dd73-66a3-4e21-ac9d-e4dc45a0bcad.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -43,7 +46,7 @@ Another example - in the case of the radius - is the following: change `radiusr:
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/213679633-b475a068-2a0f-4882-9bd0-001c98901157.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/221525306-1710a1e8-a5e1-4bed-af64-1717f84ad2ed.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -80,20 +83,24 @@ alphar: alphar*%pi
 ```
 
 ### Question Text
-+	"Reconstruct the blue 3D curve dependent on a parameter $t$.
 
-	In order to do so, you need to find the correct offsets $x_0$ and $y_0$, semi-axis  $a$ and $b$, angle of rotation $\alpha$ and amplitude $h$.
+Reconstruct the blue 3D curve dependent on a parameter $t$.
 
-	The curve is the trace of the function $$t \mapsto \begin{pmatrix} 
+In order to do so, you need to find the correct offsets $x_0$ and $y_0$, semi-axis  $a$ and $b$, angle of rotation $\alpha$ and amplitude $h$.
+
+The curve is the trace of the function 
+```math
+t \mapsto \begin{pmatrix} 
 x_0+ a \cdot \cos(t) \cdot \cos(\alpha) - b \cdot \sin(t) \cdot \sin(\alpha) \\
 y_0+ a \cdot \cos(t) \cdot \sin(\alpha) + b \cdot \sin(t) \cdot \cos(\alpha) \\
 h \cdot t
-\end{pmatrix}.$$ 
+\end{pmatrix}.
+```
 
-	Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.
+Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.
 	
-	Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`. 
-”
+Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`. 
+
 + Task explanation using LaTex
 +	JSXGraph applet using and variables defined in **Question variables** plotting the 3D curve
 +	`[[input:ans1]]`, `[[input:ans2]]`, `[[input:ans3]]`, `[[input:ans4]]`, `[[input:ans5]]` and `[[input:ans6]]` at the end of JSXGraph code to allow input of  answers of the student for r, a and phi and n respectively
@@ -236,7 +243,7 @@ alphaans: ans5
 hprogans: ans6
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/213417669-8735a0da-5074-4b7c-9870-8b287ab42be6.png) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/221525313-2ce4812e-8d5b-43ec-82a7-3210c5a9743c.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -252,7 +259,7 @@ hprogans: ans6
 |Node 1 false feedback |`<p>The offset \(x_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "x0" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/213679611-61f88456-34bd-4cea-a60e-b7582a5b6bd7.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/221525318-c028d3ca-79b3-482e-a72a-6d40b4fdb948.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -265,7 +272,7 @@ hprogans: ans6
 |Node 2 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job!</p>`|
 |Node 2 false feedback |`<p>The offset \(y_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "y0" to this value.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/213679618-09d2226a-d3ae-4b24-bc59-566872be36d3.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/221525289-fd169137-c7ac-48b1-919e-c9cea5bc6366.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -278,7 +285,7 @@ hprogans: ans6
 |Node 3 true feedback | `<p> Nice! You found the correct semi-axis length  \(a\). Good job!</p>`|
 |Node 3 false feedback |`<p>The semi-axis length  \(a\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "a" to this value.</p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/213679623-fa1d75d9-647e-4e85-9635-59744217ef3e.png) |
+| ![Node 3](https://user-images.githubusercontent.com/120648145/221525294-8723252e-50d1-420b-b7e5-13aa08170034.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -291,7 +298,7 @@ hprogans: ans6
 |Node 4 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). Good job!</p>`|
 |Node 4 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "b" to this value.</p>`|
 
-| ![Node 4](https://user-images.githubusercontent.com/120648145/213679626-94525833-4578-4b69-ac35-1d5f090abefd.png) |
+| ![Node 4](https://user-images.githubusercontent.com/120648145/221525295-0ecc3d4d-d8aa-4159-bc35-27f82b73be77.png) |
 |:--:|
 | *Values of **node 4*** |
 
@@ -304,7 +311,7 @@ hprogans: ans6
 |Node 5 true feedback | `<p> Nice! You found the correct angle \(\alpha\). Good job!</p>`|
 |Node 5 false feedback |`<p>The angle \(\alpha\) is not yet correct. Check, whether the curves are oriented the same way, when you slide "alpha" to this value.</p>`|
 
-| ![Node 5](https://user-images.githubusercontent.com/120648145/213679627-77266e47-e2a1-4f0f-918c-15c72e858ede.png) |
+| ![Node 5](https://user-images.githubusercontent.com/120648145/221525299-1f1a6d74-52c7-47bb-8ce1-3677a537178e.png) |
 |:--:|
 | *Values of **node 5*** |
 
@@ -317,7 +324,7 @@ hprogans: ans6
 |Node 6 true feedback | `<p> Nice! You found the correct \(z\)-propagation \(h\). Good job!</p>`|
 |Node 6 false feedback |`<p>The \(z\)-propagation \(h\) is not yet correct. Check, whether the curves have the same extent in \(z\)-direction, when you slide "h" to this value.</p>`|
 
-| ![Node 6](https://user-images.githubusercontent.com/120648145/213679629-32540240-5e26-4e4c-a185-5f57dea69adf.png) |
+| ![Node 6](https://user-images.githubusercontent.com/120648145/221525301-8ca41984-ae66-44ff-9e24-76f36b20f8e7.png) |
 |:--:|
 | *Values of **node 6*** |
 
