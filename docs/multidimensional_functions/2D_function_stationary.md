@@ -1,5 +1,5 @@
 ---
-title: Function of two variables (stationary point)
+title: Stationary point of a 2D function
 usemathjax: true
 theme: minima
 ---
