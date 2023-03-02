@@ -235,7 +235,7 @@ alphaans: ans5
 ampans: ans6
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/213417669-8735a0da-5074-4b7c-9870-8b287ab42be6.png) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/213679636-4e177792-32eb-47ca-8676-590ea2662fd9.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
