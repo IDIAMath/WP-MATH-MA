@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/210770463-d714b00f-ce57-4130-804c-39e378676416.PNG) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/223714756-d1315d40-4ce3-437e-9a7e-8c91d06230f4.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -27,19 +27,20 @@ The task is to move $x_0$ where it is stationary with the help of the tangent pl
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/210770475-62d8d4ad-f5ea-4209-8ed8-deceab53f52c.PNG) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/223714769-0fe722bb-9d1d-40cd-817d-5940ddcd4b8d.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
 
 ### Teacher perspective
 The teacher is able to give a list of possible values for parameters of the function. In order to do this, they simply need to modify the entries in the lists specified e.g. change `a1:rand([-10,-8,.6,-4,-2,2,4,6,8,10])/5` to `a1:rand([2,3,4,5,6,7,8])/5`.
+Additionally, they can change the possible values for the $x$ and $y$ off-sets `x0` and `y0`. This offset is used to counteract the fact, that $(0,0)$ is a common stationary point.
 
-Furthermore the teacher is able to change the function entirely to a function that fits his needs. They can change the function defined by `F: a1* cos(%pi *a2* x)* cos(%pi* a3* y)` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before.
+Furthermore the teacher is able to change the function entirely to a function that fits his needs. They can change the function defined by `F: a1* cos(%pi *a2* (x-x0))* cos(%pi* a3* (y-y0))` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before.
 
 Lastly, the reference solution for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998948-4f4a9938-4b9d-4f2a-9a7e-1ffa5fade0bd.PNG) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/223714766-9109c41d-d07c-456d-8c94-fd2cd3a37dc9.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -50,10 +51,10 @@ Lastly, the reference solution for an exemplatory stationary point must be adjus
 ### Question Variables
 +	3 lists of integer numbers for variables a1, a2, a3 to randomly select from
 +	Selected number can be divided or multiplied with a number to    scale e.g.: `a1:rand([-10,-8,-6,-4,-2,2,4,6,8,10])/5;`
-+	function F using ` a1`, `a2`, `a3` dependent on variables `x`, `y` as follows: 
++	function F using ` a1`, `a2`, `a3`, `x0`, `y0` dependent on variables `x`, `y` as follows: 
 
-    `F: a1 * cos(%pi*a2*x)*cos(a3*y);`  
-    Note that this function’s parameters `a1`, `a2` and `a3` are randomized upon executing the code as mentioned above
+    `F:a1 * cos(%pi*a2 * (x-x0) )* cos( a3 * (y-y0));`  
+    Note that this function’s parameters `a1`, `a2`, `a3`, `x0` and `y0` are randomized upon executing the code as mentioned above
 +	derivatives of Function F using Maxima syntax e.g.: `Fdx: diff(F,x)` to calculate the components of the Hessian Matrix
 +	numerical reference solution e.g.: `FdyRefSol:0
 `
@@ -61,12 +62,14 @@ Lastly, the reference solution for an exemplatory stationary point must be adjus
 #### Question variable code
 ```jacascript
 /* generate function */
-a1:rand([-10,-8,-6,-4,-2,2,4,6,8,10])/5;
-a2:rand([1,2,4,6,8,10])/5;
-a3:rand([4,5,6,8,10])/5;
+a1: rand([-10,-8,-6,-4,-2,2,4,6,8,10])/5;
+a2: rand([1,2,4,6,8,10])/5;
+a3: rand([4,5,6,8,10])/5;
+x0: rand([-3,-2,-1,1,2,3])/5;
+y0: rand([-3,-2,-1,1,2,3])/5;
 
 /* define the function */
-F:a1 * cos(%pi*a2 * x )* cos( a3 * y);
+F:a1 * cos(%pi*a2 * (x-x0) )* cos( a3 * (y-y0));
 Fdx:diff(F,x);
 Fdy:diff(F,y);
 
