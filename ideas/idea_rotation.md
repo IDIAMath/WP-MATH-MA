@@ -45,6 +45,10 @@ That way, if a curve's parametrization is given as a vector it can easily be rot
 
 The students are presented a curve, a direction of rotation and can find out the angle of rotation using a JSXGraph applet.
 
+| ![Task 1](https://user-images.githubusercontent.com/120648145/225601390-9ba1d10e-0808-4ebf-b5a3-2f4de8c6b9fa.jpg) |
+|:--:|
+| *Task 1* |
+
 ### <b>Input: Rotations about multiple axis </b>
 
 If a rotation is performed about multiple, say 2 axis, the corresponding rotational axis are multiplied. However, since matrix multiplication is not commutative, the order of execution matters.
@@ -87,11 +91,19 @@ They are provided with the axis and the rotational matrices, as well as the matr
 
 They need to find out the angle of rotation in both axis with the help of a slider in a JSXGraph applet.
 
+| ![Task 2.1](https://user-images.githubusercontent.com/120648145/225601393-3ad6120b-d93d-436d-a855-1e4c7dd7bc5b.jpg) |
+|:--:|
+| *Task 2.1* |
+
 ### <b>Task 2.2: Rotation of a curve about 2 known axis </b>
 The students are presented a curve rotated about two axis.
 They are provided with the axis and the rotational matrices, as well as the matrix product used. Hence they already know the order of operations.
 
 They need to find out the angle of rotation in both axis <b>without </b> the help of the slider previously used. That way, they have to actively think about the angles and order of execution.
+
+| ![Task 2.2](https://user-images.githubusercontent.com/120648145/225601396-97e4d0b6-5d6f-4cb8-a7a1-20503e2a570e.jpg) |
+|:--:|
+| *Task 2.2* |
 
 ### <b> Input: Two ways of rotating a curve about two axis</b>
 
@@ -103,10 +115,16 @@ They are provided with the axis and the rotational matrices, as well as the angl
 
 They need to find out the order of operations. They give their answer in a multiple choice mode.
 
+
+
 ### <b>Task 3 Feedback idea </b>
 
 If the students pick the wrong order of execution, they are presented with another applet.
 There, they see the same curve as before and can manipulate another curve with sliders. This second curve, however is determined by the wrong matrix multiplication. That way they can see, that the curves cannot line up in the intended way.
+
+| ![Task 3 feedback](https://user-images.githubusercontent.com/120648145/225601384-019209ee-9ca2-40ee-b3f5-dd595a5cd995.jpg) |
+|:--:|
+| *Task 3 feedback* |
 
 ### <b> Task 4: Rotation of a curve about 2 unknwon axis </b> 
 The students are presented a curve rotated about two axis.
