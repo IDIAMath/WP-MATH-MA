@@ -53,10 +53,14 @@ For example, for a rotation about the $x$-axis with an angle of $\alpha=60^\circ
 
 $$R_x(60^\circ) \cdot R_y(45^\circ) =
     \begin{pmatrix}
-        \cos{\left(\beta \right)} & 0 & \sin{\left(\beta \right)}\\\sin{\left(\alpha \right)} \sin{\left(\beta \right)} & \cos{\left(\alpha \right)} & - \sin{\left(\alpha \right)} \cos{\left(\beta \right)}\\- \sin{\left(\beta \right)} \cos{\left(\alpha \right)} & \sin{\left(\alpha \right)} & \cos{\left(\alpha \right)} \cos{\left(\beta \right)}
+        \cos{\left(\beta \right)} & 0 & \sin{\left(\beta \right)}\\
+        \sin{\left(\alpha \right)} \sin{\left(\beta \right)} & \cos{\left(\alpha \right)} & - \sin{\left(\alpha \right)} \cos{\left(\beta \right)}\\
+        -\sin{\left(\beta \right)} \cos{\left(\alpha \right)} & \sin{\left(\alpha \right)} & \cos{\left(\alpha \right)} \cos{\left(\beta \right)}
     \end{pmatrix}= 
     \begin{pmatrix}
-    \frac{\sqrt{2}}{2} & 0 & \frac{\sqrt{2}}{2}\\\frac{\sqrt{6}}{4} & \frac{1}{2} & - \frac{\sqrt{6}}{4}\\- \frac{\sqrt{2}}{4} & \frac{\sqrt{3}}{2} & \frac{\sqrt{2}}{4}
+        \frac{\sqrt{2}}{2} & 0 & \frac{\sqrt{2}}{2}\\
+        \frac{\sqrt{6}}{4} & \frac{1}{2} & - \frac{\sqrt{6}}{4}\\
+        -\frac{\sqrt{2}}{4} & \frac{\sqrt{3}}{2} & \frac{\sqrt{2}}{4}
     \end{pmatrix}
 $$
 
@@ -64,12 +68,18 @@ and with the switched order of operation
 
 $$R_y(45^\circ) \cdot R_x(60^\circ) =
     \begin{pmatrix}
-        \cos{\left(\beta \right)} & \sin{\left(\alpha \right)} \sin{\left(\beta \right)} & \sin{\left(\beta \right)} \cos{\left(\alpha \right)}\\0 & \cos{\left(\alpha \right)} & - \sin{\left(\alpha \right)}\\- \sin{\left(\beta \right)} & \sin{\left(\alpha \right)} \cos{\left(\beta \right)} & \cos{\left(\alpha \right)} \cos{\left(\beta \right)}
+        \cos{\left(\beta \right)} & \sin{\left(\alpha \right)} \sin{\left(\beta \right)} & \sin{\left(\beta \right)} \cos{\left(\alpha \right)}\\
+        0 & \cos{\left(\alpha \right)} & -\sin{\left(\alpha \right)}\\
+        -\sin{\left(\beta \right)} & \sin{\left(\alpha \right)} \cos{\left(\beta \right)} & \cos{\left(\alpha \right)} \cos{\left(\beta \right)}
     \end{pmatrix}= 
     \begin{pmatrix}
-    \frac{\sqrt{2}}{2} & \frac{\sqrt{6}}{4} & \frac{\sqrt{2}}{4}\\0 & \frac{1}{2} & - \frac{\sqrt{3}}{2}\\- \frac{\sqrt{2}}{2} & \frac{\sqrt{6}}{4} & \frac{\sqrt{2}}{4}
-    \end{pmatrix}.
+        \frac{\sqrt{2}}{2} & \frac{\sqrt{6}}{4} & \frac{\sqrt{2}}{4}\\
+        0 & \frac{1}{2} & - \frac{\sqrt{3}}{2}\\
+        -\frac{\sqrt{2}}{2} & \frac{\sqrt{6}}{4} & \frac{\sqrt{2}}{4}
+    \end{pmatrix}
 $$
+
+
 Therefore, the resulting vector will be different.
 ### <b>Task 2.1: Rotation of a curve about 2 known axis </b>
 The students are presented a curve rotated about two axis.
