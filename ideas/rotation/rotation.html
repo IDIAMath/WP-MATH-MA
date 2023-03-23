@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JSXGraph template</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<link href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" rel="
+			stylesheet" type="text/css" />
+		<script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"
+			type="text/javascript" charset="UTF-8"></script>
+		<!-- The next line is optional: MathJax -->
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="
+			MathJax-script" async></script>
+	</head>
+	<body>
+		<div id="jxgbox" class="jxgbox" style="width:500px; height:700px;"></div>
+		<script>
+			var board = JXG.JSXGraph.initBoard('jxgbox', {
+				boundingbox: [-8, 8, 8, -10],
+				keepaspectratio: true,
+				axis: false
+				});
+			var bound = [-3, 3];
+			var view = board.create('view3d',
+				[[-6, -3], [8, 8],
+				[bound, bound, bound]],
+				{
+					/*planes*/
+					xPlaneRear: {visible:false},
+					yPlaneRear: {visible:false}	
+				});
+            
+             // import vector from STACK
+           
+             var txtraw = "[-(r*cos(t))/sqrt(2),(r*sin(t))/2+(sqrt(3)*r*cos(t))/2^(3/2),(sqrt(3)*r*sin(t))/2-(r*cos(t))/2^(3/2)];";
+            txtraw = txtraw.replace(/%pi/g,"PI");
+            txtraw = txtraw.replace(/cos/g, "Math.cos");
+            txtraw = txtraw.replace(/sin/g, "Math.sin");
+            txtraw = txtraw.replace(/sqrt/g, "Math.sqrt");
+
+            //var F = board.jc.snippet(txtraw, true, 'r,t');
+            var t1 = board.create('text',[0,4,txtraw]);
+           
+           
+            // curve
+
+            var r = 2;
+			var alpha = board.create('slider', [[-7,-6],[3,-6],[0,0,2* Math.PI]], {name: 'alpha'});
+			var beta  = board.create('slider', [[-7,-6.5],[3,-6.5],[0,0,2* Math.PI]], {name: 'beta'});
+            var gamma  = board.create('slider', [[-7,-7],[3,-7],[0,0,2* Math.PI]], {name: 'gamma'});
+			
+			var c = view.create('curve3d', [
+				(t) => r*  Math.cos(t)/Math.sqrt(2),
+				(t) => r* Math.sin(t)/2+ Math.sqrt(6)*r* Math.cos(t)/4,
+				(t) => Math.sqrt(3)*r*Math.sin(t)/2- Math.sqrt(2)*r*Math.cos(t)/4
+                ,
+				[0, Math.PI]], {strokeWidth: 1, strokeColor: "red"});
+            
+            var c_o = view.create('curve3d', [
+            (t) => r* Math.sin(gamma.Value())* Math.sin(beta.Value())* Math.sin(t)+
+                       r* Math.cos(beta.Value())* Math.cos(t),
+				(t) => r* (-1* Math.sin(alpha.Value())*Math.sin(gamma.Value()) * Math.cos(beta.Value()) + Math.cos(alpha.Value())*Math.cos(gamma.Value())) * Math.sin(t)+
+                       r* Math.sin(alpha.Value())* Math.sin(beta.Value()) * Math.cos(t),
+				(t) => r* ( Math.sin(alpha.Value())* Math.cos(gamma.Value())+  Math.sin(gamma.Value())* Math.cos(alpha.Value())* Math.cos(beta.Value()))* Math.sin(t)-
+                       r* Math.sin(beta.Value())* Math.cos(alpha.Value())* Math.cos(t)
+                ,
+				[0, Math.PI]], {strokeWidth: 1, strokeColor: "blue"});
+
+            /*
+		
+            // vectorfield
+
+            var vector = [];
+            var scaleVec = 0.25;
+
+
+            var TF1 = (u, v, w) => 0;
+            var TF2 = (u, v, w) => 0;
+            var TF3 = (u, v, w) => 4;
+
+            vectorField();
+    function vectorField(){
+	    clearVectorField();
+        board.suspendUpdate();
+	    var i,j,k,vx,vy;
+        for(k=-2; k<3; k+=1){
+            for(i=-2; i<3; i+=1){
+                for(j=-2; j<3; j+=1){
+                    vector.push(view.create('line3d',[[i, j,k ],
+                                (function(_li,_lj,_lk){
+                                    var pout = [];
+                                    var norm = Math.max((_li*_li+ _lj*_lj+_lk*_lk )**(1/2),0.001);
+                                    pout[0] = TF1(_li,_lj,_lk)/norm;
+                                    pout[1] = TF2(_li,_lj,_lk)/norm;
+                                    pout[2] = TF3(_li,_lj,_lk)/norm;
+                                    return pout;
+                                })(TF1(i,j,k),TF2(i,j,k),TF3(i,j,k)),[0,scaleVec]],
+                                    {point: { withLabel: false},
+                                    point1: {visible: true, size: 1, color: 'red',strokeColor: 'red', withLabel: false},
+                                    point2: {visible: false, withLabel: false},
+                                    lastArrow:true, fixed: true, strokeColor:'red', highlight: false}));
+                }
+            }
+        }
+        board.unsuspendUpdate();
+    }
+    
+    function clearVectorField(){
+        board.removeObject(vector);
+        vector=[];
+    }
+    
+            vectorLine();
+    function vectorLine(){
+        board.suspendUpdate();
+        for(let i=0; i< tarr.length; i += 2 ){
+            vector1.push(view.create('line3d', [
+                [curve(tarr[i])],
+                (function(_li, _lj, _lk){
+                    var pout = [];
+                    var norm = Math.max((_li*_li+ _lj*_lj+_lk*_lk )**(1/2),0.001);
+                    pout[0] = TF1(_li,_lj,_lk)/norm;
+                    pout[1] = TF2(_li,_lj,_lk)/norm;
+                    pout[2] = TF3(_li,_lj,_lk)/norm;
+                    return pout  
+                })
+                (curve(tarr[i])[0],curve(tarr[i])[1],curve(tarr[i])[2]
+                ),[0,scaleVec]],
+                    {point: { withLabel: false},
+                    point1: {visible: true, size: 1, color: 'blue',strokeColor: 'blue', withLabel: false},
+                    point2: {visible: false, withLabel: false},
+                    lastArrow:true, fixed: true, strokeColor:'blue', highlight: false}
+                ));
+
+                
+        }
+        board.unsuspendUpdate();
+    }
+    */
+		</script>
+	</body>

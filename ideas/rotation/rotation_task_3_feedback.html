@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JSXGraph template</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<link href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" rel="
+			stylesheet" type="text/css" />
+		<script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"
+			type="text/javascript" charset="UTF-8"></script>
+		<!-- The next line is optional: MathJax -->
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="
+			MathJax-script" async></script>
+	</head>
+	<body>
+		<div id="jxgbox" class="jxgbox" style="width:500px; height:700px;"></div>
+		<script>
+			var board = JXG.JSXGraph.initBoard('jxgbox', {
+				boundingbox: [-8, 8, 8, -10],
+				keepaspectratio: true,
+				axis: false
+				});
+			var bound = [-3, 3];
+			var view = board.create('view3d',
+				[[-6, -3], [8, 8],
+				[bound, bound, bound]],
+				{
+					/*planes*/
+					xPlaneRear: {visible:false},
+					yPlaneRear: {visible:false}	
+				});
+            
+           
+            // curve
+
+            var r = 2;
+			var alpha = board.create('slider', [[-7,-6],[3,-6],[0,0,2* Math.PI]], {name: 'alpha', snapWidth: 0.05 });
+			var beta  = board.create('slider', [[-7,-6.5],[3,-6.5],[0,0,2* Math.PI]], {name: 'beta', snapWidth: 0.05 });
+            
+            
+			var c = view.create('curve3d', [
+				(t) => r* Math.sqrt(6)* Math.sin(t)/4+ r* Math.sqrt(2)* Math.cos(t)/2,
+				(t) => r* Math.sin(t)/2,
+				(t) => r* Math.sqrt(6)* Math.sin(t)/4- r* Math.sqrt(2)* Math.cos(t)/2
+                ,
+				[0, Math.PI]], {strokeWidth: 1, strokeColor: "red"});
+            
+            var c_o = view.create('curve3d', [
+                (t) => r* Math.cos(beta.Value())* Math.cos(t),
+				(t) => r* Math.sin(alpha.Value())* Math.sin(beta.Value())* Math.cos(t)+
+                       r* Math.sin(t)* Math.cos(alpha.Value()),
+				(t) => r* Math.sin(alpha.Value())* Math.sin(t)-
+                       r* Math.sin(beta.Value())* Math.cos(alpha.Value())* Math.cos(t)
+                ,
+				[0, Math.PI]], {strokeWidth: 1, strokeColor: "blue"});
+            
+                
+
+           
+            
+            
+            
+
+
+            
+		</script>
+	</body>
