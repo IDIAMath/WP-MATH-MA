@@ -17,7 +17,7 @@ theme: minima
 
 A 3D curve is plotted. It is a closed curve whose constant parameters are randomly selected upon starting the task. Its equation is
 ```math
-t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ a \cdot \cos(n \cdot t - \phi) \end{pmatrix}. 
+t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ h \cdot \cos(n \cdot t - \phi) \end{pmatrix}. 
 ```
 A second curve given by the same equation is plotted that can be varied using sliders.
 That way, by matching the two curves, the parameters can be interactively obtained.
@@ -130,7 +130,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 			var nslide = board.create('slider', [[-7,-9],[3,-9],[0,4,7]], {name: 'n', snapWidth:1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
 			var sslide = board.create('slider', [[-7,-8],[3,-8],[0,2,Math.PI]], {name: 'phase shift', snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
 			stack_jxg.bind_slider(ans1Ref,rslide);
-			stack_jxg.bind_slider(ans2Ref,aslide);
+			stack_jxg.bind_slider(ans2Ref,hslide);
 			stack_jxg.bind_slider(ans3Ref,sslide);
 			stack_jxg.bind_slider(ans4Ref,nslide);
 			
