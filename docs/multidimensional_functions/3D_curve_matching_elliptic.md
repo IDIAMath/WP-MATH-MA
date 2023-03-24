@@ -35,9 +35,9 @@ It is the task to reconstruct the parameters of the 3D curve. In order to do thi
 
 
 ### Teacher perspective
-The teacher is able to give a list of possible values for parameters. In order to do this, they simply need to modify the entries in the lists specified e.g. change `phaser : rand([1/6, 1/4, 1/3, 1/2, 2/3, 3/4, 5/6 ,1]);` to `phaser : rand([1/6, 1/4, 1/3, 1/2]);`. 
+The teacher is able to give a list of possible values for parameters. In order to do this, they simply need to modify the entries in the lists specified e.g. change `alphar : rand([1/6, 1/4, 1/3, 1/2, 2/3, 3/4, 5/6 ,1]);` to `alphar : rand([1/6, 1/4, 1/3, 1/2]);`. 
 
-Another example - in the case of the radius - is the following: change `radiusr:rand(6)/2` to `radiusr: rand(8)/2` in order to select numbers from 0 to 4 in steps of 1/2.
+Another example - in the case of the semiaxis - is the following: change `ar: 1+rand(6)/2` to `ar: 1+ rand(8)/2` in order to select numbers from 1 to 4.5 in steps of 1/2.
 
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
@@ -50,11 +50,10 @@ For an explanation of the processing of the values read **Question variables** a
 ## Question code
 
 ### Question Variables
-+	`radiusr` and `ampr` are randomly selected integer numbers created using `rand()`, they are divided by 2 and 4 respectively to allow for non-integer steps
-+ `phaser`is randomly selected from a list of possible values using `rand()`
-+ `numr`is a randomly selected integer number created using `rand()`
-+ The value of `phaser` is multiplied by pi and saved to `phase` as a numerical value. This is done in between `numer:true` and `numer:false`.
-+ The value of `phaser` is multiplied by pi to use it for plotting in **Question text**.
++	`ar`, `br` ,`xr`, `yr` and `ampr` are randomly selected integer numbers created using `rand()`, they are divided by 2 and 4 respectively to allow for non-integer steps
++ `alphar`is randomly selected from a list of possible values using `rand()`
++ The value of `alphar` is multiplied by pi and saved to `alpha` as a numerical value. This is done in between `numer:true` and `numer:false`.
++ The value of `alphar` is multiplied by pi to use it for plotting in **Question text**.
 
 
 
@@ -89,9 +88,9 @@ The curve is the trace of the function
 t \mapsto \begin{pmatrix} x_0+ a \cdot \cos(t) \cdot \cos(\alpha) - b \cdot \sin(t) \cdot \sin(\alpha) \\ y_0+ a \cdot \cos(t) \cdot \sin(\alpha) + b \cdot \sin(t) \cdot \cos(\alpha) \\h \cdot \cos(t)\end{pmatrix}.
 ```
 
-Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.
+Use the sliders in the JSXGraph applet or type in your reply right below it.
 	
-Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`. 
+
 
 + Task explanation using LaTex
 +	JSXGraph applet using and variables defined in **Question variables** plotting the 3D curve
@@ -109,10 +108,9 @@ x_0+ a \cdot \cos(t) \cdot \cos(\alpha) - b \cdot \sin(t) \cdot \sin(\alpha) \\
 y_0+ a \cdot \cos(t) \cdot \sin(\alpha) + b \cdot \sin(t) \cdot \cos(\alpha) \\
 h \cdot \cos(t)
 \end{pmatrix}.\] </p>
-<p>Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.</p>
-<p>Note: Give your reply in the form of fractions e.g. \(r\)= <code>1/2</code>, \(\phi\)= <code>7*pi/4</code>.</p>
+<p>Use the sliders in the JSXGraph applet or type in your reply right below it.</p>
 
-[[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref']]
+[[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref' input-ref-ans2='ans2Ref' input-ref-ans3='ans3Ref' input-ref-ans4='ans4Ref' input-ref-ans5='ans5Ref' input-ref-ans6='ans6Ref']]
 var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:false, shownavigation : false});
 
                              var view = board.create('view3d',
@@ -137,23 +135,25 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 				
 			//slider-based curve 
 			
-			var a = board.create('slider', [[-7,-7], [-3,-7], [0,1,10]], {name: "a"});
-			var b = board.create('slider', [[-1,-7], [3,-7], [0,3,10]], {name: "b"});
-			var y = board.create('slider', [[-1,-6],[3,-6],[-3,2,7]], {name: 'y0'});
-			var x = board.create('slider', [[-7,-6],[-3,-6],[-3,2,7]], {name: 'x0'});
-			var angle = board.create('slider', [[-7,-8], [3,-8], [0,1, Math.PI]], {name:"alpha"})
-			var h = board.create("slider", [[-7,-9], [3,-9], [0,2,5]], {name: "h"})
-			
+			var a = board.create('slider', [[-7,-7], [-3,-7], [0,1,10]], {name: "a",snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var b = board.create('slider', [[-1,-7], [3,-7], [0,3,10]], {name: "b",snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var y = board.create('slider', [[-1,-6],[3,-6],[-3,2,7]], {name: 'y0',snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var xsl = board.create('slider', [[-7,-6],[-3,-6],[-3,2,7]], {name: 'x0',snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var angle = board.create('slider', [[-7,-8], [3,-8], [0,1, Math.PI]], {name:"alpha", snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var h = board.create("slider", [[-7,-9], [3,-9], [0,2,5]], {name: "h", snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			stack_jxg.bind_slider(ans1Ref,xsl);
+			stack_jxg.bind_slider(ans2Ref,y);
+			stack_jxg.bind_slider(ans3Ref,a);
+			stack_jxg.bind_slider(ans4Ref,b);
+			stack_jxg.bind_slider(ans5Ref,angle);
+			stack_jxg.bind_slider(ans6Ref,h);
+
 			var c = view.create('curve3d', [
-				(t) => x.Value() + a.Value()* Math.cos(t)* Math.cos(angle.Value()) - b.Value()* Math.sin(t)* Math.sin(angle.Value()),
+				(t) => xsl.Value() + a.Value()* Math.cos(t)* Math.cos(angle.Value()) - b.Value()* Math.sin(t)* Math.sin(angle.Value()),
 				(t) => y.Value() + a.Value()* Math.cos(t)* Math.sin(angle.Value()) + b.Value()* Math.sin(t)* Math.cos(angle.Value()),
 				(t) => h.Value()*Math.cos(t),
 				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "red"}); 
-
-
-
-
-
+board.update();
 [[/ jsxgraph]]
 <p>\(x_0=\) [[input:ans1]] [[validation:ans1]]</p>
 <p>\(y_0=\) [[input:ans2]] [[validation:ans2]]</p>
@@ -166,60 +166,60 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 ### Answer ans 1
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `xr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 2
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `yr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 3
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `ar` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 4
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `br` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 5
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `alphar` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 6
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `ampr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ## Potential response tree
@@ -324,4 +324,5 @@ ampans: ans6
 
 ## Todo:
 * [ ] check grading
-* [ ] fix randomizing
+* [x] fix randomizing
+* [ ] change PRT 
