@@ -4,8 +4,10 @@ usemathjax: true
 theme: minima
 ---
 ## Aim of task
-+	Student knows how a multidimensional curve is produced from varying a single parameter. (Handling mathematical symbols and formalism)
-+	Student can find other parameters of the curve using a 3D visualization. (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
++	Student knows how a multidimensional curve is produced from varying a single parameter (Handling mathematical symbols and formalism).
++	Student can find other parameters of the curve using a 3D visualization (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  ).
++	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
++	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
 | ![First impression](https://user-images.githubusercontent.com/120648145/213417666-1451a89a-2008-4e9f-84df-dc3dbe322f82.png) |
 |:--:|
@@ -19,14 +21,14 @@ t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ a \cdot \cos(n \
 ```
 A second curve given by the same equation is plotted that can be varied using sliders.
 That way, by matching the two curves, the parameters can be interactively obtained.
-The task is to find the correct values for $r$, $a$, $\phi$ and $n$ in real numbers or integer numbers.
+The task is to find the correct values for $r$, $h$, $\phi$ and $n$ in real numbers or integer numbers.
 
 
 ### Student perspective
 
 The student sees a cartesian coordinate system and a curve plotted in 3D.
 
-It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders. The values have to be given in an exact algebraic manner.
+It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
 | ![Click draw button](https://user-images.githubusercontent.com/120648145/213417659-8066e704-98db-44fb-876a-db9d76c60c68.png) |
 |:--:|
@@ -64,7 +66,7 @@ For an explanation of the processing of the values read **Question variables** a
 radiusr: 1+rand(6)/2;
 ampr: 1/4+rand(10)/4; 
 phaser : rand([1/6, 1/4, 1/3, 1/2, 2/3, 3/4, 5/6 ,1]);
-numr: rand(5)+1;
+numr: 1+rand(5);
 
 /* prepare numerical values for JSXGraph */
 numer:true
@@ -78,20 +80,19 @@ phaser: phaser*%pi
 ### Question Text
 Reconstruct the blue 3D curve dependent on a parameter $t$.
 
-In order to do so, you need to find the correct radius $r$, amplitude $a$, phase shift $\phi$ and number of oscillations $n$.
+In order to do so, you need to find the correct radius $r$, amplitude $h$, phase shift $\phi$ and number of oscillations $n$.
 
 The curve is the trace of the function 
 ```math
 t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ a \cdot \cos(n \cdot t - \phi) \end{pmatrix}.
 ```
 
-Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.
+Use the sliders in the JSXGraph applet or type in your reply right below it.
 	
-Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`. 
 
 + Task explanation using LaTex
 +	JSXGraph applet using and variables defined in **Question variables** plotting the 3D curve
-+	`[[input:ans1]]`, `[[input:ans2]]`, `[[input:ans3]]` and `[[input:ans4]]` at the end of JSXGraph code to allow input of  answers of the student for r, a and phi and n respectively
+	+	`[[input:ans1]]`, `[[input:ans2]]`, `[[input:ans3]]` and `[[input:ans4]]` at the end of JSXGraph code to allow input of  answers of the student for r, h and phase shift and n respectively
 +	`[[validation:ans1]]`,  `[[validation:ans2]]` , `[[validation:ans3]]` and `[[validation:ans4]]`  are used for checking of answer
 
 #### Question text code
@@ -99,12 +100,11 @@ Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`
 
 ```javascript
 <p>Reconstruct the blue 3D curve dependent on a parameter \(t\).</p>
-<p>In order to do so, you need to find the correct radius \(r\), amplitude \(a\), phase shift \(\phi\) and number of oscillations \(n\).</p>
-<p> The curve is the trace of the function \( t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ a \cdot \cos(n \cdot t - \phi) \end{pmatrix} \). </p>
-<p>Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.</p>
-<p>Note: Give your reply in the form of fractions e.g. \(r\)= <code>1/2</code>, \(\phi\)= <code>7*pi/4</code>.</p>
+<p>In order to do so, you need to find the correct radius \(r\), amplitude \(h\), phase shift \(\phi\) and number of oscillations \(n\).</p>
+<p> The curve is the trace of the function \( t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ h \cdot \cos(n \cdot t - \phi) \end{pmatrix} \). </p>
+<p>Use the sliders in the JSXGraph applet or type in your reply right below it.</p>
 
-[[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref']]
+[[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref' input-ref-ans2='ans2Ref' input-ref-ans3='ans3Ref' input-ref-ans4='ans4Ref' ]]
 var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:false, shownavigation : false});
 
                         var view = board.create('view3d',
@@ -114,32 +114,37 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 			
 			//curve from STACK values
 			var r = {#radiusr#};
-			var a = {#ampr#};
+			var h = {#ampr#};
 			var p = {#phase#};
 			var n = {#numr#};
 			var c_base = view.create('curve3d', [
 				(t) => r* Math.cos(t),
 				(t) => r* Math.sin(t),
-				(t) => a* Math.cos(n *t-p),
+				(t) => h* Math.cos(n *t-p),
 				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "blue"});
 
 			//slider-based curve 
 
-			var rslide = board.create('slider', [[-7,-6], [3,-6], [0,5,10]], {name: "r"});
-			var aslide = board.create('slider', [[-7,-7],[3,-7],[0,2,4]], {name: 'a'});
-			var nslide = board.create('slider', [[-7,-9],[3,-9],[0,2,7]], {name: 'n', snapWidth:1});
-			var sslide = board.create('slider', [[-7,-8],[3,-8],[0,2,Math.PI]], {name: 'phase shift'});
+			var rslide = board.create('slider', [[-7,-6], [3,-6], [0,5,10]], {name: "r", snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var hslide = board.create('slider', [[-7,-7],[3,-7],[0,2,4]], {name: 'h', snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var nslide = board.create('slider', [[-7,-9],[3,-9],[0,4,7]], {name: 'n', snapWidth:1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var sslide = board.create('slider', [[-7,-8],[3,-8],[0,2,Math.PI]], {name: 'phase shift', snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			stack_jxg.bind_slider(ans1Ref,rslide);
+			stack_jxg.bind_slider(ans2Ref,aslide);
+			stack_jxg.bind_slider(ans3Ref,sslide);
+			stack_jxg.bind_slider(ans4Ref,nslide);
+			
 			var c = view.create('curve3d', [
 				(t) => rslide.Value()* Math.cos(t),
 				(t) => rslide.Value()* Math.sin(t),
-				(t) => aslide.Value()*Math.cos(nslide.Value()*t- sslide.Value()),
+				(t) => hslide.Value()*Math.cos(nslide.Value()*t- sslide.Value()),
 				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "red"});
 
 
 
 [[/ jsxgraph]]
 <p>\(r=\) [[input:ans1]] [[validation:ans1]]</p>
-<p>\(a=\) [[input:ans2]] [[validation:ans2]]</p>
+<p>\(h=\) [[input:ans2]] [[validation:ans2]]</p>
 <p>\(\phi=\) [[input:ans3]] [[validation:ans3]]</p>
 <p>\(n=\) [[input:ans4]] [[validation:ans4]]</p>
 ```
@@ -147,40 +152,40 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 ### Answer ans 1
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `radiusr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 2
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `ampr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 3
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `phaser` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 4
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `numr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ## Potential response tree
@@ -203,9 +208,10 @@ numans: ans4
 ### Node 1
 |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `radiusans`|
 |TAns | `radiusr`| 
+|Test options | 0.1 |
 |Node 1 true feedback | `<p> Nice! You found the correct radius \(r\). Good job!</p>`|
 |Node 1 false feedback |`<p>The radius \(r\) is not yet correct. Check, whether the curves align, when you slide "r" to this value.</p>`|
 
@@ -217,9 +223,10 @@ numans: ans4
 ### Node 2
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `ampans`|
 |TAns | `ampr`| 
+|Test options | 0.1 |
 |Node 2 true feedback | `<p>Nice! You found the correct amplitude a. Good job!</p>`|
 |Node 2 false feedback |`<p>The amplitude a is not yet correct. Check, whether the curves align, when you slide "a" to this value.</p>`|
 
@@ -230,9 +237,10 @@ numans: ans4
 ### Node 3
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `phaseans`|
 |TAns | `phaser`| 
+|Test options | 0.1 |
 |Node 3 true feedback | `<p>Nice! You found the correct phase shift \(\phi\). Good job!</p>`|
 |Node 3 false feedback |`<p>The phase shift \(\phi\) is not yet correct. Check, whether the curves align, when you slide "phase shift" to this value.</p>`|
 
@@ -243,9 +251,10 @@ numans: ans4
 ### Node 4 
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `numans`|
 |TAns | `numr`| 
+|Test options | 0.1 |
 |Node 4 true feedback | `<p>Nice! You found the correct number of oscillations \(n\). Good job!</p>`|
 |Node 4 false feedback |`<p>The number of oscillations \(n\) is not yet correct. Check, whether the curves align, when you slide "n" to this value. Note, that you can count the maxima of the curve and try again.</p>`|
 
@@ -259,4 +268,4 @@ numans: ans4
 
 ## Todo:
 * [ ] check grading
-* [ ] check why randomization does not work
+* [x] check why randomization does not work
