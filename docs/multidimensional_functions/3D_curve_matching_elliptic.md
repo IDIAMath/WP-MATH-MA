@@ -4,8 +4,10 @@ usemathjax: true
 theme: minima
 ---
 ## Aim of task
-+	Student knows how a multidimensional curve is produced from varying a single parameter. (Handling mathematical symbols and formalism)
-+	Student can find other parameters of the curve using a 3D visualization. (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
++	Student knows how a multidimensional curve is produced from varying a single parameter (Handling mathematical symbols and formalism).
++	Student can find other parameters of the curve using a 3D visualization (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools).
++	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
++	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
 | ![First impression](https://user-images.githubusercontent.com/120648145/213679634-c35d8096-4c3f-4fbe-b2be-8cb6d441ea87.png) |
 |:--:|
