@@ -171,6 +171,8 @@ board.update();
 
 var p1 =board.create('point', [function () {return A.X();} ,function () {return A.Y();}],{visible:false}); 
 stack_jxg.bind_point(ans1Ref,p1);
+var stateInput = document.getElementById(ans1Ref);
+stateInput.style.display = 'none';
 
 board.update(); 
 
