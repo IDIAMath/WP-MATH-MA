@@ -246,7 +246,7 @@ ampans: ans6
 ### Node 1
 |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `xans`|
 |TAns | `xr`| 
 |Node 1 true feedback | `<p> Nice! You found the correct offset \(x_0\). Good job!</p>`|
@@ -260,7 +260,7 @@ ampans: ans6
 ### Node 2
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `yans`|
 |TAns | `yr`| 
 |Node 2 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job!</p>`|
@@ -273,7 +273,7 @@ ampans: ans6
 ### Node 3
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `aans`|
 |TAns | `ar`| 
 |Node 3 true feedback | `<p> Nice! You found the correct semi-axis length  \(a\). Good job!</p>`|
@@ -286,7 +286,7 @@ ampans: ans6
 ### Node 4 
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `bans`|
 |TAns | `br`| 
 |Node 4 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). Good job!</p>`|
@@ -299,7 +299,7 @@ ampans: ans6
 ### Node 5 
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `alphaans`|
 |TAns | `alphar`| 
 |Node 5 true feedback | `<p> Nice! You found the correct angle \(\alpha\). Good job!</p>`|
@@ -312,7 +312,7 @@ ampans: ans6
 ### Node 6 
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `ampans`|
 |TAns | `ampr`| 
 |Node 6 true feedback | `<p> Nice! You found the correct amplitude \(h\). Good job!</p>`|
