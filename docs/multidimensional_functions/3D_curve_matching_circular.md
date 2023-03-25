@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/213417666-1451a89a-2008-4e9f-84df-dc3dbe322f82.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/227711682-bde41863-0cb2-4f7a-b905-ccd96282d9ab.jpg) |
 |:--:|
 | *First impression of the question* |
 
@@ -30,7 +30,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/213417659-8066e704-98db-44fb-876a-db9d76c60c68.png) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/227711681-9beca5f1-70ae-41f8-ab58-fc713760e209.jpg) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -43,7 +43,7 @@ Another example - in the case of the radius - is the following: change `radiusr:
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/213417662-9af7a3b2-9482-4509-811c-4e1379039363.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227711683-7cec1c57-97d1-4fae-8137-063b6fd01461.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -84,7 +84,7 @@ In order to do so, you need to find the correct radius $r$, amplitude $h$, phase
 
 The curve is the trace of the function 
 ```math
-t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ a \cdot \cos(n \cdot t - \phi) \end{pmatrix}.
+t \mapsto \begin{pmatrix} r \cdot \cos(t) \\ r \cdot \sin(t) \\ h \cdot \cos(n \cdot t - \phi) \end{pmatrix}.
 ```
 
 Use the sliders in the JSXGraph applet or type in your reply right below it.
