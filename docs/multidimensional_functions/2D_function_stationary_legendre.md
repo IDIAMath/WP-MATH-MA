@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/223714756-d1315d40-4ce3-437e-9a7e-8c91d06230f4.PNG) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/227723426-5e9aca62-a561-45d6-bd31-9988c9224aed.jpg) |
 |:--:|
 | *First impression of the question* |
 
@@ -23,14 +23,14 @@ it describes the tangent plane to a given point $u_0$ with the scalar product $\
 The task is to move $x_0$ where it is stationary with the help of the tangent plane. It is stationary where the slope in both $x$ and $y$ direction are zero.
 
 The function in this task is composed of two legendre polynomials.
- $$\begin{align*}f(x,y)&=a_1\cdot \frac{1}{16} \cdot (231 \cdot( a_2 \cdot (x-x_0))^6-315 \cdot (a_2 \cdot (x-x_0))^4\\&+105 \cdot(a_2 \cdot(x-x_0))^2-5) \cdot \frac{1}{2} \cdot (5 \cdot( a_3 \cdot(y-y_0))^3- 3\cdot(a_3 \cdot(y-y_0)))\end{align*}$$
+ $$f(x,y)=\frac{a_1}{16} \cdot (231 \cdot( a_2 \cdot (x-x_0))^6-315 \cdot (a_2 \cdot (x-x_0))^4 +105 \cdot(a_2 \cdot(x-x_0))^2-5) \cdot \frac{1}{2} \cdot (5 \cdot( a_3 \cdot(y-y_0))^3- 3\cdot(a_3 \cdot(y-y_0))) $$
 
 ### Student perspective
 
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/223714769-0fe722bb-9d1d-40cd-817d-5940ddcd4b8d.PNG) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/227723425-122d43ba-0370-443b-8d4a-9ad2ab3a6473.jpg) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -43,7 +43,7 @@ Furthermore the teacher is able to change the function entirely to a function th
 
 Lastly, the reference solution for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/223714766-9109c41d-d07c-456d-8c94-fd2cd3a37dc9.PNG) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227723427-0116cd0d-1d6d-499a-ab42-e7cf14e69ecf.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -101,7 +101,7 @@ FdxRefSol: float(sqrt(2*sqrt(15)+15)/(sqrt(33)*a2));
 [[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref']]
 var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:false, shownavigation : true});
 
-	    var box = [-2, 2];
+	    var box = [-1, 1];
 		    var view = board.create('view3d',
 		        [
 		            [-6, -3], [8, 8],
@@ -136,7 +136,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 
   // 3D points:
     // Point on xy plane
-    var Axy = view.create('point3d', [1, 1, -2], { withLabel: false });
+    var Axy = view.create('point3d', [0.3, 0.4, -2.0], { withLabel: false });
 
     // Project Axy to the surface
     var A = view.create('point3d', [
@@ -163,17 +163,19 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
     var plane1 = view.create('plane3d', [
         A,
         dFx_vec, dFy_vec,
-        [-0.5,0.5], [-0.5,0.5]
+        [-0.25,0.25], [-0.25,0.25]
     ], {
         fillOpacity: 0.8, fillColor: 'red'
     });
-    var a = view.create('line3d', [A, dFx_vec, [0, 1]]);
-    var b = view.create('line3d', [A, dFy_vec, [0, 1]]);
+    var a = view.create('line3d', [A, dFx_vec, [0, 0.5]]);
+    var b = view.create('line3d', [A, dFy_vec, [0, 0.5]]);
 
 board.update(); 
 
 var p1 =board.create('point', [function () {return A.X();} ,function () {return A.Y();}],{visible:false}); 
 stack_jxg.bind_point(ans1Ref,p1);
+var stateInput = document.getElementById(ans1Ref);
+stateInput.style.display = 'none';
 
 board.update(); 
 
