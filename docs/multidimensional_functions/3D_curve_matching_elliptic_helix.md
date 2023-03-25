@@ -4,10 +4,12 @@ usemathjax: true
 theme: minima
 ---
 ## Aim of task
-+	Student knows how a multidimensional curve is produced from varying a single parameter. (Handling mathematical symbols and formalism)
-+	Student can find other parameters of the curve using a 3D visualization. (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
++	Student knows how a multidimensional curve is produced from varying a single parameter (Handling mathematical symbols and formalism).
++	Student can find other parameters of the curve using a 3D visualization (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  ).
++	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
++	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/221525309-d92ad28b-25db-4898-9dad-328b740e4065.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/227714657-913398b4-1f55-46d6-a37c-872d0ab6d3d7.jpg) |
 |:--:|
 | *First impression of the question* |
 
@@ -31,22 +33,22 @@ The task is to find the correct values for $x_0$, $y_0$, $a$, $b$, $\alpha$ and 
 
 The student sees a cartesian coordinate system and a curve plotted in 3D.
 
-It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders. The values have to be given in an exact algebraic manner.
+It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/221525302-dcb6dd73-66a3-4e21-ac9d-e4dc45a0bcad.png) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/227714656-d10a472a-e8d8-492d-ac1e-51b5e1f6fa43.jpg) |
 |:--:|
 | *When the student solves the problem* |
 
 
 ### Teacher perspective
-The teacher is able to give a list of possible values for parameters. In order to do this, they simply need to modify the entries in the lists specified e.g. change `phaser : rand([1/6, 1/4, 1/3, 1/2, 2/3, 3/4, 5/6 ,1]);` to `phaser : rand([1/6, 1/4, 1/3, 1/2]);`. 
+The teacher is able to give a list of possible values for parameters. In order to do this, they simply need to modify the entries in the lists specified e.g. change `alphar : rand([1/6, 1/4, 1/3, 1/2, 2/3, 3/4, 5/6 ,1]);` to `alphar : rand([1/6, 1/4, 1/3, 1/2]);`. 
 
-Another example - in the case of the radius - is the following: change `radiusr:rand(6)/2` to `radiusr: rand(8)/2` in order to select numbers from 0 to 4 in steps of 1/2.
+Another example  is the following: change `ar: 1+rand(6)/2` to `ar: 1+rand(8)/2` in order to select numbers from 1 to 4.5 in steps of 1/2.
 
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/221525306-1710a1e8-a5e1-4bed-af64-1717f84ad2ed.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227714659-276b9c4f-d03f-428d-9007-d8ce427b1758.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -97,9 +99,7 @@ h \cdot t
 \end{pmatrix}.
 ```
 
-Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.
-	
-Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`. 
+Use the sliders in the JSXGraph applet or type in your reply right below it.
 
 + Task explanation using LaTex
 +	JSXGraph applet using and variables defined in **Question variables** plotting the 3D curve
@@ -111,16 +111,15 @@ Note: Give your reply in the form of fractions e.g. $r$= `1/2`, $\phi$= `7*pi/4`
 
 ```javascript
 <p>Reconstruct the blue 3D curve dependent on a parameter \(t\).</p>
-<p>In order to do so, you need to find the correct offsets \(x_0\) and \(y_0\), semi-axis  \(a\) and \(b\), angle of rotation \(\alpha\) and amplitude \(h\).</p>
+<p>In order to do so, you need to find the correct offsets \(x_0\) and \(y_0\), semi-axis  \(a\) and \(b\), angle of rotation \(\alpha\) and \(z\)-propagation \(h\).</p>
 <p> The curve is the trace of the function \[ t \mapsto \begin{pmatrix} 
 x_0+ a \cdot \cos(t) \cdot \cos(\alpha) - b \cdot \sin(t) \cdot \sin(\alpha) \\
 y_0+ a \cdot \cos(t) \cdot \sin(\alpha) + b \cdot \sin(t) \cdot \cos(\alpha) \\
-h \cdot \cos(t)
+h \cdot t
 \end{pmatrix}.\] </p>
-<p>Use the sliders in the JSXGraph applet to your advantage and type in your reply right below it.</p>
-<p>Note: Give your reply in the form of fractions e.g. \(r\)= <code>1/2</code>, \(\phi\)= <code>7*pi/4</code>.</p>
+<p>Use the sliders in the JSXGraph applet or type in your reply right below it.</p>
 
-[[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref']]
+[[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref' input-ref-ans2='ans2Ref' input-ref-ans3='ans3Ref' input-ref-ans4='ans4Ref' input-ref-ans5='ans5Ref' input-ref-ans6='ans6Ref']]
 var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:false, shownavigation : false});
 
                              var view = board.create('view3d',
@@ -134,31 +133,36 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 			var ang = {#alpha#};
 			var xoff = {#xr#};
 			var yoff = {#yr#};
-                        var amp = {#ampr#};
+                        var hprog = {#hprogr#};
 			var c_base = view.create('curve3d', [
 				(t) => xoff + xrad* Math.cos(t)* Math.cos(ang) - yrad* Math.sin(t)* Math.sin(ang),
 				(t) => yoff + xrad* Math.cos(t)* Math.sin(ang) + yrad* Math.sin(t)* Math.cos(ang),
-				(t) => amp* Math.cos(t),
-				[-Math.PI,Math.PI ]], {strokeWidth: 1, strokeColor: "blue"});
+				(t) => hprog*t,
+				[-3* Math.PI,3*Math.PI ]], {strokeWidth: 1, strokeColor: "blue"});
 			
-		
+			
 				
 			//slider-based curve 
 			
-			var a = board.create('slider', [[-7,-7], [-3,-7], [0,1,10]], {name: "a"});
-			var b = board.create('slider', [[-1,-7], [3,-7], [0,3,10]], {name: "b"});
-			var y = board.create('slider', [[-1,-6],[3,-6],[-3,2,7]], {name: 'y0'});
-			var x = board.create('slider', [[-7,-6],[-3,-6],[-3,2,7]], {name: 'x0'});
-			var angle = board.create('slider', [[-7,-8], [3,-8], [0,1, Math.PI]], {name:"alpha"})
-			var h = board.create("slider", [[-7,-9], [3,-9], [0,2,5]], {name: "h"})
+			var a = board.create('slider', [[-7,-7], [-3,-7], [0,1,10]], {name: "a", snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var b = board.create('slider', [[-1,-7], [3,-7], [0,3,10]], {name: "b", snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var y = board.create('slider', [[-1,-6],[3,-6],[-3,2,7]], {name: 'y0', snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var x = board.create('slider', [[-7,-6],[-3,-6],[-3,2,7]], {name: 'x0', snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var alpha = board.create('slider', [[-7,-8], [3,-8], [0,1,2* Math.PI]], {name:"alpha", snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}})
+			var h = board.create("slider", [[-7,-9], [3,-9], [0,2,5]], {name: "h", snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}})
 			
 			var c = view.create('curve3d', [
-				(t) => x.Value() + a.Value()* Math.cos(t)* Math.cos(angle.Value()) - b.Value()* Math.sin(t)* Math.sin(angle.Value()),
-				(t) => y.Value() + a.Value()* Math.cos(t)* Math.sin(angle.Value()) + b.Value()* Math.sin(t)* Math.cos(angle.Value()),
-				(t) => h.Value()*Math.cos(t),
-				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "red"}); 
+				(t) => x.Value() + a.Value()* Math.cos(t)* Math.cos(alpha.Value()) - b.Value()* Math.sin(t)* Math.sin(alpha.Value()),
+				(t) => y.Value() + a.Value()* Math.cos(t)* Math.sin(alpha.Value()) + b.Value()* Math.sin(t)* Math.cos(alpha.Value()),
+				(t) => h.Value()*t,
+				[-3* Math.PI,3* Math.PI]], {strokeWidth: 1, strokeColor: "red"}); 
 
-
+                        stack_jxg.bind_slider(ans1Ref,x);
+			stack_jxg.bind_slider(ans2Ref,y);
+			stack_jxg.bind_slider(ans3Ref,a);
+			stack_jxg.bind_slider(ans4Ref,b);
+			stack_jxg.bind_slider(ans5Ref,alpha);
+			stack_jxg.bind_slider(ans6Ref,h);
 
 
 
@@ -174,60 +178,60 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 ### Answer ans 1
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `xr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 2
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `yr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 3
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `ar` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 4
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `br` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 5
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `alphar` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ---
 ### Answer ans 6
 |property | setting| 
 |:---|:---|
-|Input type | Algebraic input|
+|Input type | Numerical|
 |Model answer | `hprogr` defined in **Question variables** |
 | Forbidden words | none |
-| Forbid float | Yes |
+| Forbid float | No |
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 ## Potential response tree
@@ -252,7 +256,7 @@ hprogans: ans6
 ### Node 1
 |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `xans`|
 |TAns | `xr`| 
 |Node 1 true feedback | `<p> Nice! You found the correct offset \(x_0\). Good job!</p>`|
@@ -266,7 +270,7 @@ hprogans: ans6
 ### Node 2
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `yans`|
 |TAns | `yr`| 
 |Node 2 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job!</p>`|
@@ -279,7 +283,7 @@ hprogans: ans6
 ### Node 3
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `aans`|
 |TAns | `ar`| 
 |Node 3 true feedback | `<p> Nice! You found the correct semi-axis length  \(a\). Good job!</p>`|
@@ -292,7 +296,7 @@ hprogans: ans6
 ### Node 4 
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `bans`|
 |TAns | `br`| 
 |Node 4 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). Good job!</p>`|
@@ -305,7 +309,7 @@ hprogans: ans6
 ### Node 5 
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `alphaans`|
 |TAns | `alphar`| 
 |Node 5 true feedback | `<p> Nice! You found the correct angle \(\alpha\). Good job!</p>`|
@@ -318,7 +322,7 @@ hprogans: ans6
 ### Node 6 
  |property | setting| 
 |:---|:---|
-|Answer Test | AlgEquiv|
+|Answer Test | NumAbsolute|
 |SAns | `hprogans`|
 |TAns | `hprogr`| 
 |Node 6 true feedback | `<p> Nice! You found the correct \(z\)-propagation \(h\). Good job!</p>`|
