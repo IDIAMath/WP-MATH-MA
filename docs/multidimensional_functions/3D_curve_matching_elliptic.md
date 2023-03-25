@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/213679634-c35d8096-4c3f-4fbe-b2be-8cb6d441ea87.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/227711675-6332df07-945b-4ab7-ba15-22d145eb2e3d.jpg) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,9 +29,9 @@ The task is to find the correct values for $r$, $a$, $\phi$ and $n$ in real numb
 
 The student sees a cartesian coordinate system and a curve plotted in 3D.
 
-It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders. The values have to be given in an exact algebraic manner.
+It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/213679631-30d42545-5805-4ed7-8ec7-5ab5812c95ef.png) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/227711684-b3fe3464-88bc-4d2c-9837-2ff17cd0c15c.jpg) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -44,7 +44,7 @@ Another example - in the case of the semiaxis - is the following: change `ar: 1+
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/213679633-b475a068-2a0f-4882-9bd0-001c98901157.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227711680-0ed0f8cc-80c2-4487-aa9e-5c5dea26cacc.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
