@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/227723426-5e9aca62-a561-45d6-bd31-9988c9224aed.jpg) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/227724436-38d22f65-e875-4840-be98-b2091555b6db.jpg) |
 |:--:|
 | *First impression of the question* |
 
@@ -30,7 +30,7 @@ The function in this task is composed of two legendre polynomials.
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/227723425-122d43ba-0370-443b-8d4a-9ad2ab3a6473.jpg) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/227724433-b28cac21-9c56-479b-aefb-42972d65d337.jpg) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -43,7 +43,7 @@ Furthermore the teacher is able to change the function entirely to a function th
 
 Lastly, the reference solution for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227723427-0116cd0d-1d6d-499a-ab42-e7cf14e69ecf.jpg) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227724429-49642c6f-e9cf-4d3c-942f-f70a7cd245c3.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -77,8 +77,10 @@ Fdx:diff(F,x);
 Fdy:diff(F,y);
 
 /* generate reference solution*/
-FdyRefSol:0;
-FdxRefSol: float(sqrt(2*sqrt(15)+15)/(sqrt(33)*a2));
+numer: true;
+FdyRefSol: (5*a3*y0+sqrt(5))/(5*a3);
+FdxRefSol: x0;
+numer: false;
 ```
 
 ### Question Text
@@ -136,7 +138,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 
   // 3D points:
     // Point on xy plane
-    var Axy = view.create('point3d', [0.3, 0.4, -2.0], { withLabel: false });
+    var Axy = view.create('point3d', [0.3, 0.4, -1.0], { withLabel: false });
 
     // Project Axy to the surface
     var A = view.create('point3d', [
@@ -247,7 +249,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 ## Todo:
 * [x] Elaborate more on task for students
 * [x] Display definition of stationary point in solution
-* [ ] Add correct reference solution
-* [ ] Update figures
+* [x] Add correct reference solution
+* [x] Update figures
 * [ ] JSXGraph-Applet does not work in solution
 
