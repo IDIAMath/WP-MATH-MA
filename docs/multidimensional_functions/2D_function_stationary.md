@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/223714756-d1315d40-4ce3-437e-9a7e-8c91d06230f4.PNG) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/228473253-34cec890-9d5d-42f3-bceb-266f9d144708.jpg) |
 |:--:|
 | *First impression of the question* |
 
@@ -27,7 +27,7 @@ The task is to move $x_0$ where it is stationary with the help of the tangent pl
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/223714769-0fe722bb-9d1d-40cd-817d-5940ddcd4b8d.PNG) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/228473243-2135f5ca-11eb-4238-be3e-8e414bfabce7.jpg) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -38,9 +38,9 @@ Additionally, they can change the possible values for the $x$ and $y$ off-sets `
 
 Furthermore the teacher is able to change the function entirely to a function that fits his needs. They can change the function defined by `F: a1* cos(%pi *a2* (x-x0))* cos(%pi* a3* (y-y0))` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before.
 
-Lastly, the reference solution for an exemplatory stationary point must be adjusted to the function used.
+Lastly, the reference solution `FdxRefSol` and`FdyRefSol` for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/223714766-9109c41d-d07c-456d-8c94-fd2cd3a37dc9.PNG) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/228473256-e7a35e39-76cc-46a0-b279-8214bf8c3acf.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -74,8 +74,8 @@ Fdx:diff(F,x);
 Fdy:diff(F,y);
 
 /* generate reference solution*/
-FdyRefSol:0;
-FdxRefSol:1/a2;
+FdyRefSol:y0;
+FdxRefSol:x0;
 ```
 
 ### Question Text
@@ -115,16 +115,16 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 
                                var txtraw = '{#F#}';
                                txtraw=txtraw.replace(/%pi/g, "PI");
-                               //txtraw=txtraw.replace(/pi/g, "PI");
-                               var F =  board.jc.snippet(txtraw, true, 'x,y');
+                              var F =  board.jc.snippet(txtraw, true, 'x,y');
+
                                txtraw = '{#Fdx#}';
-                               txtraw=txtraw.replace(/%/g, "");
-                               txtraw=txtraw.replace(/pi/g, "PI");
+                              txtraw=txtraw.replace(/%pi/g, "PI");
                                var Fdx =  board.jc.snippet(txtraw, true, 'x,y');
+
                                var txtraw = '{#Fdy#}';
-                               txtraw=txtraw.replace(/%/g, "");
-                               txtraw=txtraw.replace(/pi/g, "PI");
-                               var Fdy =  board.jc.snippet(txtraw, true, 'x,y');
+                             txtraw=txtraw.replace(/%pi/g, "PI");
+                              var Fdy =  board.jc.snippet(txtraw, true, 'x,y');
+
     var c = view.create('functiongraph3d', [
         F,
         box,
@@ -137,7 +137,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 
     // Project Axy to the surface
     var A = view.create('point3d', [
-        () => [Axy.X(), Axy.Y(), F(Axy.X(), Axy.Y())]
+       () => [Axy.X(), Axy.Y(), F(Axy.X(), Axy.Y())]
         ], { withLabel: false });
     view.create('line3d', [Axy, A], { dash: 1 });
     // Partial derivatives of F in point A
@@ -169,7 +169,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 
 board.update(); 
 
-var p1 =board.create('point', [function () {return A.X();} ,function () {return A.Y();}],{visible:false}); 
+var p1 =board.create('point', [function () {return A.X();} ,function () {return A.Y();}],{visible: false}); 
 stack_jxg.bind_point(ans1Ref,p1);
 var stateInput = document.getElementById(ans1Ref);
 stateInput.style.display = 'none';
@@ -204,7 +204,7 @@ The tangent plane in a stationary point is exactly horizontal, since the gradien
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/209998959-82c868cc-b662-4c4c-a7bd-7c0c9c32c5e4.PNG) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/228473274-2ed9737b-bbce-4e24-8a7c-324949007545.jpg) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -216,7 +216,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
  Creates variables `FdxSAns`, `FdySAns`. Their values are determined by the function `ev()` evaluating the derivatives `Fdx`, `Fdy` specified in **Question variables** numerically at the location specified by `ans1`.
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/210770473-d51927f2-522a-469f-8604-2972ecb2f13a.PNG) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/228473269-d19834b0-1455-4501-8b4a-0de0a7d98053.jpg) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
@@ -228,7 +228,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 1 true feedback | `<p>Nice! In \(x\)-direction the slope is close to zero.</p>`|
 |Node 1 false feedback | `<p>In \(x\)-direction the slope is not close enough to zero.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/210770470-829c60d5-22f3-47a5-bade-7718c0bebf03.PNG) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/228473264-000203e8-a2ac-4845-bb47-19c4defd55be.jpg) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -238,11 +238,22 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Answer Test | NumAbsolute|
 |SAns | `FdySAns`|
 |TAns | `0`| 
-|Node 2 true feedback | `<p>Nice! In \(y\)-direction the slope is close to zero.</p>`|
-|Node 2 false feedback | `<p>In \(y\)-direction the slope is not close enough to zero.</p>`|
+|Node 2 true feedback | `<p>Nice! In \(y\)-direction the slope is also close to zero. You found a stationary point!</p>`|
+|Node 2 false feedback | `<p>In \(y\)-direction the slope is not close enough to zero. Maybe you didn't select the point precisely enough. Try again!</p>`|
+
+| ![Node 3](https://user-images.githubusercontent.com/120648145/228473259-45e38833-fcb5-48ab-93a5-96a5aa51c5dc.jpg) |
+|:--:|
+| *Values of **node 3*** |
+### Node 3
+ |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `FdySAns`|
+|TAns | `0`| 
+|Node 3 true feedback | `<p>Nice! In \(y\)-direction the slope is close to zero. Maybe you didn't select the point precisely enough in \(x\)-direction. Try again!</p>`|
+|Node 3 false feedback | `<p>In \(y\)-direction the slope is also not close enough to zero. This is not a stationary point. Remember the definition of a stationary point and have a look at the explanation below!</p>`|
+
 
 ## Todo:
-* [x] Elaborate more on task for students
-* [x] Display definition of stationary point in solution
 * [ ] JSXGraph-Applet does not work in solution
 
