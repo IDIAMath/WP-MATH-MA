@@ -209,7 +209,7 @@ The tangent plane in a stationary point is exactly horizontal, since the gradien
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/209998959-82c868cc-b662-4c4c-a7bd-7c0c9c32c5e4.PNG) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/228477673-366e0a20-4e2e-44a7-af9f-07c750dbd475.jpg) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -221,7 +221,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
  Creates variables `FdxSAns`, `FdySAns`. Their values are determined by the function `ev()` evaluating the derivatives `Fdx`, `Fdy` specified in **Question variables** numerically at the location specified by `ans1`.
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/210770473-d51927f2-522a-469f-8604-2972ecb2f13a.PNG) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/228477684-707e8a7b-a877-4692-a8ab-5adb07e0e2ab.jpg) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
@@ -233,7 +233,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 1 true feedback | `<p>Nice! In \(x\)-direction the slope is close to zero.</p>`|
 |Node 1 false feedback | `<p>In \(x\)-direction the slope is not close enough to zero.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/210770470-829c60d5-22f3-47a5-bade-7718c0bebf03.PNG) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/228477682-eb053021-4f4d-4152-b1c1-58256dfbdc2a.jpg) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -243,8 +243,21 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Answer Test | NumAbsolute|
 |SAns | `FdySAns`|
 |TAns | `0`| 
-|Node 2 true feedback | `<p>Nice! In \(y\)-direction the slope is close to zero.</p>`|
-|Node 2 false feedback | `<p>In \(y\)-direction the slope is not close enough to zero.</p>`|
+|Node 2 true feedback | `<p>Nice! In \(y\)-direction the slope is also close to zero. You found a stationary point!</p>`|
+|Node 2 false feedback | `<p>In \(y\)-direction the slope is not close enough to zero. Maybe you didn't select the point precisely enough. Try again!</p>`|
+
+| ![Node 3](https://user-images.githubusercontent.com/120648145/228477678-b41ee17d-0f91-4c93-be74-4bcc696f7e0c.jpg) |
+|:--:|
+| *Values of **node 3*** |
+### Node 3
+ |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `FdySAns`|
+|TAns | `0`| 
+|Node 3 true feedback | `<p>Nice! In \(y\)-direction the slope is close to zero. Maybe you didn't select the point precisely enough in \(x\)-direction. Try again!</p>`|
+|Node 3 false feedback | `<p>In \(y\)-direction the slope is also not close enough to zero. This is not a stationary point. Remember the definition of a stationary point and have a look at the explanation below!</p>`|
+
 
 ## Todo:
 * [x] Elaborate more on task for students
