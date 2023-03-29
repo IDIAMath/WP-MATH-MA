@@ -4,7 +4,6 @@ usemathjax: true
 theme: minima
 ---
 ## Aim of task
-+ Student knows how to calculate partial derivatives and tangent planes  (Handling mathematical symbols and formalism)
 +	Student knows the concept of stationary points in 2D and can calculate them  (Handling mathematical symbols and formalism)
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
