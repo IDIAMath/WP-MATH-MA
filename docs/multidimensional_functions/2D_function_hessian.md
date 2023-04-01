@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how local approximation and value of Hessian matrix are connected graphically (Representing mathematical entities)
 +	Using a visualization of Taylor-approximation student can derive qualitative statements about Hessian matrix at a given point (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/209998318-a3c35f8d-ca6e-45a7-b5f2-c910a32cd136.PNG) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/229279438-1aacbfe5-8caa-47d6-a9df-14b63527d90f.jpg) |
 |:--:|
 | *First impression of the question* |
 
@@ -24,23 +24,24 @@ The student needs to find a point $(x,y)$, where the Hessian of the function is 
 
 ### Student perspective
 
-[describe what the student will see]
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/209998325-438d534e-02c8-455f-898b-4e0b8a2fd164.PNG) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/229279435-3e35b960-fa91-4fc0-9d4f-be081c59bf25.jpg) |
 |:--:|
 | *When the student solves the problem* |
 
+### Feedback example
+
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/229279436-d9e5001e-4303-4055-83bb-d4c48864e81f.jpg) |
+|:--:|
+| *Feedback on answer above* |
 
 ### Teacher perspective
 [describe what the teacher needs to do and can do]
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209998330-06ff458e-eeb3-40c0-bec2-069140610164.PNG) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/229279437-6cc9313a-43b3-4299-bc29-652283726fe2.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
-### Questions and answers examples
-
-[insert examples]
 
 ## Question code
 
@@ -258,10 +259,10 @@ if ev2s<0 then s2: -100;
  To be able to check, whether the Hessian is negative-definite or not, we need to check the sign of the eigenvalues. Since STACK expects us to check a numeric answer, we cannot assign the bools `true`and `false`. We create a similar variable instead with `s1` and `s2` having either of the values `100` or `-100`.
  If the eigenvalues are negative, we assign `s1`and `s2` the value `-100`.
 
-
-| ![Node 1](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![PRT 1](https://user-images.githubusercontent.com/120648145/229279440-794bc921-f75c-4a10-ba48-df8213f67e9b.jpg) |
 |:--:|
-| *Values of **node 1*** |
+| *Visualization of **PRT 1*** |
+
 ### Node 1
  |property | setting| 
 |:---|:---|
@@ -270,6 +271,11 @@ if ev2s<0 then s2: -100;
 |TAns | -100| 
 |Node 1 true feedback | `<p>The first eigenvalue is smaller than zero.  </p>`|
 |Node 1 false feedback | `<p>The first eigenvalue is not smaller than zero. </p>`|
+
+| ![Node 1](https://user-images.githubusercontent.com/120648145/229279441-5e2712aa-3ebf-4943-8d1c-e471e3fa7d6c.jpg) |
+|:--:|
+| *Values of **node 1*** |
+
 ### Node 2
  |property | setting| 
 |:---|:---|
@@ -278,6 +284,10 @@ if ev2s<0 then s2: -100;
 |TAns | -100| 
 |Node 2 true feedback | `<p>The second eigenvalue is also smaller than zero. You found a point with negative-definite hessian!</p><p>Congratulations!</p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*}\lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>` |
 |Node 2 false feedback | ```<p>The second eigenvalue is not smaller than zero. Unfortunately, your answer is not a point where the hessian is negative-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
+
+| ![Node 2](https://user-images.githubusercontent.com/120648145/229279430-df3b4d70-4720-47a6-858d-b3bd01f7bda1.jpg) |
+|:--:|
+| *Values of **node 2*** |
 
 ### Node 3
  |property | setting| 
@@ -288,7 +298,9 @@ if ev2s<0 then s2: -100;
 |Node 3 true feedback | ```<p>The second eigenvalue is smaller than zero. Since the first eigenvalue was not smaller than zero, your answer is not a point where the hessian is negative-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
 |Node 3 false feedback | ```<p>The second eigenvalue is smaller than zero. Since the first eigenvalue was not smaller than zero, your answer is not a point where the hessian is negative-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\\lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
 
-
+| ![Node 3](https://user-images.githubusercontent.com/120648145/229279433-60403dda-cc0a-42e3-99dd-97af3f946342.jpg) |
+|:--:|
+| *Values of **node 3*** |
 
 ## Todo:
 * [ ] 
