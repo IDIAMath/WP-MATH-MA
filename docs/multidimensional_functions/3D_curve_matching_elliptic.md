@@ -114,10 +114,10 @@ h \cdot \cos(t)
 
 [[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref' input-ref-ans2='ans2Ref' input-ref-ans3='ans3Ref' input-ref-ans4='ans4Ref' input-ref-ans5='ans5Ref' input-ref-ans6='ans6Ref']]
 var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:false, shownavigation : false});
-
-                             var view = board.create('view3d',
+                       var box = [-5,5];
+                       var view = board.create('view3d',
 		                            [[-6, -3], [8, 8],
-		                            [[-5, 5], [-5, 5], [-5, 5]]],
+		                            [box, box, box]],
 		                            {});
 
 			//curve from STACK values
@@ -131,18 +131,18 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 				(t) => xoff + xrad* Math.cos(t)* Math.cos(ang) - yrad* Math.sin(t)* Math.sin(ang),
 				(t) => yoff + xrad* Math.cos(t)* Math.sin(ang) + yrad* Math.sin(t)* Math.cos(ang),
 				(t) => amp* Math.cos(t),
-				[-Math.PI,Math.PI ]], {strokeWidth: 1, strokeColor: "blue"});
+				[-Math.PI,Math.PI ]], {strokeWidth: 2, strokeColor: "#1f84bc"});
 			
 		
 				
 			//slider-based curve 
 			
-			var a = board.create('slider', [[-7,-7], [-3,-7], [0,1,10]], {name: "a",snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
-			var b = board.create('slider', [[-1,-7], [3,-7], [0,3,10]], {name: "b",snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
-			var y = board.create('slider', [[-1,-6],[3,-6],[-3,2,7]], {name: 'y0',snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
-			var x = board.create('slider', [[-7,-6],[-3,-6],[-3,2,7]], {name: 'x0',snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
-			var angle = board.create('slider', [[-7,-8], [3,-8], [0,1, Math.PI]], {name:"alpha", snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
-			var h = board.create("slider", [[-7,-9], [3,-9], [0,2,5]], {name: "h", snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var a = board.create('slider', [[-7,-7], [-3,-7], [0,1,10]], {name: "a",snapwidth:0.1, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+			var b = board.create('slider', [[-1,-7], [3,-7], [0,3,10]], {name: "b",snapwidth:0.1, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+			var y = board.create('slider', [[-1,-6],[3,-6],[-3,2,7]], {name: 'y0',snapwidth:0.1, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+			var x = board.create('slider', [[-7,-6],[-3,-6],[-3,2,7]], {name: 'x0',snapwidth:0.1, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+			var angle = board.create('slider', [[-7,-8], [3,-8], [0,1, Math.PI]], {name:"alpha", snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+			var h = board.create("slider", [[-7,-9], [3,-9], [0,2,5]], {name: "h", snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
 			stack_jxg.bind_slider(ans1Ref,x);
 			stack_jxg.bind_slider(ans2Ref,y);
 			stack_jxg.bind_slider(ans3Ref,a);
@@ -154,7 +154,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 				(t) => x.Value() + a.Value()* Math.cos(t)* Math.cos(angle.Value()) - b.Value()* Math.sin(t)* Math.sin(angle.Value()),
 				(t) => y.Value() + a.Value()* Math.cos(t)* Math.sin(angle.Value()) + b.Value()* Math.sin(t)* Math.cos(angle.Value()),
 				(t) => h.Value()*Math.cos(t),
-				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "red"}); 
+				[-Math.PI, Math.PI]], {strokeWidth: 2, strokeColor: '#EE442F'}); 
 board.update();
 [[/ jsxgraph]]
 <p>\(x_0=\) [[input:ans1]] [[validation:ans1]]</p>
@@ -329,3 +329,5 @@ ampans: ans6
 * [x] fix randomizing
 * [ ] change PRT 
 * [x] update Aims of Task
+* [ ] update figures
+* [ ] add axis labels
