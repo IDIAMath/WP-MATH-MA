@@ -106,10 +106,10 @@ Use the sliders in the JSXGraph applet or type in your reply right below it.
 
 [[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref' input-ref-ans2='ans2Ref' input-ref-ans3='ans3Ref' input-ref-ans4='ans4Ref' ]]
 var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:false, shownavigation : false});
-
+                        var box = [-5,5];
                         var view = board.create('view3d',
 		                            [[-6, -3], [8, 8],
-		                            [[-5, 5], [-5, 5], [-5, 5]]],
+		                            [box, box, box]],
 		                            {});
 			
 			//curve from STACK values
