@@ -121,14 +121,14 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 				(t) => r* Math.cos(t),
 				(t) => r* Math.sin(t),
 				(t) => h* Math.cos(n *t-p),
-				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "blue"});
+				[-Math.PI, Math.PI]], {strokeWidth: 2, strokeColor: "#1f84bc"});
 
 			//slider-based curve 
 
-			var rslide = board.create('slider', [[-7,-6], [3,-6], [0,5,10]], {name: "r", snapwidth:0.1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
-			var hslide = board.create('slider', [[-7,-7],[3,-7],[0,2,4]], {name: 'h', snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
-			var nslide = board.create('slider', [[-7,-9],[3,-9],[0,4,7]], {name: 'n', snapWidth:1, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
-			var sslide = board.create('slider', [[-7,-8],[3,-8],[0,2,Math.PI]], {name: 'phase shift', snapwidth:0.05, highline: {strokeColor: 'red'}, baseline: {strokeColor: 'red'}});
+			var rslide = board.create('slider', [[-7,-6], [3,-6], [0,5,10]], {name: "r", snapwidth:0.1, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+			var hslide = board.create('slider', [[-7,-7],[3,-7],[0,2,4]], {name: 'h', snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+			var nslide = board.create('slider', [[-7,-9],[3,-9],[0,4,7]], {name: 'n', snapWidth:1, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+			var sslide = board.create('slider', [[-7,-8],[3,-8],[0,2,Math.PI]], {name: 'phase shift', snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
 			stack_jxg.bind_slider(ans1Ref,rslide);
 			stack_jxg.bind_slider(ans2Ref,hslide);
 			stack_jxg.bind_slider(ans3Ref,sslide);
@@ -137,10 +137,17 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 			var c = view.create('curve3d', [
 				(t) => rslide.Value()* Math.cos(t),
 				(t) => rslide.Value()* Math.sin(t),
-				(t) => hslide.Value()*Math.cos(nslide.Value()*t- sslide.Value()),
-				[-Math.PI, Math.PI]], {strokeWidth: 1, strokeColor: "red"});
+				(t) => hslide.Value()* Math.cos(nslide.Value()*t- sslide.Value()),
+				[-Math.PI, Math.PI]], {strokeWidth: 2, strokeColor: '#EE442F'});
 
-
+                       /* axis labels*/
+                       var xlabel=view.create('point3d',[0.9*box[1],0,(0.6*box[0]+0.4*box[1])], {size:0,name:"x"});
+                       var ylabel=view.create('point3d',[0,0.9*box[1],(0.6*box[0]+0.4*box[1])], {size:0,name:"y"});
+                       var zlabel=view.create('point3d',[
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.9*box[1]], 
+                           {size:0,name:"z"});
 
 [[/ jsxgraph]]
 <p>\(r=\) [[input:ans1]] [[validation:ans1]]</p>
@@ -269,3 +276,4 @@ numans: ans4
 ## Todo:
 * [ ] check grading
 * [x] check why randomization does not work
+* [ ] update figures
