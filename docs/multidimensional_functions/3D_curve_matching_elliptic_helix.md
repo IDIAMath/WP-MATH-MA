@@ -337,3 +337,5 @@ hprogans: ans6
 ## Todo:
 * [ ] check grading
 * [ ] fix randomizing
+* [ ] update figures
+* [ ] add axis labels
