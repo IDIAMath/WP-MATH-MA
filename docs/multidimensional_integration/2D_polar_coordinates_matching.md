@@ -100,7 +100,7 @@ numer:false;
 <p> The area is contained in the interval between a smaller and a bigger value of the coordinates. </p>
 <p> The point of view can be rotated with help of the sliders in the plot. </p>
 
-<p> <b>Reconstruct the intervals that define the given area by matching the areas using the lower coordinate system. </b> </p> 
+<p> <b>Reconstruct the intervals that define the given area by matching the areas using the right coordinate system. </b> </p> 
 
 <p> Write the interval in the form \(r\in\)<code>[r1,r2]</code> and  \(\phi\in\)<code>[phi1,phi2]</code>, e.g. <code>[1/2,2]</code> and <code>[1/2*pi,2*pi]</code>.</p>
 
@@ -111,29 +111,36 @@ numer:false;
 [[ jsxgraph width="250px" height="250px"]] [[/ jsxgraph ]]
 
 [[jsxgraph width='0px' height='0px' input-ref-ans1='ans1Ref']]
+
 //handling divids
 var divid3 = divid;
 console.log(divid3);
 var parts = divid.split('-');
 console.log(parts);
+
 parts[2] = parts[2] -1;
 var divid2 = parts.join('-');
 console.log(divid2);
+
 parts[2] = parts[2] -1;
 var divid1 = parts.join('-');
 console.log(divid1);
+
 //content
 var board = JXG.JSXGraph.initBoard(divid1,{boundingbox : [-5, 5, 5,-5], axis:true, shownavigation : false});
+
 var center =board.create("point",[0,0],{name : "",visible:false,fixed:true});
 var p1 = board.create("point",[{#p1x#},{#p1y#}],{name : "P1",visible:false,fixed:true,});
 var p2 = board.create("point",[{#p2x#},{#p2y#}],{name : "P2",visible:false,fixed:true});
 var p3 = board.create("point",[{#p3x#},{#p3y#}],{name : "P3",visible:false,fixed:true});
 var p4 = board.create("point",[{#p4x#},{#p4y#}],{name : "P4",visible:false,fixed:true});
-var c1 = board.create("arc",[center,p1,p4],{frozen:true});
-var c2 = board.create("line",[p4,p3],{frozen:true, straightFirst:false, straightLast:false});
-var c3 = board.create("arc",[center,p2,p3],{frozen:true});
-var c4 = board.create("line",[p2,p1],{frozen:true, straightFirst:false, straightLast:false});
+var c1 = board.create("arc",[center,p1,p4],{frozen:true, strokeColor: "#1f84bc"});
+var c2 = board.create("line",[p4,p3],{frozen:true, straightFirst:false, straightLast:false, strokeColor: "#1f84bc"});
+var c3 = board.create("arc",[center,p2,p3],{frozen:true, strokeColor: "#1f84bc"});
+var c4 = board.create("line",[p2,p1],{frozen:true, straightFirst:false, straightLast:false, strokeColor: "#1f84bc"});
 //stack_jxg.bind_point(ans1Ref,p1);
+
+
 var board2 = JXG.JSXGraph.initBoard(divid2,{boundingbox : [-1, 5, 5,-0.5], axis:true, 
   defaultAxes: {
     	y: {
@@ -148,13 +155,17 @@ var board2 = JXG.JSXGraph.initBoard(divid2,{boundingbox : [-1, 5, 5,-0.5], axis:
   board2.addChild(board);
   board.suspendUpdate();
   board2.suspendUpdate();
+
 // var center2 =board2.create("point",[0,0],{name : "",visible:false,fixed:true});
 var p12 = board2.create("point",[0.5,1.57],{name : "P1",visible:true});
 var p32 = board2.create("point",[2.5,3.14],{name : "P2",visible:true});
+
 var p22 = board2.create("point",[function () {return p32.X()},function () {return p12.Y()}],{name : "P3",visible:false});
 var p42 = board2.create("point",[function () {return p12.X()},function () {return p32.Y()}],{name : "P4",visible:false});
 var polyg1 = board2.create("polygon",[p12,p22,p32,p42],{name : ""});
+
 //stack_jxg.bind_point(ans1Ref,p1);
+
 var p1p = board.create("point",[function () {return p12.X()*Math.cos(p12.Y());},
                             function () {return p12.X()*Math.sin(p12.Y());}],
                             {name : "P1",visible:false});
@@ -167,13 +178,16 @@ var p3p = board.create("point",[function () {return p32.X()*Math.cos(p32.Y());},
 var p4p = board.create("point",[function () {return p12.X()*Math.cos(p32.Y());},
                             function () {return p12.X()*Math.sin(p32.Y());}],
                             {name : "P4",visible:false});
-var c1p = board.create("arc",[center,p1p,p4p],{frozen:true,strokeColor:'red'});
-var c2p = board.create("line",[p4p,p3p],{frozen:true,strokeColor:'red', straightFirst:false, straightLast:false});
-var c3p = board.create("arc",[center,p2p,p3p],{frozen:true,strokeColor:'red'});
-var c4p = board.create("line",[p2p,p1p],{frozen:true,strokeColor:'red', straightFirst:false, straightLast:false});
+var c1p = board.create("arc",[center,p1p,p4p],{frozen:true,strokeColor: '#EE442F'});
+var c2p = board.create("line",[p4p,p3p],{frozen:true,strokeColor: '#EE442F', straightFirst:false, straightLast:false});
+var c3p = board.create("arc",[center,p2p,p3p],{frozen:true,strokeColor: '#EE442F'});
+var c4p = board.create("line",[p2p,p1p],{frozen:true,strokeColor: '#EE442F', straightFirst:false, straightLast:false});
+
 board.unsuspendUpdate();
 board2.unsuspendUpdate();
+
 [[/ jsxgraph]]
+
 <p>\(r\in\) [[input:ans1]] [[validation:ans1]]</p>
 <p>\(\phi\in\) [[input:ans2]] [[validation:ans2]]</p>
 ```
@@ -267,3 +281,4 @@ phi2:ans2[2]/%pi
 * [x] evaluate whether the JSXGraph values should be specified in Question variables or not
 * [ ] make sure random values fit nicely in applet
 * [x] place applets side by side
+* [ ] update figures
