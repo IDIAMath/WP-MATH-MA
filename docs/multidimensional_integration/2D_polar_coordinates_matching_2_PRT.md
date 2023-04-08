@@ -320,3 +320,4 @@ phi2:ans2[2]/%pi
 * [x] evaluate whether the JSXGraph values should be specified in Question variables or not
 * [ ] make sure random values fit nicely in applet
 * [x] place applets side by side
+* [ ] change colours to colourblind palette
