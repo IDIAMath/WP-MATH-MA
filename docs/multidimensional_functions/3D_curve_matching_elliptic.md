@@ -155,6 +155,15 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 				(t) => y.Value() + a.Value()* Math.cos(t)* Math.sin(angle.Value()) + b.Value()* Math.sin(t)* Math.cos(angle.Value()),
 				(t) => h.Value()*Math.cos(t),
 				[-Math.PI, Math.PI]], {strokeWidth: 2, strokeColor: '#EE442F'}); 
+
+                       /* axis labels*/
+                       var xlabel=view.create('point3d',[0.9*box[1],0,(0.6*box[0]+0.4*box[1])], {size:0,name:"x"});
+                       var ylabel=view.create('point3d',[0,0.9*box[1],(0.6*box[0]+0.4*box[1])], {size:0,name:"y"});
+                       var zlabel=view.create('point3d',[
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.9*box[1]], 
+                           {size:0,name:"z"});
 board.update();
 [[/ jsxgraph]]
 <p>\(x_0=\) [[input:ans1]] [[validation:ans1]]</p>
