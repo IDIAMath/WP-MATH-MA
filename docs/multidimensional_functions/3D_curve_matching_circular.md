@@ -1,5 +1,5 @@
 ---
-title: Parametric Curve Matching circular
+title: Parametric Curve Matching circular 2 PRT
 usemathjax: true
 theme: minima
 ---
@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/227711682-bde41863-0cb2-4f7a-b905-ccd96282d9ab.jpg) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/236681223-d61887d2-2e14-4659-a9bc-f21fcf9d7f80.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -30,7 +30,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/227711681-9beca5f1-70ae-41f8-ab58-fc713760e209.jpg) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/236681209-bf166199-3e00-4289-a4a2-172213ada9f4.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -202,11 +202,10 @@ Feedback variables:
 ```
 radiusans: ans1
 ampans: ans2
-phaseans: ans3
-numans: ans4
+
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/213417669-8735a0da-5074-4b7c-9870-8b287ab42be6.png) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/236681205-6198791c-7b92-43a2-92b5-af5a1711fda1.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -223,7 +222,7 @@ numans: ans4
 |Node 1 false feedback |`<p>The radius \(r\) is not yet correct. Check, whether the curves align, when you slide "r" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/213417672-46371a41-85ae-428f-bd38-1865306c451b.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/236681211-02b25cfd-1903-4b9c-82ac-72346e930cd7.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -234,10 +233,10 @@ numans: ans4
 |SAns | `ampans`|
 |TAns | `ampr`| 
 |Test options | 0.1 |
-|Node 2 true feedback | `<p>Nice! You found the correct amplitude a. Good job!</p>`|
-|Node 2 false feedback |`<p>The amplitude a is not yet correct. Check, whether the curves align, when you slide "a" to this value.</p>`|
+|Node 2 true feedback | `<p>Nice! You also found the correct amplitude a. Good job!</p>`|
+|Node 2 false feedback |`<p>The amplitude a is not yet correct. Check, whether the curves align, when you slide "h" to this value.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/213417645-2510084e-fcca-42a0-92cc-213e60dc6553.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/236681212-827cd3f3-ed97-40bc-81ea-efc183ed5363.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -245,35 +244,76 @@ numans: ans4
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
-|SAns | `phaseans`|
-|TAns | `phaser`| 
+|SAns | `ampans`|
+|TAns | `ampr`| 
 |Test options | 0.1 |
-|Node 3 true feedback | `<p>Nice! You found the correct phase shift \(\phi\). Good job!</p>`|
-|Node 3 false feedback |`<p>The phase shift \(\phi\) is not yet correct. Check, whether the curves align, when you slide "phase shift" to this value.</p>`|
+|Node 3 true feedback | `<p>Nice! You found the correct amplitude a. Good job!</p> <p> Check whether the curves align perfectly to get the radius right as well! </p>`|
+|Node 3 false feedback |`<p>The amplitude a is not yet correct as well. Check, whether the curves align, when you slide "h" to this value.</p> <p> If the orange and blue curve overlap, the answer will be correct! </p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/213417653-ed158b79-5e19-4862-b9c8-e1270d617724.png) |
+| ![Node 3](https://user-images.githubusercontent.com/120648145/236681213-d312897b-f155-4dc3-98b5-8cee00903ea9.png) |
 |:--:|
 | *Values of **node 3*** |
 
-### Node 4 
+
+
+
+### prt2
+
+Feedback variables:
+```
+phaseans: ans3
+numans: ans4
+```
+| ![prt2](https://user-images.githubusercontent.com/120648145/236681208-294dd091-772c-4afa-9c25-d961f8cd8e2f.png) |
+|:--:|
+| *Visualization of **prt2*** |
+
+
+
+### Node 1
+|property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `phaseans`|
+|TAns | `phaser`| 
+|Test options | 0.1 |
+|Node 1 true feedback | `<p>Nice! You found the correct phase shift \(\phi\). Good job!</p>`|
+|Node 1 false feedback |`<p>The phase shift \(\phi\) is not yet correct. Check, whether the curves align, when you slide "phase shift" to this value.</p>`|
+
+
+| ![Node 1](https://user-images.githubusercontent.com/120648145/236681216-be4782eb-ae80-485b-b65e-771c312c41ed.png) |
+|:--:|
+| *Values of **node 1*** |
+
+### Node 2
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
 |SAns | `numans`|
 |TAns | `numr`| 
 |Test options | 0.1 |
-|Node 4 true feedback | `<p>Nice! You found the correct number of oscillations \(n\). Good job!</p>`|
-|Node 4 false feedback |`<p>The number of oscillations \(n\) is not yet correct. Check, whether the curves align, when you slide "n" to this value. Note, that you can count the maxima of the curve and try again.</p>`|
+|Node 2 true feedback | `<p>Nice! You also found the correct number of oscillations \(n\). Good job!</p>`|
+|Node 2 false feedback |`<p>The number of oscillations \(n\) is not yet correct. Check, whether the curves align, when you slide "n" to this value. Note, that you can count the maxima of the curve and try again.</p>`|
 
-| ![Node 4](https://user-images.githubusercontent.com/120648145/213418525-b0eab465-30e9-4f61-b8a2-100190665751.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/236681220-ba802799-67c8-4bca-8e04-2dd9653f3008.png) |
 |:--:|
-| *Values of **node 4*** |
+| *Values of **node 2*** |
 
+### Node 3
+ |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `numans`|
+|TAns | `numr`| 
+|Test options | 0.1 |
+|Node 3 true feedback | `<p>Nice! You also found the correct number of oscillations \(n\). Good job!</p><p> Make sure to get the phase shift right as well by matching the curves! </p>`|
+|Node 3 false feedback |`<p>The number of oscillations \(n\) is also not yet correct. Check, whether the curves align, when you slide "n" to this value. Note, that you can count the maxima of the curve and try again.</p>`|
 
-
-
+| ![Node 3](https://user-images.githubusercontent.com/120648145/236681222-549c3571-ddde-403d-8ab6-bd242f66a400.png) |
+|:--:|
+| *Values of **node 3*** |
 
 ## Todo:
-* [ ] check grading
+* [x] check grading
 * [x] check why randomization does not work
 * [ ] update figures
