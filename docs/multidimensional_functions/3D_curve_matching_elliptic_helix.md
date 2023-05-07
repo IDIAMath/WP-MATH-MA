@@ -411,5 +411,5 @@ hprogans: ans6
 ## Todo:
 * [x] check grading
 * [x] fix randomizing
-* [ ] update figures
+* [x] update figures
 * [x] add axis labels
