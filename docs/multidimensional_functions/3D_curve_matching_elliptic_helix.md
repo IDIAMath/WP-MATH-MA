@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/227714657-913398b4-1f55-46d6-a37c-872d0ab6d3d7.jpg) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/236683967-722681a1-9698-4b98-b527-5e9f8bbe522f.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -35,7 +35,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/227714656-d10a472a-e8d8-492d-ac1e-51b5e1f6fa43.jpg) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/236683966-7f2e35fa-cf46-49df-8554-57fca54b1a31.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -71,7 +71,7 @@ xr:  1+rand(6)/2;
 yr:  1+rand(6)/2;
 ar: 1+rand(6)/2;
 br: 1+rand(6)/2;
-ampr: 1/4+rand(10)/4; 
+hprogr: 1/4+rand(10)/4; 
 alphar : rand([1/6, 1/4, 1/3, 1/2, 2/3, 3/4, 5/6 ,1]);
 
 
@@ -250,13 +250,9 @@ Feedback variables:
 ```
 xans: ans1
 yans: ans2
-aans: ans3
-bans: ans4
-alphaans: ans5
-hprogans: ans6
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/221525313-2ce4812e-8d5b-43ec-82a7-3210c5a9743c.png) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/236683969-e67fa5c9-8b6d-4e70-95f5-c85852c96cfd.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -272,7 +268,7 @@ hprogans: ans6
 |Node 1 false feedback |`<p>The offset \(x_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "x0" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/221525318-c028d3ca-79b3-482e-a72a-6d40b4fdb948.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/236683971-39541f34-e18d-4102-a8d6-ea432947ebf3.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -282,10 +278,10 @@ hprogans: ans6
 |Answer Test | NumAbsolute|
 |SAns | `yans`|
 |TAns | `yr`| 
-|Node 2 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job!</p>`|
+|Node 2 true feedback | `<p> Nice! You also found the correct offset \(y_0\). That means you found the correct center! Good job!</p>`|
 |Node 2 false feedback |`<p>The offset \(y_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "y0" to this value.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/221525289-fd169137-c7ac-48b1-919e-c9cea5bc6366.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/236683973-b746349c-8278-4264-9dc2-f22b1f385583.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -293,58 +289,127 @@ hprogans: ans6
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
-|SAns | `aans`|
-|TAns | `ar`| 
-|Node 3 true feedback | `<p> Nice! You found the correct semi-axis length  \(a\). Good job!</p>`|
-|Node 3 false feedback |`<p>The semi-axis length  \(a\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "a" to this value.</p>`|
+|SAns | `yans`|
+|TAns | `yr`| 
+|Node 3 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job! Check if the centers are aligned in \(x\)-direction as well!</p>`|
+|Node 3 false feedback |`<p>The offset \(y_0\) is also not correct. The curves' centers are misaligned. Try to fix it by using the sliders. </p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/221525294-8723252e-50d1-420b-b7e5-13aa08170034.png) |
+| ![Node 3](https://user-images.githubusercontent.com/120648145/236683974-031d04a0-01b1-497b-a729-205b1e8cf4fb.png) |
 |:--:|
 | *Values of **node 3*** |
 
-### Node 4 
+### prt2
+
+Feedback variables:
+```
+aans: ans3
+bans: ans4
+```
+
+| ![prt2](https://user-images.githubusercontent.com/120648145/236683975-d3f574bb-5df3-4b94-a7f6-4a9487be800c.png) |
+|:--:|
+| *Visualization of **prt2*** |
+
+
+
+### Node 1
+|property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `aans`|
+|TAns | `ar`| 
+|Node 1 true feedback | `<p> Nice! You found the correct semi-axis length  \(a\). Good job!</p>`|
+|Node 1 false feedback |`<p>The semi-axis length  \(a\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "a" to this value.</p>`|
+
+
+| ![Node 1](https://user-images.githubusercontent.com/120648145/236683976-c9bb4447-d232-4c96-855e-e27193cf0e7e.png) |
+|:--:|
+| *Values of **node 1*** |
+
+### Node 2
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
 |SAns | `bans`|
 |TAns | `br`| 
-|Node 4 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). Good job!</p>`|
-|Node 4 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "b" to this value.</p>`|
+|Node 2 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). The ellipse has the right shape. Good job!</p>`|
+|Node 2 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "b" to this value.</p>`|
 
-| ![Node 4](https://user-images.githubusercontent.com/120648145/221525295-0ecc3d4d-d8aa-4159-bc35-27f82b73be77.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/236683977-10090753-7c22-462b-a6c9-351b1189f040.png) |
 |:--:|
-| *Values of **node 4*** |
+| *Values of **node 2*** |
 
-### Node 5 
+### Node 3
  |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `bans`|
+|TAns | `br`| 
+|Node 3 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). Good job! Make sure to do the same with the other semi-axis.</p>`|
+|Node 3 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Both axis are not correct. It might be that they look right, but are not due to an incorrect angle. Make sure the curves overlap from all perspectives and try again.</p>`|
+
+| ![Node 3](https://user-images.githubusercontent.com/120648145/236683961-10c00b3b-bd28-4774-b77f-38999fdf74b3.png) |
+|:--:|
+| *Values of **node 3*** |
+
+### prt3
+
+Feedback variables:
+```
+alphaans: ans5
+hprogans: ans6
+```
+
+| ![prt3](https://user-images.githubusercontent.com/120648145/236683962-3f0061fc-ab61-4f35-bf03-6be0445c45bb.png) |
+|:--:|
+| *Visualization of **prt3*** |
+
+
+
+### Node 1
+|property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
 |SAns | `alphaans`|
 |TAns | `alphar`| 
-|Node 5 true feedback | `<p> Nice! You found the correct angle \(\alpha\). Good job!</p>`|
-|Node 5 false feedback |`<p>The angle \(\alpha\) is not yet correct. Check, whether the curves are oriented the same way, when you slide "alpha" to this value.</p>`|
+|Node 1 true feedback | `https://user-images.githubusercontent.com/120648145/236683963-4b0cfb86-5142-45cf-af84-f9437bfc6036.png`|
+|Node 1 false feedback |`<p>The angle \(\alpha\) is not yet correct. Check, whether the curves are oriented the same way from all perspectives, when you slide "alpha" to this value.</p>`|
 
-| ![Node 5](https://user-images.githubusercontent.com/120648145/221525299-1f1a6d74-52c7-47bb-8ce1-3677a537178e.png) |
+
+| ![Node 1](https://user-images.githubusercontent.com/120648145/236683963-4b0cfb86-5142-45cf-af84-f9437bfc6036.png) |
 |:--:|
-| *Values of **node 5*** |
+| *Values of **node 1*** |
 
-### Node 6 
+### Node 2
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
 |SAns | `hprogans`|
 |TAns | `hprogr`| 
-|Node 6 true feedback | `<p> Nice! You found the correct \(z\)-propagation \(h\). Good job!</p>`|
-|Node 6 false feedback |`<p>The \(z\)-propagation \(h\) is not yet correct. Check, whether the curves have the same extent in \(z\)-direction, when you slide "h" to this value.</p>`|
+|Node 2 true feedback | `<p> Nice! You found the correct \(z\)-propagation \(h\). Good job!</p>`|
+|Node 2 false feedback |`<p>The \(z\)-propagation \(h\) is not yet correct. Check, whether the curves have the same extent in \(z\)-direction, when you slide "h" to this value.</p>`|
 
-| ![Node 6](https://user-images.githubusercontent.com/120648145/221525301-8ca41984-ae66-44ff-9e24-76f36b20f8e7.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/236683964-4ab720b5-55f4-4ddb-8ab9-c4a2bd9f269a.png) |
 |:--:|
-| *Values of **node 6*** |
+| *Values of **node 2*** |
+
+### Node 3
+ |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `hprogans`|
+|TAns | `hprogr`| 
+|Node 3 true feedback | `<p> Nice! You found the correct \(z\)-propagation \(h\). Good job!</p>`|
+|Node 3 false feedback |`<p>The \(z\)-propagation \(h\) is not yet correct. Check, whether the curves have the same extent in \(z\)-direction, when you slide "h" to this value.</p>`|
+
+| ![Node 3](https://user-images.githubusercontent.com/120648145/236683965-a1be373a-15ba-4755-8fd7-7b9b9c21d578.png) |
+|:--:|
+| *Values of **node 3*** |
 
 
 
 ## Todo:
-* [ ] check grading
+* [x] check grading
 * [x] fix randomizing
 * [ ] update figures
 * [x] add axis labels
