@@ -316,4 +316,4 @@ numans: ans4
 ## Todo:
 * [x] check grading
 * [x] check why randomization does not work
-* [ ] update figures
+* [x] update figures
