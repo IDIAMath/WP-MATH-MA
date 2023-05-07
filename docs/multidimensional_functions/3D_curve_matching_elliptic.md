@@ -1,5 +1,5 @@
 ---
-title: Parametric Curve Matching elliptic
+title: Parametric Curve Matching elliptic 3 PRT
 usemathjax: true
 theme: minima
 ---
@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/227711675-6332df07-945b-4ab7-ba15-22d145eb2e3d.jpg) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/236682418-61e7bd1c-0fa3-4b75-8230-ec5258de6b4d.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -31,7 +31,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/227711684-b3fe3464-88bc-4d2c-9837-2ff17cd0c15c.jpg) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/236682417-01ffde85-3915-4811-9ce8-255519a02c62.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -240,13 +240,9 @@ Feedback variables:
 ```
 xans: ans1
 yans: ans2
-aans: ans3
-bans: ans4
-alphaans: ans5
-ampans: ans6
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/213679636-4e177792-32eb-47ca-8676-590ea2662fd9.png) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/236682416-0821a8a2-3323-4ec5-907c-253b2bfa35bc.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -262,7 +258,7 @@ ampans: ans6
 |Node 1 false feedback |`<p>The offset \(x_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "x0" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/213679611-61f88456-34bd-4cea-a60e-b7582a5b6bd7.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/236682412-e0f85252-6924-48b7-9872-8ebea74b208e.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -272,10 +268,10 @@ ampans: ans6
 |Answer Test | NumAbsolute|
 |SAns | `yans`|
 |TAns | `yr`| 
-|Node 2 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job!</p>`|
+|Node 2 true feedback | `<p> Nice! You also found the correct offset \(y_0\). That means you found the correct center! Good job!</p>`|
 |Node 2 false feedback |`<p>The offset \(y_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "y0" to this value.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/213679618-09d2226a-d3ae-4b24-bc59-566872be36d3.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/236682558-875ac2f1-2a72-40e3-82d5-105b284228a7.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -283,60 +279,129 @@ ampans: ans6
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
-|SAns | `aans`|
-|TAns | `ar`| 
-|Node 3 true feedback | `<p> Nice! You found the correct semi-axis length  \(a\). Good job!</p>`|
-|Node 3 false feedback |`<p>The semi-axis length  \(a\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "a" to this value.</p>`|
+|SAns | `yans`|
+|TAns | `yr`| 
+|Node 3 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job! Check if the centers are aligned in \(x\)-direction as well!</p>`|
+|Node 3 false feedback |`<p>The offset \(y_0\) is also not correct. The curves' centers are misaligned. Try to fix it by using the sliders. </p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/213679623-fa1d75d9-647e-4e85-9635-59744217ef3e.png) |
+| ![Node 3](https://user-images.githubusercontent.com/120648145/236682434-8a658f9c-db3c-4e73-9ced-fce6d8381e78.png) |
 |:--:|
 | *Values of **node 3*** |
 
-### Node 4 
+
+### prt2
+
+Feedback variables:
+```
+aans: ans3
+bans: ans4
+
+```
+
+| ![prt2](https://user-images.githubusercontent.com/120648145/236682432-893f6ea6-c157-423b-a903-5c8a0abb1905.png) |
+|:--:|
+| *Visualization of **prt2*** |
+
+
+
+### Node 1
+|property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `aans`|
+|TAns | `ar`| 
+|Node 1 true feedback | `<p> Nice! You found the correct semi-axis length  \(a\). Good job!</p>`|
+|Node 1 false feedback |`<p>The semi-axis length  \(a\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "a" to this value.</p>`|
+
+
+| ![Node 1](https://user-images.githubusercontent.com/120648145/236682431-7a2ea542-aa7c-4176-8c74-fcd45977ddff.png) |
+|:--:|
+| *Values of **node 1*** |
+
+### Node 2
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
 |SAns | `bans`|
 |TAns | `br`| 
-|Node 4 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). Good job!</p>`|
-|Node 4 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "b" to this value.</p>`|
+|Node 2 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). The ellipse has the right shape. Good job!</p>`|
+|Node 2 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "b" to this value.</p>`|
 
-| ![Node 4](https://user-images.githubusercontent.com/120648145/213679626-94525833-4578-4b69-ac35-1d5f090abefd.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/236682428-34cb9e34-4164-49db-a3e0-dfeac75dcbac.png) |
 |:--:|
-| *Values of **node 4*** |
+| *Values of **node 2*** |
 
-### Node 5 
+### Node 3
  |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `bans`|
+|TAns | `br`| 
+|Node 3 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). Good job! Make sure to do the same with the other semi-axis.</p>`|
+|Node 3 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Both axis are not correct. It might be that they look right, but are not due to an incorrect angle. Make sure the curves overlap from all perspectives and try again.</p>`|
+
+| ![Node 3](https://user-images.githubusercontent.com/120648145/236682426-16dc42cf-63d7-4759-9532-172780c45e27.png) |
+|:--:|
+| *Values of **node 3*** |
+### prt3
+
+Feedback variables:
+```
+alphaans: ans5
+ampans: ans6
+```
+
+| ![prt3](https://user-images.githubusercontent.com/120648145/236682425-481eac40-d4fd-41be-b467-501cfeb0941a.png) |
+|:--:|
+| *Visualization of **prt3*** |
+
+
+
+### Node 1
+|property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
 |SAns | `alphaans`|
 |TAns | `alphar`| 
-|Node 5 true feedback | `<p> Nice! You found the correct angle \(\alpha\). Good job!</p>`|
-|Node 5 false feedback |`<p>The angle \(\alpha\) is not yet correct. Check, whether the curves are oriented the same way, when you slide "alpha" to this value.</p>`|
+|Node 1 true feedback | `<p> Nice! You found the correct angle \(\alpha\). Good job!</p>`|
+|Node 1 false feedback |`<p>The angle \(\alpha\) is not yet correct. Check, whether the curves are oriented the same way from all perspectives, when you slide "alpha" to this value.</p>`|
 
-| ![Node 5](https://user-images.githubusercontent.com/120648145/213679627-77266e47-e2a1-4f0f-918c-15c72e858ede.png) |
+
+| ![Node 1](https://user-images.githubusercontent.com/120648145/236682424-223eb981-c1b4-4c40-9339-86fe4751af59.png) |
 |:--:|
-| *Values of **node 5*** |
+| *Values of **node 1*** |
 
-### Node 6 
+### Node 2
  |property | setting| 
 |:---|:---|
 |Answer Test | NumAbsolute|
 |SAns | `ampans`|
 |TAns | `ampr`| 
-|Node 6 true feedback | `<p> Nice! You found the correct amplitude \(h\). Good job!</p>`|
-|Node 6 false feedback |`<p>The amplitude \(h\) is not yet correct. Check, whether the curves have the same height in \(z\)-direction, when you slide "h" to this value.</p>`|
+|Node 2 true feedback | `<p> Nice! You found the correct amplitude \(h\). Good job!</p>`|
+|Node 2 false feedback |`<p>The amplitude \(h\) is not yet correct. Check, whether the curves have the same height in \(z\)-direction, when you slide "h" to this value.</p>`|
 
-| ![Node 6](https://user-images.githubusercontent.com/120648145/213679629-32540240-5e26-4e4c-a185-5f57dea69adf.png) |
+| ![Node 2](https://user-images.githubusercontent.com/120648145/236682420-d230bfd1-2e71-4bb5-b59d-b9757218b3c9.png) |
 |:--:|
-| *Values of **node 6*** |
+| *Values of **node 2*** |
 
+### Node 3
+ |property | setting| 
+|:---|:---|
+|Answer Test | NumAbsolute|
+|SAns | `ampans`|
+|TAns | `ampr`| 
+|Node 3 true feedback | `<p> Nice! You found the correct amplitude \(h\). Good job!</p>`|
+|Node 3 false feedback |`<p>The amplitude \(h\) is not yet correct. Check, whether the curves have the same height in \(z\)-direction, when you slide "h" to this value.</p>`|
+
+| ![Node 3](https://user-images.githubusercontent.com/120648145/236682419-d03c6a51-0bc4-46dd-bfaa-93746820a6d0.png) |
+|:--:|
+| *Values of **node 3*** |
 
 
 ## Todo:
-* [ ] check grading
+* [x] check grading
 * [x] fix randomizing
-* [ ] change PRT 
+* [x] change PRT 
 * [x] update Aims of Task
-* [ ] update figures
-* [ ] add axis labels
+* [x] update figures
+* [x] add axis labels
