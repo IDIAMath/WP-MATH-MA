@@ -60,13 +60,13 @@ The student needs to find a point $(x,y)$, where the Hessian of the function is 
 ```jacascript
 /* generate function */
 a1: rand([2,4,6,8,10])/5;
-a2: rand([1,2,4,6])/5;
-a3: rand([4,5,6])/5;
+a2: rand([1,2,4,5])/5;
+a3: rand([1,3,5])/5;
 x0: rand([-3,-2,-1,1,2,3])/5;
 y0: rand([-3,-2,-1,1,2,3])/5;
 
 /* define the function */
-F:a1 * cos(%pi*a2 * (x-x0))* cos( a3 * (y-y0));
+F:a1 * cos(%pi*a2 * (x-x0))* cos(%pi* a3 * (y-y0));
 Fdx:diff(F,x);
 Fdy:diff(F,y);
 Fdxx:diff(Fdx,x);
@@ -100,6 +100,7 @@ numer: false;
 
 
 ```javascript
+<p>Given is the graph of a function and its quadratic approximation around a point. You can move that point by moving its projected point in \(x,y\)-direction. You can rotate the coordinate system using the sliders.</p>
 <p>Find a point with a negative-definite Hessian of the function at this point.</p>
 
 
@@ -195,15 +196,25 @@ stateInput.style.display = 'none';
 
 board.update(); 
 
+ /* axis labels*/
+                       var xlabel=view.create('point3d',[0.9*box[1],0,(0.6*box[0]+0.4*box[1])], {size:0,name:"x"});
+                       var ylabel=view.create('point3d',[0,0.9*box[1],(0.6*box[0]+0.4*box[1])], {size:0,name:"y"});
+                       var zlabel=view.create('point3d',[
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.9*box[1]], 
+                           {size:0,name:"z"});
+
 [[/jsxgraph]]
-<p>[[input:ans1]] </p><p>[[validation:ans1]]</p>
+<div style="display:none;">
+<p>[[input:ans1]] </p><p>[[validation:ans1]]</p></div>
 ```
 ## Answers
 ### Answer ans 1
 |property | setting| 
 |:---|:---|
 |Input type | Numerical |
-|Model answer | `[FdxRefSol, FdyRefSol]` defined in **Question variables** |
+|Model answer | `[RefSolx, RefSoly]` defined in **Question variables** |
 | Forbidden words | none |
 | Forbid float | No |
 | Student must verify | Yes |
@@ -303,4 +314,4 @@ if ev2s<0 then s2: -100;
 | *Values of **node 3*** |
 
 ## Todo:
-* [ ] 
+* [ ] Update figures
