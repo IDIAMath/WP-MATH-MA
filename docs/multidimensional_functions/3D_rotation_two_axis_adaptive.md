@@ -14,9 +14,124 @@ theme: minima
 This is an adaptive tutorial task. That means, a relatively hard task is presented. When the task is answered incorrectly, a series of other tasks is activated. These tasks cover the fundamentals necessary to solve the initial problem. The next figure depicts the scheme.
 The tasks are documented seperately, but no in complete detail in this document. Some of the tasks are availabe as stand-alone exercises.
 
+
 | ![First impression](https://user-images.githubusercontent.com/120648145/233791552-098c7f94-1c3a-43e2-8644-623bcb9ab5f6.jpg) |
 |:--:|
 | *First impression of the question* |
+
+
+## Question Variables
+
+The tasks are programmed in the same Question Text. However, they are each wrapped in a `<div>`-environment. That way, they can be accessed individually. For better legibility, in this documentation the individual tasks are presented as if they were seperate Question Texts sharing the same Question Variables.
+
+The Question Variables set up a number of things:
++ the multiplication of matrices by converting lists to matrices, multpilying them and turning them to lists again for export
++ the randomization of the order of rotation for the initial task
++ the randomization of the angles $\alpha, \beta, \gamma$ provided 
++ the conversion of the randomized angles into mumerical values for plotting
++ the matrix mutliplication for the reference curve in the initial task
++ the matrix multiplication for the reference curve in task1
++ the matrix multiplication for the reference curve in task2a
++ the matrix multiplication for the reference curve in task2b
++ the randomization of the order of rotation for task3
++ the randomization of new angle `ap_betar` to use in task3
++ the matrix multiplication for the reference curve in task3
+
+```
+
+
+/* implement the creation of matrices from lists */
+
+listtomat(L):=block(
+ [i, M], 
+ M:matrix(), 
+ for i:1 thru length(L) do M:addrow(M,L[i]),
+ return(M)
+);
+mattolist(M):=makelist(M[i],i,1,length(M));
+
+/* specify the lists to be turnt into matrices */
+r: 2;
+L1: [[1,0,0],[0,cos(a),-sin(a)],[0, sin(a), cos(a)]];
+L2: [[cos(b),0,sin(b)],[0,1,0],[-sin(b), 0, cos(b)]];
+L3: [[cos(c),-sin(c),0],[sin(c),cos(c),0],[0, 0, 1]];
+Lv: [[r*cos(t),0,0],[r*sin(t),0,0],[0,0,0]];
+
+/* create matrices */
+
+M1: listtomat(L1);
+M2: listtomat(L2);
+M3:listtomat(L3);
+v: listtomat(Lv);
+
+matlist: [M1,M2,M3];
+
+/* randomize the order of operations for initial task */
+indexr: 1+rand(6)
+ta: [[string(x-y),false],[string(y-x),false],[string(x-z),false],[string(z-x),false],[string(y-z),false],[string(z-y), false]];
+ta[indexr][2]:true;
+tans: ta[indexr];
+
+/* select matrices for multiplication for initial task */
+
+indexlist:[[1,2],[2,1],[1,3],[3,1],[2,3],[3,2]];
+indices: indexlist[indexr];
+
+M1r: matlist[indices[1]];
+M2r: matlist[indices[2]];
+
+alphar: rand([1/6,1/4,1/3,1/2,2/3,3/4])*%pi;
+betar:  rand([1/6,1/4,1/3,1/2,2/3,3/4])*%pi;
+gammar: rand([1/6,1/4,1/3,1/2,2/3,3/4])*%pi;
+deltar: rand([1/6,1/4,1/3,2/3,3/4,5/4,4/3])*%pi;
+
+/* numerical values */
+numer: true
+alpha: alphar;
+beta: betar;
+gamma: gammar;
+delta: deltar;
+numer: false
+
+/* calculate matrix product and evalutate angles for initial task */
+matres: ev(M2r.M1r.v, a:alphar, b:betar, c: gammar);
+
+/* turn matrix to list for export*/
+res: [mattolist(matres)[1][1],mattolist(matres)[2][1],mattolist(matres)[3][1]];
+
+
+
+
+/* Rotation about one axis */
+or_matres: ev(M1.v, a:deltar);
+or_res: [mattolist(or_matres)[1][1],mattolist(or_matres)[2][1],mattolist(or_matres)[3][1]];
+
+
+
+/* Rotation about two axis matching */
+trm_matres: ev(M3.M2.v, b:betar, c: gammar);
+trm_res: [mattolist(trm_matres)[1][1],mattolist(trm_matres)[2][1],mattolist(trm_matres)[3][1]];
+
+/* Rotation about two axis observing */
+tro_matres: ev(M1.M3.v, a:alphar, c:gammar);
+tro_res: [mattolist(tro_matres)[1][1],mattolist(tro_matres)[2][1],mattolist(tro_matres)[3][1]];
+
+/* Rotation about two known axis in unknown order - "ap" is short for "axis pair"*/
+ap_betar: rand([1/6,1/4,1/3,1/2,2/3,3/4])*%pi;
+while ap_betar = alphar do ap_betar: rand([1/6,1/4,1/3,1/2,2/3,3/4])*%pi;
+ap_in: rand([1,2]);
+ap_matlist:[[M2,M3],[M3,M2]];
+ap_M1r: ap_matlist[ap_in][1];
+ap_M2r: ap_matlist[ap_in][2];
+
+ap_ta: [[string(y-z),false],[string(z-y), false]];
+ap_ta[ap_in][2]:true;
+ap_tans: ap_ta[ap_in];
+ap_matres: ev(ap_M2r.ap_M1r.v, b: alphar, c: ap_betar);
+ap_res: [mattolist(ap_matres)[1][1],mattolist(ap_matres)[2][1],mattolist(ap_matres)[3][1]];
+
+```
+
 
 # Initial task (Rotating a curve about two unknown axis)
 
@@ -191,74 +306,6 @@ studentres: [mattolist(studentmatres)[1][1],mattolist(studentmatres)[2][1],matto
 
 Here, the student's answer is evaluated as a rotated curve and plotted for them to compare it to the correct answer.
 
-Code:
-
-```JavaScript
-<p> This is not the correct order of operations. <br> In the following applet, you can see, how your answer would have looked like with the angles provided. The blue and orange curves are the way they were presented before. Your solution is displayed in green. </p>
-[[jsxgraph width="500px" height="500px"]]
-var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-8, 8, 8, -10], axis:false, shownavigation: false, keepaspectratio:true});
-var box = [-3,3]
-var view = board.create('view3d',
-	[[-6, -3], [8, 8],
-	[box, box, box]],
-	{
-		/*planes*/
-		xPlaneRear: {visible:false},
-		yPlaneRear: {visible:false}	
-	});
-var xlabel=view.create('point3d',[0.9*box[1],0,(0.6*box[0]+0.4*box[1])], {size:0,name:"x"});
-var ylabel=view.create('point3d',[0,0.9*box[1],(0.6*box[0]+0.4*box[1])], {size:0,name:"y"});
-var zlabel=view.create('point3d',[
-        0.7*(0.6*box[0]+0.4*box[1]),
-        0.7*(0.6*box[0]+0.4*box[1]),
-        0.9*box[1]], 
-        {size:0,name:"z"});    
-       
-
-/* define curve */
-
-var c_base = view.create('curve3d', [
-	(t) =>2* Math.cos(t),
-	(t) =>2*  Math.sin(t),
-	(t)=> 0,
-	[0, Math.PI]], {strokeWidth: 2, strokeColor: '#1f84bc'});    
-
-
-
-/*curve in original applet*/
-
-var xcoordraw =  '{#res[1]#}';
-var ycoordraw =  '{#res[2]#}';
-var zcoordraw =  '{#res[3]#}';	
-			
-var xcurve = board.jc.snippet(xcoordraw, true, 't');
-var ycurve = board.jc.snippet(ycoordraw, true, 't');
-var zcurve = board.jc.snippet(zcoordraw, true, 't'); 
-
-var c_result = view.create('curve3d', [
-(t) => xcurve(t),
-(t) => ycurve(t),
-(t) => zcurve(t),
-[0, Math.PI]], {strokeWidth:2, strokeColor: '#EE442F'}); 
-
-/* curve based on student answer */
-
-var sxcoordraw =  '{#studentres[1]#}';
-var sycoordraw =  '{#studentres[2]#}';
-var szcoordraw =  '{#studentres[3]#}';	
-			
-var sxcurve = board.jc.snippet(sxcoordraw, true, 't');
-var sycurve = board.jc.snippet(sycoordraw, true, 't');
-var szcurve = board.jc.snippet(szcoordraw, true, 't'); 
-
-var c_student = view.create('curve3d', [
-(t) => sxcurve(t),
-(t) => sycurve(t),
-(t) => szcurve(t),
-[0, Math.PI]], {strokeWidth:2, strokeColor: 'green'}); 
-
-[[/jsxgraph]]
-``` 
 
 
 | ![Feedback](https://user-images.githubusercontent.com/120648145/233791702-da37c675-28a1-4a9e-9750-58060f9186f3.jpg) |
