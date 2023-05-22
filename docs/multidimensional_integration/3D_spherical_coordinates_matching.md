@@ -1,5 +1,5 @@
 ---
-title: Spherical Coordinates Matching 3 PRT
+title: Spherical Coordinates Matching
 usemathjax: true
 theme: minima
 ---
