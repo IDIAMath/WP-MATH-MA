@@ -1,5 +1,5 @@
 ---
-title: Rotation about two axis adaptive
+title: Rotating a curve about two axis adaptive
 usemathjax: true
 theme: minima
 ---
