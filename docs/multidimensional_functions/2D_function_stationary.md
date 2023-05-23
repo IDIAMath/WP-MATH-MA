@@ -8,7 +8,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/228473253-34cec890-9d5d-42f3-bceb-266f9d144708.jpg) |
+| ![First impression](https://private-user-images.githubusercontent.com/120648145/240399211-b4d9c702-b496-4037-b8f2-0edc5281594d.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODcwNTUyLCJuYmYiOjE2ODQ4NzAyNTIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5OTIxMS1iNGQ5YzcwMi1iNDk2LTQwMzctYjhmMi0wZWRjNTI4MTU5NGQuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkzMDUyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODkwMzUxZmM2MWIxZTg5NzRlNWM4YWQxYzUxMjU1NWUzMTUwYWQzYTAyMzNkMjM2MDcyMzJiMjExNTQxZjFkNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Zf7IZUUs6BGegx_qIWEswGB9hbkydjcry-qKybzvAHA) |
 |:--:|
 | *First impression of the question* |
 
@@ -26,7 +26,7 @@ The task is to move $x_0$ where it is stationary with the help of the tangent pl
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/228473243-2135f5ca-11eb-4238-be3e-8e414bfabce7.jpg) |
+| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240399208-4d58c82f-0c9b-4fa2-98de-e828057f0254.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODcwNTUyLCJuYmYiOjE2ODQ4NzAyNTIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5OTIwOC00ZDU4YzgyZi0wYzliLTRmYTItOThkZS1lODI4MDU3ZjAyNTQuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkzMDUyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzY5NDFiODY1Njc0Y2Q3MTc3OGFmYTcxYmQ3ZGJjNWUyYWJhNzQ3OGQwMDVkZjU2NzA2ZmRmNDRlYTdiN2M1MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.SWW_iJXqKckzUyHOt43252dTVSnOYuLkG0bVu4diqeI) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -39,7 +39,7 @@ Furthermore the teacher is able to change the function entirely to a function th
 
 Lastly, the reference solution `FdxRefSol` and`FdyRefSol` for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/228473256-e7a35e39-76cc-46a0-b279-8214bf8c3acf.jpg) |
+| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/240399213-da85c185-0300-4828-b738-2f3b1449ca9b.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODcwNTUyLCJuYmYiOjE2ODQ4NzAyNTIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5OTIxMy1kYTg1YzE4NS0wMzAwLTQ4MjgtYjczOC0yZjNiMTQ0OWNhOWIuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkzMDUyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzkwNzFlYzI2MzRhN2FiOWYzMzBiNzQ1MzE5OTZkYzg1YzBlYzBhNGIwMTE5MTA0YTlhMzE0ODc5MjliYjE1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.g6gxv_gbrNFGKpXBhGeL75MVzspckFWYWLm6U3qs2TE) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -128,7 +128,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
         F,
         box,
         box,
-    ], { strokeWidth: 0.5, stepU: 70, stepsV: 70 });
+    ], { strokeWidth: 1, strokeColor: "#1f84bc", stepU: 70, stepsV: 70 });
 
   // 3D points:
     // Point on xy plane
@@ -161,7 +161,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
         dFx_vec, dFy_vec,
         [-0.5,0.5], [-0.5,0.5]
     ], {
-        fillOpacity: 0.8, fillColor: 'red'
+        fillOpacity: 1, fillColor: '#EE442F'
     });
     var a = view.create('line3d', [A, dFx_vec, [0, 1]]);
     var b = view.create('line3d', [A, dFy_vec, [0, 1]]);
@@ -174,6 +174,15 @@ var stateInput = document.getElementById(ans1Ref);
 stateInput.style.display = 'none';
 
 board.update(); 
+
+/* axis labels*/
+                       var xlabel=view.create('point3d',[0.9*box[1],0,(0.6*box[0]+0.4*box[1])], {size:0,name:"x"});
+                       var ylabel=view.create('point3d',[0,0.9*box[1],(0.6*box[0]+0.4*box[1])], {size:0,name:"y"});
+                       var zlabel=view.create('point3d',[
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.9*box[1]], 
+                           {size:0,name:"z"});
 
 [[/jsxgraph]]
 <p>[[input:ans1]] </p><p>[[validation:ans1]]</p>
@@ -254,5 +263,4 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 
 
 ## Todo:
-* [ ] JSXGraph-Applet does not work in solution
-
+* [ ] 
