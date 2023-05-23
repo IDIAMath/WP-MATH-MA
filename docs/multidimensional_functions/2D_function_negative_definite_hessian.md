@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how local approximation and value of Hessian matrix are connected graphically (Representing mathematical entities)
 +	Using a visualization of Taylor-approximation student can derive qualitative statements about Hessian matrix at a given point (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/229279438-1aacbfe5-8caa-47d6-a9df-14b63527d90f.jpg) |
+| ![First impression](https://private-user-images.githubusercontent.com/120648145/240393153-63a33dfc-0c18-4175-899e-fc9521abae8a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzE1My02M2EzM2RmYy0wYzE4LTQxNzUtODk5ZS1mYzk1MjFhYmFlOGEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGUyNWZkYTg4NWY3YTMyMzljNGJkN2JmMGNlYWNhM2ZmZjM5NDkzMzI3NWFiY2ZmZTg1NjVlNDhkMTM3OTdhZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.eu0Ji3_mIM8StE7QZCdQxHLRmkYE3GTgPCh0EWp6TEk) |
 |:--:|
 | *First impression of the question* |
 
@@ -25,7 +25,7 @@ The student needs to find a point $(x,y)$, where the Hessian of the function is 
 ### Student perspective
 
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/229279435-3e35b960-fa91-4fc0-9d4f-be081c59bf25.jpg) |
+| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240393148-43fff879-5e74-4844-af9a-3c1754e18145.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzE0OC00M2ZmZjg3OS01ZTc0LTQ4NDQtYWY5YS0zYzE3NTRlMTgxNDUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTFmMmNhMGQwZWM5ZTU3Nzc3NGI2YmVhNGM3MWIxYzFiNWE0N2JlOTQzNTQwZTI5MjYzZjRmNGU5YzA4YmE0ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.YJwbK3Vf3yii8sFaXqVANidhaCriJgirXJ5yrDxUMS8) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -38,7 +38,7 @@ The student needs to find a point $(x,y)$, where the Hessian of the function is 
 ### Teacher perspective
 [describe what the teacher needs to do and can do]
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/229279437-6cc9313a-43b3-4299-bc29-652283726fe2.jpg) |
+| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/240393142-debd6a73-9d13-459a-a3ce-c557aefd6834.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzE0Mi1kZWJkNmE3My05ZDEzLTQ1OWEtYTNjZS1jNTU3YWVmZDY4MzQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTk3MGFkYzNlNDZkY2NhY2Q0NGU4MGU3OTE4NzllZTdiZTI3ODU1NGZkOTcyZjVhOWQ0ODk0ZjM0MTBkNTRhMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.0LajZGHY2CAfJ-7iC36WyW4WrfXDQIel865JxZ2hr08) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -270,7 +270,7 @@ if ev2s<0 then s2: -100;
  To be able to check, whether the Hessian is negative-definite or not, we need to check the sign of the eigenvalues. Since STACK expects us to check a numeric answer, we cannot assign the bools `true`and `false`. We create a similar variable instead with `s1` and `s2` having either of the values `100` or `-100`.
  If the eigenvalues are negative, we assign `s1`and `s2` the value `-100`.
 
-| ![PRT 1](https://user-images.githubusercontent.com/120648145/229279440-794bc921-f75c-4a10-ba48-df8213f67e9b.jpg) |
+| ![PRT 1](https://private-user-images.githubusercontent.com/120648145/240393138-d7ebcfc2-2546-4e2c-9052-0a4cf9cc2dd0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzEzOC1kN2ViY2ZjMi0yNTQ2LTRlMmMtOTA1Mi0wYTRjZjljYzJkZDAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDkxZWVlNjUxNzNiNTNiMTM5OThiMzc4YTBiMmJkYjM5NDE2ZTY4ZGVlMmY1MTljYjM2ZDY2MzUxNTFhMWRkOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.gZsqv_866ZneFSQtgYGYaidOZYyMxqLbJpqojn17mfg) |
 |:--:|
 | *Visualization of **PRT 1*** |
 
@@ -283,7 +283,7 @@ if ev2s<0 then s2: -100;
 |Node 1 true feedback | `<p>The first eigenvalue is smaller than zero.  </p>`|
 |Node 1 false feedback | `<p>The first eigenvalue is not smaller than zero. </p>`|
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/229279441-5e2712aa-3ebf-4943-8d1c-e471e3fa7d6c.jpg) |
+| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240393165-69ef01c9-0ee7-4772-b160-7a48aab814b3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzE2NS02OWVmMDFjOS0wZWU3LTQ3NzItYjE2MC03YTQ4YWFiODE0YjMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTg4NWQ3MTBjNjY1ODc3OTMyNzkxMDZmOTliM2YzOWVjZDgwNjM4ZDY3MDBjOTlhOGU4MzE5ZGY0ZTMwYWJlYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.F0sfe_AtwqHw1Nt1sjfRUgnAjqIScQlRneFmbisBf84) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -296,7 +296,7 @@ if ev2s<0 then s2: -100;
 |Node 2 true feedback | `<p>The second eigenvalue is also smaller than zero. You found a point with negative-definite hessian!</p><p>Congratulations!</p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*}\lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>` |
 |Node 2 false feedback | ```<p>The second eigenvalue is not smaller than zero. Unfortunately, your answer is not a point where the hessian is negative-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/229279430-df3b4d70-4720-47a6-858d-b3bd01f7bda1.jpg) |
+| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240393161-a1eb7993-21d4-4d2d-b2bd-ffb1c086c6e7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzE2MS1hMWViNzk5My0yMWQ0LTRkMmQtYjJiZC1mZmIxYzA4NmM2ZTcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjBhNmEyZGIyMTc5ODYyNzBkZWRiNzM3M2QyZTE5NmRjMjkwNmNiN2FkMGM0MjU3MjhmNzAxZWNlNmI0YWI2ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.A3dqg9umd4lv5fvlhON6ixFCkdg-_Kb962qXOy_v4bE) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -309,9 +309,9 @@ if ev2s<0 then s2: -100;
 |Node 3 true feedback | ```<p>The second eigenvalue is smaller than zero. Since the first eigenvalue was not smaller than zero, your answer is not a point where the hessian is negative-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
 |Node 3 false feedback | ```<p>The second eigenvalue is smaller than zero. Since the first eigenvalue was not smaller than zero, your answer is not a point where the hessian is negative-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\\lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/229279433-60403dda-cc0a-42e3-99dd-97af3f946342.jpg) |
+| ![Node 3](https://private-user-images.githubusercontent.com/120648145/240393157-e44c2ec4-8f1a-475b-88c8-b519d0ef5f19.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzE1Ny1lNDRjMmVjNC04ZjFhLTQ3NWItODhjOC1iNTE5ZDBlZjVmMTkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzE1NGY3ZmMzOWMyOTQ5NDU4NTNhOTIzNTU2M2ZlNDQ0OTQ2N2M0ODY2OTE1YmJiNGY4MDQ5MWRjMDQwYmZhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.b2EDDM7eotTv1MeS3RRUylSRi1Cqw96CG0OW5oroT1E) |
 |:--:|
 | *Values of **node 3*** |
 
 ## Todo:
-* [ ] Update figures
+* [x] Update figures
