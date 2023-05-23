@@ -23,8 +23,8 @@ the character of the Taylor approximation gives information about the hessian of
 The student needs to find a point $(x,y)$, where the Hessian of the function is negative-definite.
 
 ### Student perspective
-
-
+When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the local quadratical taylor approximation  is calculated and plotted in a range big enough to estimate the infinite development. 
+The student moves the plane to a point with an approximation that fulfils the requirements. The coordinates of the points are interpreted as answers.
 | ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240393148-43fff879-5e74-4844-af9a-3c1754e18145.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzE0OC00M2ZmZjg3OS01ZTc0LTQ4NDQtYWY5YS0zYzE3NTRlMTgxNDUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTFmMmNhMGQwZWM5ZTU3Nzc3NGI2YmVhNGM3MWIxYzFiNWE0N2JlOTQzNTQwZTI5MjYzZjRmNGU5YzA4YmE0ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.YJwbK3Vf3yii8sFaXqVANidhaCriJgirXJ5yrDxUMS8) |
 |:--:|
 | *When the student solves the problem* |
@@ -36,8 +36,12 @@ The student needs to find a point $(x,y)$, where the Hessian of the function is 
 | *Feedback on answer above* |
 
 ### Teacher perspective
-[describe what the teacher needs to do and can do]
+The teacher is able to give a list of possible values for parameters of the function. In order to do this, they simply need to modify the entries in the lists specified e.g. change `a1: rand([2,4,6,8,10])/5` to `a1:rand([2,3,4,5,6,7,8])/5`.
+Additionally, they can change the possible values for the $x$ and $y$ off-sets `x0` and `y0`. This offset is used to counteract the fact, that $(0,0)$ is a common stationary point.
 
+Furthermore the teacher is able to change the function entirely to a function that fits his needs. They can change the function defined by `F: -a1 * cos(%pi*a2 * (x-x0))* cos(%pi* a3 * (y-y0));` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before.
+
+Lastly, the reference solution `RefSolx` and`RefSoly` for an exemplatory stationary point must be adjusted to the function used.
 | ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/240393142-debd6a73-9d13-459a-a3ce-c557aefd6834.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4ODkwLCJuYmYiOjE2ODQ4Njg1OTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MzE0Mi1kZWJkNmE3My05ZDEzLTQ1OWEtYTNjZS1jNTU3YWVmZDY4MzQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkwMzEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTk3MGFkYzNlNDZkY2NhY2Q0NGU4MGU3OTE4NzllZTdiZTI3ODU1NGZkOTcyZjVhOWQ0ODk0ZjM0MTBkNTRhMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.0LajZGHY2CAfJ-7iC36WyW4WrfXDQIel865JxZ2hr08) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
