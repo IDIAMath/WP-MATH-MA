@@ -1,5 +1,5 @@
 ---
-title: Parametric Curve Matching elliptic 3 PRT
+title: Parametric Curve Matching elliptic
 usemathjax: true
 theme: minima
 ---
@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/236682418-61e7bd1c-0fa3-4b75-8230-ec5258de6b4d.png) |
+| ![First impression](https://private-user-images.githubusercontent.com/120648145/240879177-5b618c5d-9ede-4663-9277-e81c1714c867.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5NTQ2LCJuYmYiOjE2ODUwMDkyNDYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3OTE3Ny01YjYxOGM1ZC05ZWRlLTQ2NjMtOTI3Ny1lODFjMTcxNGM4NjcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwNzI2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODExYjExOTUxYzZjNzZmNWQxZDkyM2RmMjUyYzE0NTM5NjRkMDUyNWY2OGExZDcwZjcwNDljNGJlM2YzNWM3MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.D75tqYaG41q0XvhBtrWAThRioWUyDPWoh1itqNh4D6w) |
 |:--:|
 | *First impression of the question* |
 
@@ -31,7 +31,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/236682417-01ffde85-3915-4811-9ce8-255519a02c62.png) |
+| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240879180-93f9487f-6df7-456f-a53f-d877ee0ea456.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5NTQ2LCJuYmYiOjE2ODUwMDkyNDYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3OTE4MC05M2Y5NDg3Zi02ZGY3LTQ1NmYtYTUzZi1kODc3ZWUwZWE0NTYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwNzI2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODkzMTdhNTMxOThmMDhhMWZkZDAxYzE5NTA1ZTM1ZTU2NmU1MzdiNDIxMjlhNGNhYjc1OWRjMDczZDE0OGIyNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.kKWpyu57OKyYkfWmycSOUN8xeZjVV7CjgvaoHWZbkDY) |
 |:--:|
 | *When the student solves the problem* |
 
