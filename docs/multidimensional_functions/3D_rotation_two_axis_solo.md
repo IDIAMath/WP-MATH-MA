@@ -42,8 +42,8 @@ They are presented with angles of rotation for each of the coordinate axis. They
 ### Teacher perspective
 The teacher is able to give a list of possible values for angles of rotation. In order to do this, they simply need to modify the entries in the lists specified e.g. change `alpahr : rand([1,2,3,4,5,6])/4*%pi;` to `phaser : rand([1/4,1/3,1/2,2/3])*%pi;`. 
 
-Additionally, they can change the roational matrices to the ones they desire. In order to do this, they need to change the entries of `L1`, `L2` and `L3`. The first entry is the first row of the matrix.
-Also, they can change the curve that is rotated. To do this, they need to change the entries of `Lv`. Here the fisrt entry is the first component, e.g. the $x$-coordinate.
+Additionally, they can change the rotational matrices to the ones they desire. In order to do this, they need to change the entries of `L1`, `L2` and `L3`. The first entry is the first row of the matrix.
+Also, they can change the curve that is rotated. To do this, they need to change the entries of `Lv`. Here the first entry is the first component, e.g. the $x$-coordinate.
 They will need to change the question text as well to match the new curve and/or rotational matrices.
 
 For an explanation of the processing of the values read **Question variables** and **Question text**.
