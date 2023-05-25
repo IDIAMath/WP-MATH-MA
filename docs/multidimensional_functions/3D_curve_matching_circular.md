@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/236681223-d61887d2-2e14-4659-a9bc-f21fcf9d7f80.png) |
+| ![First impression](https://private-user-images.githubusercontent.com/120648145/240877413-8e870e39-f04d-4ef8-a88b-4cdac35d61e6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5MTQ2LCJuYmYiOjE2ODUwMDg4NDYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3NzQxMy04ZTg3MGUzOS1mMDRkLTRlZjgtYTg4Yi00Y2RhYzM1ZDYxZTYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwMDQ2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDM1Y2NmNjZlYWM3MDhhYWM4ZTA5MTkyZTU2OTNhMGY4NDg5MDkwNzRlMmY2MWRlNjU4ZjJjMjAzYjYxZDYxMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.tbVbhw8YLH_4Nob4icMhjciki4DE0HLnxQHo-L9o2A8) |
 |:--:|
 | *First impression of the question* |
 
@@ -30,7 +30,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/236681209-bf166199-3e00-4289-a4a2-172213ada9f4.png) |
+| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240877420-dd831d6e-8ccc-41da-b374-f76fa29848c4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5MTQ2LCJuYmYiOjE2ODUwMDg4NDYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3NzQyMC1kZDgzMWQ2ZS04Y2NjLTQxZGEtYjM3NC1mNzZmYTI5ODQ4YzQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwMDQ2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzIzZDhiNWM1OWI4ZTQ0MGY5ZTY5ZTU0ZTRjNDU2ZjNhMDBjNjdlZjg4NDA2MzZiOTIxYzY4MzVlOTcxMzQ2YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.gKD_47YZT8D_MG-QeBZOVIK31_qL13IBhCIIxquhNuc) |
 |:--:|
 | *When the student solves the problem* |
 
