@@ -1,5 +1,5 @@
 ---
-title: Parametric Curve Matching elliptic helix 3 PRT
+title: Parametric Curve Matching elliptic helix
 usemathjax: true
 theme: minima
 ---
@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/236683967-722681a1-9698-4b98-b527-5e9f8bbe522f.png) |
+| ![First impression](https://private-user-images.githubusercontent.com/120648145/240879530-15da17e5-32c2-4c13-9fd5-ae2f91ff4afe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5NjQ0LCJuYmYiOjE2ODUwMDkzNDQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3OTUzMC0xNWRhMTdlNS0zMmMyLTRjMTMtOWZkNS1hZTJmOTFmZjRhZmUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwOTA0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGI3ODRkMWVjYzZiOGM1ZDQyYTc1ZWUwNGNhZGM0OWZiYjRkY2QxNWJjMzgxZDEyYmNkNmY1ZTczM2Q4MjZlYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.nXbSKKSJKOJuKaOAIzHgmBUdO3rUPO2-6hmoMxooi_g) |
 |:--:|
 | *First impression of the question* |
 
@@ -35,7 +35,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/236683966-7f2e35fa-cf46-49df-8554-57fca54b1a31.png) |
+| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240879538-7060036e-8961-434f-bdda-da2dadb99332.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5NjQ0LCJuYmYiOjE2ODUwMDkzNDQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3OTUzOC03MDYwMDM2ZS04OTYxLTQzNGYtYmRkYS1kYTJkYWRiOTkzMzIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwOTA0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWMyMTZjM2JjNDkxZjY4MDVkNjllZDRkN2NjOTgxN2ZmZmQxYTM0MWE1MjdlOWNhODA2NTNiYTVhMWIxNmIyZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.KWNVuqUImU_HuJ9hP6Uk2jI8UhOvqe1at-Ng22AXh5g) |
 |:--:|
 | *When the student solves the problem* |
 
