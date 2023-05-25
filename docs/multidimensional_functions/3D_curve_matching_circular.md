@@ -1,5 +1,5 @@
 ---
-title: Parametric Curve Matching circular 2 PRT
+title: Parametric Curve Matching circular
 usemathjax: true
 theme: minima
 ---
