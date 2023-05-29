@@ -1,5 +1,5 @@
 ---
-title: Example Vectorfield (curl)
+title: Curl of a vector field
 usemathjax: true
 theme: minima
 ---
@@ -49,7 +49,7 @@ The teacher can remove entries from or add entries to the list `Vlist` that cont
 
 
 #### Question variable code
-```jacascript
+```
 /* define the list of vector fields */
 Vlist:[[z,x,y],[y,-x,0],[x,y,z]];
 
@@ -93,7 +93,7 @@ tans:Vlistcurl[Vindex];
 
 
 ```javascript
-<p>Given is a vector field  \(V:\mathbb{R}^3\to\mathbb{R}^3\) by \(V(x,y,z):=\begin{pmatrix}{@Vx@}\\{@Vy@}\\{@Vz@}\end{pmatrix}\) as shown in the diagram.</p>
+<p>Given is a vector field  \(V:\mathbb{R}^3\to\mathbb{R}^3\) by \( V(x,y,z) := \begin{pmatrix}{@Vx@} \\ {@Vy@} \\ {@Vz@}\end{pmatrix} \) as shown in the diagram.</p>
 
 <p>Select the vector fields \(\hat V\), so that \(\hat V = \nabla \times V\) is valid.</p>
 
@@ -131,9 +131,9 @@ function vectorField(){
                  vector.push(view.create('line3d',[[i, j,k ],
                                 [TF1(i,j,k),TF2(i,j,k),TF3(i,j,k)],[0,scaleVec]],
                                 {point: { withLabel: false},
-                                point1: {visible: true, size: 1, color: 'red',strokeColor: 'red', withLabel: false},
+                                point1: {visible: true, size: 1, color: '#EE442F',strokeColor: '#EE442F', withLabel: false},
                                 point2: {visible: false, withLabel: false},
-                                lastArrow:true, fixed: true, strokeColor:'red', highlight:false})
+                                lastArrow:true, fixed: true, strokeColor:'#EE442F', highlight:false})
                             );
 
             }
@@ -145,6 +145,16 @@ board.unsuspendUpdate();
 vectorField();
 
 board.update();
+
+                      /* axis labels*/
+                       var xlabel=view.create('point3d',[0.9*box[1],0,(0.6*box[0]+0.4*box[1])], {size:0,name:"x"});
+                       var ylabel=view.create('point3d',[0,0.9*box[1],(0.6*box[0]+0.4*box[1])], {size:0,name:"y"});
+                       var zlabel=view.create('point3d',[
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.7*(0.6*box[0]+0.4*box[1]),
+                           0.9*box[1]], 
+                           {size:0,name:"z"});
+
 [[/jsxgraph]]
 Select \(\hat V\).
 <p>[[input:ans1]] [[validation:ans1]]</p>
@@ -189,7 +199,7 @@ None needed, since `ans1` is selected by ticking a button.
 |Answer Test | AlgEquiv|
 |SAns | `ans1`|
 |TAns | `tans`| 
-|Node 1 true feedback | `<p> Well done, you selected the correct vector field. You can now try to calculate the curl of more complcated vector fields. The process is always the same.</p>`|
+|Node 1 true feedback | `<p> Well done, you selected the correct vector field. You can now try to calculate the curl of more complicated vector fields. The process is always the same.</p>`|
 |Node 1 false feedback | `<p> You did not select the correct vector field. Please compute \(\nabla \times V\) for the given field \(V(x,y,z):=\begin{pmatrix}{@Vx@}\\{@Vy@}\\{@Vz@}\end{pmatrix}\). </p>`|
 
 
