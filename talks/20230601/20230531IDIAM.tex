@@ -1,0 +1,168 @@
+% ..............................................................................
+% Demo of the fau-beamer template.
+%
+% Copyright 2022 by Tim Roith <tim.roith@fau.de>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+%
+% ------------------------------------------------------------------------------
+\documentclass[final]{beamer}
+
+
+% ========================================================================================
+% Theme: inner, outer, font and colors
+% ----------------------------------------------------------------------------------------
+\usepackage[institute=Nat,
+			ExtraLogo = template-art/DDS_blau.png,
+			%WordMark=None
+			aspectratio=169,
+			size=18
+		   ]{styles/beamerthemefau}
+% ----------------------------------------------------------------------------------------
+% Input and output encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% ----------------------------------------------------------------------------------------
+% Language settings
+\usepackage[english]{babel}
+
+
+% ========================================================================================
+% Fonts
+% - Helvet is loaded by styles/beamerfonts
+% - We use serif for math environements
+% - isomath is used for upGreek letters
+% ----------------------------------------------------------------------------------------
+\usepackage{isomath}
+\usefonttheme[onlymath]{serif}
+\usepackage{exscale}
+\usepackage{anyfontsize}
+\setbeamercolor{alerted text}{fg=BaseColor}
+% ----------------------------------------------------------------------------------------
+% custom commands for symbols
+\usepackage{styles/symbols}
+
+
+% ========================================================================================
+% Setup for Titlepage
+% ----------------------------------------------------------------------------------------
+\title[Multivariate Analysis]{Interactive Formative Assessments in Multivariate Analysis}
+\subtitle{Now possibilities in JSXGraph}
+\author[Ammon, Rathmann]{Nico Ammon, Wigand Rathmann}
+\institute[FAU]{Friedrich-Alexander Universit\"{a}t Erlangen-N\"{u}rnberg, Department of Data Science}
+\date{1. Juni 2023}
+
+
+% ========================================================================================
+% Bibliography
+% ----------------------------------------------------------------------------------------
+\usepackage{csquotes}
+\usepackage[style=alphabetic, %alternatively: numeric, numeric-comp, and other from biblatex
+			defernumbers=true,
+			useprefix=true,%
+			giveninits=true,%
+			hyperref=true,%
+			autocite=inline,%
+			maxcitenames=5,%
+			maxbibnames=20,%
+			uniquename=init,%
+			sortcites=true,% sort citations when multiple entries are passed to one cite command
+			doi=true,%
+			isbn=false,%
+			url=false,%
+			eprint=false,%
+			backend=biber%
+		   ]{biblatex}
+\addbibresource{bibliography.bib}
+\setbeamertemplate{bibliography item}[text]
+
+
+% ========================================================================================
+% Hyperref and setup
+% ----------------------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks = true,
+	final=true,
+	plainpages=false,
+	pdfstartview=FitV,
+	pdftoolbar=true,
+	pdfmenubar=true,
+	pdfencoding=auto,
+	psdextra,
+	bookmarksopen=true,
+	bookmarksnumbered=true,
+	breaklinks=true,
+	linktocpage=true,
+	urlcolor=BaseColor,
+	citecolor=BaseColor,
+	linkcolor=BaseColor
+}
+
+
+% ========================================================================================
+% Additional packages
+% ----------------------------------------------------------------------------------------
+
+
+
+% ========================================================================================
+% Various custom commands
+% ----------------------------------------------------------------------------------------
+\pdfsuppresswarningpagegroup=1 %solves the PDF inclusion problem
+% Change color for cite locally
+\newcommand{\colorcite}[3]{{\hypersetup{citecolor=#1}{\cite[#2]{#3}}}}
+% ----------------------------------------------------------------------------------------
+
+
+% ========================================================================================
+% The main document
+% ----------------------------------------------------------------------------------------
+\begin{document}
+% Title page
+\begin{trueplainframe}{}
+\titlepage%
+\end{trueplainframe}
+
+% Introduction
+\begin{frame}[t]{Introduction}{What will be demonstrated?}
+
+\begin{block}{Focus}
+\begin{itemize}
+\item Visualization aspects 
+    \begin{itemize}
+    \item coordinate transformation:
+
+    \begin{itemize}
+    \item    polar coordinates,
+    \item    spherical coordinates,
+    \item    general coordinate transformation,
+    \item    cylindriacal coordinate transformation
+    \end{itemize}
+    \item calculus of function with two variable,
+    \item visualization of vector fields.
+    \end{itemize}
+    \end{itemize}
+\end{block}
+\vfill
+
+\centerline{\textbf{ERASMUS+ Interactive Digital Assessment in Mathematics}}
+
+\vfill
+
+    \end{frame}
+
+% Outline
+%\begin{frame}[t]{Outline}
+%\tableofcontents
+%\end{frame}
+
+
+% input exmple sections
+\input{content.tex}
+
+\begin{frame} [t]{}
+
+\end{frame}
+\end{document} 
