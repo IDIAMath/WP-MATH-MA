@@ -1,5 +1,5 @@
 ---
-title: Polar Coordinates Matching 2 PRT
+title: Polar Coordinates Matching algebraic
 usemathjax: true
 theme: minima
 ---
@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to polar coordinates  (Handling mathematical symbols and formalism)
 +	Student can think of an area that is transformed to the given area in polar coordinates and check graphically (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools )
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/212542760-c58e002c-92df-4c7d-9c1b-2b6b40a8efbb.png) |
+| ![First impression](https://private-user-images.githubusercontent.com/120648145/239844961-0f693404-e439-40e5-b6e0-2dcd1a570a62.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQzMjczLCJuYmYiOjE2ODQ3NDI5NzMsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg0NDk2MS0wZjY5MzQwNC1lNDM5LTQwZTUtYjZlMC0yZGNkMWE1NzBhNjIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDgwOTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Yzc4YTVlMmZiY2QzM2UyZWJjZGQzNzcwNTA1ODdiYjQ1NzUyMGQ1YWUwN2Y3ZTlmMmU3ZjdjYWFmOGEzMjRiZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.N3Kau1uK354xdxV8c-mp0qTp1QOHvMkJZ6tXArjNiQE) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,7 +29,7 @@ The rectangle in the cartesian coordinate system is transformed to polar coordin
 
 It is the aim to match the changing area to the given area. Then, the interval bounds can be read from the cartesian coordinate system and given as input.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/212542754-54d58ab2-295f-4d78-907b-e7918aab21d9.png) |
+| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/239844967-9b5de10b-57f8-42b1-b71d-e1ba2a15665b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQzMjczLCJuYmYiOjE2ODQ3NDI5NzMsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg0NDk2Ny05YjVkZTEwYi01N2Y4LTQyYjEtYjcxZC1lMWJhMmExNTY2NWIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDgwOTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjU1MWM2MmY2MDFjZTVmOWZhMzBiMDk1OGIyYTFiOWMwMzY3ODRjMjAyZWU0ODg4ODI2NGY2ZWI4NzlkOTdkMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.xbp4at9eLTvkC-Ke2cu9jL-phg0hZ7f5_XIQdu0TJts) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -41,7 +41,7 @@ Another example - in the case of the radius - is the following: change `radius1:
 
 **They should not change any of the values `p1x,...,p4y`!**
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/212542757-80e34d65-04a7-4cba-b2a2-c7f573ddcdb7.png) |
+| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/239844949-d062d708-7a63-4641-ad8e-c173c6bb3d2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQzMjczLCJuYmYiOjE2ODQ3NDI5NzMsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg0NDk0OS1kMDYyZDcwOC03YTYzLTQ2NDEtYWQ4ZS1jMTczYzZiYjNkMmEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDgwOTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjU1ZDlhOGVlNWJlMzQ0ZGM3YWY3ZTZhOGI3MzM5YTBkNTUxMjQyMjg2YWJmM2ExNzZmNjZmOGM5OWU2ZmJmZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.GpMoPONDVkGa89ynjS2kyhVkpKjNs0Tx08TDFljv_JE) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -58,22 +58,31 @@ Another example - in the case of the radius - is the following: change `radius1:
 
 #### Question variable code
 ```jacascript
-ranger:rand([1/6,1/4,1/3,1/2,2/3,3/4,5/6,1]);
-startr:rand([1/6,1/4,1/3,1/2,2/3,3/4,5/6,1]);
+ranger:rand([1/6,1/4,1/3,1/2,2/3,3/4]);
+startr:rand([1/6,1/4,1/3,1/2,2/3,3/4]);
 /*radius*/
-radius1: rand(6)/2;
-radius2: radius1+(rand(6)+1)/2;
+radius1: (rand(5)+1)/2;
+radius2: radius1+(rand(4)+1)/2;
+
+
 /* prepare JSXGraph values */
 numer:true;
-p1x:radius1*cos(startr*%pi);
-p1y:radius1*sin(startr*%pi);
-p2x:radius2*cos(startr*%pi);
-p2y:radius2*sin(startr*%pi);
-p3x:radius2*cos((startr+ranger)*%pi)
-p3y:radius2*sin((startr+ranger)*%pi)
-p4x:radius1*cos((startr+ranger)*%pi)
-p4y:radius1*sin((startr+ranger)*%pi)
+start: startr*%pi;
+range: ranger*%pi;
+p1x:radius1*cos(start);
+p1y:radius1*sin(start);
+p2x:radius2*cos(start);
+p2y:radius2*sin(start);
+p3x:radius2*cos(start+range);
+p3y:radius2*sin(start+range);
+p4x:radius1*cos(start+range);
+p4y:radius1*sin(start+range);
+
 numer:false;
+
+/* symbolic values for checking*/
+startr: startr*%pi;
+ranger: ranger*%pi;
 ```
 
 ### Question Text
@@ -97,10 +106,9 @@ numer:false;
 
 ```javascript
 <p>Given is a 2D area with polar geometry. It is defined by the intervals for each of the polar coordinates \(r\) and \(\phi\). Here \(r\) is the radial coordinate and \(\phi\) is the angle starting at the \(x\)-axis oriented counterclockwise with \(\phi\in [0, 2 \pi]\). </p>
-<p> The area is contained in the interval between a smaller and a bigger value of the coordinates. </p>
-<p> The point of view can be rotated with help of the sliders in the plot. </p>
 
-<p> <b>Reconstruct the intervals that define the given area by matching the areas using the lower coordinate system. </b> </p> 
+
+<p> Reconstruct the intervals that define the given area by matching the areas using the right coordinate system. </p> 
 
 <p> Write the interval in the form \(r\in\)<code>[r1,r2]</code> and  \(\phi\in\)<code>[phi1,phi2]</code>, e.g. <code>[1/2,2]</code> and <code>[1/2*pi,2*pi]</code>.</p>
 
@@ -111,30 +119,37 @@ numer:false;
 [[ jsxgraph width="250px" height="250px"]] [[/ jsxgraph ]]
 
 [[jsxgraph width='0px' height='0px' input-ref-ans1='ans1Ref']]
+
 //handling divids
 var divid3 = divid;
 console.log(divid3);
 var parts = divid.split('-');
 console.log(parts);
+
 parts[2] = parts[2] -1;
 var divid2 = parts.join('-');
 console.log(divid2);
+
 parts[2] = parts[2] -1;
 var divid1 = parts.join('-');
 console.log(divid1);
+
 //content
-var board = JXG.JSXGraph.initBoard(divid1,{boundingbox : [-5, 5, 5,-5], axis:true, shownavigation : false});
+var board = JXG.JSXGraph.initBoard(divid2,{boundingbox : [-5, 5, 5,-5], axis:true, shownavigation : false});
+
 var center =board.create("point",[0,0],{name : "",visible:false,fixed:true});
 var p1 = board.create("point",[{#p1x#},{#p1y#}],{name : "P1",visible:false,fixed:true,});
 var p2 = board.create("point",[{#p2x#},{#p2y#}],{name : "P2",visible:false,fixed:true});
 var p3 = board.create("point",[{#p3x#},{#p3y#}],{name : "P3",visible:false,fixed:true});
 var p4 = board.create("point",[{#p4x#},{#p4y#}],{name : "P4",visible:false,fixed:true});
-var c1 = board.create("arc",[center,p1,p4],{frozen:true});
-var c2 = board.create("line",[p4,p3],{frozen:true, straightFirst:false, straightLast:false});
-var c3 = board.create("arc",[center,p2,p3],{frozen:true});
-var c4 = board.create("line",[p2,p1],{frozen:true, straightFirst:false, straightLast:false});
+var c1 = board.create("arc",[center,p1,p4],{frozen:true, strokeColor: "#1f84bc"});
+var c2 = board.create("line",[p4,p3],{frozen:true, straightFirst:false, straightLast:false, strokeColor: "#1f84bc"});
+var c3 = board.create("arc",[center,p2,p3],{frozen:true, strokeColor: "#1f84bc"});
+var c4 = board.create("line",[p2,p1],{frozen:true, straightFirst:false, straightLast:false, strokeColor: "#1f84bc"});
 //stack_jxg.bind_point(ans1Ref,p1);
-var board2 = JXG.JSXGraph.initBoard(divid2,{boundingbox : [-1, 5, 5,-0.5], axis:true, 
+
+
+var board2 = JXG.JSXGraph.initBoard(divid1,{boundingbox : [-1, 5, 5,-0.5], axis:true, 
   defaultAxes: {
     	y: {
       	ticks: {
@@ -148,13 +163,17 @@ var board2 = JXG.JSXGraph.initBoard(divid2,{boundingbox : [-1, 5, 5,-0.5], axis:
   board2.addChild(board);
   board.suspendUpdate();
   board2.suspendUpdate();
+
 // var center2 =board2.create("point",[0,0],{name : "",visible:false,fixed:true});
 var p12 = board2.create("point",[0.5,1.57],{name : "P1",visible:true});
 var p32 = board2.create("point",[2.5,3.14],{name : "P2",visible:true});
+
 var p22 = board2.create("point",[function () {return p32.X()},function () {return p12.Y()}],{name : "P3",visible:false});
 var p42 = board2.create("point",[function () {return p12.X()},function () {return p32.Y()}],{name : "P4",visible:false});
 var polyg1 = board2.create("polygon",[p12,p22,p32,p42],{name : ""});
+
 //stack_jxg.bind_point(ans1Ref,p1);
+
 var p1p = board.create("point",[function () {return p12.X()*Math.cos(p12.Y());},
                             function () {return p12.X()*Math.sin(p12.Y());}],
                             {name : "P1",visible:false});
@@ -167,13 +186,16 @@ var p3p = board.create("point",[function () {return p32.X()*Math.cos(p32.Y());},
 var p4p = board.create("point",[function () {return p12.X()*Math.cos(p32.Y());},
                             function () {return p12.X()*Math.sin(p32.Y());}],
                             {name : "P4",visible:false});
-var c1p = board.create("arc",[center,p1p,p4p],{frozen:true,strokeColor:'red'});
-var c2p = board.create("line",[p4p,p3p],{frozen:true,strokeColor:'red', straightFirst:false, straightLast:false});
-var c3p = board.create("arc",[center,p2p,p3p],{frozen:true,strokeColor:'red'});
-var c4p = board.create("line",[p2p,p1p],{frozen:true,strokeColor:'red', straightFirst:false, straightLast:false});
+var c1p = board.create("arc",[center,p1p,p4p],{frozen:true,strokeColor: '#EE442F'});
+var c2p = board.create("line",[p4p,p3p],{frozen:true,strokeColor: '#EE442F', straightFirst:false, straightLast:false});
+var c3p = board.create("arc",[center,p2p,p3p],{frozen:true,strokeColor: '#EE442F'});
+var c4p = board.create("line",[p2p,p1p],{frozen:true,strokeColor: '#EE442F', straightFirst:false, straightLast:false});
+
 board.unsuspendUpdate();
 board2.unsuspendUpdate();
+
 [[/ jsxgraph]]
+
 <p>\(r\in\) [[input:ans1]] [[validation:ans1]]</p>
 <p>\(\phi\in\) [[input:ans2]] [[validation:ans2]]</p>
 ```
@@ -192,7 +214,7 @@ board2.unsuspendUpdate();
 |property | setting| 
 |:---|:---|
 |Input type | Algebraic input|
-|Model answer | `[startr*%pi, (startr+ranger)*%pi]` defined in **Question variables** |
+|Model answer | `[startr, startr+ranger]` defined in **Question variables** |
 | Forbidden words | none |
 | Forbid float | Yes |
 | Student must verify | Yes |
@@ -264,15 +286,15 @@ r2:ans1[2]
 
 ### prt2
 
-| ![prt2](https://user-images.githubusercontent.com/120648145/212542770-dc4606a0-a03c-4a93-a18a-d9534a70fd8a.png) |
+| ![prt2](https://private-user-images.githubusercontent.com/120648145/239844964-8518da9b-5b54-4a5a-93cc-6e3330e367f6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQzMjczLCJuYmYiOjE2ODQ3NDI5NzMsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg0NDk2NC04NTE4ZGE5Yi01YjU0LTRhNWEtOTNjYy02ZTMzMzBlMzY3ZjYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDgwOTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWY1MTFkZjg1MWMzNTg4NzlkMzkyMzEzMDU5MWMwMjFjN2E2Yzk0ZmM3ODViMDJkY2U4NjAzYWEyZmM2OGVjYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.1J_2Y5CB6j_p1ef33cw6O9ni2hySMuRtgXmnP2IRjr4) |
 |:--:|
 | *Display of **prt2*** |
 
 Feedback variables:
 
 ```
-phi1:ans2[1]/%pi
-phi2:ans2[2]/%pi
+phi1:ans2[1]
+phi2:ans2[2]
 ``` 
 
 
@@ -316,8 +338,8 @@ phi2:ans2[2]/%pi
 | *Values of **node 3 of prt 2*** |
 
 ## Todo:
-* [ ] make sure variable names and code are consistent with other tasks
+* [x] make sure variable names and code are consistent with other tasks
 * [x] evaluate whether the JSXGraph values should be specified in Question variables or not
-* [ ] make sure random values fit nicely in applet
+* [x] make sure random values fit nicely in applet
 * [x] place applets side by side
-* [ ] change colours to colourblind palette
+* [x] change colours to colourblind palette

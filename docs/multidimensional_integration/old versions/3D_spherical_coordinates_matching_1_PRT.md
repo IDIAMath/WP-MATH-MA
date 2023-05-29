@@ -1,5 +1,5 @@
 ---
-title: Spherical Coordinates Matching 3 PRT
+title: Spherical Coordinates Matching
 usemathjax: true
 theme: minima
 ---
@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to spherical coordinates  (Handling mathematical symbols and formalism)
 +	Student can take a volume with spherical geometry and reconstruct the limits of its radius and angles (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/213387766-703c02a6-24e3-48ff-8bb3-6a84fcc26312.png) |
+| ![First impression](https://user-images.githubusercontent.com/120648145/212374110-86f4e6a0-5228-4d01-883f-88e26e326e31.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -25,7 +25,7 @@ The student sees a cartesian coordinate system and a volume with spherical geome
 
 It is the task to reconstruct the intervals of a 3D integration in spherical coordinates that results in the volume given. In order to do this they have to find out the radius and angles by matching a second volume to the given one using sliders. If they overlap exactly, the interval bounds can be read from the sliders. The values have to be given in an exact algebraic manner.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/213387762-e161b20f-0044-44a4-81e7-6ad1feb5ea50.png) |
+| ![Click draw button](https://user-images.githubusercontent.com/120648145/212374105-a9bbc488-1e79-444a-a112-914764cb0bd0.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -39,7 +39,7 @@ For an explanation of the processing of the values read **Question variables** a
 
 **It is important to make sure that $\psi \le \pi$ and $\phi \le 2 \pi$, when changing values!** 
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/213387764-ddd75928-0c57-40bc-8e80-a75cfbac11aa.png) |
+| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/212374103-87823772-a35f-46d7-81e7-6b010fedf85e.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -301,10 +301,13 @@ Feedback variables:
 ```
 r1:ans1[1]
 r2:ans1[2]
-
+phi1:ans2[1]
+phi2:ans2[2]
+psi1:ans3[1]
+psi2:ans3[2]
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/213387768-2d3b462f-d6db-4bf0-812c-92888d342b13.png) |
+| ![prt1](https://user-images.githubusercontent.com/120648145/212374099-d2e67317-ab88-49b7-825d-ab784d56894f.PNG) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -316,11 +319,11 @@ r2:ans1[2]
 |Answer Test | AlgEquiv|
 |SAns | `r1`|
 |TAns | `radius1`| 
-|Node 1 true feedback | `<p>Nice, you found the correct value for \(r_1\)! Good job!</p>`|
-|Node 1 false feedback |`<p>The value you gave for \(r_1\) is not correct.  </p>`|
+|Node 1 true feedback | `<p>Nice, you found the correct value for \(r_1\)! Good job! </p>`|
+|Node 1 false feedback |`<p>The value you gave for \(r_1\) is not correct. Try matching the volumes using the sliders and read the smaller radius from the coordinate system. This is the lower bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/213387771-ef4a2e53-17a4-4f8c-be1e-4bafcda69f98.png) |
+| ![Node 1](https://user-images.githubusercontent.com/120648145/212374090-381817c1-ab5a-4b6a-81f9-605ee5e34a60.PNG) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -330,118 +333,56 @@ r2:ans1[2]
 |Answer Test | AlgEquiv|
 |SAns | `r2`|
 |TAns | `radius2`| 
-|Node 2 true feedback | `<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p> Perfect! You got both radiuses right! </p>`|
-|Node 2 false feedback |`<p>The value you gave for \(r_2\) is not correct. Try matching the points perfectly and read the larger radius. This is the upper bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
-
-| ![Node 2](https://user-images.githubusercontent.com/120648145/213387772-e2f9700c-9be6-452f-b2d6-4f4accb05aad.png) |
-|:--:|
-| *Values of **node 2*** |
-
+|Node 2 true feedback | `<p>Nice, you found the correct value for \(r_2\)! Good job!</p>`|
+|Node 2 false feedback |`<p>The value you gave for \(r_2\) is not correct. Try matching the volumes using the sliders and read the smaller radius from the coordinate system. This is the upper bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
 ### Node 3
  |property | setting| 
-|:---|:---|
-|Answer Test | AlgEquiv|
-|SAns | `r2`|
-|TAns | `radius2`| 
-|Node 3 true feedback | `<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p>Check whether you did anything different here than for \(r_1\) and try again. </p>`|
-|Node 3 false feedback |`<p>The value you gave for \(r_2\) is also not correct. Try matching the points perfectly and read the radiuses. The smaller radius is the lower bound of the interval. The larger radius is the upper bound of the interval. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
-
-| ![Node 3](https://user-images.githubusercontent.com/120648145/213387774-1a6e4ca3-07b9-4abb-a8d9-070b4ce98399.png) |
-|:--:|
-| *Values of **node 3*** |
-
-
-### prt2
-
-Feedback variables:
-```
-phi1:ans2[1]
-phi2:ans2[2]
-
-```
-
-| ![prt2](https://user-images.githubusercontent.com/120648145/213387750-dffabf0b-a3ab-4b59-aa2f-d9dab89f9691.png) |
-|:--:|
-| *Visualization of **prt2*** |
-
-
-
-### Node 1
-|property | setting| 
 |:---|:---|
 |Answer Test | AlgEquiv|
 |SAns | `phi1`|
 |TAns | `phistartr`| 
-|Node 1 true feedback | `<p>Nice, you found the correct value for \(\phi_1\)! Good job!<p>`|
-|Node 1 false feedback |`<p>The value you gave for \(\phi_1\) is not correct.  </p>`|
+|Node 3 true feedback | `<p>Nice, you found the correct value for \(\phi_1\)! Good job!<p>`|
+|Node 3 false feedback |`<p>The value you gave for \(\phi_1\) is not correct. Try matching the volumes using the sliders and read the smaller angle from the coordinate system taking into account its orientation. This is the lower bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation. </p>`|
 
-
-
-### Node 2
+### Node 4
  |property | setting| 
 |:---|:---|
 |Answer Test | AlgEquiv|
 |SAns | `phi2`|
-|TAns | `phistartr + phiranger`| 
-|Node 2 true feedback | `<p>Nice, you found the correct value for \(\phi_2\)! Good job!</p> <p> Perfect! You got both values of \(\phi\) right! </p>`|
-|Node 2 false feedback |`<p>The value you gave for \(\phi_2\) is not correct. Try matching the points perfectly and read the bigger angle. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
+|TAns | `phistartr+phiranger`| 
+|Node 4 true feedback | `<p>Nice, you found the correct value for \(\phi_2\)! Good job!<p>`|
+|Node 4 false feedback |`<p>The value you gave for \(\phi_2\) is not correct. Try matching the volumes using the sliders and read the larger angle from the coordinate system taking into account its orientation. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation. </p>`|
 
-### Node 3
+### Node 5
  |property | setting| 
-|:---|:---|
-|Answer Test | AlgEquiv|
-|SAns | `phi2`|
-|TAns | `phistartr + phiranger`| 
-|Node 3 true feedback | `<p>Nice, you found the correct value for \(\phi_2\)! Good job!</p> <p>Check whether you did anything different here than for \(\phi_1\) and try again. </p>`|
-|Node 3 false feedback |`<p>The value you gave for \(\phi_2\) is also not correct. Try matching the points perfectly and read the angles. The smaller angle is the lower bound of the interval. The larger angle is the upper bound of the interval. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
-
-### prt3
-
-Feedback variables:
-```
-psi1:ans3[1]
-psi2:ans3[2]
-
-```
-
-| ![prt3](https://user-images.githubusercontent.com/120648145/213387759-ed64b85c-67c6-4c5a-8e4d-336fc97a77d7.png) |
-|:--:|
-| *Visualization of **prt3*** |
-
-
-
-### Node 1
-|property | setting| 
 |:---|:---|
 |Answer Test | AlgEquiv|
 |SAns | `psi1`|
 |TAns | `psistartr`| 
-|Node 1 true feedback | `<p>Nice, you found the correct value for \(\psi_1\)! Good job!<p>`|
-|Node 1 false feedback |`<p>The value you gave for \(\psi_1\) is not correct.  </p>`|
+|Node 5 true feedback | `<p>Nice, you found the correct value for \(\psi_1\)! Good job!<p>`|
+|Node 5 false feedback |`<p>The value you gave for \(\psi_1\) is not correct. Try matching the volumes using the sliders and read the smaller angle from the coordinate system taking into account its orientation. This is the lower bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation. </p>`|
 
-
-### Node 2
+### Node 6
  |property | setting| 
 |:---|:---|
 |Answer Test | AlgEquiv|
 |SAns | `psi2`|
-|TAns | `psistartr + psiranger`| 
-|Node 2 true feedback | `<p>Nice, you found the correct value for \(\psi_2\)! Good job!</p> <p> Perfect! You got both values of \(\psi\) right! </p>`|
-|Node 2 false feedback |`<p>The value you gave for \(\psi_2\) is not correct. Try matching the points perfectly and read the bigger angle. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
-
-### Node 3
- |property | setting| 
-|:---|:---|
-|Answer Test | AlgEquiv|
-|SAns | `psi2`|
-|TAns | `psistartr + psiranger`| 
-|Node 3 true feedback | `<p>Nice, you found the correct value for \(\psi_2\)! Good job!</p> <p>Check whether you did anything different here than for \(\psi_1\) and try again. </p>`|
-|Node 3 false feedback |`<p>The value you gave for \(\psi_2\) is also not correct. Try matching the points perfectly and read the angles. The smaller angle is the lower bound of the interval. The larger angle is the upper bound of the interval. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
-
+|TAns | `psistartr+psiranger`| 
+|Node 6 true feedback | `<p>Nice, you found the correct value for \(\psi_2\)! Good job!<p>`|
+|Node 6 false feedback |`<p>The value you gave for \(\psi_2\) is not correct. Try matching the volumes using the sliders and read the larger angle from the coordinate system taking into account its orientation. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation. </p>`|
 
 ## Todo:
-
+* [x] **JSXGraph applet does not work currently**
+* [x] Explain orientation of angles
+* [x] Give maximal intervalls
+* [x] Check in code whether maximal intervalls are correct
+* [x] Check whether model solutions are correct
+* [x] Replace theta with correct angle
 * [ ] Print JSXGraph applet bigger
 * [ ] make square appear as such
-* [x] Update Images
+* [x] Simplify and improve PRT
+* [x] Update Images and description
+* [ ] Further improve PRT
+* [x] Remove extra PRTs
+* [ ] fix point system: only psi1 and psi2 correct leads to correct

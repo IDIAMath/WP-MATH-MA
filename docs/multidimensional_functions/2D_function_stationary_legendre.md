@@ -8,7 +8,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/227724436-38d22f65-e875-4840-be98-b2091555b6db.jpg) |
+| ![First impression](https://private-user-images.githubusercontent.com/120648145/240860828-a8a412eb-f1ec-46d0-abad-b0a12b852f5f.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgyOC1hOGE0MTJlYi1mMWVjLTQ2ZDAtYWJhZC1iMGExMmI4NTJmNWYuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGI3YzI4OGFhNjM5Y2RhOGI2Mzc5MDY0NDNhYjU0MjNmYzY3YjY1MDMxODMyZDNhZjUzNGM2N2JiNjhjMDBmZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.HTBDvrZmJ0F46P188FXKgRXn4kRW9bOeOe48pHgupcU) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,20 +29,20 @@ The function in this task is composed of two legendre polynomials.
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/227724433-b28cac21-9c56-479b-aefb-42972d65d337.jpg) |
+| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240860822-859177fb-48a6-42d6-926d-97bbc6f1661e.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgyMi04NTkxNzdmYi00OGE2LTQyZDYtOTI2ZC05N2JiYzZmMTY2MWUuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2Q2ODU0NmVjMDZiZDlkOTAwNGU0MDYyODE2MGFiMGJmN2NjYWIxOTI4YWJlNDQ1YmJkNGFhMDc1NGNlOWFkMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.3nfP4VetS7nHdvKUnGh-s9Nz92cJX2VLP_Zf1E82O80) |
 |:--:|
 | *When the student solves the problem* |
 
 
 ### Teacher perspective
-The teacher is able to give a list of possible values for parameters of the function. In order to do this, they simply need to modify the entries in the lists specified e.g. change `a1:rand([-10,-8,.6,-4,-2,2,4,6,8,10])/5` to `a1:rand([2,3,4,5,6,7,8])/5`.
+The teacher is able to give a list of possible values for parameters of the function. In order to do this, they simply need to modify the entries in the lists specified e.g. change `a1:rand([15,-10,-5,5,10,15])/10;` to `a1:rand([2,3,4,5,6,7,8])/5`. Changing the values might lead to the surface not being completely depicted within the visible box.
+
 Additionally, they can change the possible values for the $x$ and $y$ off-sets `x0` and `y0`. This offset is used to counteract the fact, that $(0,0)$ is a common stationary point.
 
-Furthermore the teacher is able to change the function entirely to a function that fits his needs. They can change the function defined by `F: a1*1/16*(231*(a2*(x-x0))**6-315*(a2*(x-x0))**4+105*(a2*(x-x0))**2-5)* 1/2*(5*(a3*(y-y0))**3- 3*(a3*(y-y0)));` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before.
-
+Furthermore the teacher is able to change the function entirely to a function that fits his needs. They can change the function defined by `F: a1*1/16*(231*(a2*(x-x0))**6-315*(a2*(x-x0))**4+105*(a2*(x-x0))**2-5)* 1/2*(5*(a3*(y-y0))**3- 3*(a3*(y-y0)));` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before or make changes to the exisitng parameters.
 Lastly, the reference solution for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227724429-49642c6f-e9cf-4d3c-942f-f70a7cd245c3.jpg) |
+| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/240860825-18677be1-f651-4b90-8c3c-3e410c8ab226.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgyNS0xODY3N2JlMS1mNjUxLTRiOTAtOGMzYy0zZTQxMGM4YWIyMjYuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2Y2OTBlNGE3MzVhOGExMGFlNmNiOTM1ZjIzYzU3NjdjMjlmYzg4YjA3MTgwZWM2ZmQ0YmYwMjg0NTMxMTM1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.412ZjOwPH6ucotMfRXEMDnGcuUk7AQYhPAjLZHh2x_I) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -62,13 +62,13 @@ Lastly, the reference solution for an exemplatory stationary point must be adjus
 `
 
 #### Question variable code
-```jacascript
+```
 /* generate function */
-a1:rand([-15,-10,-5,5,10,15])/10;
-a2:rand([-15,-10,-5,5,10,15])/10;
-a3:rand([-15,-10,-5,5,10,15])/10;
-x0: rand([-3,-2,-1,1,2,3])/5;
-y0: rand([-3,-2,-1,1,2,3])/5;
+a1:rand([15,-10,-5,5,10,15])/10;
+a2:rand([-10,-5,5,10])/10;
+a3:rand([-10,-5,5,10])/10;
+x0: rand([-2,-1,1,2])/5;
+y0: rand([-2,-1,1,2])/5;
 
 /* define the function */
 F:  a1*1/16*(231*(a2*(x-x0))**6-315*(a2*(x-x0))**4+105*(a2*(x-x0))**2-5)* 1/2*(5*(a3*(y-y0))**3- 3*(a3*(y-y0)));
@@ -102,11 +102,13 @@ numer: false;
 [[jsxgraph width="500px" height="500px" input-ref-ans1='ans1Ref']]
 var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:false, shownavigation : true});
 
+	    var boxx = [{#x0#}-1, {#x0#}+1];
+	    var boxy = [{#y0#}-1, {#y0#}+1];
 	    var box = [-1, 1];
 		    var view = board.create('view3d',
 		        [
-		            [-6, -3], [8, 8],
-		            [box, box, box]
+		            [-4, -3], [8, 8],
+		            [boxx, boxy, box]
 		        ],
 		        {
 		            xPlaneRear: {visible: false},
@@ -131,13 +133,13 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
                                var Fdy =  board.jc.snippet(txtraw, true, 'x,y');
     var c = view.create('functiongraph3d', [
         F,
-        box,
-        box,
-    ], { strokeWidth: 0.5, stepU: 70, stepsV: 70 });
+        boxx,
+        boxy,
+    ], { strokeWidth: 1, strokeColor: "#1f84bc", stepU: 70, stepsV: 70 });
 
   // 3D points:
     // Point on xy plane
-    var Axy = view.create('point3d', [0.3, 0.4, -1.0], { withLabel: false });
+    var Axy = view.create('point3d', [0.25, 0.5, -1.0], { withLabel: false });
 
     // Project Axy to the surface
     var A = view.create('point3d', [
@@ -166,7 +168,7 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
         dFx_vec, dFy_vec,
         [-0.25,0.25], [-0.25,0.25]
     ], {
-        fillOpacity: 0.8, fillColor: 'red'
+        fillOpacity: 0.8, fillColor: '#EE442F'
     });
     var a = view.create('line3d', [A, dFx_vec, [0, 0.5]]);
     var b = view.create('line3d', [A, dFy_vec, [0, 0.5]]);
@@ -179,6 +181,15 @@ var stateInput = document.getElementById(ans1Ref);
 stateInput.style.display = 'none';
 
 board.update(); 
+
+/* axis labels*/
+                       var xlabel=view.create('point3d',[0.9*boxx[1],0,(0.6*box[0]+0.4*box[1])], {size:0,name:"x"});
+                       var ylabel=view.create('point3d',[0,0.9*boxy[1],(0.6*box[0]+0.4*box[1])], {size:0,name:"y"});
+                       var zlabel=view.create('point3d',[
+                           0.7*(-0.2),
+                           0.7*(-0.2),
+                           0.9*box[1]], 
+                           {size:0,name:"z"});
 
 [[/jsxgraph]]
 <p>[[input:ans1]] </p><p>[[validation:ans1]]</p>
@@ -208,7 +219,7 @@ The tangent plane in a stationary point is exactly horizontal, since the gradien
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/228477673-366e0a20-4e2e-44a7-af9f-07c750dbd475.jpg) |
+| ![prt1](https://private-user-images.githubusercontent.com/120648145/240860835-69f4211f-d589-40fa-a70f-f10f691ea6ee.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgzNS02OWY0MjExZi1kNTg5LTQwZmEtYTcwZi1mMTBmNjkxZWE2ZWUuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NThlYTkyMTBlMTI0OGRhMGNiYjdjZDNlM2M1ZGZmMTViYjgwMjMyNzA3ZjJmOTU4NjhjMjU2ZTIwYThlMjhiMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.vrBLMEc7PF3j9DXkdG_vB_XJqnvh5Z30wmU7ppWmX3c) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -220,9 +231,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
  Creates variables `FdxSAns`, `FdySAns`. Their values are determined by the function `ev()` evaluating the derivatives `Fdx`, `Fdy` specified in **Question variables** numerically at the location specified by `ans1`.
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/228477684-707e8a7b-a877-4692-a8ab-5adb07e0e2ab.jpg) |
-|:--:|
-| *Values of **node 1*** |
+
 ### Node 1
  |property | setting| 
 |:---|:---|
@@ -232,9 +241,9 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 1 true feedback | `<p>Nice! In \(x\)-direction the slope is close to zero.</p>`|
 |Node 1 false feedback | `<p>In \(x\)-direction the slope is not close enough to zero.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/228477682-eb053021-4f4d-4152-b1c1-58256dfbdc2a.jpg) |
+| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240860836-4258c131-e1c1-44e5-8848-b02fc2dcf275.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgzNi00MjU4YzEzMS1lMWMxLTQ0ZTUtODg0OC1iMDJmYzJkY2YyNzUuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Zjk4YmNjMjk4MDJkNmFkODRkMzE4YTM2YjliN2FhMWVmYmZkYjM4ODE0YzUzNjhmYjIyNDY1NDRmODg1N2QxOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.xgPoW8pdPGw0XvqjJE-Zs_owYamfFaQrB8ENC2Gb5MI) |
 |:--:|
-| *Values of **node 2*** |
+| *Values of **node 1*** |
 
 ### Node 2
  |property | setting| 
@@ -245,9 +254,10 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 2 true feedback | `<p>Nice! In \(y\)-direction the slope is also close to zero. You found a stationary point!</p>`|
 |Node 2 false feedback | `<p>In \(y\)-direction the slope is not close enough to zero. Maybe you didn't select the point precisely enough. Try again!</p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/228477678-b41ee17d-0f91-4c93-be74-4bcc696f7e0c.jpg) |
+| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240860811-bbee7a3a-56df-425f-bddd-5326413ad7b3.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgxMS1iYmVlN2EzYS01NmRmLTQyNWYtYmRkZC01MzI2NDEzYWQ3YjMuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjkyOWQyNGJkMDczNDA5MDk0N2QxYTZlOWZlMzAxMGI1NGQ0MzYyZjFiNzkyODEwMjIxNTNjNjU3MTUyMTcxNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.PBc-nsIbm5y2FgLkaFm1DkXy4-fYCYoAWyw0QHQA-U4) |
 |:--:|
-| *Values of **node 3*** |
+| *Values of **node 2*** |
+
 ### Node 3
  |property | setting| 
 |:---|:---|
@@ -257,11 +267,10 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 3 true feedback | `<p>Nice! In \(y\)-direction the slope is close to zero. Maybe you didn't select the point precisely enough in \(x\)-direction. Try again!</p>`|
 |Node 3 false feedback | `<p>In \(y\)-direction the slope is also not close enough to zero. This is not a stationary point. Remember the definition of a stationary point and have a look at the explanation below!</p>`|
 
+| ![Node 3](https://private-user-images.githubusercontent.com/120648145/240860819-0843b605-fe2d-4ded-8d38-82addc0744e3.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgxOS0wODQzYjYwNS1mZTJkLTRkZWQtOGQzOC04MmFkZGMwNzQ0ZTMuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzljMGViMDI3OWUxYjgyZDE5NDM0NTc5NGQ5OWQ1YjRkOGEwMmE4MjViZTQwOGVjYjA5YzI1OGMyYTRlMjFiNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.yv7K5Mqy3R0Euj71FZyVfzdECSlq6gLnycfDeDMz-YM) |
+|:--:|
+| *Values of **node 3*** |
 
 ## Todo:
-* [x] Elaborate more on task for students
-* [x] Display definition of stationary point in solution
-* [x] Add correct reference solution
-* [x] Update figures
-* [ ] JSXGraph-Applet does not work in solution
+* []
 
