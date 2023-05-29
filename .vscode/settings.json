@@ -1,0 +1,26 @@
+{
+    "python.analysis.packageIndexDepths": [
+
+        {
+            "name": "sklearn",
+            "depth": 2
+        },
+        {
+            "name": "matplotlib",
+            "depth": 2
+        },
+        {
+            "name": "scipy",
+            "depth": 2
+        },
+        {
+            "name": "django",
+            "depth": 2
+        },
+        {
+            "name": "flask",
+            "depth": 2
+        }
+    ],
+    "python.dataScience.jupyterServerURI":"http://localhost:8888/?token=5308359a4793c4bf44898a3a19fde8177ac14ce459d00162",
+}
