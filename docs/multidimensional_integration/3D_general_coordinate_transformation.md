@@ -19,6 +19,8 @@ An additional 3D section of the same geometry is plotted that can be varied usin
 That way, by matching the two volumes, the intervalls can be interactively obtained.
 The task is to find the correct intervalls for $u$, $v$ and $w$ in real numbers that construct the generated volume.
 
+A modified version/ application of this task can be found in the task **Cylindrical Coordinates Matching**.
+
 
 ### Student perspective
 
