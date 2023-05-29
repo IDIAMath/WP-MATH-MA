@@ -8,7 +8,7 @@ theme: minima
 +	Studen adapts his understanding of the 3D-space to a novel set of coordinates with help of a visualization (making use of aids and tools)
 +	Student can take a volume and reconstruct the limits of its parameters (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/241000395-a556b8f3-77e3-4fc6-b255-948d98150961.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4ODU3LCJuYmYiOjE2ODUwMzg1NTcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDM5NS1hNTU2YjhmMy03N2UzLTRmYzYtYjI1NS05NDhkOTgxNTA5NjEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxNTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTNhZTE2ZjQ1Y2E0ZTkxYjI2NDI0MzRlZjllYzgyNDZiNmQ5MjhiMmVjZjNjY2MzNDgwOTAwMTFkMWE4NDdhNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.O5vBNN7NKRPzVmMYNhC4GN6v8_1qx6qmTxKOSJfntDY) |
+| ![First impression](https://private-user-images.githubusercontent.com/120648145/241678356-0b945b06-f887-42a2-88ba-13d9b245abd1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MzQ2OTk2LCJuYmYiOjE2ODUzNDY2OTYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTY3ODM1Ni0wYjk0NWIwNi1mODg3LTQyYTItODhiYS0xM2Q5YjI0NWFiZDEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjlUMDc1MTM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Zjk2Y2VlOGRhN2Q2NTEyNzc5NmEwYTZhYzM1YmJjYjcwMTE1MTM5M2Y4N2RkMTU3YzQzMmZjNzc3MjcyOWEyNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.KDARvY39rv1yj-SVvzIwLC4KUTJ6rAgFxNmKLzl-tuk) |
 |:--:|
 | *First impression of the question* |
 
@@ -26,7 +26,7 @@ The student sees a cartesian coordinate system and a volume with non-cartesian g
 
 It is the task to reconstruct the intervals of a 3D integration in the new coordinates that results in the volume given. In order to do this they have to find out the correct values by matching a second volume to the given one using sliders. 
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/241000398-798fd4bd-9941-4018-807b-a89eec3a2253.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4ODU3LCJuYmYiOjE2ODUwMzg1NTcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDM5OC03OThmZDRiZC05OTQxLTQwMTgtODA3Yi1hODllZWMzYTIyNTMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxNTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDk4MDlmOTZmYWMyNGI1ZTViZWVhOTM2NzJjMzRjMTQzYWM0YWJhM2VjMDg5ZDU4ZDc3OTZlNDBhY2Y3YmIxNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.rOmQ1zG-uY0hlGEvHCKWrWw5KfvSVykAQPAMXFTcSPw) |
+| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/241678352-4e44f176-6681-44b7-8858-9f0860b2350f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MzQ2OTk2LCJuYmYiOjE2ODUzNDY2OTYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTY3ODM1Mi00ZTQ0ZjE3Ni02NjgxLTQ0YjctODg1OC05ZjA4NjBiMjM1MGYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjlUMDc1MTM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDhlYTRkMGEwMDIxNmE5NmY2MDFhNTY3ZThiYTE0MTQ2ZjIxNDVmNzVkZTNhNjM2ODk3MWFhNTBjNTRiMDRkMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.XhcP9Zmt0-U93SrINYmUALPz75agVKyDQ7uIS_VSsQo) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -39,7 +39,7 @@ The teacher can provide a list of possible values for interval bounds. In order 
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/241000393-0f703bbc-6174-4e18-9c9f-83bdd0f34c48.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4ODU3LCJuYmYiOjE2ODUwMzg1NTcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDM5My0wZjcwM2JiYy02MTc0LTRlMTgtOWM5Zi04M2JkZDBmMzRjNDgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxNTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWE2NTg0N2UzZjMzMWQ5YzBjNjRmOTNmNTYyZmJkMjhkNWU1MjM5MDVmYjVhNzJjODZlMjRlNzVmZDhiOGQxZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.zee6iJEPG4S0Avk41qvJKNcrgMANk4tj6L7_pjgH-84) |
+| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/241678358-7de8267d-089d-44e7-902a-91275f051b5e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MzQ2OTk2LCJuYmYiOjE2ODUzNDY2OTYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTY3ODM1OC03ZGU4MjY3ZC0wODlkLTQ0ZTctOTAyYS05MTI3NWYwNTFiNWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjlUMDc1MTM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTI0ZWE1OWE3MmY3MTVmMTUwOTg4OWViZjY5MTJmZDAyN2JmOTZiNmUzNDFkOGJkODRmYzg5YjJhZWYzM2U1YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.yj9ShUcG_VDH2fmtezdSm_LjSdXPXLapVLeM5iY4NrE) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -66,7 +66,7 @@ u1r:rand(3)/2;
 u2r:u1r+(rand(3)+1)/2;
 
 w1r:rand([1/3,1/2,2/3]);
-w2r:w1r+rand([1/2,2/3,1,3/2]);
+w2r:w1r+rand([1/2,2/3,1]);
 
 v1r:rand([1/6,1/3,1/2]);
 v2r:v1r+rand([1/2,2/3,1,3/2]);
@@ -153,12 +153,12 @@ var view = board.create('view3d',
 		    var w2init =  {#w2init#};
 
 	    // Create Slider for control object for student
-            var u1s = board.create('slider', [[-7, -4.5], [3, -4.5], u1init], { name: 'r_1',snapwidth:0.1, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
-            var u2s = board.create('slider', [[-7, -5.5], [3, -5.5], u2init], { name: 'r_2',snapwidth:0.1, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
-            var v1s = board.create('slider', [[-7, -6.5], [3, -6.5], v1init], { name: '\phi_1',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
-            var v2s = board.create('slider', [[-7, -7.5], [3, -7.5], v2init], { name: '\phi_2',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
-            var w1s = board.create('slider', [[-7, -8.5], [3, -8.5], w1init], { name: '\psi_1',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
-            var w2s = board.create('slider', [[-7, -9.5], [3, -9.5], w2init], { name: '\psi_2',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+            var u1s = board.create('slider', [[-7, -4.5], [3, -4.5], u1init], { name: 'u_1',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+            var u2s = board.create('slider', [[-7, -5.5], [3, -5.5], u2init], { name: 'u_2',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+            var v1s = board.create('slider', [[-7, -6.5], [3, -6.5], v1init], { name: 'v_1',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+            var v2s = board.create('slider', [[-7, -7.5], [3, -7.5], v2init], { name: 'v_2',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+            var w1s = board.create('slider', [[-7, -8.5], [3, -8.5], w1init], { name: 'w_1',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
+            var w2s = board.create('slider', [[-7, -9.5], [3, -9.5], w2init], { name: 'w_2',snapwidth:0.05, highline: {strokeColor: '#EE442F'}, baseline: {strokeColor: '#EE442F'}});
 
 				// Create transformed box
 		    var c1 = view.create('parametricsurface3d', [
