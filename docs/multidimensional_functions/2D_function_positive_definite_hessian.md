@@ -9,7 +9,7 @@ theme: minima
 +	Student understands, how local approximation and value of Hessian matrix are connected graphically (Representing mathematical entities)
 +	Using a visualization of Taylor-approximation student can derive qualitative statements about Hessian matrix at a given point (Making use of aids and tools)
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240395363-42349ebf-3bf5-4234-a4e9-e4d49ff8194c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY5NDk5LCJuYmYiOjE2ODQ4NjkxOTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5NTM2My00MjM0OWViZi0zYmY1LTQyMzQtYTRlOS1lNGQ0OWZmODE5NGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkxMzE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWE5M2ZiNmMzYzFiOTY1YjVhOTYxODZlMTRkNGZlNmNhZTQ3YTU5ODkyMDkyM2VjMzMwNTNjMDdjZDgyOTlkZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.NvuxSZmFwxrm4MXEOTW_f0JMlUba1ZcVNVNjWKxHCEU) |
+| ![First impression](./images/positive_hessian_2023-05-23.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -26,13 +26,13 @@ The student needs to find a point $(x,y)$, where the Hessian of the function is 
 
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the local quadratical taylor approximation  is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with an approximation that fulfils the requirements. The coordinates of the points are interpreted as answers.
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240395356-c5c448cd-d77c-4232-983e-8458e3d1a87d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY5NDk5LCJuYmYiOjE2ODQ4NjkxOTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5NTM1Ni1jNWM0NDhjZC1kNzdjLTQyMzItOTgzZS04NDU4ZTNkMWE4N2QucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkxMzE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTBmYjBjYmZlMzZiMDU4MDEzNTM3YTdlOWMxNjY1Yjk1YWRmNDJkOTNhZjAzY2NmOGE2MTIxZThiMjdjYTY5ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.h6_NONFCdAkmmNJzcRyRUHbGzQ2FXq4bR_OcKkjyRSU) |
+| ![Click draw button](./images/positive_hessian_student_2023-05-23.png) |
 |:--:|
 | *When the student solves the problem* |
 
 ### Feedback example
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240395349-01a263a0-bdfd-4403-803f-b3b2e4d777c7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY5NDk5LCJuYmYiOjE2ODQ4NjkxOTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5NTM0OS0wMWEyNjNhMC1iZGZkLTQ0MDMtODAzZi1iM2IyZTRkNzc3YzcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkxMzE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDIxMDAyOWQyZGIwMWMzM2IxZWU2YjEzNmEyMDllMGZmYTk5NjgwNDQ0YjdlNGIwZWFhYjY4YmUxNDlmZDdiYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.VadX6OQpqNk0MnJ2WJhql8lSsMHLf2dVsumcygTTXu4) |
+| ![Click draw button](./images/positive_hessian_feedback_2023-05-23.png) |
 |:--:|
 | *Feedback on answer above* |
 
@@ -44,7 +44,7 @@ Furthermore the teacher is able to change the function entirely to a function th
 
 Lastly, the reference solution `RefSolx` and`RefSoly` for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/240395346-c594cdb8-7c22-41e0-bf2c-423b2b4f3ebb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY5NDk5LCJuYmYiOjE2ODQ4NjkxOTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5NTM0Ni1jNTk0Y2RiOC03YzIyLTQxZTAtYmYyYy00MjNiMmI0ZjNlYmIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkxMzE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTIyNGEyMDI5NmUwNTU0Y2JlMDY5NmVhN2I0YWMzN2I4M2RiMmQ0MGMyNjY1MGNhZThlNjM2Y2RlNWQzZTU3MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.9W4kKW8Tea69-JyBsNdrMv4uQTPBYE__FxR4bp5Oka8) |
+| ![values the teacher can change](./images/positive_hessian_teacher_2023-05-23.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -276,7 +276,7 @@ if ev2s>0 then s2: +100;
  To be able to check, whether the Hessian is positive-definite or not, we need to check the sign of the eigenvalues. Since STACK expects us to check a numeric answer, we cannot assign the bools `true`and `false`. We create a similar variable instead with `s1` and `s2` having either of the values `100` or `-100`.
  If the eigenvalues are positive, we assign `s1`and `s2` the value `+100`.
 
-| ![PRT 1](https://private-user-images.githubusercontent.com/120648145/240395343-a90482b6-1133-452e-a478-2043c8b3cdaf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY5NDk5LCJuYmYiOjE2ODQ4NjkxOTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5NTM0My1hOTA0ODJiNi0xMTMzLTQ1MmUtYTQ3OC0yMDQzYzhiM2NkYWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkxMzE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjRjZjg2NTcyOTZiOGMxNWIxMTkyYThkZjU1NjVhZDlkMWRmYmNmNzBmMmQ5MTc3ZmUwZTg3NGNhMWE4M2Q5ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.MpIjAh4WV6OZre20UpbtNXK2t-zmYGOwwFo0kQ4LiWw) |
+| ![PRT 1](./images/positive_hessian_PRT_1_2023-05-23.png) |
 |:--:|
 | *Visualization of **PRT 1*** |
 
@@ -289,7 +289,7 @@ if ev2s>0 then s2: +100;
 |Node 1 true feedback | `<p>The first eigenvalue is larger than zero.  </p>`|
 |Node 1 false feedback | `<p>The first eigenvalue is not larger than zero. </p>`|
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240395340-b31104a1-5fa7-48a4-9ccc-ddf6a806121e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY5NDk5LCJuYmYiOjE2ODQ4NjkxOTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5NTM0MC1iMzExMDRhMS01ZmE3LTQ4YTQtOWNjYy1kZGY2YTgwNjEyMWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkxMzE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjFiYTNlYzcyMDUxYmQ1MjZiZDZmZjY4YmQyOTVhNGRhMDE5NTdjMmM2NzExZTNlYmQ1ZGRmNTMyY2ZkNjk3ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.GZy8_29mvCwDmkIXmiN0HGGUok6Y6LdAcshr7eRr4Qs) |
+| ![Node 1](./images/positive_hessian_PRT_1_node_1_2023-05-23.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -302,7 +302,7 @@ if ev2s>0 then s2: +100;
 |Node 2 true feedback | `<p>The second eigenvalue is also larger than zero. You found a point with positive-definite hessian!</p><p>Congratulations!</p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*}\lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>` |
 |Node 2 false feedback | ```<p>The second eigenvalue is not larger than zero. Unfortunately, your answer is not a point where the hessian is positive-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240395336-e020da14-f60b-47be-a994-5156ad558c3d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY5NDk5LCJuYmYiOjE2ODQ4NjkxOTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5NTMzNi1lMDIwZGExNC1mNjBiLTQ3YmUtYTk5NC01MTU2YWQ1NThjM2QucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkxMzE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTI3YWIyNzNlZmVjMDdkNzIzZTdlNzMxY2UxOWM0MDU3NmJjNTQ0MGUxNGNiMjNmYTU1NmRmM2I5MjE2MmZiNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.XJ9RfypSzX2FuHzbre3z4gHGEIud2cR88w2s0GW5soY) |
+| ![Node 2](./images/positive_hessian_PRT_1_node_2_2023-05-23.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -315,9 +315,9 @@ if ev2s>0 then s2: +100;
 |Node 3 true feedback | ```<p>The second eigenvalue is larger than zero. Since the first eigenvalue was not larger than zero, your answer is not a point where the hessian is positive-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\ \lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
 |Node 3 false feedback | ```<p>The second eigenvalue is larger than zero. Since the first eigenvalue was not larger than zero, your answer is not a point where the hessian is positive-definite. </p><p> The eigenvalues resulting for your point were: </p><p> \[\begin{align*} \lambda_1 &= {@ev1s@}\\\lambda_2 &= {@ev2s@} \end{align*} \] </p>```|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/240395365-d6e31419-0c04-4605-b504-89c4ffbde039.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY5NDk5LCJuYmYiOjE2ODQ4NjkxOTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5NTM2NS1kNmUzMTQxOS0wYzA0LTQ2MDUtYjUwNC04OWM0ZmZiZGUwMzkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkxMzE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWU4YWM1Y2U3ODM3YzcyMmE1ZDJhN2RhODBhOTMzNjAxOWY1OWE0NGU0MTRlMWY5ZGZkNDkyNTgzMTAyYTY2MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jmX06wePkbOjscVF0B5ui1oK1cAcAlNIN9jG2ATFfsE) |
+| ![Node 3](./images/positive_hessian_PRT_1_node_3_2023-05-23.png) |
 |:--:|
 | *Values of **node 3*** |
 
 ## Todo:
-* [ ] Update figures
+* [x] Update figures
