@@ -8,7 +8,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240399211-b4d9c702-b496-4037-b8f2-0edc5281594d.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODcwNTUyLCJuYmYiOjE2ODQ4NzAyNTIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5OTIxMS1iNGQ5YzcwMi1iNDk2LTQwMzctYjhmMi0wZWRjNTI4MTU5NGQuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkzMDUyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODkwMzUxZmM2MWIxZTg5NzRlNWM4YWQxYzUxMjU1NWUzMTUwYWQzYTAyMzNkMjM2MDcyMzJiMjExNTQxZjFkNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Zf7IZUUs6BGegx_qIWEswGB9hbkydjcry-qKybzvAHA) |
+| ![First impression](./images/stationary_2023-05-23.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -26,7 +26,7 @@ The task is to move $x_0$ where it is stationary with the help of the tangent pl
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240399208-4d58c82f-0c9b-4fa2-98de-e828057f0254.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODcwNTUyLCJuYmYiOjE2ODQ4NzAyNTIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5OTIwOC00ZDU4YzgyZi0wYzliLTRmYTItOThkZS1lODI4MDU3ZjAyNTQuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkzMDUyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzY5NDFiODY1Njc0Y2Q3MTc3OGFmYTcxYmQ3ZGJjNWUyYWJhNzQ3OGQwMDVkZjU2NzA2ZmRmNDRlYTdiN2M1MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.SWW_iJXqKckzUyHOt43252dTVSnOYuLkG0bVu4diqeI) |
+| ![Click draw button](./images/stationary_student_2023-05-23.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -39,7 +39,7 @@ Furthermore the teacher is able to change the function entirely to a function th
 
 Lastly, the reference solution `FdxRefSol` and`FdyRefSol` for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/240399213-da85c185-0300-4828-b738-2f3b1449ca9b.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODcwNTUyLCJuYmYiOjE2ODQ4NzAyNTIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5OTIxMy1kYTg1YzE4NS0wMzAwLTQ4MjgtYjczOC0yZjNiMTQ0OWNhOWIuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTkzMDUyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzkwNzFlYzI2MzRhN2FiOWYzMzBiNzQ1MzE5OTZkYzg1YzBlYzBhNGIwMTE5MTA0YTlhMzE0ODc5MjliYjE1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.g6gxv_gbrNFGKpXBhGeL75MVzspckFWYWLm6U3qs2TE) |
+| ![values the teacher can change](./images/stationary_teacher_2023-05-23.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -212,7 +212,7 @@ The tangent plane in a stationary point is exactly horizontal, since the gradien
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/228473274-2ed9737b-bbce-4e24-8a7c-324949007545.jpg) |
+| ![prt1](./images/stationary_point_PRT_2023-03-29.jpg) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -224,7 +224,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
  Creates variables `FdxSAns`, `FdySAns`. Their values are determined by the function `ev()` evaluating the derivatives `Fdx`, `Fdy` specified in **Question variables** numerically at the location specified by `ans1`.
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/228473269-d19834b0-1455-4501-8b4a-0de0a7d98053.jpg) |
+| ![Node 1](./images/stationary_point_PRT_node_1_2023-03-29.jpg) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
@@ -236,7 +236,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 1 true feedback | `<p>Nice! In \(x\)-direction the slope is close to zero.</p>`|
 |Node 1 false feedback | `<p>In \(x\)-direction the slope is not close enough to zero.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/228473264-000203e8-a2ac-4845-bb47-19c4defd55be.jpg) |
+| ![Node 2](./images/stationary_point_PRT_node_2_2023-03-29.jpg) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -249,7 +249,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 2 true feedback | `<p>Nice! In \(y\)-direction the slope is also close to zero. You found a stationary point!</p>`|
 |Node 2 false feedback | `<p>In \(y\)-direction the slope is not close enough to zero. Maybe you didn't select the point precisely enough. Try again!</p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/228473259-45e38833-fcb5-48ab-93a5-96a5aa51c5dc.jpg) |
+| ![Node 3](./images/stationary_point_PRT_node_3_2023-03-29.jpg) |
 |:--:|
 | *Values of **node 3*** |
 ### Node 3
