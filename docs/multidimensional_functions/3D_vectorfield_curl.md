@@ -205,6 +205,7 @@ None needed, since `ans1` is selected by ticking a button.
 
 ## Todo:
 * [ ] More options for vector fields
+* [ ] Display student answer graphically
 * [x] Display definition of curl in solution
-* [ ] **fix JSXGraph-Applet, does not work currently**
+* [x] **fix JSXGraph-Applet, does not work currently**
 
