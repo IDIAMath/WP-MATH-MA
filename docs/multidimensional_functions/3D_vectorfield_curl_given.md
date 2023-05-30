@@ -8,7 +8,7 @@ theme: minima
 +	Student understands, how a vector field and its curl are connected graphically (Representing mathematical entities)
 + 	Using a visualization of vector field and its curl the student can graphically check whether his calculations are correct (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/209999022-cebb6337-8522-40a4-bcc6-429757301ddc.PNG) |
+| ![First impression](./images/curl_given_2023-05-29.PNG)|
 |:--:|
 | *First impression of the question* |
 
@@ -22,7 +22,7 @@ A 3D vector field is plotted. It is the curl of another vector field.
 The student sees a plot of the 3D vector field. They can rotate their point of view using the sliders and get a better idea of the vector field. 
 
 
-| ![Click draw button](https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png) |
+| ![Click draw button](./images/curl_given_student_2023-05-29.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -32,7 +32,7 @@ The teacher can remove entries from or add entries to the list `Vlist` that cont
 
 **The rest of the Question variables should not be altered.**
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/209999017-c79b6da8-0685-4cdc-b808-9efee6b2ea99.PNG) |
+| ![values the teacher can change](./images/curl_given_teacher_2023-05-29.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -182,7 +182,7 @@ Select \( V\).
 
 ## Potential response tree
 ### prt1
-| ![prt1](https://user-images.githubusercontent.com/120648145/209999029-fa4b3865-d361-47b8-a088-f86c5ffc5ded.PNG) |
+| ![prt1](./images/curl_given_PRT_2023-05-29.PNG) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -191,9 +191,7 @@ Feedback variables:
 None needed, since `ans1` is selected by ticking a button.
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/210808115-5e057a95-400b-4c3d-8251-057e675bb665.PNG) |
-|:--:|
-| *Values of **node 1*** |
+
 ### Node 1
  |property | setting| 
 |:---|:---|
@@ -203,6 +201,9 @@ None needed, since `ans1` is selected by ticking a button.
 |Node 1 true feedback | `<p>Nice! You found the correct vector field. \(\hat V\) is the curl of this field.</p>`|
 |Node 1 false feedback | `<p>You did not select the correct vector field. The vector field given is the curl of the wanted vector field.</p>`|
 
+| ![Node 1](./images/curl_given_PRT_node_1_2023-05-29.PNG) |
+|:--:|
+| *Values of **node 1*** |
 
 ## Todo:
 * [ ] More options for vector fields
