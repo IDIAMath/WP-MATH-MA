@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to spherical coordinates  (Handling mathematical symbols and formalism)
 +	Student can reconstruct the limits of the radius and angles from a 3D model of a volume with spherical geometry (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/239858934-2b593321-478b-4913-a507-aedb140219d8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODkzNC0yYjU5MzMyMS00NzhiLTQ5MTMtYTUwNy1hZWRiMTQwMjE5ZDgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTc4MWJjYTk3YjFkMWRhMzJiZTM3MWVhZDE4NDBmZDY1MDljYzMwY2ZlZGRmNGM0NTAzMGJiYjI1YzQwMDQwOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.n4bBY5djI8uTXbTaPyBO7u5kjuO44QFWIFXI0nxoT-E) |
+| ![First impression](./images/Spherical_rotating_2023-05-22.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -25,7 +25,7 @@ The student sees a cartesian coordinate system and a volume with spherical geome
 
 It is the task to reconstruct the intervals of a 3D integration in spherical coordinates that results in the volume given. In order to do this they have to find out the radius and angles by rotating the volume with the sliders. That way they can look at different projections of the volume and deduce the limits.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/239858929-50e0e1c7-e7bd-490d-a664-0d20634fce5e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODkyOS01MGUwZTFjNy1lN2JkLTQ5MGQtYTY2NC0wZDIwNjM0ZmNlNWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MGFlYjNjODdmMTVjNGU1ZWQ4YmVkYTI0YWQ4MTYzZjhlMzJlM2VkNzFlMTQ5NGRlYzVhZDc4Yjk2MzU4NzA3ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.lFUUx4HCZmevYPBF9rQ_wvVeNKyVPUCRjwH2oPEcM-E) |
+| ![Click draw button](./images/Spherical_rotating_student_2023-05-22.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -39,7 +39,7 @@ For an explanation of the processing of the values read **Question variables** a
 **It is important to make sure that $\psi \le \pi$ and $\phi \le 2 \pi$, when changing values!** 
 
 
-| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/239859633-db5ee51f-874c-4c37-bc9c-539233184b06.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1OTYzMy1kYjVlZTUxZi04NzRjLTRjMzctYmM5Yy01MzkyMzMxODRiMDYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzU2YjM3NGQ5YTYxM2EyOGE0YzFmNzgzMzdlZjIyNzEzYTIwODlmNjFkM2VmYTU4ZDBiMGZhZmYxNmRjZmZkMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.adkOMuaA54a440-zGR629tUvetzr-b6PFW9O54FuyW0) |
+| ![values the teacher can change](./images/Spherical_rotating_teacher_2023-05-22.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -254,7 +254,7 @@ r2:ans1[2]
 |Node 1 false feedback |`<p>The value you gave for \(r_1\) is not correct.  </p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/213387771-ef4a2e53-17a4-4f8c-be1e-4bafcda69f98.png) |
+| ![Node 1](./images/Spherical_rotating_PRT_1_node_1_2023-05-22.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -267,7 +267,7 @@ r2:ans1[2]
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p> Perfect! You got both radiuses right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(r_2\) is not correct. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/239858940-641d2717-a0b7-45e2-88d8-66852da23fa2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODk0MC02NDFkMjcxNy1hMGI3LTQ1ZTItODhkOC02Njg1MmRhMjNmYTIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTI3ODkxMmI3ZmUyNTYwZTU3N2ZkMDE2NzAyMjNhZWQ5ZDNmZGM3MDVkYWRkMDBiZjFmMWI4OTUyNzg5YmIwNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.TnPSRzUEOCFnw85x1_oQlrQx5MpXyQ2NQXL-w3vPWw4) |
+| ![Node 2](./images/Spherical_rotating_PRT_1_node_2_2023-05-22.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -281,7 +281,7 @@ r2:ans1[2]
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p>Check whether you did anything different here than for \(r_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(r_2\) is also not correct. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/239858942-0c624861-1362-4293-a795-fbe156e9e2cd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODk0Mi0wYzYyNDg2MS0xMzYyLTQyOTMtYTc5NS1mYmUxNTZlOWUyY2QucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjE5MmE3MTQ1Nzk4ZjdlZjU3NDRlNmQzNTYzOGYyYWE4ZmJlYmNmNjlhMGE3MDAwOGJhYjQyYjUyYzE4OWZjNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Ik4mP8zlMTBPwAOEHSEC85E1wjY0DwqNfP-RCrH_7_U) |
+| ![Node 3](./images/Spherical_rotating_PRT_1_node_3_2023-05-22.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -310,7 +310,7 @@ phi2:ans2[2]
 |Node 1 true feedback | `<p>Nice, you found the correct value for \(\phi_1\)! Good job!<p>`|
 |Node 1 false feedback |`<p>The value you gave for \(\phi_1\) is not correct.  </p>`|
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/239858943-0cb956f7-d4c2-45bc-9c3e-70f22a27501f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODk0My0wY2I5NTZmNy1kNGMyLTQ1YmMtOWMzZS03MGYyMmEyNzUwMWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWU2YjA4NWMzZjE4MWIxODY1OTI0ZDc1YzdkZjllY2FkMDBiYzIxZjkzYjRlZDUwYjI0ZGY3ZmMwZDA5ZDE4NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.n_yzHN2Ax1lRRoT6lavEuh3O08iMZzM-7zmQqTmrXcU) |
+| ![Node 1](./images/Spherical_rotating_PRT_2_node_1_2023-05-22.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -323,7 +323,7 @@ phi2:ans2[2]
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(\phi_2\)! Good job!</p> <p> Perfect! You got both values of \(\phi\) right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(\phi_2\) is not correct. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/239858947-3e8a8efa-cec6-4712-8c1e-1b0afa136dd9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODk0Ny0zZThhOGVmYS1jZWM2LTQ3MTItOGMxZS0xYjBhZmExMzZkZDkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWZhMDE0ZDEyNjI2NzQ2Mzc3NDc2MmE5NjcwOTY3NjBkNTBkZTRjNTQxNTg4ZDdhNGI2MGU0NmU2MWFjZTllMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.L7D9ePrMbyWGuYdN4Yhr49IETpiKtvJdA3m6SAdZVvc) |
+| ![Node 2](./images/Spherical_rotating_PRT_2_node_2_2023-05-22.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -336,7 +336,7 @@ phi2:ans2[2]
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(\phi_2\)! Good job!</p> <p>Check whether you did anything different here than for \(\phi_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(\phi_2\) is also not correct. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/239858948-90e5bc12-a3d7-4213-9267-c6bb971294e0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODk0OC05MGU1YmMxMi1hM2Q3LTQyMTMtOTI2Ny1jNmJiOTcxMjk0ZTAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmZmMTE5ZDUxNjJkODRiMzMyZGY0ZDliNGRiNWUzZWY0MmVhZmI1ODU3M2ZiMmJlZGM3YTE2YTdlNzNiNmQxYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.ZKKNDcDvNVIWEWBSIqZ69CuiJt7wo7NnDB6u1J_2Fa0) |
+| ![Node 3](./images/Spherical_rotating_PRT_2_node_3_2023-05-22.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -364,7 +364,7 @@ psi2:ans3[2]
 |Node 1 true feedback | `<p>Nice, you found the correct value for \(\psi_1\)! Good job!<p>`|
 |Node 1 false feedback |`<p>The value you gave for \(\psi_1\) is not correct.  </p>`|
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/239858921-321e6976-6af6-4b61-9308-e31162ff8a64.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODkyMS0zMjFlNjk3Ni02YWY2LTRiNjEtOTMwOC1lMzExNjJmZjhhNjQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2VmMTgxMDA0MzJlYWFhMzU3OGVlMGYwZTE4MDIyYzI5MmM2MDhiYzRlYTNlYzgxNTdlOGE4NGUzMjkzZjc0ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.DndFmNBAfpaRNfV_PWK7_Ltu5mi4rSR0OBX7BZr2cOo) |
+| ![Node 1](./images/Spherical_rotating_PRT_3_node_1_2023-05-22.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -379,7 +379,7 @@ psi2:ans3[2]
 |Node 2 false feedback |`<p>The value you gave for \(\psi_2\) is not correct.  Make sure, you're giving the values in the format specified in the task explanation.</p>` + Applet|
 
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/239858922-12e44945-029f-4d3f-a92e-d94437d3b571.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODkyMi0xMmU0NDk0NS0wMjlmLTRkM2YtYTkyZS1kOTQ0MzdkM2I1NzEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmI3MDlhZDM2ZmViMGY4OTcyYjE0Y2U0MjJmNTQxMmM1NWQyMWZiMzJlMzUxNTE1YzNlMDhiZmRlMzQyNmE1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.wtSuctFftdPEObvQKe-YaCzHlWTRImKuhQTyVqai5fc) |
+| ![Node 2](./images/Spherical_rotating_PRT_3_node_2_2023-05-22.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -392,7 +392,7 @@ psi2:ans3[2]
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(\psi_2\)! Good job!</p> <p>Check whether you did anything different here than for \(\psi_1\) and try again. </p>` + Applet|
 |Node 3 false feedback |`<p>The value you gave for \(\psi_2\) is also not correct. Make sure, you're giving the values in the format specified in the task explanation.</p>` + Applet|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/239858925-964d964a-a537-41a6-a459-3e90884cbdd7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODkyNS05NjRkOTY0YS1hNTM3LTQxYTYtYTQ1OS0zZTkwODg0Y2JkZDcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTk5NWJhZWNhMDk1MjQ4NDE5ZWE0YmE3NjNkYTIwMWJiOWQ0ODMzMGIyMmExMWYzMjExOWVlZjJiYWFjNjM1NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.-HaWDTLOZ237UTl-hjXL7hoiGEsNmNJeIBAoOTr7kb8) |
+| ![Node 3](./images/Spherical_rotating_PRT_3_node_3_2023-05-22.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -739,7 +739,7 @@ board.update();
 
 [[/jsxgraph]]
 ```
-| ![Feedback_applet](https://private-user-images.githubusercontent.com/120648145/239858932-76cfed7b-42e8-4e10-ac3c-fed17c35b88d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQ2MzU4LCJuYmYiOjE2ODQ3NDYwNTgsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg1ODkzMi03NmNmZWQ3Yi00MmU4LTRlMTAtYWMzYy1mZWQxN2MzNWI4OGQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDkwMDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmQzZWYxN2M4M2YzMDA4MTQ4NGMyZjY2ZDcwMGU4NmZkNTM2OGVmYmU2ODhkZTkwNWI3NWY1MzRhYmQ3ZTAzYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.IykZIbyaAcaDgf-3p4i8DRE53lUWPDNu1TPD5XT4Wfc) |
+| ![Feedback_applet](./images/Spherical_rotating_student_feedback_2023-05-22.png) |
 |:--:|
 | *Feedback applet with the reference volume, student volume and cross sections with coordinate planes.* |
 
