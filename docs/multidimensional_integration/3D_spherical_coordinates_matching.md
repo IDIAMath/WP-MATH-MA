@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to spherical coordinates  (Handling mathematical symbols and formalism)
 +	Student can take a volume with spherical geometry and reconstruct the limits of its radius and angles (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240959221-79653916-5814-4343-9ccd-e359c45f1a77.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4MjQwLCJuYmYiOjE2ODUwMjc5NDAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTIyMS03OTY1MzkxNi01ODE0LTQzNDMtOWNjZC1lMzU5YzQ1ZjFhNzcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUxOTAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmUzMDI3NGVjMTJmNjNiODNjNDIyYzQzODA5Mjc2MGRkNzg1MmZmYTM1NjJlMjBkOTM3M2Q5NmMzNDI2NGFjMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.dPI7SWiFAvkLqADF_SngkWW_ariuvK_e9kgTly70aoI) |
+| ![First impression](./images/Spherical_matching_2023-05-25.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -25,7 +25,7 @@ The student sees a cartesian coordinate system and a volume with spherical geome
 
 It is the task to reconstruct the intervals of a 3D integration in spherical coordinates that results in the volume given. In order to do this they have to find out the radius and angles by matching a second volume to the given one using sliders. If they overlap exactly, the interval bounds can be read from the sliders. The values have to be given in an exact algebraic manner.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240959207-fd37658b-a50a-4639-985d-dc299731c5c9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4MjQwLCJuYmYiOjE2ODUwMjc5NDAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTIwNy1mZDM3NjU4Yi1hNTBhLTQ2MzktOTg1ZC1kYzI5OTczMWM1YzkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUxOTAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWNmMDRlODU5NDhhNzA5NTJjY2VhNWNiZjg4NjE0MWRmNmM2MTk0NTM0NDQxMDk2ZjM2Y2Y3MzM4MjVhMGZmZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.c-_sZ56WYgHpen1GKccWU1G6Zc9GCc_Wmu2bJlTzUSY) |
+| ![Click draw button](./images/Spherical_matching_student_2023-05-25.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -39,7 +39,7 @@ For an explanation of the processing of the values read **Question variables** a
 
 **It is important to make sure that $\psi \le \pi$ and $\phi \le 2 \pi$, when changing values!** 
 
-| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/240959218-774d4f98-a379-4270-91de-e7b1dff39114.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4MjQwLCJuYmYiOjE2ODUwMjc5NDAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTIxOC03NzRkNGY5OC1hMzc5LTQyNzAtOTFkZS1lN2IxZGZmMzkxMTQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUxOTAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWIwOGQ5MDUxNGY4ZjU1M2FmZTM2ZWJiYTFjOWRmMGQ0NWRmMTVmMzcwZmI1ZjM3NzNlN2Y4OWExZGYyMjhmYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Rpb61PJaR2bhq1sDyM2a5knZWIZmzDNOUgCmaHoukeM) |
+| ![values the teacher can change](./images/Spherical_matching_teacher_2023-05-25.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -340,7 +340,7 @@ r2:ans2
 
 ```
 
-| ![prt1](https://private-user-images.githubusercontent.com/120648145/240959464-966f4706-8809-4824-8494-ab8175aeada4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4Mjk3LCJuYmYiOjE2ODUwMjc5OTcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTQ2NC05NjZmNDcwNi04ODA5LTQ4MjQtODQ5NC1hYjgxNzVhZWFkYTQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUxOTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2VhZGM0YjY3OTdhZDZkOTFhNjNlMTEwNWQ3NTlmNzhiYzRiNWEzNjM4NTgxMTdlYzM3MjBmZjIyNTRjMjdlZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.8oPOeoVPk0-qZZk9uUqNrySMZennSNs9ig0uFCfGh1w) |
+| ![prt1](./images/Spherical_matching_PRT_1_2023-05-25.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -356,7 +356,7 @@ r2:ans2
 |Node 1 false feedback |`<p>The value you gave for \(r_1\) is not correct.  </p>`|
 
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240959467-41247bb2-e583-4d6d-b147-836b9a97ef00.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4Mjk3LCJuYmYiOjE2ODUwMjc5OTcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTQ2Ny00MTI0N2JiMi1lNTgzLTRkNmQtYjE0Ny04MzZiOWE5N2VmMDAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUxOTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2MzZmU1Y2UwM2MyZGRiNzgzNDhhOTRiNDQwZjgzYWM2MGVlN2RlNTIwZTIwNjExNDJkNjZmYTBmODRiYzU2ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.EQKiw4Pxp_MlqvuQdjIAA3IMUP9PPNTDRVeoRaNRauk) |
+| ![Node 1](./images/Spherical_matching_PRT_1_node_1_2023-05-25.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -369,7 +369,7 @@ r2:ans2
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p> Perfect! You got both radiuses right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(r_2\) is not correct. Try matching the points perfectly and read the larger radius. </p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240959458-79501a9d-8fb8-470f-b93a-d5e62d09c798.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4Mjk3LCJuYmYiOjE2ODUwMjc5OTcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTQ1OC03OTUwMWE5ZC04ZmI4LTQ3MGYtYjkzYS1kNWU2MmQwOWM3OTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUxOTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTMzMDc4NjZlMTJlZGJlYWY2ZDc5ZDAxMTA0NjIyZjE0ZGUyM2UxN2UwNDk5NmY3Yzk3ODEyZDYyYWExNGYyYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.CxrqEQc8r3BTowletX4u5oVWps6V09geMITzn-HVNUQ) |
+| ![Node 2](./images/Spherical_matching_PRT_1_node_2_2023-05-25.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -383,7 +383,7 @@ r2:ans2
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p>Check whether you did anything different here than for \(r_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(r_2\) is also not correct. Try matching the points perfectly and read the radiuses. The smaller radius is the lower bound of the interval. The larger radius is the upper bound of the interval. </p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/240959462-036c8eff-740a-49fb-b39e-f41a0767ba42.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4Mjk3LCJuYmYiOjE2ODUwMjc5OTcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTQ2Mi0wMzZjOGVmZi03NDBhLTQ5ZmItYjM5ZS1mNDFhMDc2N2JhNDIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUxOTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTY0YTFlYTg2MjUwOTdhYjJlMTcwYzk2NDk1ZGI1YmM4MDU2Mjg1NGIzMzM0NGY4MmYwZjhkNzcxMWExMDAyMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.tg7QperEwTpCwq5waltUIzl-qDhkfs9azImvX_xUrY0) |
+| ![Node 3](./images/Spherical_matching_PRT_1_node_3_2023-05-25.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -397,7 +397,7 @@ phi2:ans4;
 
 ```
 
-| ![prt2](https://private-user-images.githubusercontent.com/120648145/240959822-cf48db59-8395-4cc1-99bf-c71dd46d6429.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4MzYzLCJuYmYiOjE2ODUwMjgwNjMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTgyMi1jZjQ4ZGI1OS04Mzk1LTRjYzEtOTliZi1jNzFkZDQ2ZDY0MjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUyMTAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDk4NzFjY2YwNzU5NDQwMGZjMjdkOGVkMzRlMDhlZmYwN2JiNjA4NWY1ZjMzMjE5YjVhZjJkYjFjYTJjMTgxMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.rSRkI3hX0oUat91jlG50Qh7AEyvZvF670u3xFMfZidA) |
+| ![prt2](./images/Spherical_matching_PRT_2_2023-05-25.png) |
 |:--:|
 | *Visualization of **prt2*** |
 
@@ -412,7 +412,7 @@ phi2:ans4;
 |Node 1 true feedback | `<p>Nice, you found the correct value for \(\phi_1\)! Good job!<p>`|
 |Node 1 false feedback |`<p>The value you gave for \(\phi_1\) is not correct.  </p>`|
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240959831-e21b87a0-d937-4158-94de-31732f771054.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4MzYzLCJuYmYiOjE2ODUwMjgwNjMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTgzMS1lMjFiODdhMC1kOTM3LTQxNTgtOTRkZS0zMTczMmY3NzEwNTQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUyMTAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2JkYzZkYWUzNWM3YThiN2Q3MzY3YmY3OTk5ZjBiN2FlMDdkODA2YzdmNTI5MDcxM2EwN2MyN2MzY2E3MTgyMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.rex4bN8a8POIGxppeJ3RpK8cT7c3oiJWWTU-H2WW5FM) |
+| ![Node 1](./images/Spherical_matching_PRT_2_node_1_2023-05-25.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -426,7 +426,7 @@ phi2:ans4;
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(\phi_2\)! Good job!</p> <p> Perfect! You got both values of \(\phi\) right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(\phi_2\) is not correct. Try matching the points perfectly and read the bigger angle.</p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240959810-b4fe9426-f1b4-4648-acf9-9f88958a604a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4MzYzLCJuYmYiOjE2ODUwMjgwNjMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTgxMC1iNGZlOTQyNi1mMWI0LTQ2NDgtYWNmOS05Zjg4OTU4YTYwNGEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUyMTAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjEwM2FjZWI5N2I4NDdhYTMxMGI1MDA0YjljMzY5YzUxMTU4NDI2MGQ0ZjVmZDZkMTU0Zjk3YTczYThlN2MyMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.ZoEQTM5tr6WbF29lfJluuAGwupn3dkfoynne1hgWXZ8) |
+| ![Node 2](./images/Spherical_matching_PRT_2_node_2_2023-05-25.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -439,7 +439,7 @@ phi2:ans4;
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(\phi_2\)! Good job!</p> <p>Check whether you did anything different here than for \(\phi_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(\phi_2\) is also not correct. Try matching the points perfectly and read the angles. The smaller angle is the lower bound of the interval. The larger angle is the upper bound of the interval.</p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/240959816-b571d51f-fef9-498e-a155-270292a910f8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4MzYzLCJuYmYiOjE2ODUwMjgwNjMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk1OTgxNi1iNTcxZDUxZi1mZWY5LTQ5OGUtYTE1NS0yNzAyOTJhOTEwZjgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUyMTAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDQ1OTdhZmRmNDEwODk1NGRjYmY0OTJiZTg5ZTBiODk3ZWIxMDRmOTVjODVkN2ZhZjVmNjllMmEzZTYwOWQ0MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Y_wYWjo6btNRxg3__WNYe-Nvv55Qmx0K6N57Zh9Soxs) |
+| ![Node 3](./images/Spherical_matching_PRT_2_node_3_2023-05-25.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -452,7 +452,7 @@ psi2:ans6;
 
 ```
 
-| ![prt3](https://private-user-images.githubusercontent.com/120648145/240960377-ab3a7c38-2655-479a-ae73-d91839a45a53.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4NDc1LCJuYmYiOjE2ODUwMjgxNzUsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk2MDM3Ny1hYjNhN2MzOC0yNjU1LTQ3OWEtYWU3My1kOTE4MzlhNDVhNTMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUyMjU1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGQ2YTcwY2E2NTU2N2E0YmEyNGExMTQwMmM0OGQ3OWVlOGNkZjdmM2ZlMmI4YmQwNmE5MjYwZmFiMzU4MDkxNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.MVdSz6-PcApZe7NlXbWUKZb8MBXVnZ7RHBiJZ_pZGPE) |
+| ![prt3](./images/Spherical_matching_PRT_3_2023-05-25.png) |
 |:--:|
 | *Visualization of **prt3*** |
 
@@ -467,7 +467,7 @@ psi2:ans6;
 |Node 1 true feedback | `<p>Nice, you found the correct value for \(\psi_1\)! Good job!<p>`|
 |Node 1 false feedback |`<p>The value you gave for \(\psi_1\) is not correct.  </p>`|
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240960369-60d14ff4-0d0e-4e96-9b06-afcb8817bf26.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4NDc1LCJuYmYiOjE2ODUwMjgxNzUsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk2MDM2OS02MGQxNGZmNC0wZDBlLTRlOTYtOWIwNi1hZmNiODgxN2JmMjYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUyMjU1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmVjOTMxYWU2MTllOWY0YmQwYWI2MTUzYzg5OWQzNTZmZDA3ZGEzN2IwMTFhN2UyNWFjYTU2YzhiNWJkZDU0OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.eUdhgiaDvpBAJ3HVEHe6TpOtZLdKsBnfDsdaHiXBLhc) |
+| ![Node 1](./images/Spherical_matching_PRT_3_node_1_2023-05-25.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -480,7 +480,7 @@ psi2:ans6;
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(\psi_2\)! Good job!</p> <p> Perfect! You got both values of \(\psi\) right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(\psi_2\) is not correct. Try matching the points perfectly and read the bigger angle. </p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240960374-0d861c5d-6e7d-453d-b45d-b3acf3812c7c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4NDc1LCJuYmYiOjE2ODUwMjgxNzUsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk2MDM3NC0wZDg2MWM1ZC02ZTdkLTQ1M2QtYjQ1ZC1iM2FjZjM4MTJjN2MucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUyMjU1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzYzNTgwYjdmNjZmODFiZDM3YTYxYjgwZDk2Nzk4NTc1OGYyZjlmZDZlODk0M2M5Y2ExN2QxZTgxYTJkYzMzOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.YqbIBvFqQQUy38gqe-3PrilGb0QRn2pQMR20nPjB608) |
+| ![Node 2](./images/Spherical_matching_PRT_3_node_2_2023-05-25.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -493,7 +493,7 @@ psi2:ans6;
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(\psi_2\)! Good job!</p> <p>Check whether you did anything different here than for \(\psi_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(\psi_2\) is also not correct. Try matching the points perfectly and read the angles. The smaller angle is the lower bound of the interval. The larger angle is the upper bound of the interval.</p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/240960376-8147f233-ccfe-47a3-9bcf-8cf5fd14ca9e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDI4NDc1LCJuYmYiOjE2ODUwMjgxNzUsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDk2MDM3Ni04MTQ3ZjIzMy1jY2ZlLTQ3YTMtOWJjZi04Y2Y1ZmQxNGNhOWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTUyMjU1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDE0MWFiMWNhZDI2NDVkMDZhZDJmMzcxZDI2ZmU4NzczMTAyY2FmNGQzNWUyMjI5ZWRkZjRkMTI5NTY4NDQyYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.0PYPPu4hjK6f6r4MWW3NVn6erS7wlXbXjkFuf-xSz5E) |
+| ![Node 3](./images/Spherical_matching_PRT_3_node_3_2023-05-25.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -501,4 +501,4 @@ psi2:ans6;
 
 * [ ] Print JSXGraph applet bigger
 * [x] make square appear as such
-* [ ] Update Images
+* [x] Update Images
