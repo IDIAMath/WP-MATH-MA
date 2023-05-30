@@ -8,7 +8,7 @@ theme: minima
 +	Studen adapts his understanding of the 3D-space to a novel set of coordinates with help of a visualization (making use of aids and tools)
 +	Student can take a volume and reconstruct the limits of its parameters (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/241678356-0b945b06-f887-42a2-88ba-13d9b245abd1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MzQ2OTk2LCJuYmYiOjE2ODUzNDY2OTYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTY3ODM1Ni0wYjk0NWIwNi1mODg3LTQyYTItODhiYS0xM2Q5YjI0NWFiZDEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjlUMDc1MTM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Zjk2Y2VlOGRhN2Q2NTEyNzc5NmEwYTZhYzM1YmJjYjcwMTE1MTM5M2Y4N2RkMTU3YzQzMmZjNzc3MjcyOWEyNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.KDARvY39rv1yj-SVvzIwLC4KUTJ6rAgFxNmKLzl-tuk) |
+| ![First impression](./images/general_transformation_2023-05-29.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -28,7 +28,7 @@ The student sees a cartesian coordinate system and a volume with non-cartesian g
 
 It is the task to reconstruct the intervals of a 3D integration in the new coordinates that results in the volume given. In order to do this they have to find out the correct values by matching a second volume to the given one using sliders. 
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/241678352-4e44f176-6681-44b7-8858-9f0860b2350f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MzQ2OTk2LCJuYmYiOjE2ODUzNDY2OTYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTY3ODM1Mi00ZTQ0ZjE3Ni02NjgxLTQ0YjctODg1OC05ZjA4NjBiMjM1MGYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjlUMDc1MTM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDhlYTRkMGEwMDIxNmE5NmY2MDFhNTY3ZThiYTE0MTQ2ZjIxNDVmNzVkZTNhNjM2ODk3MWFhNTBjNTRiMDRkMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.XhcP9Zmt0-U93SrINYmUALPz75agVKyDQ7uIS_VSsQo) |
+| ![Click draw button](./images/general_transformation_student_2023-05-29.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -41,7 +41,7 @@ The teacher can provide a list of possible values for interval bounds. In order 
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/241678358-7de8267d-089d-44e7-902a-91275f051b5e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MzQ2OTk2LCJuYmYiOjE2ODUzNDY2OTYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTY3ODM1OC03ZGU4MjY3ZC0wODlkLTQ0ZTctOTAyYS05MTI3NWYwNTFiNWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjlUMDc1MTM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTI0ZWE1OWE3MmY3MTVmMTUwOTg4OWViZjY5MTJmZDAyN2JmOTZiNmUzNDFkOGJkODRmYzg5YjJhZWYzM2U1YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.yj9ShUcG_VDH2fmtezdSm_LjSdXPXLapVLeM5iY4NrE) |
+| ![values the teacher can change](./images/general_transformation_teacher_2023-05-29.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -355,6 +355,7 @@ var view = board.create('view3d',
 | Student must verify | Yes |
 | Show the validation | Yes, with variable list|
 
+
 ## Potential response tree
 ### prt1
 
@@ -365,7 +366,7 @@ u2s:ans2
 
 ```
 
-| ![prt1](https://private-user-images.githubusercontent.com/120648145/241000583-7327235f-8302-4222-afb8-0fe69a8d254e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4OTEwLCJuYmYiOjE2ODUwMzg2MTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDU4My03MzI3MjM1Zi04MzAyLTQyMjItYWZiOC0wZmU2OWE4ZDI1NGUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxNjUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTU1YTlhZGViM2YwM2FmNzdjNDgxYzkxYWE3M2NiZGIzNWMxNDIxNTQyMmJlYTdkOTc4NGRhYzNmMWY3YTg4ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.eKR2RBeIGesR2wuBgByh5EP0rOutpmmYUcdOEouMUGs) |
+| ![prt1](./images/general_transformation_PRT_1_2023-05-25.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -381,7 +382,7 @@ u2s:ans2
 |Node 1 false feedback |`<p>The value you gave for \(u_1\) is not correct.  </p>`|
 
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/241000584-951c4281-4d66-466d-aa34-c1b497013989.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4OTEwLCJuYmYiOjE2ODUwMzg2MTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDU4NC05NTFjNDI4MS00ZDY2LTQ2NmQtYWEzNC1jMWI0OTcwMTM5ODkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxNjUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjBmM2UyZDE4MTA1ZmIwNDExYjA1MWJkZjU0ZGRjMGIxMmQ4MTFmMWNlZDU3NjZhY2FjMjIzYjYzNjU5NGRhNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.J4a6Bhr1_EHzja8EJKWx7AnGYhLsC8XFvTN5MUjz0D0) |
+| ![Node 1](./images/general_transformation_PRT_1_node_1_2023-05-25.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -394,7 +395,7 @@ u2s:ans2
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(u_2\)! Good job!</p> <p> Perfect! You got both values right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(u_2\) is not correct. Try matching the volumes perfectly.</p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/241000585-84d480e5-f0b1-4747-b506-1687314bfa0a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4OTEwLCJuYmYiOjE2ODUwMzg2MTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDU4NS04NGQ0ODBlNS1mMGIxLTQ3NDctYjUwNi0xNjg3MzE0YmZhMGEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxNjUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTExMzJkOTcxM2NjZDQ1OWZmODZiNjA3YjE5OGZlMDA1Y2UwYzY2YjY5Yzk3MTEwNTU3OWJkZGViYWNhM2MxYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.IflFq2qdl6xOpblWw7ghxOymE_vkQVtAMwNy2HIMfvs) |
+| ![Node 2](./images/general_transformation_PRT_1_node_2_2023-05-25.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -408,7 +409,7 @@ u2s:ans2
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(u_2\)! Good job!</p> <p>Check whether you did anything different here than for \(u_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(u_2\) is also not correct. Try matching the volumes perfectly by adjusting the sliders.  \(u_1,u_2\) define the radial component. </p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/241000580-6a64e45f-d1f5-4b2b-8438-2deae81ff160.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4OTEwLCJuYmYiOjE2ODUwMzg2MTAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDU4MC02YTY0ZTQ1Zi1kMWY1LTRiMmItODQzOC0yZGVhZTgxZmYxNjAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxNjUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDcwYWNiOWMyZjhmNTE0ZDQxZWE0MGZiYTRmZTdhNTQ3MDVmNmQzMWM5ZTYzOTU0NGQwODY2NGUxOWM3YzA4MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.APB3n0_UgDXUaIOVELkf5kbzIBl23i2LPeAlUcnZpRM) |
+| ![Node 3](./images/general_transformation_PRT_1_node_3_2023-05-25.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -422,7 +423,7 @@ v2s:ans4;
 
 ```
 
-| ![prt2](https://private-user-images.githubusercontent.com/120648145/241000807-ef7fe56b-13a5-496f-b13f-80b6cb764e08.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4OTgwLCJuYmYiOjE2ODUwMzg2ODAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDgwNy1lZjdmZTU2Yi0xM2E1LTQ5NmYtYjEzZi04MGI2Y2I3NjRlMDgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzI5OGJiMGNlMTUwMTdjN2MyNzVlMzA5NzQwZmJlNmY5NTQyODFhZDBhYmU2NjI2YzUyZGRlOWIwMjVlYTYyYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ._HwQmqfKGTD7Ynr0rxRLIoTlpg1udE0ADn6DXrrybvk) |
+| ![prt2](./images/general_transformation_PRT_2_2023-05-25.png) |
 |:--:|
 | *Visualization of **prt2*** |
 
@@ -437,7 +438,7 @@ v2s:ans4;
 |Node 1 true feedback | `<p>Nice, you found the correct value for \(v_1\)! Good job!<p>`|
 |Node 1 false feedback |`<p>The value you gave for \(v_1\) is not correct.  </p>`|
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/241000808-a9df7951-5c1d-43f9-abde-526a869d0db4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4OTgwLCJuYmYiOjE2ODUwMzg2ODAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDgwOC1hOWRmNzk1MS01YzFkLTQzZjktYWJkZS01MjZhODY5ZDBkYjQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzE3ZmQwY2ZlYjc2YWJhMGNiNGJhYmMzY2RiYTU2NWJkZWI2MTE2YzljY2U5YjUxMjE5Y2VkNjI0ZWNjOTU1MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.D0wS8D1OhLLiANmHNc4WTvrYg93LufqWikgCVynGy-M) |
+| ![Node 1](./images/general_transformation_PRT_2_node_1_2023-05-25.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -451,7 +452,7 @@ v2s:ans4;
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(v_2\)! Good job!</p> <p> Perfect! You got both values right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(v_2\) is not correct. Try matching the volumes perfectly.</p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/241000810-d987397e-6e86-4cf4-b2ae-fa820b94a325.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4OTgwLCJuYmYiOjE2ODUwMzg2ODAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDgxMC1kOTg3Mzk3ZS02ZTg2LTRjZjQtYjJhZS1mYTgyMGI5NGEzMjUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWZmYjMyNjg2ZjQwMDc4OGYwZGMzNzZmYjdiODk5NmIzZGEyZTAxNTdiYjQ2MmY3OWU4MDJlZTY0ODZjZTJjOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.xhmsZiBBQ1MrLZONtSnzgvFrCL5uORPCBB2HsQUK77E) |
+| ![Node 2](./images/general_transformation_PRT_2_node_2_2023-05-25.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -462,11 +463,12 @@ v2s:ans4;
 |SAns | `v2s`|
 |TAns | `v2r`| 
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(v_2\)! Good job!</p> <p>Check whether you did anything different here than for \(v_1\) and try again. </p>`|
-|Node 3 false feedback |`<p>The value you gave for \(v_2\) is also not correct. Try matching the volumes perfectly. \(v_1,v_2\) define the opening angle of the radial component.</p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/241000799-cc6c7e86-b4b3-4384-bc90-6e53bcdbab5f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM4OTgwLCJuYmYiOjE2ODUwMzg2ODAsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMDc5OS1jYzZjN2U4Ni1iNGIzLTQzODQtYmM5MC02ZTUzYmNkYmFiNWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTI1MTNmNjI0NTA5YWM0YmNjNDdmOGZmOTk3ODZjOTExNTRhYjgwNDc0ZDgyN2MzYzRkNDljY2I4ZDY2NTJmYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.vtMMwnPjb60m_2JyuSRdf3HGqXrighg2FQF6av1FWjc) |
+
+| ![Node 3](./images/general_transformation_PRT_2_node_3_2023-05-25.png) |
 |:--:|
 | *Values of **node 3*** |
+
 
 ### prt3
 
@@ -477,7 +479,7 @@ w2s:ans6;
 
 ```
 
-| ![prt3](https://private-user-images.githubusercontent.com/120648145/241001128-62777315-86e6-47cf-b258-ef6112b794ca.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM5MDc3LCJuYmYiOjE2ODUwMzg3NzcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMTEyOC02Mjc3NzMxNS04NmU2LTQ3Y2YtYjI1OC1lZjYxMTJiNzk0Y2EucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxOTM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWFiNGYwYTU1NTVjOTY5MmM2MzUzMWExOWE3ZTdkZDU2MTRlNzliNWM2ZDdkNmVmNTFiOTMyY2ExOWIzNmE1NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.PMvmkDtn78oHqKkNL7urhRhtlIfLk0VNYxFt6LLR8og) |
+| ![prt3](./images/general_transformation_PRT_3_2023-05-25.png) |
 |:--:|
 | *Visualization of **prt3*** |
 
@@ -492,7 +494,7 @@ w2s:ans6;
 |Node 1 true feedback | `<p>Nice, you found the correct value for \(w_1\)! Good job!<p>`|
 |Node 1 false feedback |`<p>The value you gave for \(w_1\) is not correct.  </p>`|
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/241001131-6b5a1e2a-b6d9-4aa9-bbf6-78a77590756a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM5MDc3LCJuYmYiOjE2ODUwMzg3NzcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMTEzMS02YjVhMWUyYS1iNmQ5LTRhYTktYmJmNi03OGE3NzU5MDc1NmEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxOTM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2IwYTRjYzIwN2Q2ZDNmYWYzOGY0YTc3ZGE0OTc3NzRjNDhiMmFmMmIxNmYzNjRiNzE4OWExZjMwMThkMjQ0NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.NCK58Yrt_msElORttELeiVd05gq3JdRPBkcdpj4RFk0) |
+| ![Node 1](./images/general_transformation_PRT_3_node_1_2023-05-25.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -505,7 +507,7 @@ w2s:ans6;
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(w_2\)! Good job!</p> <p> Perfect! You got both values right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(w_2\) is not correct. Try matching the volumes perfectly. </p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/241001134-1e87b3a5-bb62-4ed4-a885-d410bec6ceb0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM5MDc3LCJuYmYiOjE2ODUwMzg3NzcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMTEzNC0xZTg3YjNhNS1iYjYyLTRlZDQtYTg4NS1kNDEwYmVjNmNlYjAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxOTM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGNlYmM3MzMyMmJjNThjMTY3NDFhOTQ1Y2JhNjEzOGY3ZTk2OWEyM2JjMjUwNDg2OGI4YTRiNmUyM2QzZjg2NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.zZ2k4ZWnDqosEp0R0ldR4XxVxY9WUPd7PC_Thxi4td8) |
+| ![Node 2](./images/general_transformation_PRT_3_node_2_2023-05-25.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -518,9 +520,14 @@ w2s:ans6;
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(w_2\)! Good job!</p> <p>Check whether you did anything different here than for \(w_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(w_2\) is also not correct. Try matching the volumes perfectly. \(w_1,w_2\) define the opening angle in the \(x-y\)-plane.</p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/241001125-d0ca204e-7757-4fa0-b19a-0424384fc14c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDM5MDc3LCJuYmYiOjE2ODUwMzg3NzcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MTAwMTEyNS1kMGNhMjA0ZS03NzU3LTRmYTAtYjE5YS0wNDI0Mzg0ZmMxNGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTgxOTM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjEzY2U3ODk0NmRkZmZkN2FlZGU5N2IyZGFlODIyMGY5NzE3ODdkOGQ2ZGViYTdmMDExZWNkZWRjMzE3NDcwNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jMp_4Tlq8xgtmuDx_74ABBU2SdhyV_0BBNv0s4dX6S0) |
+| ![Node 3](./images/general_transformation_PRT_3_node_3_2023-05-25.png) |
 |:--:|
 | *Values of **node 3*** |
+
+
+
+
+
 
 ## Todo:
 * [ ] 
