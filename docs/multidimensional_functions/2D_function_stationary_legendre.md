@@ -8,7 +8,7 @@ theme: minima
 +	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
 + Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240860828-a8a412eb-f1ec-46d0-abad-b0a12b852f5f.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgyOC1hOGE0MTJlYi1mMWVjLTQ2ZDAtYWJhZC1iMGExMmI4NTJmNWYuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGI3YzI4OGFhNjM5Y2RhOGI2Mzc5MDY0NDNhYjU0MjNmYzY3YjY1MDMxODMyZDNhZjUzNGM2N2JiNjhjMDBmZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.HTBDvrZmJ0F46P188FXKgRXn4kRW9bOeOe48pHgupcU) |
+| ![First impression](./images/stationary_point_legendre_2023-05-25.PNG) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,7 +29,7 @@ The function in this task is composed of two legendre polynomials.
 When the point is moved in $x-y$-direction, the height of a corresponding point with the same $x,y$-coordinates moves according to the 2D-function. At this point, the tangent plane is calculated and plotted in a range big enough to estimate the infinite development. 
 The student moves the plane to a point with a tangent plane that fulfils the requirements. The coordinates of the points are interpreted as answers.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240860822-859177fb-48a6-42d6-926d-97bbc6f1661e.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgyMi04NTkxNzdmYi00OGE2LTQyZDYtOTI2ZC05N2JiYzZmMTY2MWUuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2Q2ODU0NmVjMDZiZDlkOTAwNGU0MDYyODE2MGFiMGJmN2NjYWIxOTI4YWJlNDQ1YmJkNGFhMDc1NGNlOWFkMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.3nfP4VetS7nHdvKUnGh-s9Nz92cJX2VLP_Zf1E82O80) |
+| ![Click draw button](./images/stationary_point_legendre_student_2023-05-25.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -42,7 +42,7 @@ Additionally, they can change the possible values for the $x$ and $y$ off-sets `
 Furthermore the teacher is able to change the function entirely to a function that fits his needs. They can change the function defined by `F: a1*1/16*(231*(a2*(x-x0))**6-315*(a2*(x-x0))**4+105*(a2*(x-x0))**2-5)* 1/2*(5*(a3*(y-y0))**3- 3*(a3*(y-y0)));` to a function they desire. However, it might be necessary to define additional parameters analogous to the ones defined before or make changes to the exisitng parameters.
 Lastly, the reference solution for an exemplatory stationary point must be adjusted to the function used.
 
-| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/240860825-18677be1-f651-4b90-8c3c-3e410c8ab226.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgyNS0xODY3N2JlMS1mNjUxLTRiOTAtOGMzYy0zZTQxMGM4YWIyMjYuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2Y2OTBlNGE3MzVhOGExMGFlNmNiOTM1ZjIzYzU3NjdjMjlmYzg4YjA3MTgwZWM2ZmQ0YmYwMjg0NTMxMTM1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.412ZjOwPH6ucotMfRXEMDnGcuUk7AQYhPAjLZHh2x_I) |
+| ![values the teacher can change](./images/stationary_point_legendre_teacher_2023-05-25.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -219,7 +219,7 @@ The tangent plane in a stationary point is exactly horizontal, since the gradien
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://private-user-images.githubusercontent.com/120648145/240860835-69f4211f-d589-40fa-a70f-f10f691ea6ee.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgzNS02OWY0MjExZi1kNTg5LTQwZmEtYTcwZi1mMTBmNjkxZWE2ZWUuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NThlYTkyMTBlMTI0OGRhMGNiYjdjZDNlM2M1ZGZmMTViYjgwMjMyNzA3ZjJmOTU4NjhjMjU2ZTIwYThlMjhiMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.vrBLMEc7PF3j9DXkdG_vB_XJqnvh5Z30wmU7ppWmX3c) |
+| ![prt1](./images/stationary_point_legendre_prt_1_2023-05-25.PNG) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -241,7 +241,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 1 true feedback | `<p>Nice! In \(x\)-direction the slope is close to zero.</p>`|
 |Node 1 false feedback | `<p>In \(x\)-direction the slope is not close enough to zero.</p>`|
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240860836-4258c131-e1c1-44e5-8848-b02fc2dcf275.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgzNi00MjU4YzEzMS1lMWMxLTQ0ZTUtODg0OC1iMDJmYzJkY2YyNzUuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Zjk4YmNjMjk4MDJkNmFkODRkMzE4YTM2YjliN2FhMWVmYmZkYjM4ODE0YzUzNjhmYjIyNDY1NDRmODg1N2QxOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.xgPoW8pdPGw0XvqjJE-Zs_owYamfFaQrB8ENC2Gb5MI) |
+| ![Node 1](./images/stationary_point_legendre_prt_1_node_1_2023-05-25.PNG) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -254,7 +254,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 2 true feedback | `<p>Nice! In \(y\)-direction the slope is also close to zero. You found a stationary point!</p>`|
 |Node 2 false feedback | `<p>In \(y\)-direction the slope is not close enough to zero. Maybe you didn't select the point precisely enough. Try again!</p>`|
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240860811-bbee7a3a-56df-425f-bddd-5326413ad7b3.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgxMS1iYmVlN2EzYS01NmRmLTQyNWYtYmRkZC01MzI2NDEzYWQ3YjMuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjkyOWQyNGJkMDczNDA5MDk0N2QxYTZlOWZlMzAxMGI1NGQ0MzYyZjFiNzkyODEwMjIxNTNjNjU3MTUyMTcxNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.PBc-nsIbm5y2FgLkaFm1DkXy4-fYCYoAWyw0QHQA-U4) |
+| ![Node 2](./images/stationary_point_legendre_prt_1_node_2_2023-05-25.PNG) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -267,7 +267,7 @@ FdySAns:ev(Fdy,numer,x=ans1[1],y=ans1[2]);
 |Node 3 true feedback | `<p>Nice! In \(y\)-direction the slope is close to zero. Maybe you didn't select the point precisely enough in \(x\)-direction. Try again!</p>`|
 |Node 3 false feedback | `<p>In \(y\)-direction the slope is also not close enough to zero. This is not a stationary point. Remember the definition of a stationary point and have a look at the explanation below!</p>`|
 
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/240860819-0843b605-fe2d-4ded-8d38-82addc0744e3.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA1NTU0LCJuYmYiOjE2ODUwMDUyNTQsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg2MDgxOS0wODQzYjYwNS1mZTJkLTRkZWQtOGQzOC04MmFkZGMwNzQ0ZTMuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMDkwMDU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzljMGViMDI3OWUxYjgyZDE5NDM0NTc5NGQ5OWQ1YjRkOGEwMmE4MjViZTQwOGVjYjA5YzI1OGMyYTRlMjFiNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.yv7K5Mqy3R0Euj71FZyVfzdECSlq6gLnycfDeDMz-YM) |
+| ![Node 3](./images/stationary_point_legendre_prt_1_node_3_2023-05-25.PNG) |
 |:--:|
 | *Values of **node 3*** |
 

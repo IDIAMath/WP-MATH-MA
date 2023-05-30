@@ -23,6 +23,7 @@ The student sees a plot of the 3D vector field. They can rotate their point of v
 
 
 | ![Click draw button](./images/curl_given_student_2023-05-29.PNG) |
+| ![Click draw button](./images/curl_given_student_2023-05-29.PNG) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -32,6 +33,7 @@ The teacher can remove entries from or add entries to the list `Vlist` that cont
 
 **The rest of the Question variables should not be altered.**
 
+| ![values the teacher can change](./images/curl_given_teacher_2023-05-29.PNG) |
 | ![values the teacher can change](./images/curl_given_teacher_2023-05-29.PNG) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
@@ -203,6 +205,9 @@ None needed, since `ans1` is selected by ticking a button.
 |Node 1 true feedback | `<p>Nice! You found the correct vector field. \(\hat V\) is the curl of this field.</p>`|
 |Node 1 false feedback | `<p>You did not select the correct vector field. The vector field given is the curl of the wanted vector field.</p>`|
 
+| ![Node 1](./images/curl_given_PRT_node_1_2023-05-29.PNG) |
+|:--:|
+| *Values of **node 1*** |
 
 ## Todo:
 * [ ] More options for vector fields
