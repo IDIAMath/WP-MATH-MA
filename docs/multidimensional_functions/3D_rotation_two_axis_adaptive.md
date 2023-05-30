@@ -15,7 +15,7 @@ This is an adaptive tutorial task. That means, a relatively hard task is present
 The tasks are documented seperately, but no in complete detail in this document. Some of the tasks are availabe as stand-alone exercises.
 
 
-| ![Overview](https://private-user-images.githubusercontent.com/120648145/239914246-c663f94c-b5d8-443a-9185-79fcca29cce1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzYwMzYxLCJuYmYiOjE2ODQ3NjAwNjEsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTkxNDI0Ni1jNjYzZjk0Yy1iNWQ4LTQ0M2EtOTE4NS03OWZjY2EyOWNjZTEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMTI1NDIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWI1ZmU3NjI0ZTYzZTgxM2Q5NTg3MGZjYTQ1M2I2OTE2ZDYxZTg0NDBmMjIwMmNhYmU1OGY0MzYwY2Q3YTA1ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.2YcKPQ4eR8JXBa-eWohAOESpRJfKeoxl6g4QxQY_3Es) |
+| ![Overview](./images/Rotation_adaptive_scheme.png) |
 |:--:|
 | *Overview of the task.* |
 
@@ -135,7 +135,7 @@ ap_res: [mattolist(ap_matres)[1][1],mattolist(ap_matres)[2][1],mattolist(ap_matr
 
 # Initial task (Rotating a curve about two unknown axis)
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240385755-309e330d-9a0f-494b-bde6-b123f6ea7a1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY2ODk5LCJuYmYiOjE2ODQ4NjY1OTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NTc1NS0zMDllMzMwZC05YTBmLTQ5NGItYmRlNi1iMTIzZjZlYTdhMWEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgyOTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTkzNWQxYmViMzAzYmM2MTE3YjUxNjA1ZTlhMTNmOTgxMDZlOTFlYTczMjhkZGZmNjMzYTVmMmYzNmE0MDVhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.WOYyuz5Z14uDjj9Kw8gq2eL7VGj2P8-UENpiQpL1bv4) |
+| ![First impression](./images/Rotation_adaptive_task.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -160,7 +160,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 They are presented with angles of rotation for each of the coordinate axis. They are asked to select the correct order of operations from a multiple choice selection.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240385755-309e330d-9a0f-494b-bde6-b123f6ea7a1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY2ODk5LCJuYmYiOjE2ODQ4NjY1OTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NTc1NS0zMDllMzMwZC05YTBmLTQ5NGItYmRlNi1iMTIzZjZlYTdhMWEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgyOTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTkzNWQxYmViMzAzYmM2MTE3YjUxNjA1ZTlhMTNmOTgxMDZlOTFlYTczMjhkZGZmNjMzYTVmMmYzNmE0MDVhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.WOYyuz5Z14uDjj9Kw8gq2eL7VGj2P8-UENpiQpL1bv4) |
+| ![Click draw button](./images/Rotation_adaptive_task_student.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -238,7 +238,7 @@ studentres: [mattolist(studentmatres)[1][1],mattolist(studentmatres)[2][1],matto
 
 ```
 
-| ![prt1](https://private-user-images.githubusercontent.com/120648145/240385712-18d69ca0-2c9d-4b0c-9724-beb75c128f01.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY2ODk5LCJuYmYiOjE2ODQ4NjY1OTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NTcxMi0xOGQ2OWNhMC0yYzlkLTRiMGMtOTcyNC1iZWI3NWMxMjhmMDEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgyOTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzAyZWQ5MDdmNTkwMWQ0MDI0ZWIyM2Q2ODE5ZWEyNjM5MWUwMzM1MTJjZjYxY2ExMGI0YzliYjNjZTc2ZWJkMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.RnbhVvf5cJVlPFONm1KBFO5B16v7x47Su4vRM0AqyYk) |
+| ![prt1](./images/Rotation_adaptive_PRT_1.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -257,12 +257,12 @@ studentres: [mattolist(studentmatres)[1][1],mattolist(studentmatres)[2][1],matto
 <p> Unfortunately, this is not the correct order of operations. <br>  In the following applet, you can see, how your answer would have looked like with the angles provided. The blue and orange curves are the way they were presented before. Your solution is displayed in purple. </p>
 <p> Note: sometimes there are other correct solutions. If there is only a purple curve, it overlaps with the orange and your answer is correct, as well.</p>
 ```
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240385715-0c45a0b4-0f9e-4665-bbf8-013dc7cc7e30.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY2ODk5LCJuYmYiOjE2ODQ4NjY1OTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NTcxNS0wYzQ1YTBiNC0wZjllLTQ2NjUtYmJmOC0wMTNkYzdjYzdlMzAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgyOTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWM4NTc4YzA4NTdjNDM5ZGMwZWUwYWFiMTYzMWI0MDQ3Y2E1MDhhOTI3ZDE0Y2UzNjNiNThlMTk4ZGE5YTBlNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.fqkwOqF37QTZXhbu9WBsLB4EEeF7R9cG-44olHaFZmQ) |
+| ![Node 1](./images/Rotation_adaptive_PRT_1_node_1.png) |
 |:--:|
 | *Values of **Node 1*** |
 
 
-| ![Feedback](https://private-user-images.githubusercontent.com/120648145/240385779-63fb49bb-f794-44ff-943c-f053250fc860.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY2ODk5LCJuYmYiOjE2ODQ4NjY1OTksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NTc3OS02M2ZiNDliYi1mNzk0LTQ0ZmYtOTQzYy1mMDUzMjUwZmM4NjAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgyOTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2UwM2ZhYTIwOGEwZDI2ZTJhZDEwY2E2NDViMDBkMzJhODcyNGVlMTRmMWZjYWE5NzE1NDRmMjZkNzlmODZlMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.J7WM58FLSAAPKJxJE02uYzxUhO98OczqiyA4eYnzyKE) |
+| ![Feedback](./images/Rotation_adaptive_task_feedback.png) |
 |:--:|
 | *Feedback upon incorrect answer * |
 
@@ -302,7 +302,7 @@ Go on to the next task to look at an easy rotation.
 # Task 1: Rotation about one axis
 
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240387362-a5afb547-6e0b-40c1-9a85-31281248bf93.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3MzAxLCJuYmYiOjE2ODQ4NjcwMDEsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NzM2Mi1hNWFmYjU0Ny02ZTBiLTQwYzEtOWE4NS0zMTI4MTI0OGJmOTMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzNjQxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWIxMDY4ZTFmM2RhZWNhZmM0MTg0ZTAzMTE0OWVhMGI1MDYzODc0NWFmNjRkMTA1MjE5NDJiNzE1MDY5MzlhMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.nQ63UuL1ItQHikbqoaz7Lexy8HvupO-tFCg8VflBJ5s) |
+| ![First impression](./images/Rotation_adaptive_task_1.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -326,7 +326,7 @@ They need to find out, what angle of rotation is.
 The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 They are presented with two curves that can be changed into one another by rotation about a coordinate axis. They are asked to find the correct rotational angle with the help of a slider.
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240387340-4fe6cadf-83ca-4dcf-9769-3210111b4e59.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3MzAxLCJuYmYiOjE2ODQ4NjcwMDEsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NzM0MC00ZmU2Y2FkZi04M2NhLTRkY2YtOTc2OS0zMjEwMTExYjRlNTkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzNjQxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2U3ODJkMGQ0Y2VkNDdhYTMxMWYwMGE2MTY2MzUzMjYxMTU3Yjk1NmZlMjIxMWE3YTM3YTNiZDhkMWY0OGI0MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.PsGJC7KqGZ-mBpj3msxBHNKG-feRibNU_eb8q03cE8s) |
+| ![Click draw button](./images/Rotation_adaptive_task_1_student.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -373,7 +373,7 @@ Feedback variables:
 ans2;
 ```
 
-| ![prt2](https://private-user-images.githubusercontent.com/120648145/240387861-7cf10434-a589-4e2e-afe4-229e290bf7e2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3NDEzLCJuYmYiOjE2ODQ4NjcxMTMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4Nzg2MS03Y2YxMDQzNC1hNTg5LTRlMmUtYWZlNC0yMjllMjkwYmY3ZTIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzODMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjBmMmVhNzA0M2NhNjczODIxMmU1ZWVmYWUwMDU4YTU5NzlkNWU2NmE3YTEyYjU2OWRkM2I0YzU2ZjQ5MTk1ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.oQ3vnqqCNv91xl3Xo8KN8alSvx08xx20zQBVZ3X0MtI) |
+| ![prt2](./images/Rotation_adaptive_PRT_2.png) |
 |:--:|
 | *Visualization of **prt2*** |
 
@@ -402,7 +402,7 @@ ans2;
         <button type="button" onclick="hide('task1');show('input2');">Continue</button>
     </p> 
 ```
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240387862-efea22a3-f1c6-4865-b239-a38ab54c03d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3NDEzLCJuYmYiOjE2ODQ4NjcxMTMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4Nzg2Mi1lZmVhMjJhMy1mMWM2LTQ4NjUtYjIzOS1hMzhhYjU0YzAzZDIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzODMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDAyODg3YmU5MTI2NGE4MTI5YmQzZGVkNGVjYWU4YjMzM2RkNzlmM2VkMjNlNDg0Mzg0YmU4MWViMDJlYjIxOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.w999V4-OvrBVUXW9rnEcRHKNEo_Pj4RdUPrMNJ5pgVs) |
+| ![Node 1](./images/Rotation_adaptive_PRT_2_node_1.png) |
 |:--:|
 | *Values of **Node 1*** |
 # Input 2: Rotations about multiple axis
@@ -453,7 +453,7 @@ In the next task, you can get familiar with a rotation about two axis.
 
 # Task 2a: Rotation about two known axis with unknown angles
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240387345-7bc063ec-a252-4077-98e4-c01770d84cd2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3MzAxLCJuYmYiOjE2ODQ4NjcwMDEsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NzM0NS03YmMwNjNlYy1hMjUyLTQwNzctOThlNC1jMDE3NzBkODRjZDIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzNjQxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTk5N2Q4ZTI4NTM2MDM0ZTQ4MjVhZjZiMjQxOWJmNWY2ZjNjNjcwZGUyZjYyOTdiODMyZGQzODNjY2YwNjAzYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.67RWmYEH78jN_gayEs5itO_gY7matSvMqjUVyT_mids) |
+| ![First impression](./images/Rotation_adaptive_task_2a.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -477,7 +477,7 @@ They need to find out, what the angles of rotation are.
 The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 They are presented with two curves that can be changed into one another by rotation about two coordinate axis. They are asked to find the correct rotational angles with the help of two sliders.
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240387348-c01829d5-057e-4cdf-a164-0bd1d5cfadb1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3MzAxLCJuYmYiOjE2ODQ4NjcwMDEsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4NzM0OC1jMDE4MjlkNS0wNTdlLTRjZGYtYTE2NC0wYmQxZDVjZmFkYjEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzNjQxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODhjMjY5MTBiOGIzYWMzMDI1MGNjN2Y4ZDBiNjc4OTVhZmQ2MDg0MGRjYTM4MmQxZTU0ZWRiYWE4OWFiZDM3NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.w6vFQWH8VlUinhXbqCadRODhUh4T3ZcI4DHGO8JpP4M) |
+| ![Click draw button](./images/Rotation_adaptive_task_2a_student.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -535,7 +535,7 @@ ans3;
 ans4;
 ```
 
-| ![prt3](https://private-user-images.githubusercontent.com/120648145/240387864-507df4c5-de1a-4305-b10d-61e8b75b1c57.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3NDEzLCJuYmYiOjE2ODQ4NjcxMTMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4Nzg2NC01MDdkZjRjNS1kZTFhLTQzMDUtYjEwZC02MWU4Yjc1YjFjNTcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzODMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmJhMGY0MDgwNTViMjk5ZjEzMjFlNGJiZmI2MDQ1ZWJkYzBhZjY4Mjc2MGI4MmIwNWE4YWY4NjE0NjFiZmY1YSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.lqde5eWIWrX_U4n-VRscCJ_OYUBGmZG9GYprQ9piiA8) |
+| ![prt3](./images/Rotation_adaptive_PRT_3.png) |
 |:--:|
 | *Visualization of **prt3*** |
 
@@ -551,7 +551,7 @@ ans4;
 |Node 1 false feedback | <p> The value you gave for angle \(\alpha\) is not yet correct. The correct value is {@betar@}. </p>|
 
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240387868-44d218a8-565f-42ed-9f8a-fa01b69384c4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3NDEzLCJuYmYiOjE2ODQ4NjcxMTMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4Nzg2OC00NGQyMThhOC01NjVmLTQyZWQtOWY4YS1mYTAxYjY5Mzg0YzQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzODMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGVjMWFkNmIzN2ZhYjEzMTUwNjU0N2ZjYWIxY2M0MGZlYWY2ZjI3MzIwMWI4YmE4MDNhNDU3MzY5ZjIzYWY0ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.WNLHULQQpw1E8iRBmzF_niHZoDOeyn_84jVlFB83AHc) |
+| ![Node 1](./images/Rotation_adaptive_PRT_3_node_1.png) |
 |:--:|
 | *Node 1* |
 
@@ -585,7 +585,7 @@ ans4;
     </p>not correct.<br></p>
 ```
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240387870-76a813b2-8524-4b10-b276-c6b8f8f09f1d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3NDEzLCJuYmYiOjE2ODQ4NjcxMTMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4Nzg3MC03NmE4MTNiMi04NTI0LTRiMTAtYjI3Ni1jNmI4ZjhmMDlmMWQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzODMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDI1ZWIwNjIzYWM1MTBmN2UyZDI2OGFhZjdiZjlmM2FjNTgxMzQ3OTcyZTZkMDdmMDRhNzQyYWI4NTNkYzYzNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.MgbzfeAU4yXWiiEPLxwLBkk95JkY4GFyN1pLH8sZhj4) |
+| ![Node 2](./images/Rotation_adaptive_PRT_3_node_2.png) |
 |:--:|
 | *Node 2* |
 ### Node 3
@@ -614,13 +614,13 @@ ans4;
         <button type="button" onclick="hide('task2a');show('task2b');">Continue</button>
     </p>
 ```
-| ![Node 3](https://private-user-images.githubusercontent.com/120648145/240387873-425b5449-4f06-450e-b970-c7bc11d59218.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3NDEzLCJuYmYiOjE2ODQ4NjcxMTMsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4Nzg3My00MjViNTQ0OS00ZjA2LTQ1MGUtYjk3MC1jN2JjMTFkNTkyMTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTgzODMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTdiZGYyZjYxNmNkYTYxNjc3ZmQwMDY0ODA5Yjc1NjMwYzY0ZmJlZTdlMmU1ZTQ3YWM3NGMxN2NhZDdmY2FlMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.CgDBchPpzhCiLwvg_ObZTNg4vv72HCHuvCmEJ28ndN8) |
+| ![Node 3](./images/Rotation_adaptive_PRT_3_node_3.png) |
 |:--:|
 | *Node 3* |
 
 # Task 2b: Rotation about two known axis with unknown angles
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240389050-1397cd94-442c-4f3e-88cf-2a9dfd3565bb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3Nzg3LCJuYmYiOjE2ODQ4Njc0ODcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4OTA1MC0xMzk3Y2Q5NC00NDJjLTRmM2UtODhjZi0yYTlkZmQzNTY1YmIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg0NDQ3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzFmYzIxYTMwYjFjZGY4ZDg1OWNkOWJiMTdiYjQ2YmRhMWU2YzlhODg0ZjA1ZWUxODBkNDkzMjE5ZWY1YTI1NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.qT7x6oQ-sMDhetLZuAwhY9h8-Bed1wM1Xfygpn0XwQI) |
+| ![First impression](./images/Rotation_adaptive_task_2b.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -644,7 +644,7 @@ They need to find out, what the angles of rotation are.
 The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 They are presented with two curves that can be changed into one another by rotation about two coordinate axis. They are asked to find the correct rotational angles. They give their answer in an algebraic manner.
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240389151-af8e9346-8b49-4680-b15d-f706dac71df0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3Nzg3LCJuYmYiOjE2ODQ4Njc0ODcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4OTE1MS1hZjhlOTM0Ni04YjQ5LTQ2ODAtYjE1ZC1mNzA2ZGFjNzFkZjAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg0NDQ3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDFmYTUzZDc3MWY4YTk2NWYxMDZjMmE0MDMxZGMxODUxNzRmZGE4N2U4ZTdkNTU2MTk4YzcwMDUwZDAzYTU4YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.nyA5SKOb4vPjXyFrTXu4bUriXNXT1c4CO3LhgOGAOxM) |
+| ![Click draw button](./images/Rotation_adaptive_task_2b_student.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -702,7 +702,7 @@ ans5;
 ans6;
 ```
 
-| ![prt4](https://private-user-images.githubusercontent.com/120648145/240389593-899863be-3203-4361-8733-914f5dd66f15.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3ODg5LCJuYmYiOjE2ODQ4Njc1ODksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4OTU5My04OTk4NjNiZS0zMjAzLTQzNjEtODczMy05MTRmNWRkNjZmMTUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg0NjI5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2JlMzUxZjZiYWUyNTcyYWNlNDMwZWM2NWFhOTJjZTg2NDNjYjBjMWM4Njk2ZDNjMzIwOGE3OWJkYjdjMjJlYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jn_F8Y4oYvJ7IVE-SQgLgKx5YvcM01N10h86pYM3XIc) |
+| ![prt4](./images/Rotation_adaptive_PRT_4.png) |
 |:--:|
 | *Visualization of **prt4*** |
 
@@ -718,7 +718,7 @@ ans6;
 |Node 1 false feedback | `<p> The value you gave for angle \(\alpha\) is not yet correct. The correct value is {@gammar@}. </p>`|
 
 
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240389596-1fac0ac0-81c2-4721-9a2e-fd3a0b3dc6d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3ODg5LCJuYmYiOjE2ODQ4Njc1ODksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4OTU5Ni0xZmFjMGFjMC04MWMyLTQ3MjEtOWEyZS1mZDNhMGIzZGM2ZDIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg0NjI5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDllMzk2MzkwMWE4YjJiNjczZjBiZTk0YjU2Yjc3OWM5MTA5MjFlNGRmMTI5NzAwOTkwYTljN2QzOWVlYzRhOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.QDYzso4I4_MtMkSGE46gwIK-ZkvKI9_GIPQIJ8RCZPM) |
+| ![Node 1](./images/Rotation_adaptive_PRT_4_node_1.png) |
 |:--:|
 | *Node 1* |
 
@@ -747,7 +747,7 @@ ans6;
 ```
 + JSXGraph Applet
 
-| ![Node 2](https://private-user-images.githubusercontent.com/120648145/240389597-1eb312e8-a853-4b4f-8736-c3892009eb77.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3ODg5LCJuYmYiOjE2ODQ4Njc1ODksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4OTU5Ny0xZWIzMTJlOC1hODUzLTRiNGYtODczNi1jMzg5MjAwOWViNzcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg0NjI5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NGNhM2M0Y2I4ZTNiMDY5NDNiN2MwNzFlMTQxNzEyYjA5NTU4ZTczYzQ5ODgxMjlhYTE1ZmU1OGY1ZDE1N2ZkOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.vNqoTEyoVdCSdbrrpwHGllF2rYULWBzIg5-aU6ITtIw) |
+| ![Node 2](./images/Rotation_adaptive_PRT_4_node_2.png) |
 |:--:|
 | *Node 2* |
 
@@ -768,14 +768,14 @@ ans6;
 ```<p> The value you gave for angle \(\beta\) is also not yet correct. The correct value is {@alphar@}. </p>
 <br> In the following applet, you can see, how your answer would have looked. The blue and orange curves are the way they were presented before. Your solution is displayed in purple. </p>
 ```
-| ![Node 3]https://private-user-images.githubusercontent.com/120648145/240389599-d13e8740-bcf3-4a80-a72f-26677c15d704.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3ODg5LCJuYmYiOjE2ODQ4Njc1ODksInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4OTU5OS1kMTNlODc0MC1iY2YzLTRhODAtYTcyZi0yNjY3N2MxNWQ3MDQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg0NjI5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjE2ZWI2OTFhZjNmZjA3YmZlZDAwYzgwNTMzMWFjZGE5NWI5NTA0ZTlmY2UwYmY0ZjIzMDFjM2JlMzI0MzljOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.HjuQ3TmrEz8yR5FxdhsxIC5u18JXj-0g2AXr5fHatN0) |
+| ![Node 3](./images/Rotation_adaptive_PRT_4_node_3.png) |
 |:--:|
 | *Node 3* |
 
 
 Here, the student's answer is evaluated as a rotated curve and plotted for them to compare it to the correct answer.
 
-| ![Feedback](https://private-user-images.githubusercontent.com/120648145/240389242-121cd75b-8dc9-4718-a5c6-7d285d39fea3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY3Nzg3LCJuYmYiOjE2ODQ4Njc0ODcsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM4OTI0Mi0xMjFjZDc1Yi04ZGM5LTQ3MTgtYTVjNi03ZDI4NWQzOWZlYTMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg0NDQ3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmFhNGNjZDMyZmRjMzYzZjdmNWVhOWQ4YjFlYmY0MDdkNGQwZjk4MDY0NmMzYTI1MDYzYWEzZjJiNWJlNTQ1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.VvY-6XpyPekO3k3bBryAdCmw9mUmW1SH5PBSVT5IdTg) |
+| ![Feedback](./images/Rotation_adaptive_task_2b_feedback.png) |
 |:--:|
 | *Feedback upon incorrect answer * |
 
@@ -783,7 +783,7 @@ Here, the student's answer is evaluated as a rotated curve and plotted for them 
 # Task 3: Rotation of a curve about two known axis in unknown order
 
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240390451-45356907-cd71-4d20-9ccc-e962cecd4cc0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4MTQyLCJuYmYiOjE2ODQ4Njc4NDIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MDQ1MS00NTM1NjkwNy1jZDcxLTRkMjAtOWNjYy1lOTYyY2VjZDRjYzAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg1MDQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzMyNmQ3NmNkZWMwZGJhOWJiYTczZDZjMTI3ZDNjMTQ3NDdkYzNiOGJjYmI3YWEyNjMxY2I5NmZiZGViODIzNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.QuL4Puc8-DA8gS_qYIKNrIcsgQgW_ArmcIptw9xjiTg) |
+| ![First impression](./images/Rotation_adaptive_task_3.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -808,7 +808,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 They are presented with angles of rotation for each of the coordinate axis. They are asked to select the correct order of operations from a multiple choice selection.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240390458-324d731c-3b73-40d6-8402-5c8720412594.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4MTQyLCJuYmYiOjE2ODQ4Njc4NDIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MDQ1OC0zMjRkNzMxYy0zYjczLTQwZDYtODQwMi01Yzg3MjA0MTI1OTQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg1MDQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDQxOTkxNTllMDIzMjM3MDRmZGExZDc2Y2Q0ZDc2YWI0MDc0ZTk0NzgzN2M5ODgzZTY2OWVjMzcwMDIzOTA1ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.5frJZdFhLl-cvzfFmYWStVMzFyqKv9Ng7TIYeS4EoWs) |
+| ![Click draw button](./images/Rotation_adaptive_task_3_student.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -880,7 +880,7 @@ ap_studentres: [mattolist(ap_studentmatres)[1][1],mattolist(ap_studentmatres)[2]
 
 ```
 
-| ![prt5](https://private-user-images.githubusercontent.com/120648145/240390751-3cbfd2ea-0c7b-4fad-ad06-78b2c30b9bc2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4MjMxLCJuYmYiOjE2ODQ4Njc5MzEsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MDc1MS0zY2JmZDJlYS0wYzdiLTRmYWQtYWQwNi03OGIyYzMwYjliYzIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg1MjExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjJmZjk4M2YwN2E4MTM2ZGNmZjcwNzEzNWEyMmU4OGRiMzUyYjY0M2UwY2QwOGEzZWJjYjFhNDFmNjBlMjQ2MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.9DVt8IshZQ_YR1rJhHiQgrAoqYgeZ3OqW2VW2eB1Kds) |
+| ![prt5](./images/Rotation_adaptive_PRT_5.png) |
 |:--:|
 | *Visualization of **prt5*** |
 
@@ -907,7 +907,7 @@ ap_studentres: [mattolist(ap_studentmatres)[1][1],mattolist(ap_studentmatres)[2]
 <p> Unfortunately, this is not the correct order of operations.  A correct answer is {@ap_tans[1]@}. </p><br>
 <br> In the following applet, you can see, how your answer would have looked like with the angles provided. The blue and orange curves are the way they were presented before. Your solution is displayed in purple. </p>
 ```
-| ![Node 1](https://private-user-images.githubusercontent.com/120648145/240390743-c5b7954f-e80d-47a8-b613-a6e40a87f578.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4MjMxLCJuYmYiOjE2ODQ4Njc5MzEsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MDc0My1jNWI3OTU0Zi1lODBkLTQ3YTgtYjYxMy1hNmU0MGE4N2Y1NzgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg1MjExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzUzNDIwMTNiNWE4OTBhYTI1NDYyZWNlYjNiMDlhZDFjMThhNDMyMzk2ZTFlYWNjNzVhYTAwOGI2ZGI3NDNlNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.nEUMHCDqwm6gs_6UnfHjYsRghIMvK106ztaiCggh3XY) |
+| ![Node 1](./images/Rotation_adaptive_PRT_5_node_1.png) |
 |:--:|
 | *Node 1* |
 
@@ -916,7 +916,7 @@ Here, the student's answer is evaluated as a rotated curve and plotted for them 
 
 
 
-| ![Feedback](https://private-user-images.githubusercontent.com/120648145/240390456-dc20c28d-8235-4d16-ae36-2d9f763f743b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0ODY4MTQyLCJuYmYiOjE2ODQ4Njc4NDIsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDM5MDQ1Ni1kYzIwYzI4ZC04MjM1LTRkMTYtYWUzNi0yZDlmNzYzZjc0M2IucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjNUMTg1MDQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWUzYWNiMTVkOTRlZGZhMjU3YzRmODgzYmM2NTFkZTZjOTc1YjA5Y2ViMTgzMWM1MjVjOTZjODZjYzljNTRiMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.zE0TiTA7SDNQPElNLBjOudcBAY3LuJtcuLyiNftDZKk) |
+| ![Feedback](./images/Rotation_adaptive_task_3_feedback.png) |
 |:--:|
 | *Feedback upon incorrect answer * |
 
