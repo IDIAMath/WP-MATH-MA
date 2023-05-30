@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240877413-8e870e39-f04d-4ef8-a88b-4cdac35d61e6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5MTQ2LCJuYmYiOjE2ODUwMDg4NDYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3NzQxMy04ZTg3MGUzOS1mMDRkLTRlZjgtYTg4Yi00Y2RhYzM1ZDYxZTYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwMDQ2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDM1Y2NmNjZlYWM3MDhhYWM4ZTA5MTkyZTU2OTNhMGY4NDg5MDkwNzRlMmY2MWRlNjU4ZjJjMjAzYjYxZDYxMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.tbVbhw8YLH_4Nob4icMhjciki4DE0HLnxQHo-L9o2A8) |
+| ![First impression](./images/parametric_curve_matching_circular_2023-05-25.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -30,7 +30,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240877420-dd831d6e-8ccc-41da-b374-f76fa29848c4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5MTQ2LCJuYmYiOjE2ODUwMDg4NDYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3NzQyMC1kZDgzMWQ2ZS04Y2NjLTQxZGEtYjM3NC1mNzZmYTI5ODQ4YzQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwMDQ2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzIzZDhiNWM1OWI4ZTQ0MGY5ZTY5ZTU0ZTRjNDU2ZjNhMDBjNjdlZjg4NDA2MzZiOTIxYzY4MzVlOTcxMzQ2YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.gKD_47YZT8D_MG-QeBZOVIK31_qL13IBhCIIxquhNuc) |
+| ![Click draw button](./images/parametric_curve_matching_circular_student_2023-05-25.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -43,7 +43,7 @@ Another example - in the case of the radius - is the following: change `radiusr:
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227711683-7cec1c57-97d1-4fae-8137-063b6fd01461.jpg) |
+| ![values the teacher can change](./images/Parametric_curve_matching_circular_teacher_2023-03-25.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -205,7 +205,7 @@ ampans: ans2
 
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/236681205-6198791c-7b92-43a2-92b5-af5a1711fda1.png) |
+| ![prt1](./images/parametric_curve_matching_circular_2_prt_1_2023-05-06.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -213,7 +213,7 @@ ampans: ans2
 
 ### Node 1
 |property | setting| 
-|:---|:---|
+|:---|:---|6
 |Answer Test | NumAbsolute|
 |SAns | `radiusans`|
 |TAns | `radiusr`| 
@@ -222,7 +222,7 @@ ampans: ans2
 |Node 1 false feedback |`<p>The radius \(r\) is not yet correct. Check, whether the curves align, when you slide "r" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/236681211-02b25cfd-1903-4b9c-82ac-72346e930cd7.png) |
+| ![Node 1](./images/parametric_curve_matching_circular_2_prt_1_node_1_2023-05-06.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -236,7 +236,7 @@ ampans: ans2
 |Node 2 true feedback | `<p>Nice! You also found the correct amplitude a. Good job!</p>`|
 |Node 2 false feedback |`<p>The amplitude a is not yet correct. Check, whether the curves align, when you slide "h" to this value.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/236681212-827cd3f3-ed97-40bc-81ea-efc183ed5363.png) |
+| ![Node 2](./images/parametric_curve_matching_circular_2_prt_1_node_2_2023-05-06.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -250,7 +250,7 @@ ampans: ans2
 |Node 3 true feedback | `<p>Nice! You found the correct amplitude a. Good job!</p> <p> Check whether the curves align perfectly to get the radius right as well! </p>`|
 |Node 3 false feedback |`<p>The amplitude a is not yet correct as well. Check, whether the curves align, when you slide "h" to this value.</p> <p> If the orange and blue curve overlap, the answer will be correct! </p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/236681213-d312897b-f155-4dc3-98b5-8cee00903ea9.png) |
+| ![Node 3](./images/parametric_curve_matching_circular_2_prt_1_node_3_2023-05-06.png) |
 |:--:|
 | *Values of **node 3*** |
 
