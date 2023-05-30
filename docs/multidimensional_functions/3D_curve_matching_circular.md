@@ -281,7 +281,7 @@ numans: ans4
 |Node 1 false feedback |`<p>The phase shift \(\phi\) is not yet correct. Check, whether the curves align, when you slide "phase shift" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/236681216-be4782eb-ae80-485b-b65e-771c312c41ed.png) |
+| ![Node 1](./images/parametric_curve_matching_circular_2_prt_2_node_1_2023-05-06.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -295,7 +295,7 @@ numans: ans4
 |Node 2 true feedback | `<p>Nice! You also found the correct number of oscillations \(n\). Good job!</p>`|
 |Node 2 false feedback |`<p>The number of oscillations \(n\) is not yet correct. Check, whether the curves align, when you slide "n" to this value. Note, that you can count the maxima of the curve and try again.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/236681220-ba802799-67c8-4bca-8e04-2dd9653f3008.png) |
+| ![Node 2](./images/parametric_curve_matching_circular_2_prt_2_node_2_2023-05-06.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -309,7 +309,7 @@ numans: ans4
 |Node 3 true feedback | `<p>Nice! You also found the correct number of oscillations \(n\). Good job!</p><p> Make sure to get the phase shift right as well by matching the curves! </p>`|
 |Node 3 false feedback |`<p>The number of oscillations \(n\) is also not yet correct. Check, whether the curves align, when you slide "n" to this value. Note, that you can count the maxima of the curve and try again.</p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/236681222-549c3571-ddde-403d-8ab6-bd242f66a400.png) |
+| ![Node 3](./images/parametric_curve_matching_circular_2_prt_2_node_3_2023-05-06.png) |
 |:--:|
 | *Values of **node 3*** |
 
