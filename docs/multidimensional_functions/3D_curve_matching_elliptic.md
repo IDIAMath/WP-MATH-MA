@@ -9,7 +9,7 @@ theme: minima
 +	Student understands geometrical implications of individual parameters in a multi-dimensional curve (representing mathematical entities).
 +	Student understands that exact geometric features can be approximated numerically (modelling mathematically).
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/240879177-5b618c5d-9ede-4663-9277-e81c1714c867.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5NTQ2LCJuYmYiOjE2ODUwMDkyNDYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3OTE3Ny01YjYxOGM1ZC05ZWRlLTQ2NjMtOTI3Ny1lODFjMTcxNGM4NjcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwNzI2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODExYjExOTUxYzZjNzZmNWQxZDkyM2RmMjUyYzE0NTM5NjRkMDUyNWY2OGExZDcwZjcwNDljNGJlM2YzNWM3MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.D75tqYaG41q0XvhBtrWAThRioWUyDPWoh1itqNh4D6w) |
+| ![First impression](./images/parametric_curve_matching_elliptic_2023-05-25.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -31,7 +31,7 @@ The student sees a cartesian coordinate system and a curve plotted in 3D.
 
 It is the task to reconstruct the parameters of the 3D curve. In order to do this they have to find out the radius, amplitude, phase shift and number of oscillations by matching a second curve to the given one using sliders. If they overlap exactly, the parameter values can be read from the sliders and are automatically given as numerical values.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/240879180-93f9487f-6df7-456f-a53f-d877ee0ea456.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1MDA5NTQ2LCJuYmYiOjE2ODUwMDkyNDYsInBhdGgiOiIvMTIwNjQ4MTQ1LzI0MDg3OTE4MC05M2Y5NDg3Zi02ZGY3LTQ1NmYtYTUzZi1kODc3ZWUwZWE0NTYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjVUMTAwNzI2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODkzMTdhNTMxOThmMDhhMWZkZDAxYzE5NTA1ZTM1ZTU2NmU1MzdiNDIxMjlhNGNhYjc1OWRjMDczZDE0OGIyNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.kKWpyu57OKyYkfWmycSOUN8xeZjVV7CjgvaoHWZbkDY) |
+| ![Click draw button](./images/parametric_curve_matching_elliptic_student_2023-05-25.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -44,7 +44,7 @@ Another example - in the case of the semiaxis - is the following: change `ar: 1+
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/227711680-0ed0f8cc-80c2-4487-aa9e-5c5dea26cacc.jpg) |
+| ![values the teacher can change](./images/Parametric_curve_matching_circular_teacher_2023-03-25.jpg) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -60,7 +60,7 @@ For an explanation of the processing of the values read **Question variables** a
 
 
 #### Question variable code
-```jacascript
+```
 /*randomize parameters*/
 
 xr:  1+rand(6)/2;
@@ -242,7 +242,7 @@ xans: ans1
 yans: ans2
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/236682416-0821a8a2-3323-4ec5-907c-253b2bfa35bc.png) |
+| ![prt1](./images/parametric_curve_matching_elliptic_3_prt_prt_1_2023-05-06.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -258,7 +258,7 @@ yans: ans2
 |Node 1 false feedback |`<p>The offset \(x_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "x0" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/236682412-e0f85252-6924-48b7-9872-8ebea74b208e.png) |
+| ![Node 1](./images/parametric_curve_matching_elliptic_3_prt_prt_1_node_1_2023-05-06.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -271,7 +271,7 @@ yans: ans2
 |Node 2 true feedback | `<p> Nice! You also found the correct offset \(y_0\). That means you found the correct center! Good job!</p>`|
 |Node 2 false feedback |`<p>The offset \(y_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "y0" to this value.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/236682558-875ac2f1-2a72-40e3-82d5-105b284228a7.png) |
+| ![Node 2](./images/parametric_curve_matching_elliptic_3_prt_prt_1_node_2_2023-05-06.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -284,7 +284,7 @@ yans: ans2
 |Node 3 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job! Check if the centers are aligned in \(x\)-direction as well!</p>`|
 |Node 3 false feedback |`<p>The offset \(y_0\) is also not correct. The curves' centers are misaligned. Try to fix it by using the sliders. </p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/236682434-8a658f9c-db3c-4e73-9ced-fce6d8381e78.png) |
+| ![Node 3](./images/parametric_curve_matching_elliptic_3_prt_prt_1_node_3_2023-05-06.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -298,7 +298,7 @@ bans: ans4
 
 ```
 
-| ![prt2](https://user-images.githubusercontent.com/120648145/236682432-893f6ea6-c157-423b-a903-5c8a0abb1905.png) |
+| ![prt2](./images/parametric_curve_matching_elliptic_3_prt_prt_2_2023-05-06.png) |
 |:--:|
 | *Visualization of **prt2*** |
 
@@ -314,7 +314,7 @@ bans: ans4
 |Node 1 false feedback |`<p>The semi-axis length  \(a\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "a" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/236682431-7a2ea542-aa7c-4176-8c74-fcd45977ddff.png) |
+| ![Node 1](./images/parametric_curve_matching_elliptic_3_prt_prt_2_node_1_2023-05-06.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -327,7 +327,7 @@ bans: ans4
 |Node 2 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). The ellipse has the right shape. Good job!</p>`|
 |Node 2 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Check, whether the curves have the same shape from above, when you slide "b" to this value.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/236682428-34cb9e34-4164-49db-a3e0-dfeac75dcbac.png) |
+| ![Node 2](./images/parametric_curve_matching_elliptic_3_prt_prt_2_node_2_2023-05-06.png)|
 |:--:|
 | *Values of **node 2*** |
 
@@ -340,7 +340,7 @@ bans: ans4
 |Node 3 true feedback | `<p> Nice! You found the correct semi-axis length  \(b\). Good job! Make sure to do the same with the other semi-axis.</p>`|
 |Node 3 false feedback |`<p>The semi-axis length  \(b\) is not yet correct. Both axis are not correct. It might be that they look right, but are not due to an incorrect angle. Make sure the curves overlap from all perspectives and try again.</p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/236682426-16dc42cf-63d7-4759-9532-172780c45e27.png) |
+| ![Node 3](./images/parametric_curve_matching_elliptic_3_prt_prt_2_node_3_2023-05-06.png)|
 |:--:|
 | *Values of **node 3*** |
 ### prt3
@@ -351,7 +351,7 @@ alphaans: ans5
 ampans: ans6
 ```
 
-| ![prt3](https://user-images.githubusercontent.com/120648145/236682425-481eac40-d4fd-41be-b467-501cfeb0941a.png) |
+| ![prt3](./images/parametric_curve_matching_elliptic_3_prt_prt_3_2023-05-06.png) |
 |:--:|
 | *Visualization of **prt3*** |
 
@@ -367,7 +367,7 @@ ampans: ans6
 |Node 1 false feedback |`<p>The angle \(\alpha\) is not yet correct. Check, whether the curves are oriented the same way from all perspectives, when you slide "alpha" to this value.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/236682424-223eb981-c1b4-4c40-9339-86fe4751af59.png) |
+| ![Node 1](./images/parametric_curve_matching_elliptic_3_prt_prt_3_node_1_2023-05-06.png) |
 |:--:|
 | *Values of **node 1*** |
 
@@ -380,7 +380,7 @@ ampans: ans6
 |Node 2 true feedback | `<p> Nice! You found the correct amplitude \(h\). Good job!</p>`|
 |Node 2 false feedback |`<p>The amplitude \(h\) is not yet correct. Check, whether the curves have the same height in \(z\)-direction, when you slide "h" to this value.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/236682420-d230bfd1-2e71-4bb5-b59d-b9757218b3c9.png) |
+| ![Node 2](./images/parametric_curve_matching_elliptic_3_prt_prt_3_node_2_2023-05-06.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -393,7 +393,7 @@ ampans: ans6
 |Node 3 true feedback | `<p> Nice! You found the correct amplitude \(h\). Good job!</p>`|
 |Node 3 false feedback |`<p>The amplitude \(h\) is not yet correct. Check, whether the curves have the same height in \(z\)-direction, when you slide "h" to this value.</p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/236682419-d03c6a51-0bc4-46dd-bfaa-93746820a6d0.png) |
+| ![Node 3](./images/parametric_curve_matching_elliptic_3_prt_prt_3_node_3_2023-05-06.png) |
 |:--:|
 | *Values of **node 3*** |
 
