@@ -1,0 +1,252 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_HTML"></script>
+    <link rel="stylesheet" href="indexILIAS.css">
+<link rel="stylesheet" type="text/css" href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<script type="text/javascript" src="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
+
+  <!--Message if JavaScript is disabled in the Browser-->
+	<noscript>
+		Diese Website erfordert JavaScript. Bitte ermöglichen Sie dies in den Einstellungen Ihres Browsers.
+	</noscript>
+	
+
+	<title>2d Integration: Functions </title>
+	
+</head>
+
+<body>
+<div style="float: right;"><img  alt=""
+	src="FAU_DMM_Logo_rgb_170.png"><br>
+	</div>
+
+	
+		<h1 class="firstHeading">Integration area in \(\mathbb{R}^2\) bounded by curves </h1>
+<p>
+
+The applet shows the principle of drawing 2d integration areas described by curves depending on parameters.
+</p>
+<p>
+
+A "virtual" box is defined by \(M:=\{(x,y)^\top\in \mathbb{R}^2\,: \, x_l\leqslant x \leqslant x_u,\; y_l\leqslant y \leqslant y_u\}\)
+
+</p>
+<p>
+The functions are evaluated as follows
+\(
+\underline{y}(x), \overline{y}(x)\) for   \( x \in [x_u, x_l]\) and
+\(\underline{x}(y), \overline{x}(y)\) for \(y \in [y_l,y_u]\)
+</p>		
+
+<p>
+By construction there might be gaps between the bounding curves.
+</p>
+			<p>
+				\(\underline{y}(x)=\)<input value="0"  type="text" id="ylfun"></br>
+				\(\overline{y}(x)=\)<input value="sin(PI*x)/10+1" type="text" id="yufun"> </br>
+<!--
+				\(\underline{x}(y)=\)<input value="1"  type="text" id="xlfun"></br>
+				\(\overline{x}(y)=\)<input value="2" type="text" id="xufun"></br> -->				<input value="plot" onclick="plot()" type="button" ><br>
+			</p>
+
+<p>
+Try to find functions \(\underline{y}, \overline{y}\) and \(\underline{x}, \overline{x}\) that the yellow area covers the orange one.
+</p>
+
+
+<div id="box1" class="jxgbox" style="width:500px; height:400px; "></div>
+
+<br clear="all">
+<center>
+<script language="JavaScript">
+
+b1 = JXG.JSXGraph.initBoard('box1', {boundingbox:[-0.1,2,2.1,-1], grid:true});
+b1.snapToGrid = true;
+b1.suspendUpdate();
+
+// some variables
+var nSubDivCurv = 50; // number of points to represent a curve -1
+var xl = 1;  // lower bound integration wrt x
+var xu = 2;  // upper bound integration wrt x
+var yl = 0;  // lower bound integration wrt y
+var yu = 1;  // upper bound integration wrt y
+var cIntArea // Integration area to be plotted by the entered functions
+var yLower, yUpper, xLower, xUpper
+
+
+b1axisx=b1.create('axis', [[0,0], [1,0]], {});
+b1axisy=b1.create('axis', [[0,0], [0,1]], {});
+xlp = b1.create("glider",[xl,0,b1axisx],{name:"x_l"});
+xup = b1.create("glider",[xu,0,b1axisx],{name:"x_u"});
+
+// Given area
+var yLowerGiven = b1.jc.snippet("0", true, 'x', false);
+var yUpperGiven = b1.jc.snippet("-sin(6.28*x)/10+1", true, 'x', false);
+
+
+var xLowerGiven = b1.jc.snippet("1", true, 'y', false);
+var xUpperGiven = b1.jc.snippet("-sin(6.28*y)/10+2", true, 'y', false);
+
+/*
+cIntAreaGiven = b1.create('curve', [[], []], {strokeWidth: 1, fillColor: 'orange', fillOpacity: 0.25});
+
+cIntAreaGiven.updateDataArray = function() {
+           // generate upper curve
+           var hx = (xup.X()-xlp.X())/(nSubDivCurv);
+           var pt = xl;
+           this.dataX = [xlp.X()];
+           this.dataY = [yUpperGiven(xlp.X())];
+           for (i = 1; i <= nSubDivCurv; i++) {
+                pt += hx;
+                this.dataX.push(pt);
+                this.dataY.push(yUpperGiven(pt));
+           }
+           // add xUpper between (xu,yl) and (xu,yUpperGiven(xu))
+           // take care, that the function is consistent in the corners!
+           var yuLoc = yUpperGiven(xup.X());
+           var ylLoc = yLowerGiven(xup.X());
+           var hy = (yuLoc-ylLoc)/(nSubDivCurv);
+           var pt = yuLoc;
+           for (i = 1+nSubDivCurv; i <= 2*nSubDivCurv+1; i++) {
+                this.dataX.push(xUpperGiven(pt));
+                this.dataY.push(pt);
+                pt -= hy;
+           }
+           // add yLower between xu and xl
+           // take care, that the function is consistent in the corners!
+           var hx = (xup.X()-xlp.X())/(nSubDivCurv);
+           var pt = xup.X();
+           for (i = 2+2*nSubDivCurv; i <= 3*nSubDivCurv+2; i++) {
+                this.dataX.push(pt);
+                this.dataY.push(yLowerGiven(pt));
+                pt -= hx;
+           }
+
+
+           // add xLower between (xu,yl) and (xu,yUpper(xu))
+           // take care, that the function is consitent in the corners!
+           var yuLoc = yUpperGiven(xlp.X());
+           var ylLoc = yLowerGiven(xlp.X());
+           var hy = (yuLoc-ylLoc)/(nSubDivCurv);
+           var pt = ylLoc;
+           for (i = 3*nSubDivCurv+3; i <= 4*nSubDivCurv+3; i++) {
+                this.dataX.push(xLowerGiven(pt));
+                this.dataY.push(pt);
+                pt += hy;
+           }
+
+           // close the curve
+           this.dataX.push(this.dataX[0]);
+           this.dataY.push(this.dataY[0]);
+        }; // end cIntAreaGiven.updateDataArray
+*/
+b1.unsuspendUpdate();
+
+var genIntArea = function () {
+       b1.suspendUpdate();
+
+       b1.removeObject(cIntArea);
+        txtraw = document.getElementById('ylfun').value.trim();
+        txtraw=txtraw.replace(/\s/g, "");
+        //txtraw=txtraw.replace(/[a-z]/g, "");
+        yLower = b1.jc.snippet(txtraw, true, 'x', false);
+
+        txtraw = document.getElementById('yufun').value.trim();
+        txtraw=txtraw.replace(/\s/g, "");
+        yUpper = b1.jc.snippet(txtraw, true, 'x', false);
+
+        /*
+        txtraw = document.getElementById('xlfun').value.trim();
+        txtraw=txtraw.replace(/\s/g, "");
+        txtraw=txtraw.replace(/[x]/g, "y");
+        xLower = b1.jc.snippet(txtraw, true, 'y', false);
+        */
+
+        /*
+        txtraw = document.getElementById('xufun').value.trim();
+        txtraw=txtraw.replace(/\s/g, "");
+        txtraw=txtraw.replace(/[x]/g, "y");
+        xUpper = b1.jc.snippet(txtraw, true, 'y', false);
+        */
+
+        cIntArea = b1.create('curve', [[], []], {strokeWidth: 1, fillColor: 'yellow', fillOpacity: 0.5});
+
+
+        cIntArea.updateDataArray = function() {
+        xLower = b1.jc.snippet(xlp.X().toString(), true, 'x', false);
+        xUpper = b1.jc.snippet(xup.X().toString(), true, 'x', false);
+           // generate upper curve
+           var hx = (xup.X()-xlp.X())/(nSubDivCurv);
+           var pt = xlp.X();
+           this.dataX = [xlp.X()];
+           this.dataY = [yUpper(xlp.X())];
+           for (i = 1; i <= nSubDivCurv; i++) {
+                pt += hx;
+                this.dataX.push(pt);
+                this.dataY.push(yUpper(pt));
+           }
+           // add xUpper between (xu,yl) and (xu,yUpper(xu))
+           // take care, that the function is consitent in the corners!
+           var yuLoc = yUpper(xup.X());
+           var ylLoc = yLower(xup.X());
+           var hy = (yuLoc-ylLoc)/(nSubDivCurv);
+           var pt = yuLoc;
+           for (i = 1+nSubDivCurv; i <= 2*nSubDivCurv+1; i++) {
+                this.dataX.push(xUpper(pt));
+                this.dataY.push(pt);
+                pt -= hy;
+           }
+           // add yLower between xu and xl
+           // take care, that the function is consistent in the corners!
+           var hx = (xup.X()-xlp.X())/(nSubDivCurv);
+           var pt = xup.X();
+           for (i = 2+2*nSubDivCurv; i <= 3*nSubDivCurv+2; i++) {
+                this.dataX.push(pt);
+                this.dataY.push(yLower(pt));
+                pt -= hx;
+           }
+
+
+           // add xLower between (xu,yl) and (xu,yUpper(xu))
+           // take care, that the function is consitent in the corners!
+           var yuLoc = yUpper(xlp.X());
+           var ylLoc = yLower(xlp.X());
+           var hy = (yuLoc-ylLoc)/(nSubDivCurv);
+           var pt = ylLoc;
+           for (i = 3*nSubDivCurv+3; i <= 4*nSubDivCurv+3; i++) {
+                this.dataX.push(xLower(pt));
+                this.dataY.push(pt);
+                pt += hy;
+           }
+
+           // close the curve
+           this.dataX.push(this.dataX[0]);
+           this.dataY.push(this.dataY[0]);
+        }; // end cIntArea.updateDataArray
+        
+        b1.unsuspendUpdate();
+
+        }; // end function plot
+
+var plot = function () {
+        genIntArea();
+        b1.update();
+        };
+
+plot();
+
+
+</script>
+
+</center>
+
+</p>
+
+
+
+</body>
+<footer>Wigand Rathmann, FAU, <a
+href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></footer>
+</html>
