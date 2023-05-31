@@ -34,9 +34,11 @@ It is the task to reconstruct the intervals of a 3D integration in the new coord
 
 
 ### Teacher perspective
-The teacher is able to give a transformation iwth the functions `Tx`,`Ty` and `Tz`  given as a parametrization of the cartesian $x$,$y$ and $z$ using new parameters $u$, $v$ and $w$. The function needs to be expressed in Maxima/STACK syntax. 
+The teacher is able to give a transformation with the functions `Tx`,`Ty` and `Tz`  given as a parametrization of the cartesian $x$,$y$ and $z$ using new parameters $u$, $v$ and $w$. The function needs to be expressed in Maxima/STACK syntax. Based on the transformation chosen, the volumes change significantly, allowing for a wide variety of applications. 
 
-The teacher can provide a list of possible values for interval bounds. In order to do this, they simply need to modify the entries in the lists specified e.g. change `v1r:rand([1/6,1/3,1/2]);` to `v1r:rand([1/8,1/7,1/3]);`. However, the maximal intervals are dependent on the transformation chosen.
+The teacher can provide a list of possible values for interval bounds. In order to do this, they simply need to modify the entries in the lists specified e.g. change `v1r:rand([1/6,1/3,1/2]);` to `v1r:rand([1/8,1/7,1/3]);`. However, the maximal intervals are dependent on the transformation chosen. Obviously, the possible interval bounds need to match the geometry in order to allow for sensible solving. Within the tasks of this catalogue, angles are generally limited by rational multiples of $\pi$. Radiuses or other distances are usually simple rational or integer numbers.
+
+The teacher can also specify the range of the sliders. He can change the lower bound, the value for the inital representation and the upper bound. The values are given in the format of a list, e.g.: `u1init: [0,1,4]`. In this case the slider can take values between 0 and 4, and is initially set to a value of 1.
 
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
@@ -49,11 +51,11 @@ For an explanation of the processing of the values read **Question variables** a
 ## Question code
 
 ### Question Variables
-+ The transformation function `Tx`,`Ty`, and `Tz` are defined
-+	`v1r`,`v2r`,`w1r`, `w2r` take random values of a list containing possible values  (needs to be multiplied by pi later)
++ 	The transformation function `Tx`,`Ty`, and `Tz` are defined in STACK syntax
++	`v1r`,`v2r`,`w1r`, `w2r` take random values of a list containing possible values  (need to be multiplied by pi later, since they represent angles)
 +	`u1r` and `u2r` are randomly selected in steps of 1/2 and `u2r` is always bigger than `u1r`
-+`v1r`,`v2r`,`w1r`, `w2r` are multiplied by pi and saved as numerical values. This is done in between `numer:true` and `numer:false`.
-+ the values for the sliders are initialized to facilitate changing them depending on the transformation
++	`v1r`,`v2r`,`w1r`, `w2r` are multiplied by pi and saved as numerical values. This is done in between `numer:true` and `numer:false`, in order to display it with JSXGraph
++ 	the values for the sliders are initialized to facilitate changing them depending on the transformation
 
 
 #### Question variable code
@@ -105,9 +107,9 @@ w2init: [0,3, 6.28];
   T(u,v,w):= \begin{pmatrix} Tx \\ Ty \\ Tz \end{pmatrix}.
 ```
 
-The blue volume displayed below can be obtained from the real intervals \([u_1,u_2], [v_1,v_2]\) and \([w_1.w_2]\) by transforming them in this way.
+The blue volume displayed below can be obtained from the real intervals $[u_1,u_2], [v_1,v_2]$ and $[w_1.w_2]$ by transforming them in this way.
 
- Determine the limits of the \(u\), \(v\) and \(w\) to describe the given volume. "
+ Determine the limits of the $u$, $v$ and $w$ to describe the given volume. "
 
 + Task explanation using LaTex
 +	JSXGraph applet using the functions and variables defined in **Question variables** plotting the 3D volume given by the coordinates `u`, `v` and `r`
