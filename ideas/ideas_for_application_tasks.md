@@ -106,10 +106,102 @@ It is necessary to display vector fields in at least 2D. Since they can become v
 
 #### <b> Interactive tasks using fluid dynamics </b>
 
+The first kind of interactive task might involve interactive treatment of the vector fields present in fluid dynamics and might include
 
++ reconstructing vector fields with specific properties
++ judging, whether vector fields have fulfil certain properties such as having no curl or no divergence
+
+The second kind might involve treatment of objects under influence of the flow, such as
+
++ Prediciting the trajectory of a particle in the vector field and parametrizing it or drawing an estimation
++ Predicting the change of orientation of simple objects such as boxes
+
+
+#### <b> What is currently available? </b>
+
+Currently, the visualization of 2D vector fields is possible in JSXGraph.
+Mathematical operations such as calculation of a curl or a divergence can be done with STACK, as demonstrated in the task <b> Curl of a vector field </b>.
+
+Also, JSXGraph provides a method to draw in an applet by recognizing cursor movement and reconstructing lines from it.
+
+
+#### <b>How can this be improved? </b>
+
+As of now, we have not seen an implementation of any of the functions mentioned above into a 2D vector field task. However, the first kind of tasks mentioned should be possbile to implement with relative ease. Some of the problems have already been solved in the progress of creation of 3D tasks.
+
+On the other side, we have no knowledge about the drawing being included into a vector field task. It might be necessary to implement a way to extract the drawn curve from the applet in order to compare it to a reference solution. A simple fix in formative assessment could be to have the student draw the line and consequently present a correct solution. Then the student could judge by himself, whether the task was solved correctly. In this case no implementation of the drawn curves into STACK would be necessary.
 
 ## Economy / Biology / Physics / Engineering
 ### Optimization problems
+#### <b> Brief introduction to optimization </b>
+Optimization is a mathematical discipline in applied mathematics. In essence an optimization problem consists of the following steps
++ formalizing the problem
++ finding a function within the formalism that describes the feature of interest
++ finding restrictions based on the formalization of the problem
++ minimizing the function in the set defined by the restrictions
++ translating the mathematical result into possible actions
+
+As this is a very general procedure, it can be applied to many fields in life and science. This makes it a very potent tool and desirable for engineers to pick up and master. Some of the applications include
+
++ minimizing material in 3D printing
++ minimizing material loss in CNC routing or turning of parts
++ minimizing time of production in machines
++ minimizing distances travelled in logistics
++ cutting costs in productions by optimizing the processes in factories
++ finding physical results based on minimization priciples
+
+#### <b> Requirements for optimization tasks</b>
+Optimization tasks require a way of demonstrating the function. Consequently, maxima and minima need to be able to be determined or extremal points selected in a graphic. The processes of formalization of the problems should be guided step by step with examples. The determined restrictions should be visualized by constraining the function to the corresponding points. Lastly, mathematical operations leading to the solution of optimization tasks should be visualzied step by step in the graphics in order to facilitate generalization for the students.
+
+#### <b> Interactive tasks using optimization </b>
+Interactive tasks using optimization might be tackled from multiple perspectives. The general themes of the tasks could be
++ formulating a problem and formalizing the given informations into a mathematical model
++ working with a given model and finding optimal solutions
++ understanding processes of optimization algorithms graphically
++ making use of optimization results in applied contextes or giving advice based on the solutions
+
+From these general topics, more specific tasks can be deduced. For example a task could be to formulate a linear optimization problem by giving the function and restrictions in an algebraic manner. If the answer is not correct the task becomes adaptive and a series of intermediate tasks is presented.
+
+For a 2D optimization problem a task could be to drag planes on the graphic to fit the restrictions given in a text and visualizing the restriction of the functio.
+Additionally, the concepts of stationary points, maxima and minima can be demonstrated in an interactive manner.
+
+It could be helpful to have the students go step by step with an algorithm like the Simplex. They follow the calculations and experience how the points move on the functions until the optimal value is found.
+
+
+
+#### <b> What is currently available and how could it be improved? </b>
+Currently, the visualization of stationary points, maxima and minima using Taylor approximations to the functions in an environment of the selected points is available. It can be found in the tasks <b> Stationary point of a 2D function </b>, <b> Point of a 2D function with negative definite hessian </b> and  <b> Point of a 2D function with positive definite hessian </b>.
+
+It will be relatively easy to include restrictions such as adjustable vertical planes into the graphics and create visualization tasks from it.
+
+With respect to the formulation of problems, no tasks are currently available. However, the concept of adaptive tasks has already been demonstrated in tasks such as <b> Rotation of a curve about two axis adaptive </b> and <b> Curl of a vector field adaptive </b> as well as many more examples created at Ruhr Universität Bochum by Kallweit and colleagues.
+
+Lastly, the demonstration of the Simplex has not been included in an interactive task so far. However points on a function can easily be displayed, dragged and read out into answers. It is therefore only a matter of including the correct algorithm into STACK and making the step-by-step process feasable. This could be done with methods similar to those used in the adaptive tasks.
+
+
 
 ## General problemsolving using Mathematics
 ### Parametrization of curves, surfaces and volumes
+
+#### <b> Brief introduction to parametrization </b>
+Paramtrization is the process of expressing geometrical objects such as curves, surfaces and volumes by mathematical expression that are dependent on a set of parameters. By varying the parameters, the geometrical shape can be generated from the image of a mathematical function. This is a step necessary in basically every modelling process in mathematics. Since mathematics is used to describe real-world problems, a translation between spatial properties and mathematical entities is necessary. This translation is provided by parametrizations of the objects in a chosen frame of reference.
+
+#### <b> Requirements for parametrization tasks</b>
+In order to visualize parametrizations, geometrical objects will need to be displayed in 2D and 3D. Additionally, changes may need to be made to geometrical objects interactively in order to get a better idea of how the individual parameter affects the object. Lastly, parametrization will be given algebraically, so the corresponding expressions need to be interpreted and compared to the reference solutions.
+
+#### <b> Interactive tasks using parametrization </b>
+Interactive tasks for the topic of parametrization can have many different facettes. A few of them include
++ matching exercises in order to obtain the value of parameters
++ exercises helping in the decision process of which functions describe the problem best
++ finding expressions to the set of points that implicitly define the object or reconstruct the object from the implicit representation
++ making predictions about the changes to an object for a given parameter change
+
+
+
+#### <b> What is currently available? </b>
+Especially the matching exercises have been extensively investigated. Examples range from curves to volumes and can be found in tasks such as <b> Parametric Curve Matching circular/elliptic/elliptic helix</b> and <b> Spherical Coordinate Matching</b> among others.
+
+#### <b>How can this be improved? </b>
+From the tasks mentioned before, tasks for making predicitons about the effect of parameter changes can easily be obtained. It is only a matter of getting rid of the sliders for the student to use and putting in the new values in the functions used in the STACK tasks.
+
+The other kinds of tasks have not been investigated. It will be necessary to include some basic priciples of displaying the objects that have been used in the tasks mentioned before. However the didactical progress will have to be found from scratch. In the progress some concepts of the existing tasks such as adaptive tasks may be helpful.
