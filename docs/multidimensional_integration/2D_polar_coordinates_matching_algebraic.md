@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to polar coordinates  (Handling mathematical symbols and formalism)
 +	Student can think of an area that is transformed to the given area in polar coordinates and check graphically (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools )
 
-| ![First impression](https://private-user-images.githubusercontent.com/120648145/239844961-0f693404-e439-40e5-b6e0-2dcd1a570a62.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQzMjczLCJuYmYiOjE2ODQ3NDI5NzMsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg0NDk2MS0wZjY5MzQwNC1lNDM5LTQwZTUtYjZlMC0yZGNkMWE1NzBhNjIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDgwOTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Yzc4YTVlMmZiY2QzM2UyZWJjZGQzNzcwNTA1ODdiYjQ1NzUyMGQ1YWUwN2Y3ZTlmMmU3ZjdjYWFmOGEzMjRiZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.N3Kau1uK354xdxV8c-mp0qTp1QOHvMkJZ6tXArjNiQE) |
+| ![First impression](images/polar_coordinate_algebraic_01_preview.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,7 +29,7 @@ The rectangle in the cartesian coordinate system is transformed to polar coordin
 
 It is the aim to match the changing area to the given area. Then, the interval bounds can be read from the cartesian coordinate system and given as input.
 
-| ![Click draw button](https://private-user-images.githubusercontent.com/120648145/239844967-9b5de10b-57f8-42b1-b71d-e1ba2a15665b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQzMjczLCJuYmYiOjE2ODQ3NDI5NzMsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg0NDk2Ny05YjVkZTEwYi01N2Y4LTQyYjEtYjcxZC1lMWJhMmExNTY2NWIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDgwOTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjU1MWM2MmY2MDFjZTVmOWZhMzBiMDk1OGIyYTFiOWMwMzY3ODRjMjAyZWU0ODg4ODI2NGY2ZWI4NzlkOTdkMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.xbp4at9eLTvkC-Ke2cu9jL-phg0hZ7f5_XIQdu0TJts) |
+| ![Click draw button](images/polar_coordinate_algebraic_02_student.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -41,7 +41,7 @@ Another example - in the case of the radius - is the following: change `radius1:
 
 **They should not change any of the values `p1x,...,p4y`!**
 
-| ![values the teacher can change](https://private-user-images.githubusercontent.com/120648145/239844949-d062d708-7a63-4641-ad8e-c173c6bb3d2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQzMjczLCJuYmYiOjE2ODQ3NDI5NzMsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg0NDk0OS1kMDYyZDcwOC03YTYzLTQ2NDEtYWQ4ZS1jMTczYzZiYjNkMmEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDgwOTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjU1ZDlhOGVlNWJlMzQ0ZGM3YWY3ZTZhOGI3MzM5YTBkNTUxMjQyMjg2YWJmM2ExNzZmNjZmOGM5OWU2ZmJmZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.GpMoPONDVkGa89ynjS2kyhVkpKjNs0Tx08TDFljv_JE) |
+| ![values the teacher can change](images/polar_coordinate_algebraic_03_teacher.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -57,7 +57,7 @@ Another example - in the case of the radius - is the following: change `radius1:
 
 
 #### Question variable code
-```jacascript
+```javascript
 ranger:rand([1/6,1/4,1/3,1/2,2/3,3/4]);
 startr:rand([1/6,1/4,1/3,1/2,2/3,3/4]);
 /*radius*/
@@ -172,7 +172,7 @@ var p22 = board2.create("point",[function () {return p32.X()},function () {retur
 var p42 = board2.create("point",[function () {return p12.X()},function () {return p32.Y()}],{name : "P4",visible:false});
 var polyg1 = board2.create("polygon",[p12,p22,p32,p42],{name : ""});
 
-//stack_jxg.bind_point(ans1Ref,p1);
+stack_jxg.bind_point_dual(ans3Ref,p12,p32);
 
 var p1p = board.create("point",[function () {return p12.X()*Math.cos(p12.Y());},
                             function () {return p12.X()*Math.sin(p12.Y());}],
@@ -198,6 +198,10 @@ board2.unsuspendUpdate();
 
 <p>\(r\in\) [[input:ans1]] [[validation:ans1]]</p>
 <p>\(\phi\in\) [[input:ans2]] [[validation:ans2]]</p>
+
+<div id="storepoints" style="display:none">
+<p>Lager P1 [[input:ans3]] [[validation:ans3]]</p>
+</div>
 ```
 ## Answers
 ### Answer ans 1
@@ -232,7 +236,7 @@ board2.unsuspendUpdate();
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/212542762-64649610-5e53-4e20-8d65-6085d6281a95.png) |
+| ![prt1](images/polar_coordinate_algebraic_04_prt1.png) |
 |:--:|
 | *Display of **prt1*** |
 
@@ -254,7 +258,7 @@ r2:ans1[2]
 |Node 1 true feedback |`<p>Nice, you found the correct value for \(r_1\)! Good job!</p>`|
 |Node 1 false feedback |`<p>The value you gave for \(r_1\) is not correct.  </p>`|
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/212542764-0b546556-0131-45be-9ef0-0516d9644f5b.png) |
+| ![Node 1](images/polar_coordinate_algebraic_04_prt1_node1.png) |
 |:--:|
 | *Values of **node 1 of prt 1*** |
 
@@ -267,7 +271,7 @@ r2:ans1[2]
 |Node 2 true feedback |`<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p> Perfect! You got both radiuses right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(r_2\) is not correct. Try matching the points perfectly and read the larger radius. This is the upper bound of the interval of possible radiuses. Make sure, you're giving the values in the format specified in the task explanation.</p> `|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/212542767-e7483060-677b-4b41-83ba-151e7d0af7d3.png) |
+| ![Node 2](images/polar_coordinate_algebraic_04_prt1_node2.png) |
 |:--:|
 | *Values of **node 2 of prt 1*** |
 
@@ -280,13 +284,13 @@ r2:ans1[2]
 |Node 3 true feedback |`<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p>Check whether you did anything different here than for \(r_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(r_2\) is also not correct. Try matching the points perfectly and read the radiuses. The smaller radius is the lower bound of the interval. The larger radius is the upper bound of the interval. Make sure, you're giving the values in the format specified in the task explanation.</p> `|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/212542768-72b3e5e5-c9dc-45fc-a3a3-3f724f061bc6.png) |
+| ![Node 3](images/polar_coordinate_algebraic_04_prt1_node2.png) |
 |:--:|
 | *Values of **node 3 of prt 1*** |
 
 ### prt2
 
-| ![prt2](https://private-user-images.githubusercontent.com/120648145/239844964-8518da9b-5b54-4a5a-93cc-6e3330e367f6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg0NzQzMjczLCJuYmYiOjE2ODQ3NDI5NzMsInBhdGgiOiIvMTIwNjQ4MTQ1LzIzOTg0NDk2NC04NTE4ZGE5Yi01YjU0LTRhNWEtOTNjYy02ZTMzMzBlMzY3ZjYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MjJUMDgwOTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWY1MTFkZjg1MWMzNTg4NzlkMzkyMzEzMDU5MWMwMjFjN2E2Yzk0ZmM3ODViMDJkY2U4NjAzYWEyZmM2OGVjYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.1J_2Y5CB6j_p1ef33cw6O9ni2hySMuRtgXmnP2IRjr4) |
+| ![prt2](images/polar_coordinate_algebraic_05_prt2.png) |
 |:--:|
 | *Display of **prt2*** |
 
@@ -307,7 +311,7 @@ phi2:ans2[2]
 |Node 1 true feedback |`<p>Nice, you found the correct value for \(\phi_1\)! Good job!<p>`|
 |Node 1 false feedback |`<p>The value you gave for \(\phi_1\) is not correct.  </p>`|
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/212542743-5ba265d3-f694-4889-83da-0ff2055af060.png) |
+| ![Node 1](images/polar_coordinate_algebraic_05_prt2_node1.png) |
 |:--:|
 | *Values of **node 1 of prt 2*** |
 
@@ -320,7 +324,7 @@ phi2:ans2[2]
 |Node 2 true feedback |`<p>Nice, you found the correct value for \(\phi_2\)! Good job!</p> <p> Perfect! You got both angles right! </p>`|
 |Node 2 false feedback |`<p>The value you gave for \(\phi_2\) is not correct. Try matching the points perfectly and read the bigger angle. This is the upper bound of the interval of possible angles. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/212542750-4b36f16c-0bc9-429a-b6da-bdc0a4b7f533.png) |
+| ![Node 2](images/polar_coordinate_algebraic_05_prt2_node2.png) |
 |:--:|
 | *Values of **node 2 of prt 2*** |
 
@@ -333,7 +337,7 @@ phi2:ans2[2]
 |Node 3 true feedback |`<p>Nice, you found the correct value for \(r_2\)! Good job!</p> <p>Check whether you did anything different here than for \(r_1\) and try again. </p>`|
 |Node 3 false feedback |`<p>The value you gave for \(\phi_2\) is also not correct. Try matching the points perfectly and read the angles. The smaller angle is the lower bound of the interval. The larger angle is the upper bound of the interval. Make sure, you're giving the values in the format specified in the task explanation.</p> `|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/212542751-071077a7-0baf-46fd-9ebf-0cdcf6134767.png) |
+| ![Node 3](images/polar_coordinate_algebraic_05_prt2_node3.png) |
 |:--:|
 | *Values of **node 3 of prt 2*** |
 
