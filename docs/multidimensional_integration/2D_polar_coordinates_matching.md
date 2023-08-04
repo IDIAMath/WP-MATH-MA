@@ -7,7 +7,7 @@ theme: minima
 +	Student knows the transformation from cartesian to polar coordinates  (Handling mathematical symbols and formalism)
 +	Student can think of an area that is transformed to the given area in polar coordinates and check graphically (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools )
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/212396778-99f646a0-cef1-4daf-b957-e506a4ae3447.PNG) |
+| ![First impression](./images/polar_coordinates_matching_2_PRT_01_preview.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -29,7 +29,7 @@ The rectangle in the cartesian coordinate system is transformed to polar coordin
 
 It is the aim to match the changing area to the given area. Then, the interval bounds can be read from the cartesian coordinate system and given as input.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/212396786-a615de75-7553-446e-960b-7766f59d709e.PNG) |
+| ![Click draw button](./images/polar_coordinates_matching_2_PRT_02_student.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -41,7 +41,7 @@ Another example - in the case of the radius - is the following: change `radius1:
 
 **They should not change any of the values `p1x,...,p4y`!**
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/212383411-1340fd0d-004f-4ca6-a0a4-753a9020cc46.PNG) |
+| ![values the teacher can change](./images/polar_coordinates_matching_2_PRT_03_teacher.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -224,7 +224,7 @@ board2.unsuspendUpdate();
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/209998503-d17d43ca-be5f-4e6e-820d-01946ba26950.PNG) |
+| ![prt1](./images/polar_coordinates_matching_04_PRT1.png) |
 |:--:|
 | *Display of **prt1*** |
 
@@ -237,7 +237,7 @@ phi2:ans2[2]/%pi
 
 ```
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/212383405-d43f59aa-986f-4b8d-9dd4-ac8fc348239e.PNG) |
+| ![Node 1](./images/polar_coordinates_matching_2_PRT_04_PRT1_node1.png) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
