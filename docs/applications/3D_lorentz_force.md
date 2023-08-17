@@ -5,7 +5,8 @@ theme: minima
 ---
 ## Aim of task
 +	Student knows how a multidimensional curve is produced from varying a single parameter. (Handling mathematical symbols and formalism)
-+	Student can find other parameters of the curve using a 3D visualization. (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
++	Student knows how the directions of the vectors in a vector product are related. (Making use of aids and tools)
++	Student can imagine the effect of continuously applying a vector product to a vector and find the right expression. (Communicating in, with and about Mathematics)
 
 | ![First impression](./images/Lorentz_force_2023-08-17.png) |
 |:--:|
