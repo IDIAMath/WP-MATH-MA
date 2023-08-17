@@ -7,7 +7,7 @@ theme: minima
 +	Student knows how a multidimensional curve is produced from varying a single parameter. (Handling mathematical symbols and formalism)
 +	Student can find other parameters of the curve using a 3D visualization. (represent mathematical entities, posing and solving mathematical problems, making use of aids and tools  )
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/213679634-c35d8096-4c3f-4fbe-b2be-8cb6d441ea87.png) |
+| ![First impression](./images/Lorentz_force_2023-08-17.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -34,7 +34,7 @@ It is the task to qualitatively predict the curve followed by the particle given
 
 The answer is given in multiple choice format.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/213679631-30d42545-5805-4ed7-8ec7-5ab5812c95ef.png) |
+| ![Click draw button](./images/Lorentz_force_student_2023-08-17.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -50,7 +50,7 @@ Lastly, they can change the absolute value of the magnetic field to values they 
 For an explanation of the processing of the values read **Question variables** and **Question text**.
 
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/213679633-b475a068-2a0f-4882-9bd0-001c98901157.png) |
+| ![values the teacher can change](./images/Lorentz_force_teacher_2023-08-17.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -231,7 +231,7 @@ location;
 tans: ta[location];
 ```
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/213417669-8735a0da-5074-4b7c-9870-8b287ab42be6.png) |
+| ![prt1](./images/Lorentz_force_PRT_1_2023-08-17.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
@@ -247,18 +247,10 @@ tans: ta[location];
 |Node 1 false feedback |`<p> Unfortunately, this is not the correct type of trajectory.<br> Remember to use the right hand rule for a cross product!<br> Also, due to the properties of the vector product, the velocity component parallel to the magnetic field does not contribute to the Lorentz force. Hence there is no acceleration along the \(z\)-axis.</p>`|
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/213679611-61f88456-34bd-4cea-a60e-b7582a5b6bd7.png) |
+| ![Node 1](./images/Lorentz_force_PRT_1_node_1_2023-08-17.png) |
 |:--:|
 | *Values of **node 1*** |
 
-### Node 2
- |property | setting| 
-|:---|:---|
-|Answer Test | AlgEquiv|
-|SAns | `yans`|
-|TAns | `yr`| 
-|Node 2 true feedback | `<p> Nice! You found the correct offset \(y_0\). Good job!</p>`|
-|Node 2 false feedback |`<p>The offset \(y_0\) is not yet correct. Check, whether the curves' centres are aligned, when you slide "y0" to this value.</p>`|
 
 ## General Feedback code
 
@@ -393,4 +385,9 @@ var board = JXG.JSXGraph.initBoard(divid,{boundingbox : [-10, 10, 10,-10], axis:
 [[/ jsxgraph]]
 
 ```
+| ![General Feedback](./images/Lorentz_force_feedback_2023-08-17.png) |
+|:--:|
+| *Example of general feedback.* |
+
+
 ## Todo:
