@@ -3,7 +3,7 @@
 ### Multivariate Calculus
 [Questions](multidimensional_functions/Readme.md)
 
-### Mutlidimensional Integration 
+### Multidimensional Integration 
 [Questions](multidimensional_integration/Readme.md)
 
 ### Application tasks
