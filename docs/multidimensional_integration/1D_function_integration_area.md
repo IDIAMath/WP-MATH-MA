@@ -4,12 +4,12 @@ usemathjax: true
 theme: minima
 ---
 ## Aim of task
-+ Student knows how to calculate partial derivatives and tangent planes  (Handling mathematical symbols and formalism)
-+	Student knows the concept of stationary points in 2D and can calculate them  (Handling mathematical symbols and formalism)
-+	Student understands, how stationary points and tangent planes are connected graphically  (Representing mathematical entities)
-+ Using a visualization of planes tangent to a 2D function graph student can decide whether or not a point is stationary (Making use of aids and tools)
++ Student knows how a function can be defined on an interval  (Handling mathematical symbols and formalism)
++	Student knows how a function can be transformed and change the graph  (Handling mathematical symbols and formalism)
++	Student knows the graphical representation of some basic functions  (Representing mathematical entities)
++ Student can adapt to errors and correct them based on graphical feedback (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/223714756-d1315d40-4ce3-437e-9a7e-8c91d06230f4.PNG) |
+| ![First impression](./images/integration_area_2023-08-18.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -22,7 +22,7 @@ A 2D area is plotted that can be expressed as the space in between an upper and 
 The student is asked to put in an interval and two functions. They strive to reconstruct the area displayed in the coordinate system by finding the correct functions. If the settings are on "Adaptive Mode" changes can be made after answering and feedback, when "Check" is pressed instead of "Submit and finish".
 This way they can learn the best from their mistakes and get it right on the next try.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/223714769-0fe722bb-9d1d-40cd-817d-5940ddcd4b8d.PNG) |
+| ![Click draw button](./images/integration_area_student_2023-08-18.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -30,7 +30,7 @@ This way they can learn the best from their mistakes and get it right on the nex
 ### Teacher perspective
 The teacher is able to give a list of different upper and lower functions. Also, they can specify the interval bounds `x1` and `x2` by setting them directly or making changes to the `rand()` function. 
 For example, they can replace `x1:rand(4)/2;` by `x1:rand(5);` to go from 1 to 5 in steps of one instead of going from 1/2 to 2 in steps of 1/2 and selecting randomly from the list.
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/223714766-9109c41d-d07c-456d-8c94-fd2cd3a37dc9.PNG) |
+| ![values the teacher can change](./images/integration_area_teacher_2023-08-18.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -180,17 +180,13 @@ var b1    = JXG.JSXGraph.initBoard(divid,{boundingbox: [-0.5,4.5,5.1,-4.5],grid:
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/209998959-82c868cc-b662-4c4c-a7bd-7c0c9c32c5e4.PNG) |
+| ![prt1](./images/integration_area_PRT_1_2023-08-18.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
-Feedback variables:
-```
-
-```
  
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/210770473-d51927f2-522a-469f-8604-2972ecb2f13a.PNG) |
+| ![Node 1](./images/integration_area_PRT_1_node_1_2023-08-18.png) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
@@ -202,7 +198,9 @@ Feedback variables:
 |Node 1 true feedback | ``|
 |Node 1 false feedback | JSXGraph applet showing the student answer|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/210770470-829c60d5-22f3-47a5-bade-7718c0bebf03.PNG) |
+
+
+| ![Node 2](./images/integration_area_PRT_1_node_2_2023-08-18.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -215,7 +213,7 @@ Feedback variables:
 |Node 2 true feedback | `<p>Nice, you found the correct value for \(x_1\)! Good job!</p>`|
 |Node 2 false feedback | `<p>The value you gave for \(x_1\) is not correct.  </p>`|
 
-| ![Node 3](https://user-images.githubusercontent.com/120648145/210770470-829c60d5-22f3-47a5-bade-7718c0bebf03.PNG) |
+| ![Node 3](./images/integration_area_PRT_1_node_3_2023-08-18.png) |
 |:--:|
 | *Values of **node 3*** |
 
@@ -228,7 +226,7 @@ Feedback variables:
 |Node 3 true feedback | `<p>Nice, you found the correct value for \(x_2\)! Good job!</p> <p> Perfect! You got both interval bounds right! </p>`|
 |Node 3 false feedback | `<p>The value you gave for \(x_2\) is not correct. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
-| ![Node 4](https://user-images.githubusercontent.com/120648145/210770470-829c60d5-22f3-47a5-bade-7718c0bebf03.PNG) |
+| ![Node 4](./images/integration_area_PRT_1_node_4_2023-08-18.png) |
 |:--:|
 | *Values of **node 4*** |
 
@@ -241,9 +239,14 @@ Feedback variables:
 |Node 4 true feedback | `<p>Nice, you found the correct value for \(x_2\)! Good job!</p> <p>Check whether you did anything different here than for \(x_1\) and try again. </p>`|
 |Node 4 false feedback | `<p>The value you gave for \(x_2\) is also not correct. Make sure, you're giving the values in the format specified in the task explanation.</p>`|
 
+
+| ![feedback PRT1](./images/integration_area_feedback_2023-08-18.png) |
+|:--:|
+| *Example for feedback with applet.* |
+
 ### prt2
 
-| ![prt2](https://user-images.githubusercontent.com/120648145/209998959-82c868cc-b662-4c4c-a7bd-7c0c9c32c5e4.PNG) |
+| ![prt2](./images/integration_area_PRT_2_2023-08-18.png) |
 |:--:|
 | *Visualization of **prt2*** |
 
@@ -251,7 +254,7 @@ In this PRT, the student's upper function is checked. Additionally to comparing 
 
 ### prt3
 
-| ![prt3](https://user-images.githubusercontent.com/120648145/209998959-82c868cc-b662-4c4c-a7bd-7c0c9c32c5e4.PNG) |
+| ![prt3](./images/integration_area_PRT_3_2023-08-18.png) |
 |:--:|
 | *Visualization of **prt3*** |
 
@@ -259,8 +262,4 @@ In this PRT, the student's lower function is checked. Additionally to comparing 
 
 
 ## Todo:
-* [x] Elaborate more on task for students
-* [x] Display definition of stationary point in solution
-* [ ] Add correct reference solution
-* [ ] JSXGraph-Applet does not work in solution
-
+[] Feedback message of PRT1 is displayed before the applet
