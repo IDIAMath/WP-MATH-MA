@@ -8,7 +8,7 @@ theme: minima
 + Student knows how special 2D functions look like (Representing mathematical entities)
 + Using a visualization of multidimensional functions they reconstruct the given function (Making use of aids and tools)
 
-| ![First impression](https://user-images.githubusercontent.com/120648145/223714756-d1315d40-4ce3-437e-9a7e-8c91d06230f4.PNG) |
+| ![First impression](./images/Parametric_surfaces_graphs_2023-09-11.png) |
 |:--:|
 | *First impression of the question* |
 
@@ -19,7 +19,7 @@ A 2D function $f$ is plotted resulting in a surface embedded in 3D. This surface
 
 A JSXGraph applet containing the plot is displayed. The students can rotate the plot and look at it from different perspectives and then give their answer as an algebraic expression.
 
-| ![Click draw button](https://user-images.githubusercontent.com/120648145/223714769-0fe722bb-9d1d-40cd-817d-5940ddcd4b8d.PNG) |
+| ![Click draw button](./images/Parametric_surfaces_graphs_student_2023-09-11.png) |
 |:--:|
 | *When the student solves the problem* |
 
@@ -31,7 +31,7 @@ Furthermore the teacher is give a list of possible functions from which the task
 The current list is `funclist:[a1 * cos(%pi*x)* cos(y), x^2+a1*y^2,((a1+1)^2-x^2-y^2)^(1/2),(a1^2+x^2-y^2)^(1/2),(a1^2+x^2+y^2)^(1/2), a1*x+y];`
 However, it might be necessary to define additional parameters analogous to the ones defined before.
 
-| ![values the teacher can change](https://user-images.githubusercontent.com/120648145/223714766-9109c41d-d07c-456d-8c94-fd2cd3a37dc9.PNG) |
+| ![values the teacher can change](./images/Parametric_surfaces_graphs_teacher_2023-09-11.png) |
 |:--:|
 | *The above image shows which values the teacher may wish to change* |
 
@@ -144,14 +144,14 @@ board.update();
 ## Potential response tree
 ### prt1
 
-| ![prt1](https://user-images.githubusercontent.com/120648145/209998959-82c868cc-b662-4c4c-a7bd-7c0c9c32c5e4.PNG) |
+| ![prt1](./images/Parametric_surfaces_graphs_PRT_1_2023-09-11.png) |
 |:--:|
 | *Visualization of **prt1*** |
 
 
 
 
-| ![Node 1](https://user-images.githubusercontent.com/120648145/210770473-d51927f2-522a-469f-8604-2972ecb2f13a.PNG) |
+| ![Node 1](./images/Parametric_surfaces_graphs_PRT_1_node_1_2023-09-11.png) |
 |:--:|
 | *Values of **node 1*** |
 ### Node 1
@@ -163,7 +163,7 @@ board.update();
 |Node 1 true feedback | `<p>Nice! You found the correct function. Will you dare to try again?</p>`|
 |Node 1 false feedback | `<p>Sadly, you did not find the correct function.</p>`|
 
-| ![Node 2](https://user-images.githubusercontent.com/120648145/210770470-829c60d5-22f3-47a5-bade-7718c0bebf03.PNG) |
+| ![Node 2](./images/Parametric_surfaces_graphs_PRT_1_node_2_2023-09-11.png) |
 |:--:|
 | *Values of **node 2*** |
 
@@ -237,6 +237,10 @@ board.update();
 
 [[/jsxgraph]]
 ```
+| ![Graphical feedback](./images/Parametric_surfaces_graphs_feedback_2023-09-11.png) |
+|:--:|
+| *Graphical feedback* |
+
 
 ## Todo:
 
