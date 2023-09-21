@@ -13,6 +13,10 @@
 			MathJax-script" async></script>
 	</head>
 	<body>
+        <p>
+            See at working examples <a href="https://idiamath.github.io/JSXGraphExamples/vectorfield3D-curve-slider.html">Curve with Slider</a>
+            or  <a href="https://idiamath.github.io/JSXGraphExamples/vectorfield3D-curve-input.html">Curve with input</a>
+        </p>
 		<div id="jxgbox" class="jxgbox" style="width:500px; height:700px;"></div>
 		<script>
 			var board = JXG.JSXGraph.initBoard('jxgbox', {
@@ -97,7 +101,7 @@
 			        r.Value()* Math.sin(t1),
 			        h.Value()*Math.cos(n.Value()*t1- s.Value())  
                     ],
-                (function(_li, _lj, _lk)){
+                function(_li, _lj, _lk){
                     var pout = [];
                     var norm = Math.max((_li*_li+ _lj*_lj+_lk*_lk )**(1/2),0.001);
                     pout[0] = TF1(_li,_lj,_lk)/norm;
